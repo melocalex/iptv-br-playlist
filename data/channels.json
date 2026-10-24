@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T04:14:44.295Z",
+ "generatedAt": "2026-10-24T04:28:35.185Z",
  "vantagesSeen": [
   "local-br",
   "github-us"
@@ -18531,8 +18531,8 @@
    "website": "https://pluto.tv/latam/live-tv/61b793ccf571b80007b7a610",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -19140,8 +19140,8 @@
    "website": "https://www.historyplay.tv/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 80,
     "sites": [
      "mi.tv"
     ]
@@ -21793,8 +21793,8 @@
    "website": "https://agromais.band.uol.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 51,
     "sites": [
      "mi.tv"
     ]
@@ -33644,8 +33644,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 87,
     "sites": [
      "mi.tv"
     ]
@@ -34114,8 +34114,8 @@
    "website": "http://www.amctv.la/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 42,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -46608,8 +46608,8 @@
    "website": "https://canalarte1.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 60,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -46989,8 +46989,8 @@
    "website": "https://canal.parlamento.pt",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 19,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -55264,8 +55264,8 @@
    "website": "https://br.axn.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 57,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -56194,8 +56194,8 @@
    "website": "https://www.axn.pt/axnmovies",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 48,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -61407,8 +61407,8 @@
    "website": "https://bandnewstv.band.uol.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 53,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -61684,8 +61684,8 @@
    "website": "http://bandsports.band.uol.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 41,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -74056,8 +74056,8 @@
    "website": "https://pluto.tv/en/live-tv/bet-pluto-tv-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 38,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -80564,8 +80564,8 @@
    "website": "https://bmcnews.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 25,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -101846,8 +101846,8 @@
    "website": "https://sba1.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 53,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -103041,8 +103041,8 @@
    "website": "https://www.futura.org.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 120,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -106792,8 +106792,8 @@
    "website": "https://canalrural.uol.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 38,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -112929,8 +112929,8 @@
    "website": "http://www.cartoonnetworkla.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 317,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -132080,8 +132080,8 @@
    "website": "https://pluto.tv/en/live-tv/cine-terror",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 16,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -139923,8 +139923,8 @@
    "website": "https://www.cnnbrasil.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 51,
     "sites": [
      "mi.tv"
     ]
@@ -140435,8 +140435,8 @@
    "website": "http://www.cnnportugal.pt/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 73,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -142856,8 +142856,8 @@
    "website": "https://pluto.tv/en/live-tv/comedy-central-pluto-tv-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 50,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -166454,8 +166454,8 @@
    "website": "http://www.discoverykidsplus.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 221,
     "sites": [
      "mi.tv"
     ]
@@ -167106,8 +167106,8 @@
    "website": "http://www.latam.discovery.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 108,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -189812,8 +189812,8 @@
    "website": "http://www.espn.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 37,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -195518,8 +195518,8 @@
    "website": "https://pt.euronews.com/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 198,
     "sites": [
      "i.mjh.nz",
      "meo.pt",
@@ -199708,8 +199708,8 @@
    "website": "https://www.failarmy.com/pages/streaming",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 49,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -208548,8 +208548,8 @@
    "website": "https://www.fishtv.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 77,
     "sites": [
      "mi.tv"
     ]
@@ -223749,8 +223749,8 @@
    "website": "http://globonews.globo.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 57,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -240137,8 +240137,8 @@
    "website": "https://www.historyplay.tv/br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 69,
     "sites": [
      "mi.tv"
     ]
@@ -240663,8 +240663,8 @@
    "website": "http://www.historyplay.tv/history-2",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 63,
     "sites": [
      "mi.tv"
     ]
@@ -270420,8 +270420,8 @@
    "website": "https://jovempan.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -288490,8 +288490,8 @@
    "website": "http://www.kuriakos-tv.com/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 84,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -298479,8 +298479,8 @@
    "website": "https://www.historyplay.tv/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 54,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -313825,8 +313825,8 @@
    "website": "https://pluto.tv/en/live-tv/masterchef-ptv1",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -341202,8 +341202,8 @@
    "website": "https://pluto.tv/en/live-tv/mtv-pluto-tv",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 32,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -344245,8 +344245,8 @@
    "website": "https://boxbrazil.tv.br/prime-box-brazil/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 255,
     "sites": [
      "mi.tv"
     ]
@@ -349262,8 +349262,8 @@
    "website": "https://pluto.tv/en/live-tv/naruto",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 55,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -380896,8 +380896,8 @@
    "website": "https://pluto.tv/en/live-tv/dog-whisperer-ptv1",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 40,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -388712,8 +388712,8 @@
    "website": "https://pluto.tv/en/live-tv/o-reino-infantil-ptv1",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 49,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -405373,8 +405373,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-aliens/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 30,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -405570,8 +405570,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-animais/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -405980,8 +405980,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-anime-1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 34,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -406213,8 +406213,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-anime-acao",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 48,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -406524,8 +406524,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-bang-bang/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -406978,8 +406978,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-canal-uol/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 31,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -407462,8 +407462,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-cine-classicos",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -407604,8 +407604,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-cine-comedia-1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -407789,8 +407789,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-cine-comedia-romantica/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -407875,8 +407875,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-cine-crime/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -408122,8 +408122,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-cine-drama-1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -408361,8 +408361,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-cine-familia-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -408495,8 +408495,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-cine-inspiracao/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 12,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -408749,8 +408749,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-cine-romance-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -408939,8 +408939,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-cine-sucessos",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -409872,8 +409872,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-cozinha/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 36,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -410601,8 +410601,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-desenhos-classicos/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 55,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -411395,8 +411395,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-esportes/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 35,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -411978,8 +411978,8 @@
    "website": "https://pluto.tv/en/live-tv/ficcao-cientifica",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 16,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -412381,8 +412381,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-filmes-acao",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 16,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -412467,8 +412467,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-filmes-aventura/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 14,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -412553,8 +412553,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-filmes-de-luta/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 15,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -412639,8 +412639,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-filmes-nacionais",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 17,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -413844,8 +413844,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-documentarios/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 29,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -414926,8 +414926,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-investigacao-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 39,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -415224,8 +415224,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-junior-1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 57,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -415608,8 +415608,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-kfood/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 30,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -415760,8 +415760,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-kids-1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 63,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -416017,8 +416017,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-kids-club/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 52,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -417146,8 +417146,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-misterios-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 35,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -417782,8 +417782,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-natureza",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -417868,8 +417868,8 @@
    "website": "https://pluto.tv/live-tv/hardcore-pawn/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 59,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -417954,8 +417954,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-netmovies/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 16,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -418264,8 +418264,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-novelas-ptv1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 29,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -418729,8 +418729,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-paisagens-por-stingray",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -418757,9 +418757,15 @@
        "checkedAt": "2026-10-24T03:47:41.624Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:14.501Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:41.624Z",
+     "lastSuccessAt": "2026-10-24T04:25:14.501Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -419357,8 +419363,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-policial/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 46,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -419385,9 +419391,15 @@
        "checkedAt": "2026-10-24T03:47:41.933Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:15.399Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:41.933Z",
+     "lastSuccessAt": "2026-10-24T04:25:15.399Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -419836,8 +419848,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-record-news/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 28,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -419864,9 +419876,15 @@
        "checkedAt": "2026-10-24T03:47:41.557Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:13.907Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:41.557Z",
+     "lastSuccessAt": "2026-10-24T04:25:13.907Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -419974,8 +419992,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-retro-2",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 40,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -420002,9 +420020,15 @@
        "checkedAt": "2026-10-24T03:47:41.380Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:12.812Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:41.380Z",
+     "lastSuccessAt": "2026-10-24T04:25:12.812Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -421401,8 +421425,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-series-acao/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 31,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -421429,9 +421453,15 @@
        "checkedAt": "2026-10-24T03:47:42.750Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:14.332Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:42.750Z",
+     "lastSuccessAt": "2026-10-24T04:25:14.332Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -421539,8 +421569,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-series-comedia/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 59,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -421567,9 +421597,15 @@
        "checkedAt": "2026-10-24T03:47:43.208Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:14.427Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:43.208Z",
+     "lastSuccessAt": "2026-10-24T04:25:14.427Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -421619,8 +421655,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-series-criminais/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 31,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -421647,9 +421683,15 @@
        "checkedAt": "2026-10-24T03:47:43.330Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:13.693Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:43.330Z",
+     "lastSuccessAt": "2026-10-24T04:25:13.693Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -422091,8 +422133,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-series-drama-ptv1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 28,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -422119,9 +422161,15 @@
        "checkedAt": "2026-10-24T03:47:45.126Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:13.706Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:45.126Z",
+     "lastSuccessAt": "2026-10-24T04:25:13.706Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -422283,8 +422331,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-series-novelescas/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -422311,9 +422359,15 @@
        "checkedAt": "2026-10-24T03:47:47.010Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:13.588Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:47.010Z",
+     "lastSuccessAt": "2026-10-24T04:25:13.588Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -422468,8 +422522,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-series-sci-fi/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 31,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -422496,9 +422550,15 @@
        "checkedAt": "2026-10-24T03:47:47.284Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:16.126Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:47.284Z",
+     "lastSuccessAt": "2026-10-24T04:25:16.126Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -422657,8 +422717,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-shows-por-stingray",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -422685,9 +422745,15 @@
        "checkedAt": "2026-10-24T03:47:48.442Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:16.026Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:48.442Z",
+     "lastSuccessAt": "2026-10-24T04:25:16.026Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -424254,8 +424320,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-terror-trash/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 17,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -424282,9 +424348,15 @@
        "checkedAt": "2026-10-24T03:47:46.761Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:18.068Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:46.761Z",
+     "lastSuccessAt": "2026-10-24T04:25:18.068Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -424993,8 +425065,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-turbo/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 37,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -425021,9 +425093,15 @@
        "checkedAt": "2026-10-24T03:47:47.715Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:17.063Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:47.715Z",
+     "lastSuccessAt": "2026-10-24T04:25:17.063Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -425351,8 +425429,8 @@
    "website": "https://pluto.tv/live-tv/pluto-tv-viagens/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 35,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -425379,9 +425457,15 @@
        "checkedAt": "2026-10-24T03:47:48.303Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:16.803Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:48.303Z",
+     "lastSuccessAt": "2026-10-24T04:25:16.803Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -425487,8 +425571,8 @@
    "website": "https://pluto.tv/en/live-tv/pluto-tv-vida-real-ptv1",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 44,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -425515,9 +425599,15 @@
        "checkedAt": "2026-10-24T03:47:49.475Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:16.539Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:49.475Z",
+     "lastSuccessAt": "2026-10-24T04:25:16.539Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -425557,9 +425647,15 @@
        "checkedAt": "2026-10-24T03:47:47.710Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:17.138Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:47.710Z",
+     "lastSuccessAt": "2026-10-24T04:25:17.138Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -429722,8 +429818,8 @@
    "website": "https://portocanal.sapo.pt/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 43,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -429753,9 +429849,15 @@
        "checkedAt": "2026-10-24T03:47:46.495Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:15.118Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:46.495Z",
+     "lastSuccessAt": "2026-10-24T04:25:15.118Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -433682,9 +433784,15 @@
        "checkedAt": "2026-10-24T03:47:45.721Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:16.730Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:45.721Z",
+     "lastSuccessAt": "2026-10-24T04:25:16.730Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -434715,9 +434823,15 @@
        "checkedAt": "2026-10-24T03:47:50.405Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:18.075Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:50.405Z",
+     "lastSuccessAt": "2026-10-24T04:25:18.075Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -449240,7 +449354,7 @@
     "programmes": 0,
     "sites": []
    },
-   "health": "UNSTABLE",
+   "health": "WORKING",
    "eligible": true,
    "streams": [
     {
@@ -449254,16 +449368,22 @@
      "declaredQuality": "720p",
      "userAgent": null,
      "referrer": null,
-     "health": "UNSTABLE",
+     "health": "WORKING",
      "byVantage": {
       "local-br": {
        "status": "UNSTABLE",
        "checkedAt": "2026-10-24T03:48:05.638Z",
        "http": 200,
        "reason": "oscilou_na_execucao"
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:19.195Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:05.638Z",
+     "lastSuccessAt": "2026-10-24T04:25:19.195Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -456262,8 +456382,8 @@
    "website": "https://rbatv.dol.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 40,
     "sites": [
      "mi.tv"
     ]
@@ -456289,9 +456409,15 @@
        "checkedAt": "2026-10-24T03:47:48.827Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:17.474Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:48.827Z",
+     "lastSuccessAt": "2026-10-24T04:25:17.474Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -457585,6 +457711,12 @@
        "checkedAt": "2026-10-24T03:47:49.668Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:18.101Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -458659,8 +458791,8 @@
    "website": "http://rederecord.r7.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 50,
     "sites": [
      "meuguia.tv",
      "mi.tv",
@@ -458687,9 +458819,15 @@
        "checkedAt": "2026-10-24T03:47:49.074Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:18.940Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:49.074Z",
+     "lastSuccessAt": "2026-10-24T04:25:18.940Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -458724,6 +458862,12 @@
        "checkedAt": "2026-10-24T03:47:48.607Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:18.202Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -458746,6 +458890,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:49.244Z",
+       "http": 404,
+       "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:18.951Z",
        "http": 404,
        "reason": "http_404"
       }
@@ -458783,8 +458933,8 @@
    "website": "https://noticias.r7.com/record-news/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 112,
     "sites": [
      "chaines-tv.orange.fr",
      "meo.pt",
@@ -458815,9 +458965,15 @@
        "checkedAt": "2026-10-24T03:47:50.340Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:20.390Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:50.340Z",
+     "lastSuccessAt": "2026-10-24T04:25:20.390Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -458853,9 +459009,15 @@
        "checkedAt": "2026-10-24T03:47:49.734Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:20.072Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:49.734Z",
+     "lastSuccessAt": "2026-10-24T04:25:20.072Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -458889,9 +459051,15 @@
        "checkedAt": "2026-10-24T03:47:50.311Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:20.492Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:50.311Z",
+     "lastSuccessAt": "2026-10-24T04:25:20.492Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -458925,9 +459093,15 @@
        "checkedAt": "2026-10-24T03:47:52.872Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:20.168Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:52.872Z",
+     "lastSuccessAt": "2026-10-24T04:25:20.168Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -458962,9 +459136,15 @@
        "checkedAt": "2026-10-24T03:47:49.534Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:21.821Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:49.534Z",
+     "lastSuccessAt": "2026-10-24T04:25:21.821Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -458998,9 +459178,15 @@
        "checkedAt": "2026-10-24T03:47:49.946Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:22.572Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:49.946Z",
+     "lastSuccessAt": "2026-10-24T04:25:22.572Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -459034,6 +459220,12 @@
        "checkedAt": "2026-10-24T03:47:51.823Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:18.568Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459056,6 +459248,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:50.163Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:19.781Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -459082,6 +459280,12 @@
        "checkedAt": "2026-10-24T03:47:50.764Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:19.854Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459104,6 +459308,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:51.831Z",
+       "http": 400,
+       "reason": "http_400"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:20.418Z",
        "http": 400,
        "reason": "http_400"
       }
@@ -459168,6 +459378,12 @@
        "checkedAt": "2026-10-24T03:47:51.863Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:20.633Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459230,6 +459446,12 @@
        "checkedAt": "2026-10-24T03:47:51.941Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:21.202Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459290,6 +459512,12 @@
        "checkedAt": "2026-10-24T03:47:52.142Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:21.355Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459352,6 +459580,12 @@
        "checkedAt": "2026-10-24T03:47:52.092Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:21.540Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459412,9 +459646,15 @@
        "checkedAt": "2026-10-24T03:47:53.837Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:23.948Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:53.837Z",
+     "lastSuccessAt": "2026-10-24T04:25:23.948Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "mpegts",
@@ -459491,6 +459731,12 @@
        "checkedAt": "2026-10-24T03:47:52.575Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:21.787Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459553,6 +459799,12 @@
        "checkedAt": "2026-10-24T03:47:53.706Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:22.005Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -459615,6 +459867,12 @@
        "checkedAt": "2026-10-24T03:47:53.704Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:21.973Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -460476,8 +460734,8 @@
    "website": "https://rbtv.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 76,
     "sites": [
      "mi.tv"
     ]
@@ -460503,10 +460761,16 @@
        "checkedAt": "2026-10-24T03:47:54.317Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "UNSUPPORTED",
+       "checkedAt": "2026-10-24T04:25:21.972Z",
+       "http": 206,
+       "reason": "ffprobe_failed"
       }
      },
      "lastSuccessAt": "2026-10-24T03:47:54.317Z",
-     "consecutiveFailures": 0,
+     "consecutiveFailures": 1,
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -460539,6 +460803,12 @@
        "checkedAt": "2026-10-24T03:47:53.210Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:22.709Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -460561,6 +460831,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:53.365Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:22.652Z",
        "http": null,
        "reason": "net:ENOTFOUND"
       }
@@ -460623,9 +460899,15 @@
        "checkedAt": "2026-10-24T03:47:53.260Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:23.574Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:53.260Z",
+     "lastSuccessAt": "2026-10-24T04:25:23.574Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -460661,9 +460943,15 @@
        "checkedAt": "2026-10-24T03:47:54.026Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:23.945Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:54.026Z",
+     "lastSuccessAt": "2026-10-24T04:25:23.945Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -460699,9 +460987,15 @@
        "checkedAt": "2026-10-24T03:47:53.958Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:23.736Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:53.958Z",
+     "lastSuccessAt": "2026-10-24T04:25:23.736Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -460735,6 +461029,12 @@
        "checkedAt": "2026-10-24T03:47:53.865Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:23.317Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -460757,6 +461057,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:54.536Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:23.477Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -460819,6 +461125,12 @@
        "checkedAt": "2026-10-24T03:47:53.725Z",
        "http": 200,
        "reason": "ffprobe_failed"
+      },
+      "github-us": {
+       "status": "UNSUPPORTED",
+       "checkedAt": "2026-10-24T04:25:22.701Z",
+       "http": 200,
+       "reason": "ffprobe_failed"
       }
      },
      "lastSuccessAt": null,
@@ -460852,8 +461164,8 @@
    "website": "https://www.redefamilia.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 13,
     "sites": [
      "mi.tv"
     ]
@@ -460878,9 +461190,15 @@
        "checkedAt": "2026-10-24T03:47:54.549Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:24.409Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:54.549Z",
+     "lastSuccessAt": "2026-10-24T04:25:24.409Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -460913,6 +461231,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:54.993Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:24.102Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -460975,6 +461299,12 @@
        "checkedAt": "2026-10-24T03:47:55.258Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:24.918Z",
+       "http": 404,
+       "reason": "http_404"
       }
      },
      "lastSuccessAt": null,
@@ -460998,6 +461328,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:55.374Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:24.747Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -461035,8 +461371,8 @@
    "website": "https://www.redegospel.tv.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 48,
     "sites": [
      "mi.tv"
     ]
@@ -461061,9 +461397,15 @@
        "checkedAt": "2026-10-24T03:47:55.356Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:25.876Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:55.356Z",
+     "lastSuccessAt": "2026-10-24T04:25:25.876Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461099,9 +461441,15 @@
        "checkedAt": "2026-10-24T03:47:55.877Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:26.848Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:55.877Z",
+     "lastSuccessAt": "2026-10-24T04:25:26.848Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461136,9 +461484,15 @@
        "checkedAt": "2026-10-24T03:47:55.146Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:24.698Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:55.146Z",
+     "lastSuccessAt": "2026-10-24T04:25:24.698Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461172,9 +461526,15 @@
        "checkedAt": "2026-10-24T03:47:55.420Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:28.645Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:55.420Z",
+     "lastSuccessAt": "2026-10-24T04:25:28.645Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461217,8 +461577,8 @@
    "website": "https://www.meionorte.com/tv-meionorte",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 32,
     "sites": [
      "mi.tv"
     ]
@@ -461244,9 +461604,15 @@
        "checkedAt": "2026-10-24T03:47:56.417Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:28.590Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:56.417Z",
+     "lastSuccessAt": "2026-10-24T04:25:28.590Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461316,6 +461682,12 @@
        "checkedAt": "2026-10-24T03:47:55.799Z",
        "http": null,
        "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:25.242Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
       }
      },
      "lastSuccessAt": null,
@@ -461351,8 +461723,8 @@
    "website": "http://redeminas.tv/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 53,
     "sites": [
      "mi.tv"
     ]
@@ -461378,9 +461750,15 @@
        "checkedAt": "2026-10-24T03:47:59.571Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:37.784Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:59.571Z",
+     "lastSuccessAt": "2026-10-24T04:25:37.784Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461414,6 +461792,12 @@
        "checkedAt": "2026-10-24T03:48:12.220Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:36.339Z",
+       "http": 504,
+       "reason": "http_504"
       }
      },
      "lastSuccessAt": null,
@@ -461474,9 +461858,15 @@
        "checkedAt": "2026-10-24T03:47:57.335Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:29.958Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:57.335Z",
+     "lastSuccessAt": "2026-10-24T04:25:29.958Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461508,6 +461898,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:56.661Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:26.034Z",
        "http": null,
        "reason": "net:ENOTFOUND"
       }
@@ -461570,6 +461966,12 @@
        "checkedAt": "2026-10-24T03:47:56.667Z",
        "http": null,
        "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:26.217Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
       }
      },
      "lastSuccessAt": null,
@@ -461626,6 +462028,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:12.630Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:42.443Z",
        "http": null,
        "reason": "net:20"
       }
@@ -461690,9 +462098,15 @@
        "checkedAt": "2026-10-24T03:47:56.967Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:27.757Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:56.967Z",
+     "lastSuccessAt": "2026-10-24T04:25:27.757Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461728,9 +462142,15 @@
        "checkedAt": "2026-10-24T03:47:57.000Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:27.783Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:57.000Z",
+     "lastSuccessAt": "2026-10-24T04:25:27.783Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461800,9 +462220,15 @@
        "checkedAt": "2026-10-24T03:47:58.663Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:32.435Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:58.663Z",
+     "lastSuccessAt": "2026-10-24T04:25:32.435Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461847,8 +462273,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 52,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -461874,9 +462300,15 @@
        "checkedAt": "2026-10-24T03:47:58.872Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:30.409Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:58.872Z",
+     "lastSuccessAt": "2026-10-24T04:25:30.409Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461911,9 +462343,15 @@
        "checkedAt": "2026-10-24T03:47:58.170Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:28.706Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:58.170Z",
+     "lastSuccessAt": "2026-10-24T04:25:28.706Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461947,9 +462385,15 @@
        "checkedAt": "2026-10-24T03:47:58.473Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:29.762Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:58.473Z",
+     "lastSuccessAt": "2026-10-24T04:25:29.762Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -461983,9 +462427,15 @@
        "checkedAt": "2026-10-24T03:47:58.664Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:31.059Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:58.664Z",
+     "lastSuccessAt": "2026-10-24T04:25:31.059Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -462019,6 +462469,12 @@
        "checkedAt": "2026-10-24T03:47:58.109Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:29.332Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -462041,6 +462497,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:47:59.401Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:30.274Z",
        "http": null,
        "reason": "net:ENOTFOUND"
       }
@@ -462103,9 +462565,15 @@
        "checkedAt": "2026-10-24T03:47:59.582Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:30.730Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:47:59.582Z",
+     "lastSuccessAt": "2026-10-24T04:25:30.730Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -462173,9 +462641,15 @@
        "checkedAt": "2026-10-24T03:48:00.991Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:35.134Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:00.991Z",
+     "lastSuccessAt": "2026-10-24T04:25:35.134Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -462220,8 +462694,8 @@
    "website": "http://www.redevida.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 97,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -462247,9 +462721,15 @@
        "checkedAt": "2026-10-24T03:48:01.398Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:31.301Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:01.398Z",
+     "lastSuccessAt": "2026-10-24T04:25:31.301Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "mpegts",
@@ -462285,9 +462765,15 @@
        "checkedAt": "2026-10-24T03:48:00.038Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:32.124Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:00.038Z",
+     "lastSuccessAt": "2026-10-24T04:25:32.124Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -462322,6 +462808,12 @@
        "checkedAt": "2026-10-24T03:48:00.033Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:31.542Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -462346,6 +462838,12 @@
        "checkedAt": "2026-10-24T03:48:00.000Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:31.925Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -462368,6 +462866,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:01.255Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:32.806Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -465639,9 +466143,15 @@
        "checkedAt": "2026-10-24T03:48:04.537Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:33.159Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:04.537Z",
+     "lastSuccessAt": "2026-10-24T04:25:33.159Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -467246,9 +467756,15 @@
        "checkedAt": "2026-10-24T03:48:04.964Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:34.558Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:04.964Z",
+     "lastSuccessAt": "2026-10-24T04:25:34.558Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -468946,9 +469462,15 @@
        "checkedAt": "2026-10-24T03:48:02.690Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:34.564Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:02.690Z",
+     "lastSuccessAt": "2026-10-24T04:25:34.564Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -468985,9 +469507,15 @@
        "checkedAt": "2026-10-24T03:48:01.927Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:36.869Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:01.927Z",
+     "lastSuccessAt": "2026-10-24T04:25:36.869Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -469021,9 +469549,15 @@
        "checkedAt": "2026-10-24T03:48:01.519Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:34.924Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:01.519Z",
+     "lastSuccessAt": "2026-10-24T04:25:34.924Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -469057,6 +469591,12 @@
        "checkedAt": "2026-10-24T03:48:02.553Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:34.304Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -469079,6 +469619,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:02.913Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:34.649Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -476627,8 +477173,8 @@
    "website": "http://www.rtp.pt/rtp1/",
    "declaredFormat": "1080i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 62,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -476657,9 +477203,15 @@
        "checkedAt": "2026-10-24T03:48:08.984Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:37.097Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:08.984Z",
+     "lastSuccessAt": "2026-10-24T04:25:37.097Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -476704,8 +477256,8 @@
    "website": "http://www.rtp.pt/rtp2/",
    "declaredFormat": "1080i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 144,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -476734,9 +477286,15 @@
        "checkedAt": "2026-10-24T03:48:09.147Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:37.107Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:09.147Z",
+     "lastSuccessAt": "2026-10-24T04:25:37.107Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -476781,8 +477339,8 @@
    "website": "https://acores.rtp.pt/",
    "declaredFormat": "1080i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 77,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -476811,9 +477369,15 @@
        "checkedAt": "2026-10-24T03:48:09.241Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:37.673Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:09.241Z",
+     "lastSuccessAt": "2026-10-24T04:25:37.673Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -476848,9 +477412,15 @@
        "checkedAt": "2026-10-24T03:48:06.732Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:36.546Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:06.732Z",
+     "lastSuccessAt": "2026-10-24T04:25:36.546Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -476895,8 +477465,8 @@
    "website": "https://africa.rtp.pt/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 71,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -476926,9 +477496,15 @@
        "checkedAt": "2026-10-24T03:48:07.239Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:36.584Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:07.239Z",
+     "lastSuccessAt": "2026-10-24T04:25:36.584Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -476998,9 +477574,15 @@
        "checkedAt": "2026-10-24T03:48:08.515Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:36.897Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:08.515Z",
+     "lastSuccessAt": "2026-10-24T04:25:36.897Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -477045,16 +477627,16 @@
    "website": "http://www.rtp.pt/rtpmemoria/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 118,
     "sites": [
      "meo.pt",
      "nostv.pt",
      "rtp.pt"
     ]
    },
-   "health": "UNKNOWN",
-   "eligible": false,
+   "health": "WORKING",
+   "eligible": true,
    "streams": [
     {
      "key": "6c751e8b02fc60d9",
@@ -477067,18 +477649,36 @@
      "declaredQuality": "504p",
      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",
      "referrer": null,
-     "health": "UNKNOWN",
+     "health": "WORKING",
      "byVantage": {
       "local-br": {
        "status": "UNSUPPORTED",
        "checkedAt": "2026-10-24T03:48:05.431Z",
        "http": 204,
        "reason": "ffprobe_failed"
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:37.982Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": null,
+     "lastSuccessAt": "2026-10-24T04:25:37.982Z",
      "consecutiveFailures": 1,
-     "media": null,
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
      "verifiedPortugueseAudio": false
     }
    ]
@@ -477144,9 +477744,15 @@
        "checkedAt": "2026-10-24T03:48:09.098Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:38.442Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:09.098Z",
+     "lastSuccessAt": "2026-10-24T04:25:38.442Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -477178,6 +477784,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:07.063Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:38.872Z",
        "http": null,
        "reason": "net:ENOTFOUND"
       }
@@ -477215,8 +477827,8 @@
    "website": "https://www.rtp.pt/noticias/",
    "declaredFormat": "1080i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 84,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -477247,9 +477859,15 @@
        "checkedAt": "2026-10-24T03:48:11.767Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:39.600Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:11.767Z",
+     "lastSuccessAt": "2026-10-24T04:25:39.600Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -477284,9 +477902,15 @@
        "checkedAt": "2026-10-24T03:48:10.955Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:38.813Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:10.955Z",
+     "lastSuccessAt": "2026-10-24T04:25:38.813Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -494034,6 +494658,12 @@
        "checkedAt": "2026-10-24T03:48:24.551Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:54.298Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -494057,6 +494687,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:25.738Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:54.307Z",
        "http": null,
        "reason": "net:20"
       }
@@ -496330,9 +496966,15 @@
        "checkedAt": "2026-10-24T03:48:11.037Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:44.733Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:11.037Z",
+     "lastSuccessAt": "2026-10-24T04:25:44.733Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -496402,9 +497044,15 @@
        "checkedAt": "2026-10-24T03:48:10.739Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:40.261Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:10.739Z",
+     "lastSuccessAt": "2026-10-24T04:25:40.261Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -496474,6 +497122,12 @@
        "checkedAt": "2026-10-24T03:48:11.278Z",
        "http": 504,
        "reason": "http_504"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:39.900Z",
+       "http": 504,
+       "reason": "http_504"
       }
      },
      "lastSuccessAt": null,
@@ -496507,8 +497161,8 @@
    "website": "https://www.sbt.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 30,
     "sites": [
      "mi.tv"
     ]
@@ -496533,9 +497187,15 @@
        "checkedAt": "2026-10-24T03:48:14.649Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:39.914Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:14.649Z",
+     "lastSuccessAt": "2026-10-24T04:25:39.914Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -496570,9 +497230,15 @@
        "checkedAt": "2026-10-24T03:48:11.886Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:39.847Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:11.886Z",
+     "lastSuccessAt": "2026-10-24T04:25:39.847Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -496604,6 +497270,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:12.232Z",
+       "http": 404,
+       "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:41.041Z",
        "http": 404,
        "reason": "http_404"
       }
@@ -496666,9 +497338,15 @@
        "checkedAt": "2026-10-24T03:48:15.888Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:42.570Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:15.888Z",
+     "lastSuccessAt": "2026-10-24T04:25:42.570Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -496738,9 +497416,15 @@
        "checkedAt": "2026-10-24T03:48:12.474Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:45.387Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:12.474Z",
+     "lastSuccessAt": "2026-10-24T04:25:45.387Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -496808,9 +497492,15 @@
        "checkedAt": "2026-10-24T03:48:12.952Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:46.407Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:12.952Z",
+     "lastSuccessAt": "2026-10-24T04:25:46.407Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -500805,6 +501495,12 @@
        "checkedAt": "2026-10-24T03:48:13.133Z",
        "http": null,
        "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:41.201Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
       }
      },
      "lastSuccessAt": null,
@@ -500863,6 +501559,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:14.338Z",
+       "http": null,
+       "reason": "net:UND_ERR_SOCKET"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:41.849Z",
        "http": null,
        "reason": "net:UND_ERR_SOCKET"
       }
@@ -500957,8 +501659,8 @@
    "website": "https://www.sesctv.org.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 74,
     "sites": [
      "mi.tv"
     ]
@@ -500983,9 +501685,15 @@
        "checkedAt": "2026-10-24T03:48:13.000Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:43.069Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:13.000Z",
+     "lastSuccessAt": "2026-10-24T04:25:43.069Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -501021,9 +501729,15 @@
        "checkedAt": "2026-10-24T03:48:13.648Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:43.822Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:13.648Z",
+     "lastSuccessAt": "2026-10-24T04:25:43.822Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -501059,9 +501773,15 @@
        "checkedAt": "2026-10-24T03:48:13.721Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:44.198Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:13.721Z",
+     "lastSuccessAt": "2026-10-24T04:25:44.198Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -501094,6 +501814,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:13.658Z",
+       "http": 400,
+       "reason": "http_400"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:42.466Z",
        "http": 400,
        "reason": "http_400"
       }
@@ -505784,6 +506510,12 @@
        "checkedAt": "2026-10-24T03:48:15.308Z",
        "http": 504,
        "reason": "http_504"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:44.619Z",
+       "http": 504,
+       "reason": "http_504"
       }
      },
      "lastSuccessAt": null,
@@ -506426,6 +507158,12 @@
        "checkedAt": "2026-10-24T03:48:15.516Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:44.009Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -506486,9 +507224,15 @@
        "checkedAt": "2026-10-24T03:48:20.018Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:45.279Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:20.018Z",
+     "lastSuccessAt": "2026-10-24T04:25:45.279Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -506783,6 +507527,12 @@
        "checkedAt": "2026-10-24T03:48:30.892Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:01.023Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -506848,6 +507598,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:16.092Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:45.549Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -506980,6 +507736,12 @@
        "checkedAt": "2026-10-24T03:48:31.764Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:01.397Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -507040,9 +507802,15 @@
        "checkedAt": "2026-10-24T03:48:19.706Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:46.539Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:19.706Z",
+     "lastSuccessAt": "2026-10-24T04:25:46.539Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -507085,8 +507853,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 36,
     "sites": [
      "mi.tv"
     ]
@@ -507112,9 +507880,15 @@
        "checkedAt": "2026-10-24T03:48:17.340Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:48.159Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:17.340Z",
+     "lastSuccessAt": "2026-10-24T04:25:48.159Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -511265,8 +512039,8 @@
    "website": "https://pluto.tv/live-tv/smithsonian-channel/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 26,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -511293,9 +512067,15 @@
        "checkedAt": "2026-10-24T03:48:21.739Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:48.776Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:21.739Z",
+     "lastSuccessAt": "2026-10-24T04:25:48.776Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -511335,9 +512115,15 @@
        "checkedAt": "2026-10-24T03:48:23.515Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:48.976Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:23.515Z",
+     "lastSuccessAt": "2026-10-24T04:25:48.976Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -514626,8 +515412,8 @@
    "website": "https://br.sonychannel.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 38,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -514654,9 +515440,15 @@
        "checkedAt": "2026-10-24T03:48:16.674Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:47.510Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:16.674Z",
+     "lastSuccessAt": "2026-10-24T04:25:47.510Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -514690,6 +515482,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:28.592Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:48.340Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -515131,9 +515929,15 @@
        "checkedAt": "2026-10-24T03:48:18.030Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:48.740Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:18.030Z",
+     "lastSuccessAt": "2026-10-24T04:25:48.740Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -515169,9 +515973,15 @@
        "checkedAt": "2026-10-24T03:48:20.945Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:50.136Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:20.945Z",
+     "lastSuccessAt": "2026-10-24T04:25:50.136Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -515207,9 +516017,15 @@
        "checkedAt": "2026-10-24T03:48:20.748Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:51.266Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:20.748Z",
+     "lastSuccessAt": "2026-10-24T04:25:51.266Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -515243,6 +516059,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:21.095Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:49.881Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -517746,9 +518568,15 @@
        "checkedAt": "2026-10-24T03:48:27.134Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:52.126Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:27.134Z",
+     "lastSuccessAt": "2026-10-24T04:25:52.126Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -517825,9 +518653,15 @@
        "checkedAt": "2026-10-24T03:48:28.113Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:52.444Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:28.113Z",
+     "lastSuccessAt": "2026-10-24T04:25:52.444Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -517904,9 +518738,15 @@
        "checkedAt": "2026-10-24T03:48:29.418Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:52.223Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:29.418Z",
+     "lastSuccessAt": "2026-10-24T04:25:52.223Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -517983,9 +518823,15 @@
        "checkedAt": "2026-10-24T03:48:29.702Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:52.260Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:29.702Z",
+     "lastSuccessAt": "2026-10-24T04:25:52.260Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -519345,9 +520191,15 @@
        "checkedAt": "2026-10-24T03:48:26.434Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:25:57.169Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:26.434Z",
+     "lastSuccessAt": "2026-10-24T04:25:57.169Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -522604,6 +523456,12 @@
        "checkedAt": "2026-10-24T03:48:41.837Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:08.467Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -522667,6 +523525,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:43.153Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:09.327Z",
        "http": null,
        "reason": "net:20"
       }
@@ -522733,6 +523597,12 @@
        "checkedAt": "2026-10-24T03:48:43.810Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:09.425Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -522795,6 +523665,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:44.444Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:09.462Z",
        "http": null,
        "reason": "net:20"
       }
@@ -522861,6 +523737,12 @@
        "checkedAt": "2026-10-24T03:48:45.439Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:09.646Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -522923,6 +523805,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:45.841Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:11.500Z",
        "http": null,
        "reason": "net:20"
       }
@@ -522988,6 +523876,12 @@
        "checkedAt": "2026-10-24T03:48:31.523Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:55.848Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -523050,6 +523944,12 @@
        "checkedAt": "2026-10-24T03:48:47.386Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:13.051Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -523073,6 +523973,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:32.566Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:25:58.590Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -524451,6 +525357,12 @@
        "checkedAt": "2026-10-24T03:48:49.209Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:15.792Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -524784,6 +525696,12 @@
        "checkedAt": "2026-10-24T03:48:49.232Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:18.225Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -524918,6 +525836,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:49.814Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:18.598Z",
        "http": null,
        "reason": "net:20"
       }
@@ -525502,6 +526426,12 @@
        "checkedAt": "2026-10-24T03:48:59.084Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:25.675Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -525808,6 +526738,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:00.361Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:26.527Z",
        "http": null,
        "reason": "net:20"
       }
@@ -526823,8 +527759,8 @@
    "website": "https://pluto.tv/live-tv/star-trek-1/details",
    "declaredFormat": "720p",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 24,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -526851,9 +527787,15 @@
        "checkedAt": "2026-10-24T03:48:51.238Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:13.077Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:51.238Z",
+     "lastSuccessAt": "2026-10-24T04:26:13.077Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -526893,9 +527835,15 @@
        "checkedAt": "2026-10-24T03:48:52.094Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:12.524Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:52.094Z",
+     "lastSuccessAt": "2026-10-24T04:26:12.524Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -526935,9 +527883,15 @@
        "checkedAt": "2026-10-24T03:48:57.260Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:12.886Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:57.260Z",
+     "lastSuccessAt": "2026-10-24T04:26:12.886Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -532228,8 +533182,8 @@
    "website": "http://www.universalplus.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 34,
     "sites": [
      "maxstream.tv",
      "meuguia.tv",
@@ -532260,9 +533214,15 @@
        "checkedAt": "2026-10-24T03:48:50.628Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:14.859Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:50.628Z",
+     "lastSuccessAt": "2026-10-24T04:26:14.859Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -532299,10 +533259,62 @@
        "checkedAt": "2026-10-24T03:48:55.229Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:16.390Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:55.229Z",
+     "lastSuccessAt": "2026-10-24T04:26:16.390Z",
      "consecutiveFailures": 0,
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "verifiedPortugueseAudio": false
+    },
+    {
+     "key": "e1013e9808461112",
+     "url": "http://15.204.246.24:8080/StudioUniversalHD/index.m3u8",
+     "role": "alternative",
+     "sources": [
+      "iptv-org-api:streams",
+      "iptv-org-index"
+     ],
+     "declaredQuality": "1080p",
+     "userAgent": null,
+     "referrer": null,
+     "health": "WORKING",
+     "byVantage": {
+      "local-br": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T03:48:49.189Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:13.202Z",
+       "http": 206,
+       "reason": null
+      }
+     },
+     "lastSuccessAt": "2026-10-24T04:26:13.202Z",
+     "consecutiveFailures": 1,
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -532338,9 +533350,15 @@
        "checkedAt": "2026-10-24T03:48:57.125Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:15.376Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:57.125Z",
+     "lastSuccessAt": "2026-10-24T04:26:15.376Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -532357,31 +533375,6 @@
       "subtitleTracks": [],
       "subtitleDetectionReliable": false
      },
-     "verifiedPortugueseAudio": false
-    },
-    {
-     "key": "e1013e9808461112",
-     "url": "http://15.204.246.24:8080/StudioUniversalHD/index.m3u8",
-     "role": "alternative",
-     "sources": [
-      "iptv-org-api:streams",
-      "iptv-org-index"
-     ],
-     "declaredQuality": "1080p",
-     "userAgent": null,
-     "referrer": null,
-     "health": "UNKNOWN",
-     "byVantage": {
-      "local-br": {
-       "status": "OFFLINE",
-       "checkedAt": "2026-10-24T03:48:49.189Z",
-       "http": 403,
-       "reason": "http_403"
-      }
-     },
-     "lastSuccessAt": null,
-     "consecutiveFailures": 1,
-     "media": null,
      "verifiedPortugueseAudio": false
     }
    ]
@@ -532775,9 +533768,15 @@
        "checkedAt": "2026-10-24T03:48:51.283Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:14.742Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:51.283Z",
+     "lastSuccessAt": "2026-10-24T04:26:14.742Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -543087,8 +544086,8 @@
    "website": "https://pluto.tv/en/live-tv/tastemade-ptv2",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "i.mjh.nz",
      "plex.tv",
@@ -543117,9 +544116,15 @@
        "checkedAt": "2026-10-24T03:48:58.859Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:17.225Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:58.859Z",
+     "lastSuccessAt": "2026-10-24T04:26:17.225Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -544676,9 +545681,15 @@
        "checkedAt": "2026-10-24T03:48:54.335Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:19.785Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:54.335Z",
+     "lastSuccessAt": "2026-10-24T04:26:19.785Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -549313,8 +550324,8 @@
    "website": "https://www.telecineplay.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 27,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -549341,9 +550352,15 @@
        "checkedAt": "2026-10-24T03:48:53.580Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:15.123Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:53.580Z",
+     "lastSuccessAt": "2026-10-24T04:26:15.123Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "mpegts",
@@ -561839,8 +562856,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 44,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -561867,9 +562884,15 @@
        "checkedAt": "2026-10-24T03:48:52.262Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:17.161Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:52.262Z",
+     "lastSuccessAt": "2026-10-24T04:26:17.161Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -561905,9 +562928,15 @@
        "checkedAt": "2026-10-24T03:48:55.575Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:18.353Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:55.575Z",
+     "lastSuccessAt": "2026-10-24T04:26:18.353Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -561943,9 +562972,15 @@
        "checkedAt": "2026-10-24T03:48:55.740Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:21.041Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:55.740Z",
+     "lastSuccessAt": "2026-10-24T04:26:21.041Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -561979,9 +563014,15 @@
        "checkedAt": "2026-10-24T03:48:55.549Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:19.807Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:55.549Z",
+     "lastSuccessAt": "2026-10-24T04:26:19.807Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -562015,9 +563056,15 @@
        "checkedAt": "2026-10-24T03:49:08.370Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:20.205Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:08.370Z",
+     "lastSuccessAt": "2026-10-24T04:26:20.205Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -562051,6 +563098,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:48:53.629Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:17.527Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -570234,9 +571287,15 @@
        "checkedAt": "2026-10-24T03:49:06.525Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:19.760Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:06.525Z",
+     "lastSuccessAt": "2026-10-24T04:26:19.760Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -570270,9 +571329,15 @@
        "checkedAt": "2026-10-24T03:49:04.309Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:21.966Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:04.309Z",
+     "lastSuccessAt": "2026-10-24T04:26:21.966Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -570599,8 +571664,8 @@
     "programmes": 0,
     "sites": []
    },
-   "health": "UNKNOWN",
-   "eligible": false,
+   "health": "UNSTABLE",
+   "eligible": true,
    "streams": [
     {
      "key": "dfd9e1da1489873c",
@@ -570613,18 +571678,36 @@
      "declaredQuality": "720p",
      "userAgent": null,
      "referrer": null,
-     "health": "UNKNOWN",
+     "health": "UNSTABLE",
      "byVantage": {
       "local-br": {
        "status": "UNSUPPORTED",
        "checkedAt": "2026-10-24T03:49:20.551Z",
        "http": 200,
        "reason": "nenhuma_faixa_tocavel"
+      },
+      "github-us": {
+       "status": "UNSTABLE",
+       "checkedAt": "2026-10-24T04:26:42.905Z",
+       "http": 200,
+       "reason": "oscilou_na_execucao"
       }
      },
-     "lastSuccessAt": null,
+     "lastSuccessAt": "2026-10-24T04:26:42.905Z",
      "consecutiveFailures": 1,
-     "media": null,
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 960,
+      "height": 540,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
      "verifiedPortugueseAudio": false
     }
    ]
@@ -572192,8 +573275,8 @@
    "website": "https://www.tudiscovery.com/tlc",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 113,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -572220,9 +573303,15 @@
        "checkedAt": "2026-10-24T03:49:01.081Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:21.250Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:01.081Z",
+     "lastSuccessAt": "2026-10-24T04:26:21.250Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -572259,9 +573348,15 @@
        "checkedAt": "2026-10-24T03:48:58.048Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:19.916Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:48:58.048Z",
+     "lastSuccessAt": "2026-10-24T04:26:19.916Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "mpegts",
@@ -574486,8 +575581,8 @@
    "website": "http://www.tntla.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 52,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -574514,9 +575609,15 @@
        "checkedAt": "2026-10-24T03:49:01.769Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:20.670Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:01.769Z",
+     "lastSuccessAt": "2026-10-24T04:26:20.670Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -574529,6 +575630,51 @@
       "audioChannels": 2,
       "audioLanguages": [
        "eng",
+       "spa"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "verifiedPortugueseAudio": false
+    },
+    {
+     "key": "aa953381e1305f46",
+     "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
+     "role": "alternative",
+     "sources": [
+      "iptv-org-api:streams",
+      "iptv-org-index"
+     ],
+     "declaredQuality": "720p",
+     "userAgent": null,
+     "referrer": null,
+     "health": "WORKING",
+     "byVantage": {
+      "local-br": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T03:48:59.057Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:20.159Z",
+       "http": 206,
+       "reason": null
+      }
+     },
+     "lastSuccessAt": "2026-10-24T04:26:20.159Z",
+     "consecutiveFailures": 1,
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
        "spa"
       ],
       "subtitleTracks": [],
@@ -574554,9 +575700,15 @@
        "checkedAt": "2026-10-24T03:49:01.977Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:21.486Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:01.977Z",
+     "lastSuccessAt": "2026-10-24T04:26:21.486Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -574577,31 +575729,6 @@
      "verifiedPortugueseAudio": false
     },
     {
-     "key": "aa953381e1305f46",
-     "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-     "role": "alternative",
-     "sources": [
-      "iptv-org-api:streams",
-      "iptv-org-index"
-     ],
-     "declaredQuality": "720p",
-     "userAgent": null,
-     "referrer": null,
-     "health": "UNKNOWN",
-     "byVantage": {
-      "local-br": {
-       "status": "OFFLINE",
-       "checkedAt": "2026-10-24T03:48:59.057Z",
-       "http": 403,
-       "reason": "http_403"
-      }
-     },
-     "lastSuccessAt": null,
-     "consecutiveFailures": 1,
-     "media": null,
-     "verifiedPortugueseAudio": false
-    },
-    {
      "key": "d5eb4415b7c1f511",
      "url": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/tnt/chunks.m3u8",
      "role": "alternative",
@@ -574617,6 +575744,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:01.516Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:22.966Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -574679,9 +575812,15 @@
        "checkedAt": "2026-10-24T03:49:03.594Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:22.785Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:03.594Z",
+     "lastSuccessAt": "2026-10-24T04:26:22.785Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -574719,9 +575858,15 @@
        "checkedAt": "2026-10-24T03:49:03.850Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:22.947Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:03.850Z",
+     "lastSuccessAt": "2026-10-24T04:26:22.947Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -574757,9 +575902,15 @@
        "checkedAt": "2026-10-24T03:49:04.533Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:23.720Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:04.533Z",
+     "lastSuccessAt": "2026-10-24T04:26:23.720Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -574797,9 +575948,15 @@
        "checkedAt": "2026-10-24T03:49:01.255Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:23.874Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:01.255Z",
+     "lastSuccessAt": "2026-10-24T04:26:23.874Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -574836,6 +575993,12 @@
        "checkedAt": "2026-10-24T03:49:01.724Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:22.251Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -574858,6 +576021,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:03.884Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:24.460Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -575738,8 +576907,8 @@
    "website": "https://pluto.tv/en/live-tv/tokusato-ptv1",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 52,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -575766,9 +576935,15 @@
        "checkedAt": "2026-10-24T03:49:07.238Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:25.542Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:07.238Z",
+     "lastSuccessAt": "2026-10-24T04:26:25.542Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -575807,9 +576982,15 @@
        "checkedAt": "2026-10-24T03:49:09.251Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:26.980Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:09.251Z",
+     "lastSuccessAt": "2026-10-24T04:26:26.980Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -581242,8 +582423,8 @@
    "website": "https://boxbrazil.tv.br/music-box-brazil/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 139,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -581269,9 +582450,15 @@
        "checkedAt": "2026-10-24T03:49:05.647Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:25.269Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:05.647Z",
+     "lastSuccessAt": "2026-10-24T04:26:25.269Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -581306,6 +582493,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:04.874Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:24.512Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -586887,8 +588080,8 @@
    "website": "https://pluto.tv/en/live-tv/turma-da-monica",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 30,
     "sites": [
      "i.mjh.nz",
      "pluto.tv"
@@ -586915,9 +588108,15 @@
        "checkedAt": "2026-10-24T03:49:09.970Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:27.287Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:09.970Z",
+     "lastSuccessAt": "2026-10-24T04:26:27.287Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -589571,6 +590770,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:06.897Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:25.681Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -593658,8 +594863,8 @@
    "website": "https://www.acritica.com/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 38,
     "sites": [
      "mi.tv"
     ]
@@ -593685,9 +594890,15 @@
        "checkedAt": "2026-10-24T03:49:06.357Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:25.949Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:06.357Z",
+     "lastSuccessAt": "2026-10-24T04:26:25.949Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -593757,6 +594968,12 @@
        "checkedAt": "2026-10-24T03:49:06.100Z",
        "http": null,
        "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:25.892Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
       }
      },
      "lastSuccessAt": null,
@@ -593817,9 +595034,15 @@
        "checkedAt": "2026-10-24T03:49:07.302Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:31.736Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:07.302Z",
+     "lastSuccessAt": "2026-10-24T04:26:31.736Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594015,9 +595238,15 @@
        "checkedAt": "2026-10-24T03:49:07.768Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:28.984Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:07.768Z",
+     "lastSuccessAt": "2026-10-24T04:26:28.984Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594085,6 +595314,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:07.656Z",
+       "http": 404,
+       "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:28.085Z",
        "http": 404,
        "reason": "http_404"
       }
@@ -594200,9 +595435,15 @@
        "checkedAt": "2026-10-24T03:49:08.267Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:29.394Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:08.267Z",
+     "lastSuccessAt": "2026-10-24T04:26:29.394Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594351,8 +595592,8 @@
    "website": "https://www.a12.com/tv",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 53,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -594378,9 +595619,15 @@
        "checkedAt": "2026-10-24T03:49:08.739Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:29.281Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:08.739Z",
+     "lastSuccessAt": "2026-10-24T04:26:29.281Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594416,9 +595663,15 @@
        "checkedAt": "2026-10-24T03:49:10.529Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:30.394Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:10.529Z",
+     "lastSuccessAt": "2026-10-24T04:26:30.394Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594454,9 +595707,15 @@
        "checkedAt": "2026-10-24T03:49:09.046Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:28.307Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:09.046Z",
+     "lastSuccessAt": "2026-10-24T04:26:28.307Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594491,9 +595750,15 @@
        "checkedAt": "2026-10-24T03:49:08.766Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:29.641Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:08.766Z",
+     "lastSuccessAt": "2026-10-24T04:26:29.641Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594527,9 +595792,15 @@
        "checkedAt": "2026-10-24T03:49:09.227Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:31.239Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:09.227Z",
+     "lastSuccessAt": "2026-10-24T04:26:31.239Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -594561,6 +595832,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:08.950Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:28.540Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -594621,6 +595898,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:11.704Z",
+       "http": 404,
+       "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:29.928Z",
        "http": 404,
        "reason": "http_404"
       }
@@ -594953,6 +596236,12 @@
        "checkedAt": "2026-10-24T03:49:10.223Z",
        "http": 503,
        "reason": "http_503"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:31.084Z",
+       "http": 503,
+       "reason": "http_503"
       }
      },
      "lastSuccessAt": null,
@@ -595011,6 +596300,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:11.236Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:30.610Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -595154,8 +596449,8 @@
    "website": "http://www.redebahia.com.br/empresas/tv/tv-bahia",
    "declaredFormat": "1080i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 26,
     "sites": [
      "mi.tv"
     ]
@@ -595181,9 +596476,15 @@
        "checkedAt": "2026-10-24T03:49:11.285Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:30.988Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:11.285Z",
+     "lastSuccessAt": "2026-10-24T04:26:30.988Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -595463,6 +596764,12 @@
        "checkedAt": "2026-10-24T03:49:26.259Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:46.595Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -595487,6 +596794,12 @@
        "checkedAt": "2026-10-24T03:49:26.433Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:46.843Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -595509,6 +596822,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:26.458Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:47.129Z",
        "http": null,
        "reason": "net:20"
       }
@@ -595544,8 +596863,8 @@
    "website": "https://tvbrasil.ebc.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 78,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -595572,9 +596891,15 @@
        "checkedAt": "2026-10-24T03:49:10.572Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:32.574Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:10.572Z",
+     "lastSuccessAt": "2026-10-24T04:26:32.574Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -595610,9 +596935,15 @@
        "checkedAt": "2026-10-24T03:49:12.605Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:35.834Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:12.605Z",
+     "lastSuccessAt": "2026-10-24T04:26:35.834Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -595646,9 +596977,15 @@
        "checkedAt": "2026-10-24T03:49:12.065Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:33.388Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:12.065Z",
+     "lastSuccessAt": "2026-10-24T04:26:33.388Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -595682,9 +597019,15 @@
        "checkedAt": "2026-10-24T03:49:12.047Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:33.602Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:12.047Z",
+     "lastSuccessAt": "2026-10-24T04:26:33.602Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -595718,9 +597061,15 @@
        "checkedAt": "2026-10-24T03:49:14.947Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:41.580Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:14.947Z",
+     "lastSuccessAt": "2026-10-24T04:26:41.580Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -595754,6 +597103,12 @@
        "checkedAt": "2026-10-24T03:49:11.859Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:32.576Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -595776,6 +597131,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:12.551Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:32.884Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -595838,10 +597199,16 @@
        "checkedAt": "2026-10-24T03:49:13.561Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:35.079Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": "2026-10-24T03:49:13.561Z",
-     "consecutiveFailures": 0,
+     "consecutiveFailures": 1,
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -596122,9 +597489,15 @@
        "checkedAt": "2026-10-24T03:49:19.625Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:39.075Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:19.625Z",
+     "lastSuccessAt": "2026-10-24T04:26:39.075Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -596374,9 +597747,15 @@
        "checkedAt": "2026-10-24T03:49:13.812Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:38.167Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:13.812Z",
+     "lastSuccessAt": "2026-10-24T04:26:38.167Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597062,8 +598441,8 @@
    "website": "https://www.camara.leg.br/tv",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 36,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -597089,9 +598468,15 @@
        "checkedAt": "2026-10-24T03:49:14.814Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:39.091Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:14.814Z",
+     "lastSuccessAt": "2026-10-24T04:26:39.091Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597128,9 +598513,15 @@
        "checkedAt": "2026-10-24T03:49:17.445Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:47.472Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:17.445Z",
+     "lastSuccessAt": "2026-10-24T04:26:47.472Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597164,9 +598555,15 @@
        "checkedAt": "2026-10-24T03:49:14.708Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:38.842Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:14.708Z",
+     "lastSuccessAt": "2026-10-24T04:26:38.842Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597200,9 +598597,15 @@
        "checkedAt": "2026-10-24T03:49:13.080Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:36.935Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:13.080Z",
+     "lastSuccessAt": "2026-10-24T04:26:36.935Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597234,6 +598637,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:14.398Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:37.371Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -597366,6 +598775,12 @@
        "checkedAt": "2026-10-24T03:49:14.140Z",
        "http": 404,
        "reason": "http_404"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:36.781Z",
+       "http": 404,
+       "reason": "http_404"
       }
      },
      "lastSuccessAt": null,
@@ -597424,6 +598839,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:31.602Z",
+       "http": null,
+       "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:55.367Z",
        "http": null,
        "reason": "net:20"
       }
@@ -597618,8 +599039,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 75,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -597646,9 +599067,15 @@
        "checkedAt": "2026-10-24T03:49:15.226Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:42.027Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:15.226Z",
+     "lastSuccessAt": "2026-10-24T04:26:42.027Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597682,9 +599109,15 @@
        "checkedAt": "2026-10-24T03:49:15.592Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:41.199Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:15.592Z",
+     "lastSuccessAt": "2026-10-24T04:26:41.199Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597718,9 +599151,15 @@
        "checkedAt": "2026-10-24T03:49:16.136Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:42.362Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:16.136Z",
+     "lastSuccessAt": "2026-10-24T04:26:42.362Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -597752,6 +599191,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:16.110Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:40.635Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -598134,6 +599579,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:16.841Z",
+       "http": null,
+       "reason": "net:ENOTFOUND"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:42.743Z",
        "http": null,
        "reason": "net:ENOTFOUND"
       }
@@ -599194,6 +600645,12 @@
        "checkedAt": "2026-10-24T03:49:33.327Z",
        "http": null,
        "reason": "net:20"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:58.782Z",
+       "http": null,
+       "reason": "net:20"
       }
      },
      "lastSuccessAt": null,
@@ -599227,8 +600684,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 31,
     "sites": [
      "mi.tv"
     ]
@@ -599254,9 +600711,15 @@
        "checkedAt": "2026-10-24T03:49:17.034Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:45.602Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:17.034Z",
+     "lastSuccessAt": "2026-10-24T04:26:45.602Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -599352,8 +600815,8 @@
    "website": "https://tvclubepe.op9.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 33,
     "sites": [
      "mi.tv"
     ]
@@ -599379,9 +600842,15 @@
        "checkedAt": "2026-10-24T03:49:22.407Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:43.869Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:22.407Z",
+     "lastSuccessAt": "2026-10-24T04:26:43.869Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -599610,9 +601079,15 @@
        "checkedAt": "2026-10-24T03:49:20.555Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:44.027Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:20.555Z",
+     "lastSuccessAt": "2026-10-24T04:26:44.027Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -599682,9 +601157,15 @@
        "checkedAt": "2026-10-24T03:49:26.731Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:45.701Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:26.731Z",
+     "lastSuccessAt": "2026-10-24T04:26:45.701Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600083,9 +601564,15 @@
        "checkedAt": "2026-10-24T03:49:23.300Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:49.464Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:23.300Z",
+     "lastSuccessAt": "2026-10-24T04:26:49.464Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600432,9 +601919,15 @@
        "checkedAt": "2026-10-24T03:49:23.125Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:48.022Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:23.125Z",
+     "lastSuccessAt": "2026-10-24T04:26:48.022Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600470,9 +601963,15 @@
        "checkedAt": "2026-10-24T03:49:25.701Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:48.526Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:25.701Z",
+     "lastSuccessAt": "2026-10-24T04:26:48.526Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600507,9 +602006,15 @@
        "checkedAt": "2026-10-24T03:49:21.578Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:46.055Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:21.578Z",
+     "lastSuccessAt": "2026-10-24T04:26:46.055Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600543,9 +602048,15 @@
        "checkedAt": "2026-10-24T03:49:23.768Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:48.760Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:23.768Z",
+     "lastSuccessAt": "2026-10-24T04:26:48.760Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600579,9 +602090,15 @@
        "checkedAt": "2026-10-24T03:49:25.176Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:50.751Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:25.176Z",
+     "lastSuccessAt": "2026-10-24T04:26:50.751Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600615,9 +602132,15 @@
        "checkedAt": "2026-10-24T03:49:22.598Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:53.738Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:22.598Z",
+     "lastSuccessAt": "2026-10-24T04:26:53.738Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600651,9 +602174,15 @@
        "checkedAt": "2026-10-24T03:49:31.050Z",
        "http": 200,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:51.826Z",
+       "http": 200,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:31.050Z",
+     "lastSuccessAt": "2026-10-24T04:26:51.826Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -600694,6 +602223,12 @@
        "checkedAt": "2026-10-24T03:49:22.931Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:47.447Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -600718,6 +602253,12 @@
        "checkedAt": "2026-10-24T03:49:23.928Z",
        "http": 403,
        "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:48.255Z",
+       "http": 403,
+       "reason": "http_403"
       }
      },
      "lastSuccessAt": null,
@@ -600740,6 +602281,12 @@
       "local-br": {
        "status": "OFFLINE",
        "checkedAt": "2026-10-24T03:49:25.107Z",
+       "http": 403,
+       "reason": "http_403"
+      },
+      "github-us": {
+       "status": "OFFLINE",
+       "checkedAt": "2026-10-24T04:26:51.941Z",
        "http": 403,
        "reason": "http_403"
       }
@@ -600853,9 +602400,15 @@
        "checkedAt": "2026-10-24T03:49:28.727Z",
        "http": 206,
        "reason": null
+      },
+      "github-us": {
+       "status": "WORKING",
+       "checkedAt": "2026-10-24T04:26:49.174Z",
+       "http": 206,
+       "reason": null
       }
      },
-     "lastSuccessAt": "2026-10-24T03:49:28.727Z",
+     "lastSuccessAt": "2026-10-24T04:26:49.174Z",
      "consecutiveFailures": 0,
      "media": {
       "container": "hls",
@@ -601653,8 +603206,8 @@
    "website": "http://www.tve.ba.gov.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 49,
     "sites": [
      "mi.tv"
     ]
@@ -602326,8 +603879,8 @@
    "website": "https://www.tve.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 72,
     "sites": [
      "mi.tv"
     ]
@@ -603338,8 +604891,8 @@
    "website": "https://www.tvgazeta.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 37,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -604416,8 +605969,8 @@
    "website": "http://www.tvi.iol.pt/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 44,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -604932,8 +606485,8 @@
    "website": "https://tvi.iol.pt/tvireality/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 33,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -605399,8 +606952,8 @@
    "website": "http://www.tvjustica.jus.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 74,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -613469,8 +615022,8 @@
    "website": "http://www.paranaeducativa.pr.gov.br/modules/conteudo/conteudo.php?conteudo=19",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 56,
     "sites": [
      "mi.tv"
     ]
@@ -616279,8 +617832,8 @@
    "website": null,
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 180,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -619771,8 +621324,8 @@
    "website": "https://www12.senado.leg.br/tv#/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 69,
     "sites": [
      "meuguia.tv",
      "mi.tv"
@@ -760715,8 +762268,8 @@
    "website": "https://tvi.iol.pt/vmais/",
    "declaredFormat": "576i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 50,
     "sites": [
      "meo.pt",
      "nostv.pt",
@@ -770022,8 +771575,8 @@
    "website": "https://woohoo.com.br/",
    "declaredFormat": "480i",
    "epg": {
-    "hasGuide": false,
-    "programmes": 0,
+    "hasGuide": true,
+    "programmes": 154,
     "sites": [
      "meuguia.tv",
      "mi.tv"
