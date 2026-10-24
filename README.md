@@ -248,6 +248,11 @@ Três decisões que definem a camada:
 - **"Não sei" é resposta.** Evidência vencida, canal sem grade ou nome que não existe no corpus
   geram abstenção declarada, com o número medido no motivo. O modo de falha a derrotar é
   recomendar com confiança um stream que não toca.
+- **O programa no ar sai do relógio, não de ponteiro pré-calculado.** A camada compara `s`/`e` da
+  fatia contra o instante da pergunta, e o `generatedAt` da fatia decide se o dado está velho
+  demais para responder (`rag.freshness.guideStaleAfterHours`). Por isso a mesma pergunta tem
+  resposta diferente conforme a hora em que a grade foi gerada — veja
+  [Fronteira de dia da fonte](#fronteira-de-dia-da-fonte).
 
 Toda resposta que passa pelo modelo é conferida antes de sair: `tvg-id` ou URL que não esteja no
 bloco de evidência derruba o texto gerado e vale a redação determinística.

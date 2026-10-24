@@ -10,14 +10,21 @@
     "",
     "Ancoras por tvg-id (deveConter) sao canais grandes, mas stream publico tem rotatividade:",
     "se um deles sair do catalogo, o caso falha de proposito — e sinal de que o corpus mudou,",
-    "nao de teste instavel."
+    "nao de teste instavel.",
+    "",
+    "Caso sobre 'agora' depende da HORA em que a grade foi gerada, nao so do instante da",
+    "avaliacao: parte da fonte vira o dia as 06:00 UTC (veja 'Fronteira de dia da fonte' no",
+    "README). Grade gerada antes disso deixa dezenas de canais sem programa no ar — medido pelo",
+    "pipeline: 29 de 179 numa geracao as 05:10 UTC, contra 1 no horario do cron, 06:10 UTC.",
+    "Entao 'noticia-pt-agora' falhando com abstencao de grade logo depois de uma geracao manual",
+    "de madrugada e a fonte virando o dia, nao regressao da recuperacao."
   ],
   "minimoDeAcertoPercent": 100,
   "casos": [
     {
       "id": "noticia-pt-agora",
       "pergunta": "o que tem de noticia em portugues tocando agora",
-      "porque": "Pergunta central da pesquisa: categoria, idioma e janela temporal, com evidencia por ponto de observacao.",
+      "porque": "Pergunta central da pesquisa: categoria, idioma e janela temporal, com evidencia por ponto de observacao. Exigir abstencao vazia so se sustenta se a grade tiver programa no ar: numa grade gerada antes das 06:00 UTC a fonte ainda nao virou o dia e este caso falha por isso, nao por regressao.",
       "espera": {
         "categorias": ["news"],
         "idiomas": ["por"],

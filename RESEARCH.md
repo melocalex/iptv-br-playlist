@@ -142,6 +142,13 @@ What that number is and is not:
 - The score is a function of the instant. Shifting one case 72 h forward makes every observation
   in the corpus stale and the layer abstains on both axes — the freshness rule, measured rather
   than asserted.
+- It is also a function of **when the guide was generated**, not only of when the question is
+  asked. Part of the source rolls the day at 06:00 UTC, so a guide built before that hour leaves
+  channels with no programme on air: measured by the pipeline, 29 of 179 channels at a 05:10 UTC
+  generation against 1 at the 06:10 UTC cron. "What is on now" therefore has a different answer
+  for the same question and the same clock, depending on an upstream publication boundary. That
+  is a property of the corpus the retrieval layer has to report, not smooth over — and a second
+  reason the single number above needs its timestamp to mean anything.
 
 Against the five research questions: 1, 3 and 4 are now scorable and scored above. Question 2
 remains unscorable for the path that matters — measured today, 0 of the 50 channels with verified
