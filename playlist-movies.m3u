@@ -1,0 +1,92 @@
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTINF:-1 tvg-id="PlusMaisUm.br@HD" tvg-name="+MaisUm" tvg-logo="https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",+MaisUm
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://stream.ichibansys.com:3230/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="AdrenalinaPuraTV.us@Brazil" tvg-name="Adrenalina Pura TV" tvg-logo="https://i.imgur.com/Pvid2iH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Adrenalina Pura TV
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8
+#EXTINF:-1 tvg-id="AMCLatinAmerica.us@Brazil" tvg-name="AMC Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",AMC Latin America
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://138.121.15.230:9002/AMC/index.m3u8
+#EXTINF:-1 tvg-id="AXN.br@SD" tvg-name="AXN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",AXN
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://170.83.16.50/AXN/index.m3u8
+#EXTINF:-1 tvg-id="CINDIETV.br@HD" tvg-name="CINDIE TV" tvg-logo="https://a.jsrdn.com/hls/23208/cindie-tv/logo_20250225_222520_68.png" tvg-language="eng;por;spa" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",CINDIE TV
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
+#EXTINF:-1 tvg-id="CineTerror.us@BR" tvg-name="Cine Terror" tvg-logo="https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Cine Terror
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f12111c9e6c2c00078ef3bb.m3u8
+#EXTINF:-1 tvg-id="ClassiqueTV.br@SD" tvg-name="Classique TV" tvg-logo="https://i.imgur.com/rHxcraT.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Classique TV
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://stmv1.srvif.com/classique/classique/playlist.m3u8
+#EXTINF:-1 tvg-id="FilmesSuspense.us@BR" tvg-name="Filmes Suspense" tvg-logo="https://images.pluto.tv/channels/5f171d3442a0500007362f22/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Filmes Suspense
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f171d3442a0500007362f22.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetwork.br@SD" tvg-name="MyTime Movie Network" tvg-logo="https://i.imgur.com/aiGQtzI.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",MyTime Movie Network
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBangBang.us@BR" tvg-name="Pluto TV Bang Bang" tvg-logo="https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Bang Bang
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-663b9dc7cb3ea10008f1a0ce.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineClassicos.us@BR" tvg-name="Pluto TV Cine Classicos" tvg-logo="https://images.pluto.tv/channels/5fa1612a669ba0000702017b/colorLogoPNG_1733440556804.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Classicos
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5fa1612a669ba0000702017b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.us@BR" tvg-name="Pluto TV Cine Comedia" tvg-logo="https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Comedia
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComediaRomantica.us@BR" tvg-name="Pluto TV Cine Comedia Romantica" tvg-logo="https://images.pluto.tv/channels/62545ed3dab4380007582f7c/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Comedia Romantica
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-62545ed3dab4380007582f7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineCrime.us@BR" tvg-name="Pluto TV Cine Crime" tvg-logo="https://images.pluto.tv/channels/6479ff764f5ba5000878dfe2/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Crime
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-6479ff764f5ba5000878dfe2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineDrama.us@BR" tvg-name="Pluto TV Cine Drama" tvg-logo="https://images.pluto.tv/channels/5f1210d14ae1f80007bafb1d/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Drama
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f1210d14ae1f80007bafb1d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineFamilia.us@BR" tvg-name="Pluto TV Cine Familia" tvg-logo="https://images.pluto.tv/channels/5f171f032cd22e0007f17f3d/colorLogoPNG_1732045254120.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Familia
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f171f032cd22e0007f17f3d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineInspiracao.us@BR" tvg-name="Pluto TV Cine Inspiracao" tvg-logo="https://images.pluto.tv/channels/5fa991b1f09e020007e78626/colorLogoPNG_1748874366972.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Inspiracao
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5fa991b1f09e020007e78626.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineRomance.us@BR" tvg-name="Pluto TV Cine Romance" tvg-logo="https://images.pluto.tv/channels/5f171f988ab9780007fa95ea/colorLogoPNG_1771344977802.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Romance
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f171f988ab9780007fa95ea.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineSucessos.us@BR" tvg-name="Pluto TV Cine Sucessos" tvg-logo="https://images.pluto.tv/channels/5f120e94a5714d00074576a1/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Sucessos
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f120e94a5714d00074576a1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFiccaoCientifica.us@BR" tvg-name="Pluto TV Ficcao Cientifica" tvg-logo="https://images.pluto.tv/channels/5fa15ad6367e170007cdd098/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Ficcao Cientifica
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5fa15ad6367e170007cdd098.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesAcao.us@BR" tvg-name="Pluto TV Filmes Acao" tvg-logo="https://images.pluto.tv/channels/5f120f41b7d403000783a6d6/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes Acao
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f120f41b7d403000783a6d6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesAventura.us@BR" tvg-name="Pluto TV Filmes Aventura" tvg-logo="https://images.pluto.tv/channels/66c79a4262e5510008ff68a5/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes Aventura
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-66c79a4262e5510008ff68a5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesdeLuta.us@BR" tvg-name="Pluto TV Filmes de Luta" tvg-logo="https://images.pluto.tv/channels/6806d62369aec5b19cd628c0/colorLogoPNG_1746817781806.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes de Luta
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-6806d62369aec5b19cd628c0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesNacionais.us@BR" tvg-name="Pluto TV Filmes Nacionais" tvg-logo="https://images.pluto.tv/channels/5f5a545d0dbf7f0007c09408/colorLogoPNG_1732044719987.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes Nacionais
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f5a545d0dbf7f0007c09408.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNetmovies.us@BR" tvg-name="Pluto TV Netmovies" tvg-logo="https://images.pluto.tv/channels/663b9de4f999220008230fa8/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Netmovies
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-663b9de4f999220008230fa8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTerrorTrash.us@BR" tvg-name="Pluto TV Terror Trash" tvg-logo="https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Terror Trash
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-66aa67493a4ad2000806d91b.m3u8
+#EXTINF:-1 tvg-id="SonyMovies.br@SD" tvg-name="Sony Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Sony Movies
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://45.162.64.114/SONY_MOVIES/index.m3u8
+#EXTINF:-1 tvg-id="TelecineAction.br@SD" tvg-name="Telecine Action" tvg-logo="https://i.imgur.com/BHYWG0h.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Telecine Action
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://46.151.196.223:14326/
+#EXTINF:-1 tvg-id="AXNMovies.pt@SD" tvg-name="AXN Movies" tvg-logo="https://i.imgur.com/tJQckal.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Filmes",AXN Movies
+#EXTGRP:🇵🇹 Portugal • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://50.7.120.34:8080/AXN_BLACK/index.m3u8
+#EXTINF:-1 tvg-id="KuriakosCine.pt@SD" tvg-name="Kuriakos Cine" tvg-logo="https://i.imgur.com/CZViCwB.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Filmes",Kuriakos Cine
+#EXTGRP:🇵🇹 Portugal • Filmes
+https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8

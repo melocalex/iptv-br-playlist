@@ -1,0 +1,1001 @@
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTINF:-1 tvg-id="AgroMais.br@SD" tvg-name="AgroMais" tvg-logo="https://i.imgur.com/sFcOZeo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",AgroMais
+#EXTGRP:🇧🇷 Brasil • Notícias
+http://45.177.114.115/agromais/index.m3u8
+#EXTINF:-1 tvg-id="AratuOn.br@SD" tvg-name="Aratu On" tvg-logo="https://i.imgur.com/Ht4jCab.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Aratu On
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8
+#EXTINF:-1 tvg-id="BandNews.br@SD" tvg-name="BandNews" tvg-logo="https://i.ibb.co/0jVZBFp/u8ya-iw-R-400x400.jpg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",BandNews
+#EXTGRP:🇧🇷 Brasil • Notícias
+http://45.162.64.114/BAND_NEWS/index.m3u8
+#EXTINF:-1 tvg-id="BMCNews.br@SD" tvg-name="BM&C News" tvg-logo="https://i.imgur.com/pOUY2Uz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",BM&C News
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://jmp2.uk/plu-666c9c60a7efd40008f552f0.m3u8
+#EXTINF:-1 tvg-id="Canal38.br@SD" tvg-name="Canal 38" tvg-logo="https://i.imgur.com/co7TCWC.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Canal 38
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalMetropolitanodeNoticias.br@SD" tvg-name="Canal Metropolitano de Noticias" tvg-logo="https://i.imgur.com/G0x4xqa.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Canal Metropolitano de Noticias
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8
+#EXTINF:-1 tvg-id="CNNBrasil.br@SD" tvg-name="CNN Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/CNN_Brasil.svg/960px-CNN_Brasil.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",CNN Brasil
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
+#EXTINF:-1 tvg-id="GloboNews.br@SD" tvg-name="GloboNews" tvg-logo="https://i.imgur.com/3yZyaCm.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",GloboNews
+#EXTGRP:🇧🇷 Brasil • Notícias
+http://79.127.238.228:14093
+#EXTINF:-1 tvg-id="J3NEWSTV.br@SD" tvg-name="J3NEWS TV" tvg-logo="https://i.imgur.com/lezIQyL.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",J3NEWS TV
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://video01.brascast.com/d92ebb4f/d92ebb4f/playlist.m3u8
+#EXTINF:-1 tvg-id="JovemPanNews.br@SD" tvg-name="Jovem Pan News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/960px-Jovem_Pan_logo_2018.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Jovem Pan News
+#EXTGRP:🇧🇷 Brasil • Notícias
+http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8
+#EXTINF:-1 tvg-id="PlenaTV.br@SD" tvg-name="Plena TV" tvg-logo="https://i.imgur.com/lH4RT7b.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Plena TV
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRecordNews.us@BR" tvg-name="Pluto TV Record News" tvg-logo="https://images.pluto.tv/channels/6102e04e9ab1db0007a980a1/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Pluto TV Record News
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://jmp2.uk/plu-6102e04e9ab1db0007a980a1.m3u8
+#EXTINF:-1 tvg-id="RecordNews.br@SD" tvg-name="Record News" tvg-logo="https://i.imgur.com/HZDRG0K.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Record News
+#EXTGRP:🇧🇷 Brasil • Notícias
+http://170.83.49.66:8083/RECORDNEWSHD/index.m3u8
+#EXTINF:-1 tvg-id="SBTNews.br@SD" tvg-name="SBT News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/42/SBT_News_2025.svg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",SBT News
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8
+#EXTINF:-1 tvg-id="STZTV.br@SD" tvg-name="STZ TV" tvg-logo="https://i.imgur.com/SeF2I7q.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",STZ TV
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8
+#EXTINF:-1 tvg-id="TCM10HD.br@SD" tvg-name="TCM 10 HD" tvg-logo="https://i.imgur.com/aMuMVvB.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TCM 10 HD
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://live.tcm10.com.br/tcm10hd/stream.m3u8
+#EXTINF:-1 tvg-id="TVAFolha.br@SD" tvg-name="TV A Folha" tvg-logo="https://i.imgur.com/I7XGMhj.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV A Folha
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBrusque.br@SD" tvg-name="TV Brusque" tvg-logo="https://i.imgur.com/J2EAZPS.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Brusque
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
+#EXTINF:-1 tvg-id="TVNatal.br@SD" tvg-name="TV Natal" tvg-logo="https://i.imgur.com/wqQmQml.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Natal
+#EXTGRP:🇧🇷 Brasil • Notícias
+http://185.228.163.146:8000/play/a01y/index.m3u8
+#EXTINF:-1 tvg-id="TVParaense.br@HD" tvg-name="TV Paraense" tvg-logo="https://duckduckgo.com/i/e408ea02.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Paraense
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u
+#EXTINF:-1 tvg-id="TVSimCachoeiro.br@SD" tvg-name="TV Sim Cachoeiro" tvg-logo="https://i.imgur.com/t5oUK3C.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Sim Cachoeiro
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8
+#EXTINF:-1 tvg-id="TVZoom.br@SD" tvg-name="TV Zoom" tvg-logo="https://i.imgur.com/jCGrjf5.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Zoom
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://cdn.jmvstream.com/w/LVW-9730/LVW9730_LmUwslM8jt/playlist.m3u8
+#EXTINF:-1 tvg-id="TVideoNews.br@SD" tvg-name="TVideoNews" tvg-logo="https://i.imgur.com/vstHOYx.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TVideoNews
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://video01.logicahost.com.br/tvideonews/tvideonews/playlist.m3u8
+#EXTINF:-1 tvg-id="VEJAPlusTV.br@HD" tvg-name="VEJA+ TV" tvg-logo="https://i.imgur.com/n0pxHo4.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",VEJA+ TV
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8
+#EXTINF:-1 tvg-id="BandSports.br@SD" tvg-name="Band Sports" tvg-logo="https://i.imgur.com/EuPvzJe.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",Band Sports
+#EXTGRP:🇧🇷 Brasil • Esportes
+http://45.162.64.114/BAND_SPORTS/index.m3u8
+#EXTINF:-1 tvg-id="CazeTV.br@SD" tvg-name="CazeTV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Caz%C3%A9TV_logo.svg/1280px-Caz%C3%A9TV_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",CazeTV
+#EXTGRP:🇧🇷 Brasil • Esportes
+http://138.204.86.4:8080/CAZE_TV/playlist.m3u8
+#EXTINF:-1 tvg-id="ESPN.br@SD" tvg-name="ESPN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",ESPN
+#EXTGRP:🇧🇷 Brasil • Esportes
+http://181.78.197.59:8000/play/a07z/index.m3u8
+#EXTINF:-1 tvg-id="ESPN3.br@SD" tvg-name="ESPN 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",ESPN 3
+#EXTGRP:🇧🇷 Brasil • Esportes
+http://181.78.197.59:8000/play/a081/index.m3u8
+#EXTINF:-1 tvg-id="ESPN4.br@SD" tvg-name="ESPN 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/960px-ESPN_4_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",ESPN 4
+#EXTGRP:🇧🇷 Brasil • Esportes
+http://181.78.197.59:8000/play/a07n/index.m3u8
+#EXTINF:-1 tvg-id="PlutoTVEsportes.us@BR" tvg-name="Pluto TV Esportes" tvg-logo="https://images.pluto.tv/channels/5f32d2db0af67400077f29c4/colorLogoSVG_1780355759776.svg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",Pluto TV Esportes
+#EXTGRP:🇧🇷 Brasil • Esportes
+https://jmp2.uk/plu-5f32d2db0af67400077f29c4.m3u8
+#EXTINF:-1 tvg-id="PlusMaisUm.br@HD" tvg-name="+MaisUm" tvg-logo="https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",+MaisUm
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://stream.ichibansys.com:3230/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="AdrenalinaPuraTV.us@Brazil" tvg-name="Adrenalina Pura TV" tvg-logo="https://i.imgur.com/Pvid2iH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Adrenalina Pura TV
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8
+#EXTINF:-1 tvg-id="AMCLatinAmerica.us@Brazil" tvg-name="AMC Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",AMC Latin America
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://138.121.15.230:9002/AMC/index.m3u8
+#EXTINF:-1 tvg-id="AXN.br@SD" tvg-name="AXN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",AXN
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://170.83.16.50/AXN/index.m3u8
+#EXTINF:-1 tvg-id="CINDIETV.br@HD" tvg-name="CINDIE TV" tvg-logo="https://a.jsrdn.com/hls/23208/cindie-tv/logo_20250225_222520_68.png" tvg-language="eng;por;spa" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",CINDIE TV
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
+#EXTINF:-1 tvg-id="CineTerror.us@BR" tvg-name="Cine Terror" tvg-logo="https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Cine Terror
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f12111c9e6c2c00078ef3bb.m3u8
+#EXTINF:-1 tvg-id="ClassiqueTV.br@SD" tvg-name="Classique TV" tvg-logo="https://i.imgur.com/rHxcraT.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Classique TV
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://stmv1.srvif.com/classique/classique/playlist.m3u8
+#EXTINF:-1 tvg-id="FilmesSuspense.us@BR" tvg-name="Filmes Suspense" tvg-logo="https://images.pluto.tv/channels/5f171d3442a0500007362f22/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Filmes Suspense
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f171d3442a0500007362f22.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetwork.br@SD" tvg-name="MyTime Movie Network" tvg-logo="https://i.imgur.com/aiGQtzI.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",MyTime Movie Network
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBangBang.us@BR" tvg-name="Pluto TV Bang Bang" tvg-logo="https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Bang Bang
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-663b9dc7cb3ea10008f1a0ce.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineClassicos.us@BR" tvg-name="Pluto TV Cine Classicos" tvg-logo="https://images.pluto.tv/channels/5fa1612a669ba0000702017b/colorLogoPNG_1733440556804.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Classicos
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5fa1612a669ba0000702017b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.us@BR" tvg-name="Pluto TV Cine Comedia" tvg-logo="https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Comedia
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComediaRomantica.us@BR" tvg-name="Pluto TV Cine Comedia Romantica" tvg-logo="https://images.pluto.tv/channels/62545ed3dab4380007582f7c/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Comedia Romantica
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-62545ed3dab4380007582f7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineCrime.us@BR" tvg-name="Pluto TV Cine Crime" tvg-logo="https://images.pluto.tv/channels/6479ff764f5ba5000878dfe2/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Crime
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-6479ff764f5ba5000878dfe2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineDrama.us@BR" tvg-name="Pluto TV Cine Drama" tvg-logo="https://images.pluto.tv/channels/5f1210d14ae1f80007bafb1d/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Drama
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f1210d14ae1f80007bafb1d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineFamilia.us@BR" tvg-name="Pluto TV Cine Familia" tvg-logo="https://images.pluto.tv/channels/5f171f032cd22e0007f17f3d/colorLogoPNG_1732045254120.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Familia
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f171f032cd22e0007f17f3d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineInspiracao.us@BR" tvg-name="Pluto TV Cine Inspiracao" tvg-logo="https://images.pluto.tv/channels/5fa991b1f09e020007e78626/colorLogoPNG_1748874366972.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Inspiracao
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5fa991b1f09e020007e78626.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineRomance.us@BR" tvg-name="Pluto TV Cine Romance" tvg-logo="https://images.pluto.tv/channels/5f171f988ab9780007fa95ea/colorLogoPNG_1771344977802.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Romance
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f171f988ab9780007fa95ea.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineSucessos.us@BR" tvg-name="Pluto TV Cine Sucessos" tvg-logo="https://images.pluto.tv/channels/5f120e94a5714d00074576a1/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Cine Sucessos
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f120e94a5714d00074576a1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFiccaoCientifica.us@BR" tvg-name="Pluto TV Ficcao Cientifica" tvg-logo="https://images.pluto.tv/channels/5fa15ad6367e170007cdd098/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Ficcao Cientifica
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5fa15ad6367e170007cdd098.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesAcao.us@BR" tvg-name="Pluto TV Filmes Acao" tvg-logo="https://images.pluto.tv/channels/5f120f41b7d403000783a6d6/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes Acao
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f120f41b7d403000783a6d6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesAventura.us@BR" tvg-name="Pluto TV Filmes Aventura" tvg-logo="https://images.pluto.tv/channels/66c79a4262e5510008ff68a5/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes Aventura
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-66c79a4262e5510008ff68a5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesdeLuta.us@BR" tvg-name="Pluto TV Filmes de Luta" tvg-logo="https://images.pluto.tv/channels/6806d62369aec5b19cd628c0/colorLogoPNG_1746817781806.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes de Luta
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-6806d62369aec5b19cd628c0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesNacionais.us@BR" tvg-name="Pluto TV Filmes Nacionais" tvg-logo="https://images.pluto.tv/channels/5f5a545d0dbf7f0007c09408/colorLogoPNG_1732044719987.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Filmes Nacionais
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-5f5a545d0dbf7f0007c09408.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNetmovies.us@BR" tvg-name="Pluto TV Netmovies" tvg-logo="https://images.pluto.tv/channels/663b9de4f999220008230fa8/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Netmovies
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-663b9de4f999220008230fa8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTerrorTrash.us@BR" tvg-name="Pluto TV Terror Trash" tvg-logo="https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Pluto TV Terror Trash
+#EXTGRP:🇧🇷 Brasil • Filmes
+https://jmp2.uk/plu-66aa67493a4ad2000806d91b.m3u8
+#EXTINF:-1 tvg-id="SonyMovies.br@SD" tvg-name="Sony Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Sony Movies
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://45.162.64.114/SONY_MOVIES/index.m3u8
+#EXTINF:-1 tvg-id="TelecineAction.br@SD" tvg-name="Telecine Action" tvg-logo="https://i.imgur.com/BHYWG0h.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",Telecine Action
+#EXTGRP:🇧🇷 Brasil • Filmes
+http://46.151.196.223:14326/
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-name="AWTV" tvg-logo="https://i.imgur.com/2tdMyef.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",AWTV
+#EXTGRP:🇧🇷 Brasil • Séries
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CSIMiami.us@BR" tvg-name="CSI: Miami" tvg-logo="https://images.pluto.tv/channels/63eb9c5351f5d000085e8d7e/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",CSI: Miami
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-63eb9c5351f5d000085e8d7e.m3u8
+#EXTINF:-1 tvg-id="DiffrentStrokesArnold.us@Brazil" tvg-name="Diff'rent Strokes Arnold" tvg-logo="https://i.imgur.com/jkmouY3.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Diff'rent Strokes Arnold
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-61f1d27a189ed10007b7393e.m3u8
+#EXTINF:-1 tvg-id="iCarly.us@BR" tvg-name="iCarly" tvg-logo="https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",iCarly
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-620ff46e0a576e0007dc2f89.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasANovaGeracao.us@BR" tvg-name="Jornada nas Estrelas: A Nova Geracao" tvg-logo="https://images.pluto.tv/channels/69162ad79505d0f3b1ebf07d/colorLogoPNG_1766066212478.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Jornada nas Estrelas: A Nova Geracao
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-69162ad79505d0f3b1ebf07d.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasDeepSpaceNine.us@BR" tvg-name="Jornada nas Estrelas: Deep Space Nine" tvg-logo="https://images.pluto.tv/channels/69162af591700f4c4c135c95/colorLogoPNG_1766066526851.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Jornada nas Estrelas: Deep Space Nine
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-69162af591700f4c4c135c95.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasVoyager.us@BR" tvg-name="Jornada nas Estrelas: Voyager" tvg-logo="https://images.pluto.tv/channels/69162b1ef189e235142b17ab/colorLogoPNG_1766150123044.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Jornada nas Estrelas: Voyager
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-69162b1ef189e235142b17ab.m3u8
+#EXTINF:-1 tvg-id="KenanKel.us@BR" tvg-name="Kenan & Kel" tvg-logo="https://images.pluto.tv/channels/5ffcc5130fd98c0007f2e216/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Kenan & Kel
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5ffcc5130fd98c0007f2e216.m3u8
+#EXTINF:-1 tvg-id="MasterChef.us@Brazil" tvg-name="MasterChef" tvg-logo="https://i.imgur.com/lOuySbz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MasterChef
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6077045b6031bd00078de127.m3u8
+#EXTINF:-1 tvg-id="MTVAreyoutheOne.us@BR" tvg-name="MTV Are you the One?" tvg-logo="https://images.pluto.tv/channels/5f6108d8cc331900075e98e4/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MTV Are you the One?
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5f6108d8cc331900075e98e4.m3u8
+#EXTINF:-1 tvg-id="MTVComoEx.us@BR" tvg-name="MTV Com o Ex" tvg-logo="https://images.pluto.tv/channels/61a528267e1b8b0007357920/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MTV Com o Ex
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-61a528267e1b8b0007357920.m3u8
+#EXTINF:-1 tvg-id="MTVDating.us@BR" tvg-name="MTV Dating" tvg-logo="https://images.pluto.tv/channels/6851bb3426beced4f2f67ee6/colorLogoPNG_1750686926779.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MTV Dating
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6851bb3426beced4f2f67ee6.m3u8
+#EXTINF:-1 tvg-id="NCIS.us@BR" tvg-name="NCIS" tvg-logo="https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",NCIS
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-63eb9fdda995710008991c54.m3u8
+#EXTINF:-1 tvg-id="Numbers.us@BR" tvg-name="Numbers" tvg-logo="https://images.pluto.tv/channels/67f960c5441853fe50e7afc1/colorLogoPNG_1747430170532.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Numbers
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-67f960c5441853fe50e7afc1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAliens.us@BR" tvg-name="Pluto TV Aliens" tvg-logo="https://images.pluto.tv/channels/6806d65e84f24b70109485fa/colorLogoPNG_1746817107468.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Aliens
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6806d65e84f24b70109485fa.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelas.us@BR" tvg-name="Pluto TV Novelas" tvg-logo="https://images.pluto.tv/channels/5f512365abe1f50007d3ff56/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Novelas
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5f512365abe1f50007d3ff56.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesAcao.us@BR" tvg-name="Pluto TV Series Acao" tvg-logo="https://images.pluto.tv/channels/6474ab1da51cb80008bfb5f4/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Acao
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6474ab1da51cb80008bfb5f4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesComedia.us@BR" tvg-name="Pluto TV Series Comedia" tvg-logo="https://images.pluto.tv/channels/655e5bc94261ca000810cb17/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Comedia
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-655e5bc94261ca000810cb17.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesCriminais.us@BR" tvg-name="Pluto TV Series Criminais" tvg-logo="https://images.pluto.tv/channels/6474ab5cdc7a760008745008/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Criminais
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6474ab5cdc7a760008745008.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesDrama.us@BR" tvg-name="Pluto TV Series Drama" tvg-logo="https://images.pluto.tv/channels/65f060d84e01740008d7421f/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Drama
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-65f060d84e01740008d7421f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesNovelescas.us@BR" tvg-name="Pluto TV Series Novelescas" tvg-logo="https://images.pluto.tv/channels/691627e4a29a6123e400b3e0/colorLogoPNG_1764878235665.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Novelescas
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-691627e4a29a6123e400b3e0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesSciFi.us@BR" tvg-name="Pluto TV Series Sci-Fi" tvg-logo="https://images.pluto.tv/channels/63d2ba2f60bc8f0008981a0e/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Sci-Fi
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-63d2ba2f60bc8f0008981a0e.m3u8
+#EXTINF:-1 tvg-id="StarTrek.us@BR" tvg-name="Star Trek" tvg-logo="https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Star Trek
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5ec5761aabe4690007f6e047.m3u8
+#EXTINF:-1 tvg-id="TNTNovelas.us@Brazil" tvg-name="TNT Novelas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",TNT Novelas
+#EXTGRP:🇧🇷 Brasil • Séries
+http://190.61.47.54:8000/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="TVSeries.br@SD" tvg-name="TV Series" tvg-logo="https://i.imgur.com/Ff5mj0o.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",TV Series
+#EXTGRP:🇧🇷 Brasil • Séries
+https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
+#EXTINF:-1 tvg-id="DetetivesMedicos.us@BR" tvg-name="Detetives Medicos" tvg-logo="https://images.pluto.tv/channels/638df93ae2f2a3000737c168/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Detetives Medicos
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-638df93ae2f2a3000737c168.m3u8
+#EXTINF:-1 tvg-id="History.br@SD" tvg-name="History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",History
+#EXTGRP:🇧🇷 Brasil • Documentários
+http://170.83.16.50/HISTORY/index.m3u8
+#EXTINF:-1 tvg-id="History2LatinAmerica.us@Brazil" tvg-name="History 2 Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/History2_logo_%282022%29.svg/500px-History2_logo_%282022%29.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",History 2 Latin America
+#EXTGRP:🇧🇷 Brasil • Documentários
+http://45.177.114.114/HISTORY_2/index.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAnimais.us@BR" tvg-name="Pluto TV Animais" tvg-logo="https://images.pluto.tv/channels/6474aa984cfc2c0008883a92/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Pluto TV Animais
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-6474aa984cfc2c0008883a92.m3u8
+#EXTINF:-1 tvg-id="PlutoTVInvestigacao.us@BR" tvg-name="Pluto TV Investigacao" tvg-logo="https://i.imgur.com/JlQq0YJ.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Pluto TV Investigacao
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-5f32cf37c9ff2b00082adbc8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNegocioFechado.us@BR" tvg-name="Pluto TV Negocio Fechado" tvg-logo="https://images.pluto.tv/channels/64ad7394798def00087b2bfe/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Pluto TV Negocio Fechado
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-64ad7394798def00087b2bfe.m3u8
+#EXTINF:-1 tvg-id="PlutoTVPolicial.us@BR" tvg-name="Pluto TV Policial" tvg-logo="https://images.pluto.tv/channels/678fdf9e3de7c8cf948e8824/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Pluto TV Policial
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-678fdf9e3de7c8cf948e8824.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTurbo.us@BR" tvg-name="Pluto TV Turbo" tvg-logo="https://images.pluto.tv/channels/6014761dfb91870008ea6463/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Pluto TV Turbo
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-6014761dfb91870008ea6463.m3u8
+#EXTINF:-1 tvg-id="SmithsonianChannelPlutoTV.us@BR" tvg-name="Smithsonian Channel Pluto TV" tvg-logo="https://images.pluto.tv/channels/6298bd10d88ef000073f16b7/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Documentários",Smithsonian Channel Pluto TV
+#EXTGRP:🇧🇷 Brasil • Documentários
+https://jmp2.uk/plu-6298bd10d88ef000073f16b7.m3u8
+#EXTINF:-1 tvg-id="AvatarAlendadeAang.us@BR" tvg-name="Avatar: A lenda de Aang" tvg-logo="https://images.pluto.tv/channels/6759eeb1bd523200083b4f29/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Avatar: A lenda de Aang
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-6759eeb1bd523200083b4f29.m3u8
+#EXTINF:-1 tvg-id="BabyFirst.us@Brazil" tvg-name="BabyFirst" tvg-logo="https://i.imgur.com/WxLHBwu.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",BabyFirst
+#EXTGRP:🇧🇷 Brasil • Infantil
+http://168.228.44.241:9997/play/a07u/index.m3u8
+#EXTINF:-1 tvg-id="BobEsponjaCalcaQuadrada.us@BR" tvg-name="Bob Esponja Calca Quadrada" tvg-logo="https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Bob Esponja Calca Quadrada
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-62545c0b002f4b0007688b61.m3u8
+#EXTINF:-1 tvg-id="BoxKidsTV.br@SD" tvg-name="Box Kids TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/18/Boxkidstv.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Box Kids TV
+#EXTGRP:🇧🇷 Brasil • Infantil
+http://170.83.49.66:8083/BOXKIDSHD/index.m3u8
+#EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us@Brazil" tvg-name="Cartoon Network Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Cartoon Network Latin America
+#EXTGRP:🇧🇷 Brasil • Infantil
+http://45.162.64.114/CARTOON_NETWORK/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryKidsLatinAmerica.us@Brazil" tvg-name="Discovery Kids Latin America" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Discovery Kids Latin America
+#EXTGRP:🇧🇷 Brasil • Infantil
+http://38.224.231.176:8000/play/a01j/index.m3u8
+#EXTINF:-1 tvg-id="DumDum.br@SD" tvg-name="DumDum" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",DumDum
+#EXTGRP:🇧🇷 Brasil • Infantil
+http://45.162.64.114/ZOOMOO_KIDS/index.m3u8
+#EXTINF:-1 tvg-id="NickJrClub.us@BR" tvg-name="Nick Jr. Club" tvg-logo="https://images.pluto.tv/channels/5f121460b73ac6000719fbaf/colorLogoPNG_1748348856602.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Nick Jr. Club
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-6824ce95f09106f4b18f4114.m3u8
+#EXTINF:-1 tvg-id="NickelodeonClassico.us@BR" tvg-name="Nickelodeon Classico" tvg-logo="https://images.pluto.tv/channels/5f12151794c1800007a8ae63/colorLogoPNG_1750157164414.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Nickelodeon Classico
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-6824ce10c5d53e1351ceb8d1.m3u8
+#EXTINF:-1 tvg-id="NickelodeonTeen.us@BR" tvg-name="Nickelodeon Teen" tvg-logo="https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Nickelodeon Teen
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-60f5fabf0721880007cd50e3.m3u8
+#EXTINF:-1 tvg-id="NickelodeonToons.us@BR" tvg-name="Nickelodeon Toons" tvg-logo="https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Nickelodeon Toons
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-645951c0e94c38000802d2cb.m3u8
+#EXTINF:-1 tvg-id="NickOnline.br@HD" tvg-name="NickOnline" tvg-logo="https://x1colegal.com/logo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",NickOnline
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://x1colegal.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="OReinoInfantil.us@Brazil" tvg-name="O Reino Infantil" tvg-logo="https://i.imgur.com/qoVxc13.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",O Reino Infantil
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-5f5c216df68f920007888315.m3u8
+#EXTINF:-1 tvg-id="OggyeasBaratasTontas.us@BR" tvg-name="Oggy e as Baratas Tontas" tvg-logo="https://images.pluto.tv/channels/63221bafdc6e110007b50270/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Oggy e as Baratas Tontas
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-63221bafdc6e110007b50270.m3u8
+#EXTINF:-1 tvg-id="PlutoTVJunior.us@BR" tvg-name="Pluto TV Junior" tvg-logo="https://images.pluto.tv/channels/5f12141b146d760007934ea7/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Pluto TV Junior
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-5f12141b146d760007934ea7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKids.us@BR" tvg-name="Pluto TV Kids" tvg-logo="https://images.pluto.tv/channels/5f1214a637c6fd00079c652f/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Pluto TV Kids
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-5dd6dae8ce788b0009eaf77b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKidsClub.us@BR" tvg-name="Pluto TV Kids Club" tvg-logo="https://images.pluto.tv/channels/66c8cae7fed35b0008580ec0/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Pluto TV Kids Club
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-66c8cae7fed35b0008580ec0.m3u8
+#EXTINF:-1 tvg-id="TurmadaMonica.us@Brazil" tvg-name="Turma da Monica" tvg-logo="https://i.imgur.com/nrvPPrW.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Infantil",Turma da Monica
+#EXTGRP:🇧🇷 Brasil • Infantil
+https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
+#EXTINF:-1 tvg-id="ComedyCentralSouthPark.us@BR" tvg-name="Comedy Central South Park" tvg-logo="https://images.pluto.tv/channels/609ae66b359b270007869ff1/colorLogoPNG_1733160636316.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",Comedy Central South Park
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-609ae5cd48d3200007b0a98e.m3u8
+#EXTINF:-1 tvg-id="Naruto.us@Brazil" tvg-name="Naruto" tvg-logo="https://i.imgur.com/M8X3Kvc.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",Naruto
+#EXTGRP:🇧🇷 Brasil • Animação
+https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAnime.us@BR" tvg-name="Pluto TV Anime" tvg-logo="https://images.pluto.tv/channels/5f12136385bccc00070142ed/colorLogoPNG_1777595293242.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",Pluto TV Anime
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-5f12136385bccc00070142ed.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAnimeAcao.us@BR" tvg-name="Pluto TV Anime Acao" tvg-logo="https://images.pluto.tv/channels/604b79c558393100078faeef/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",Pluto TV Anime Acao
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-604b79c558393100078faeef.m3u8
+#EXTINF:-1 tvg-id="SouthParkColecaoCartman.us@BR" tvg-name="South Park: Colecao Cartman" tvg-logo="https://images.pluto.tv/channels/65df71008b24c80008f04281/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",South Park: Colecao Cartman
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-65df71008b24c80008f04281.m3u8
+#EXTINF:-1 tvg-id="SouthParkColecaoKenny.us@BR" tvg-name="South Park: Colecao Kenny" tvg-logo="https://images.pluto.tv/channels/65df704366eec8000898e32f/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",South Park: Colecao Kenny
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-65df704366eec8000898e32f.m3u8
+#EXTINF:-1 tvg-id="SouthParkColecaoKyle.us@BR" tvg-name="South Park: Colecao Kyle" tvg-logo="https://images.pluto.tv/channels/65df713dec9fda0008b7a81d/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",South Park: Colecao Kyle
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-65df713dec9fda0008b7a81d.m3u8
+#EXTINF:-1 tvg-id="SouthParkColecaoStan.us@BR" tvg-name="South Park: Colecao Stan" tvg-logo="https://images.pluto.tv/channels/65df70b0f7f0af0008c3b316/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",South Park: Colecao Stan
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-65df70b0f7f0af0008c3b316.m3u8
+#EXTINF:-1 tvg-id="Tokusato.us@Brazil" tvg-name="Tokusato" tvg-logo="https://i.imgur.com/tWpjXtl.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",Tokusato
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-5ff609de50ab210008025c1b.m3u8
+#EXTINF:-1 tvg-id="OnePiece.us@BR" tvg-name="One Piece" tvg-logo="https://i.imgur.com/XsvbAWR.png" tvg-language="jap" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",One Piece
+#EXTGRP:🇧🇷 Brasil • Animação
+https://jmp2.uk/plu-62e94ec74823db0007277a8f.m3u8
+#EXTINF:-1 tvg-id="AELatinAmerica.us@Brazil" tvg-name="A&E Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",A&E Latin America
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://170.83.16.50/AeE/index.m3u8
+#EXTINF:-1 tvg-id="AdultSwimLatinAmerica.us@Brazil" tvg-name="Adult Swim Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Adult Swim Latin America
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://45.162.64.114/ADULT_SWIM/index.m3u8
+#EXTINF:-1 tvg-id="BETPlutoTV.us@BR" tvg-name="BET Pluto TV" tvg-logo="https://images.pluto.tv/channels/5ff768b6a4c8b80008498610/colorLogoPNG_1756804608228.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",BET Pluto TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-5ff768b6a4c8b80008498610.m3u8
+#EXTINF:-1 tvg-id="Blitstv.br@SD" tvg-name="Blitstv" tvg-logo="https://i.imgur.com/FO4QTRf.jpeg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Blitstv
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://stmv1.transmissaodigital.com/blitstv/blitstv/playlist.m3u8
+#EXTINF:-1 tvg-id="ChromaTV.br@SD" tvg-name="Chroma TV" tvg-logo="https://i.imgur.com/SnaIMgj.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Chroma TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://5c483b9d1019c.streamlock.net/8054/8054/playlist.m3u8
+#EXTINF:-1 tvg-id="ComedyCentralBrasil.br@SD" tvg-name="Comedy Central Brasil" tvg-logo="https://comcastadvertising.com/wp-content/uploads/2021/10/Comedy-Central-White.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Comedy Central Brasil
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8
+#EXTINF:-1 tvg-id="ComedyCentralPlutoTV.us@BR" tvg-name="Comedy Central Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f357e91b18f0b00073583d2/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Comedy Central Pluto TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-5f357e91b18f0b00073583d2.m3u8
+#EXTINF:-1 tvg-id="ConectaMaisTV.br@SD" tvg-name="Conecta Mais TV" tvg-logo="https://i.imgur.com/qHwTWlz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Conecta Mais TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryWorld.us@Brazil" tvg-name="Discovery World" tvg-logo="https://i.imgur.com/yNFmUkE.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Discovery World
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://168.196.127.137:6001/play/a097/index.m3u8
+#EXTINF:-1 tvg-id="ElementalChannel.br@SD" tvg-name="Elemental Channel" tvg-logo="https://i.imgur.com/8upyApg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Elemental Channel
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://stmv1.samcast.com.br/ricardo2194/ricardo2194/playlist.m3u8
+#EXTINF:-1 tvg-id="ElyTV.br@SD" tvg-name="ElyTV" tvg-logo="https://i.imgur.com/1eHNe91.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",ElyTV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://stmv1.srvsite.com/ely/ely/playlist.m3u8
+#EXTINF:-1 tvg-id="FailArmy.us@Brazil" tvg-name="FailArmy" tvg-logo="https://i.imgur.com/VIpQJxL.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",FailArmy
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://bd93cfed.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZhaWxBcm15X0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="ForaTedioTV.br@SD" tvg-name="Fora Tedio TV" tvg-logo="https://i.imgur.com/R9ul4T1.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Fora Tedio TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+#EXTVLCOPT:http-referrer=https://www.foratedio.com
+https://stmv2.srvif.com/foratedio/foratedio/playlist.m3u8
+#EXTINF:-1 tvg-id="LifetimeLatinAmerica.us@Brazil" tvg-name="Lifetime Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Lifetime Latin America
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://170.83.16.50/LIFETIME/index.m3u8
+#EXTINF:-1 tvg-id="MTVCatfish.us@BR" tvg-name="MTV Catfish" tvg-logo="https://images.pluto.tv/channels/626c2a3502d84a0007cec817/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Catfish
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-626c2a3502d84a0007cec817.m3u8
+#EXTINF:-1 tvg-id="MTVDrag.us@BR" tvg-name="MTV Drag" tvg-logo="https://images.pluto.tv/channels/645111f1d8436e00081bb2bd/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Drag
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-645111f1d8436e00081bb2bd.m3u8
+#EXTINF:-1 tvg-id="MTVJovenseMaes.us@BR" tvg-name="MTV Jovens e Maes" tvg-logo="https://images.pluto.tv/channels/620fdc7d8a36fc000710e3ba/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Jovens e Maes
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-620fdc7d8a36fc000710e3ba.m3u8
+#EXTINF:-1 tvg-id="MTVPlutoTV.us@BR" tvg-name="MTV Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f1212fb81e85c00077ae9ef/colorLogoPNG_1759263027326.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Pluto TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-5f1212fb81e85c00077ae9ef.m3u8
+#EXTINF:-1 tvg-id="MTVReality.us@BR" tvg-name="MTV Reality" tvg-logo="https://images.pluto.tv/channels/6493f4f566e485000853d640/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Reality
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-6851bdfc9ac48fde5e07f5ae.m3u8
+#EXTINF:-1 tvg-id="MTVRocks.us@BR" tvg-name="MTV Rocks" tvg-logo="https://images.pluto.tv/channels/66a01e07d2d50d0008100d6a/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Rocks
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-66a01b52a4ee27000808ea36.m3u8
+#EXTINF:-1 tvg-id="MTVShore.us@BR" tvg-name="MTV Shore" tvg-logo="https://images.pluto.tv/channels/625463563b8ddc0007134aeb/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",MTV Shore
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-625463563b8ddc0007134aeb.m3u8
+#EXTINF:-1 tvg-id="NTV.br@SD" tvg-name="NTV" tvg-logo="https://i.imgur.com/n79nkVC.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",NTV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://cdn.livespanel.com/nossatv/nossatv/playlist.m3u8
+#EXTINF:-1 tvg-id="PetloversTV.br@SD" tvg-name="Petlovers TV" tvg-logo="https://petloverstv.com.br/storage/357/config/yqP4nOugWRxRFCmgLqXF4gRKyM9ybsAOfHgUaqPt.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Petlovers TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCanalUOL.us@BR" tvg-name="Pluto TV Canal UOL" tvg-logo="https://images.pluto.tv/channels/64b9370b409629000802d32b/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Pluto TV Canal UOL
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-64b9370b409629000802d32b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRetro.us@BR" tvg-name="Pluto TV Retro" tvg-logo="https://i.imgur.com/wztO3GM.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Pluto TV Retro
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://jmp2.uk/plu-5f1212ad1728050007a523b8.m3u8
+#EXTINF:-1 tvg-id="RedeNGT.br@SD" tvg-name="Rede NGT" tvg-logo="https://i.imgur.com/ZFN1R4B.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Rede NGT
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://isaocorp.cloudecast.com/ngt/index.m3u8
+#EXTINF:-1 tvg-id="TVCuruca.br@SD" tvg-name="TV Curuca" tvg-logo="https://i.imgur.com/JdCKNZ4.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",TV Curuca
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVGRANDENATALHDTVBRASIL.br@SD" tvg-name="TV GRANDE NATAL HDTV BRASIL" tvg-logo="https://i.imgur.com/MTuErdw.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",TV GRANDE NATAL HDTV BRASIL
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://tvgrandenatalhd.duckdns.org:8080/hls/live.m3u8
+#EXTINF:-1 tvg-id="TVVicosa.br@SD" tvg-name="TV Vicosa" tvg-logo="https://i.imgur.com/TZF55f9.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",TV Vicosa
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPlusPet.br@SD" tvg-name="TV+Pet" tvg-logo="https://www.tvmaispet.com.br/images/tvpet-logo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",TV+Pet
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8
+#EXTINF:-1 tvg-id="UMATV.br@HD" tvg-name="UMA TV" tvg-logo="https://i.imgur.com/m0RVb79.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",UMA TV
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+https://umatv.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="KpopTVPlay.br@SD" tvg-name="KpopTV Play" tvg-logo="https://i.imgur.com/Tf0vweF.png" tvg-language="kor;por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",KpopTV Play
+#EXTGRP:🇧🇷 Brasil • Música
+https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8
+#EXTINF:-1 tvg-id="LamoreRockShowWebTV.br@SD" tvg-name="Lamore Rock Show WebTV" tvg-logo="https://www.lamorerockshowwebtv.com.br/wp-content/uploads/2024/11/logo_rockshow.avif" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",Lamore Rock Show WebTV
+#EXTGRP:🇧🇷 Brasil • Música
+https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8
+#EXTINF:-1 tvg-id="MTVBiggestPop.us@BR" tvg-name="MTV Biggest Pop" tvg-logo="https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",MTV Biggest Pop
+#EXTGRP:🇧🇷 Brasil • Música
+https://jmp2.uk/plu-5d14fd1a252d35decbc4080c.m3u8
+#EXTINF:-1 tvg-id="MTVClassic.us@BR" tvg-name="MTV Classic" tvg-logo="https://images.pluto.tv/channels/66a01dcb8561260008b0a41d/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",MTV Classic
+#EXTGRP:🇧🇷 Brasil • Música
+https://jmp2.uk/plu-66a01dcb8561260008b0a41d.m3u8
+#EXTINF:-1 tvg-id="MusicBoxBrazil.br@SD" tvg-name="Music Box Brazil" tvg-logo="https://i.imgur.com/CDPCF2X.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",Music Box Brazil
+#EXTGRP:🇧🇷 Brasil • Música
+http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8
+#EXTINF:-1 tvg-id="PlutoTVShowsporStingray.us@BR" tvg-name="Pluto TV Shows por Stingray" tvg-logo="https://images.pluto.tv/channels/604b91e0692f770007d9f33f/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",Pluto TV Shows por Stingray
+#EXTGRP:🇧🇷 Brasil • Música
+https://jmp2.uk/plu-604b91e0692f770007d9f33f.m3u8
+#EXTINF:-1 tvg-id="TikTokRadioBrasil.br@HD" tvg-name="TikTok Radio Brasil" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f4/TikTok_Radio.svg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Música",TikTok Radio Brasil
+#EXTGRP:🇧🇷 Brasil • Música
+https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992529
+#EXTINF:-1 tvg-id="Arte1.br@SD" tvg-name="Arte 1" tvg-logo="https://i.imgur.com/Ivnk7A6.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Arte 1
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://45.162.64.114/ARTE1/index.m3u8
+#EXTINF:-1 tvg-id="BemMaisTV.br@HD" tvg-name="Bem Mais TV" tvg-logo="https://bemmaistv.com.br/wp-content/uploads/2025/08/0LASAmOtt4-150x150.jpg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Bem Mais TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+#EXTVLCOPT:http-referrer=https://bemmaistv.com.br/
+https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8
+#EXTINF:-1 tvg-id="DespertarTV.br@HD" tvg-name="Despertar TV" tvg-logo="https://res.cloudinary.com/dpkehkbpv/image/upload/v1721839192/logo/mixtv/despertar_tv_ieb2l3.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Despertar TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://br.conectmy.com.br/DespertarTV/index.m3u8
+#EXTINF:-1 tvg-id="FonteTV.br@SD" tvg-name="Fonte TV" tvg-logo="https://i.imgur.com/7q2BmNc.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Fonte TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://flash.softhost.com.br:1935/fonte/fontetv/live.m3u8
+#EXTINF:-1 tvg-id="GospelCartoon.br@SD" tvg-name="Gospel Cartoon" tvg-logo="https://i.imgur.com/yxjPno5.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Gospel Cartoon
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8
+#EXTINF:-1 tvg-id="GospelMovieTV.br@SD" tvg-name="Gospel Movie TV" tvg-logo="https://i.imgur.com/cQN3nWt.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Gospel Movie TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPDTVWorldwide.br@SD" tvg-name="IMPD TV Worldwide" tvg-logo="https://i.imgur.com/9dW3AUQ.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",IMPD TV Worldwide
+#EXTGRP:🇧🇷 Brasil • Cultura
+#EXTVLCOPT:http-referrer=https://igrejamundial.nuvemplay.live
+https://igrejamundial.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NovoTempo.br@SD" tvg-name="Novo Tempo" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Novo Tempo
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://45.162.64.114/NOVO_TEMPO/index.m3u8
+#EXTINF:-1 tvg-id="PlenitudeTV.br@SD" tvg-name="Plenitude TV" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Plenitude TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://strv.painelvox.top/plenitude/plenitude/playlist.m3u8
+#EXTINF:-1 tvg-id="RedeGospel.br@SD" tvg-name="Rede Gospel" tvg-logo="https://i.imgur.com/mttSwgO.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Rede Gospel
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://170.83.49.66:8083/REDEGOSPELHD/index.m3u8
+#EXTINF:-1 tvg-id="RedeSeculo21.br@SD" tvg-name="Rede Seculo 21" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Rede Seculo 21
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://45.162.64.114/REDE_SECULO_21/index.m3u8
+#EXTINF:-1 tvg-id="RedeVida.br@SD" tvg-name="Rede Vida" tvg-logo="https://i.imgur.com/mP1qfp2.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Rede Vida
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://46.151.196.223:14244
+#EXTINF:-1 tvg-id="RITTV.br@SD" tvg-name="RIT TV" tvg-logo="https://i.imgur.com/Unjs1wi.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",RIT TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://170.83.49.66:8083/RITHD/index.m3u8
+#EXTINF:-1 tvg-id="TVAparecida.br@SD" tvg-name="TV Aparecida" tvg-logo="https://i.imgur.com/kxrja0X.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Aparecida
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://170.83.16.50/TV_APARECIDA/index.m3u8
+#EXTINF:-1 tvg-id="TVEvangelizar.br@SD" tvg-name="TV Evangelizar" tvg-logo="https://i.imgur.com/IrYR7Kp.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Evangelizar
+#EXTGRP:🇧🇷 Brasil • Cultura
+http://170.83.49.66:8083/EVANGELIZARHD/index.m3u8
+#EXTINF:-1 tvg-id="TVLifeAmerica.br@HD" tvg-name="TV Life America" tvg-logo="https://i.imgur.com/HZI0ilU.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Life America
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8
+#EXTINF:-1 tvg-id="TVPadreCicero.br@SD" tvg-name="TV Padre Cicero" tvg-logo="https://i.imgur.com/Y7b29VG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Padre Cicero
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPaiEterno.br@SD" tvg-name="TV Pai Eterno" tvg-logo="https://i.imgur.com/iuoXchN.png" tvg-language="por;eng" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Pai Eterno
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://video09.logicahost.com.br/paieterno/paieterno/playlist.m3u8
+#EXTINF:-1 tvg-id="TVTerceiroAnjo.br@SD" tvg-name="TV Terceiro Anjo" tvg-logo="https://i.imgur.com/PExKWNv.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Terceiro Anjo
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8
+#EXTINF:-1 tvg-id="TVUFOP.br@HD" tvg-name="TV UFOP" tvg-logo="https://raw.githubusercontent.com/daniloroxette/tvufop/refs/heads/main/images/tvufop_logo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV UFOP
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://app.tvufop.com.br/hls/tvufop.m3u8
+#EXTINF:-1 tvg-id="TVUniversal.br@SD" tvg-name="TV Universal" tvg-logo="https://i.imgur.com/TIsk5zN.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TV Universal
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVERS.br@SD" tvg-name="TVE RS" tvg-logo="https://i.imgur.com/MQ6lJpS.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",TVE RS
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
+#EXTINF:-1 tvg-id="UnisulTV.br@SD" tvg-name="Unisul TV" tvg-logo="https://i.imgur.com/N0TvAFz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Cultura",Unisul TV
+#EXTGRP:🇧🇷 Brasil • Cultura
+https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token=
+#EXTINF:-1 tvg-id="AgroCanal.br@SD" tvg-name="AgroCanal" tvg-logo="https://i.imgur.com/5XyopHf.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",AgroCanal
+#EXTGRP:🇧🇷 Brasil • Educação
+http://170.83.49.66:8083/AGROCANALHD/index.m3u8
+#EXTINF:-1 tvg-id="CanalEducacao.br@SD" tvg-name="Canal Educacao" tvg-logo="https://i.imgur.com/OOB7nrS.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Canal Educacao
+#EXTGRP:🇧🇷 Brasil • Educação
+http://45.162.64.114/CANAL_EDUCACAO/index.m3u8
+#EXTINF:-1 tvg-id="CanalFDR.br@SD" tvg-name="Canal FDR" tvg-logo="https://i.imgur.com/7SE4CkE.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Canal FDR
+#EXTGRP:🇧🇷 Brasil • Educação
+https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8
+#EXTINF:-1 tvg-id="CanalFutura.br@SD" tvg-name="Canal Futura" tvg-logo="https://i.imgur.com/LgynEBC.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Canal Futura
+#EXTGRP:🇧🇷 Brasil • Educação
+http://45.162.64.114/FUTURA/index.m3u8
+#EXTINF:-1 tvg-id="Futura.br@SD" tvg-name="Futura" tvg-logo="https://i.ibb.co/Pz6Nqk7w/logo-futura-vazado.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Futura
+#EXTGRP:🇧🇷 Brasil • Educação
+http://170.83.49.66:8083/FUTURAHD/index.m3u8
+#EXTINF:-1 tvg-id="ISTV.br@SD" tvg-name="ISTV" tvg-logo="https://i.imgur.com/RUKVrOH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",ISTV
+#EXTGRP:🇧🇷 Brasil • Educação
+https://stmv1.srvstm.com/sistema7933/sistema7933/playlist.m3u8
+#EXTINF:-1 tvg-id="OEncantadordeCaes.us@Brazil" tvg-name="O Encantador de Caes" tvg-logo="https://i.imgur.com/sQn6vvh.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",O Encantador de Caes
+#EXTGRP:🇧🇷 Brasil • Educação
+https://jmp2.uk/plu-61099df8cee03b00074b2ecf.m3u8
+#EXTINF:-1 tvg-id="PlutoTVMisterios.us@BR" tvg-name="Pluto TV Misterios" tvg-logo="https://images.pluto.tv/channels/5fac52f142044f00078e2a51/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Pluto TV Misterios
+#EXTGRP:🇧🇷 Brasil • Educação
+https://jmp2.uk/plu-5fac52f142044f00078e2a51.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNatureza.us@BR" tvg-name="Pluto TV Natureza" tvg-logo="https://images.pluto.tv/channels/5f1213ba0ecebc00070e170f/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Pluto TV Natureza
+#EXTGRP:🇧🇷 Brasil • Educação
+https://jmp2.uk/plu-5f1213ba0ecebc00070e170f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVPaisagensporStingray.us@BR" tvg-name="Pluto TV Paisagens por Stingray" tvg-logo="https://images.pluto.tv/channels/604a8dedbca75b0007b1c753/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Pluto TV Paisagens por Stingray
+#EXTGRP:🇧🇷 Brasil • Educação
+https://jmp2.uk/plu-604a8dedbca75b0007b1c753.m3u8
+#EXTINF:-1 tvg-id="PlutoTVVidaReal.us@BR" tvg-name="Pluto TV Vida Real" tvg-logo="https://images.pluto.tv/channels/5f32d4d9ec194100070c7449/colorLogoPNG_1732044921019.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Pluto TV Vida Real
+#EXTGRP:🇧🇷 Brasil • Educação
+https://jmp2.uk/plu-5f32d4d9ec194100070c7449.m3u8
+#EXTINF:-1 tvg-id="ProntosocorroHistoriasDeEmergencia.us@Brazil" tvg-name="Pronto-socorro: Historias De Emergencia" tvg-logo="https://i.imgur.com/0PkyJ3U.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Pronto-socorro: Historias De Emergencia
+#EXTGRP:🇧🇷 Brasil • Educação
+https://jmp2.uk/plu-61bb72a7bf8c520007a8fd27.m3u8
+#EXTINF:-1 tvg-id="RedeMinas.br@SD" tvg-name="Rede Minas" tvg-logo="https://i.imgur.com/MtQWAHv.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Rede Minas
+#EXTGRP:🇧🇷 Brasil • Educação
+https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalRural.br@SD" tvg-name="Canal Rural" tvg-logo="https://i.imgur.com/w9R9IIX.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Canal Rural
+#EXTGRP:🇧🇷 Brasil • Variedades
+http://170.83.49.66:8083/CANALRURALHD/index.m3u8
+#EXTINF:-1 tvg-id="FishTV.br@SD" tvg-name="Fish TV" tvg-logo="https://www.fishtv.com/public/site/images/logos/fishtv.svg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Fish TV
+#EXTGRP:🇧🇷 Brasil • Variedades
+http://45.162.64.114/FISH_TV/index.m3u8
+#EXTINF:-1 tvg-id="MacGyver.us@BR" tvg-name="MacGyver" tvg-logo="https://images.pluto.tv/channels/63eb9dc84e83e70008abea92/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",MacGyver
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://jmp2.uk/plu-63eb9dc84e83e70008abea92.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCozinha.us@BR" tvg-name="Pluto TV Cozinha" tvg-logo="https://images.pluto.tv/channels/5f1ef23020a5ac0007e5e8ea/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Pluto TV Cozinha
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://jmp2.uk/plu-5f1ef23020a5ac0007e5e8ea.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDesenhosClassicos.us@BR" tvg-name="Pluto TV Desenhos Classicos" tvg-logo="https://images.pluto.tv/channels/655e5c4d2c46f3000877a54b/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Pluto TV Desenhos Classicos
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://jmp2.uk/plu-655e5c4d2c46f3000877a54b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKFOOD.us@BR" tvg-name="Pluto TV KFOOD" tvg-logo="https://images.pluto.tv/channels/633ee9ba83c08f00076b60a6/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Pluto TV KFOOD
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://jmp2.uk/plu-633ee9ba83c08f00076b60a6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVViagens.us@BR" tvg-name="Pluto TV Viagens" tvg-logo="https://images.pluto.tv/channels/5f32d432d612e50007e56133/colorLogoPNG_1769016717502.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Pluto TV Viagens
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://jmp2.uk/plu-5f32d432d612e50007e56133.m3u8
+#EXTINF:-1 tvg-id="RetroCartoon.br@SD" tvg-name="Retro Cartoon" tvg-logo="https://i.imgur.com/hIlEfhl.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Retro Cartoon
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8
+#EXTINF:-1 tvg-id="TastemadeBrasil.us@Brazil" tvg-name="Tastemade Brasil" tvg-logo="https://i.imgur.com/FPy4zF4.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Tastemade Brasil
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://jmp2.uk/plu-5fd1419a3b4f4b000773ba85.m3u8
+#EXTINF:-1 tvg-id="TerraViva.br@SD" tvg-name="Terra Viva" tvg-logo="https://i.imgur.com/wnYsE3O.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Terra Viva
+#EXTGRP:🇧🇷 Brasil • Variedades
+http://45.162.64.114/TERRAVIVA/index.m3u8
+#EXTINF:-1 tvg-id="TLCLatinAmerica.us@Brazil" tvg-name="TLC Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",TLC Latin America
+#EXTGRP:🇧🇷 Brasil • Variedades
+http://38.134.250.110:8000/play/a00n/index.m3u8
+#EXTINF:-1 tvg-id="TravelBoxBrazil.br@SD" tvg-name="Travel Box Brazil" tvg-logo="https://i.imgur.com/3tBJERH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Travel Box Brazil
+#EXTGRP:🇧🇷 Brasil • Variedades
+http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8
+#EXTINF:-1 tvg-id="TVParanaTurismo.br@SD" tvg-name="TV Parana Turismo" tvg-logo="https://i.imgur.com/I6pKoBd.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",TV Parana Turismo
+#EXTGRP:🇧🇷 Brasil • Variedades
+http://200.189.113.201/hls/tve.m3u8
+#EXTINF:-1 tvg-id="AdessoTV.br@SD" tvg-name="Adesso TV" tvg-logo="https://i.imgur.com/KgetM8j.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Adesso TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8
+#EXTINF:-1 tvg-id="AmazonSat.br@SD" tvg-name="Amazon Sat" tvg-logo="https://i.imgur.com/7rjCS5i.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Amazon Sat
+#EXTGRP:🇧🇷 Brasil • Geral
+https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
+#EXTINF:-1 tvg-id="ArarunaTV.br@SD" tvg-name="Araruna TV" tvg-logo="https://i.imgur.com/jl39ula.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Araruna TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal25Jundiai.br@SD" tvg-name="Canal 25 Jundiai" tvg-logo="https://i.imgur.com/7igGMwH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Canal 25 Jundiai
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
+#EXTINF:-1 tvg-id="CanaldoBoi.br@SD" tvg-name="Canal do Boi" tvg-logo="https://i.imgur.com/pVM5MhS.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Canal do Boi
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/CANAL_DO_BOI/index.m3u8
+#EXTINF:-1 tvg-id="CanalGov.br@SD" tvg-name="Canal Gov" tvg-logo="https://i.imgur.com/rHPY0Yv.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Canal Gov
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.177.114.115/TV_BRASIL_2/index.m3u8
+#EXTINF:-1 tvg-id="CanalSete.br@SD" tvg-name="Canal Sete" tvg-logo="https://i.imgur.com/0cq0BPp.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Canal Sete
+#EXTGRP:🇧🇷 Brasil • Geral
+http://play.canalsete.com.br:1935/canalsete/xpl-c7_source/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalUOL.br@SD" tvg-name="Canal UOL" tvg-logo="https://conteudo.imguol.com.br/c/play/logo_canaluol_2024.svg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Canal UOL
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video24.mais.uol.com.br/live/6146.m3u8
+#EXTINF:-1 tvg-id="CatveFM.br@SD" tvg-name="Catve FM" tvg-logo="https://i.imgur.com/w89yw36.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Catve FM
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="CatveMasterTV.br@SD" tvg-name="Catve Master TV" tvg-logo="https://i.imgur.com/4m7Iazm.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Catve Master TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="Catve2.br@SD" tvg-name="Catve2" tvg-logo="https://i.imgur.com/qiVfsfB.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Catve2
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8
+#EXTINF:-1 tvg-id="COMBrasil.br@SD" tvg-name="COM Brasil" tvg-logo="https://i.imgur.com/GrjGwKM.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",COM Brasil
+#EXTGRP:🇧🇷 Brasil • Geral
+https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/NewCo/New_Brasil_BR/New_Brasil.m3u8
+#EXTINF:-1 tvg-id="ConecTVBrasil.br@SD" tvg-name="ConecTV Brasil" tvg-logo="https://i.imgur.com/XN6jjMR.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",ConecTV Brasil
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8
+#EXTINF:-1 tvg-id="CulturaFast.br@SD" tvg-name="Cultura Fast" tvg-logo="https://eitv6.cdn.broadpeak.io/account351-i1438/channel/53/quadrada_-3-_pequeno-1723832301.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Cultura Fast
+#EXTGRP:🇧🇷 Brasil • Geral
+https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8
+#EXTINF:-1 tvg-id="CulturaPara.br@SD" tvg-name="Cultura Para" tvg-logo="https://i.imgur.com/5jPEI5c.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Cultura Para
+#EXTGRP:🇧🇷 Brasil • Geral
+http://www.portalcultura.com.br/playerhtml/funtelpa/tv_funtelpa/playlist.m3u8
+#EXTINF:-1 tvg-id="DemaisTV.br@SD" tvg-name="Demais TV" tvg-logo="https://i.imgur.com/Md3xibE.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Demais TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stmv1.samcast.com.br/demaistv6503/demaistv6503/playlist.m3u8
+#EXTINF:-1 tvg-id="EUTV.br@SD" tvg-name="EUTV" tvg-logo="https://i.imgur.com/8PxpamC.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",EUTV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8
+#EXTINF:-1 tvg-id="FalaLitoral.br@SD" tvg-name="Fala Litoral" tvg-logo="https://i.imgur.com/NF6PL8O.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Fala Litoral
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8
+#EXTINF:-1 tvg-id="GloboplayNovelas.br@SD" tvg-name="Globoplay Novelas" tvg-logo="https://i.ibb.co/m5TBCDL2/Globoplay-Novelas-1.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Globoplay Novelas
+#EXTGRP:🇧🇷 Brasil • Geral
+http://79.127.238.228:14455
+#EXTINF:-1 tvg-id="Lke.br@SD" tvg-name="L!ke" tvg-logo="https://i.imgur.com/chHsCzB.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",L!ke
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cnl-cl.otteravision.com/cnl/cl_h265/cl_h265.m3u8
+#EXTINF:-1 tvg-id="NovaEraTV.br@SD" tvg-name="Nova Era TV" tvg-logo="https://i.imgur.com/IK3F9Uq.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Nova Era TV
+#EXTGRP:🇧🇷 Brasil • Geral
+http://wz3.dnip.com.br:1935/novaeratv/novaeratv.sdp/live.m3u8
+#EXTINF:-1 tvg-id="ODiaTV.br@SD" tvg-name="O Dia TV" tvg-logo="https://i.imgur.com/1LUbAVP.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",O Dia TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://6836041ea1117.streamlock.net/tvodia/tvodia/playlist.m3u8
+#EXTINF:-1 tvg-id="PlayTV.br@SD" tvg-name="Play TV" tvg-logo="https://i.imgur.com/Ikrj3lk.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Play TV
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/PLAY_TV/index.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHistoria.us@BR" tvg-name="Pluto TV Historia" tvg-logo="https://images.pluto.tv/channels/5f1ef1a8cec6be00072a7ac9/colorLogoPNG_1754405659295.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Pluto TV Historia
+#EXTGRP:🇧🇷 Brasil • Geral
+https://jmp2.uk/plu-5f1ef1a8cec6be00072a7ac9.m3u8
+#EXTINF:-1 tvg-id="PrimerTV.br@SD" tvg-name="Primer TV" tvg-logo="https://i.imgur.com/PMptSP3.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Primer TV
+#EXTGRP:🇧🇷 Brasil • Geral
+http://200.194.238.229:8383/live/primer/playlist.m3u8
+#EXTINF:-1 tvg-id="RBATV.br@SD" tvg-name="RBATV" tvg-logo="https://i.imgur.com/ZWFxlU1.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",RBATV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
+#EXTINF:-1 tvg-id="Record.br@SD" tvg-name="Record" tvg-logo="https://i.imgur.com/sz9gTTr.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Record
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
+#EXTINF:-1 tvg-id="RecordTVInteriorSP.br@SD" tvg-name="RecordTV Interior SP" tvg-logo="https://i.imgur.com/VcHy0fu.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",RecordTV Interior SP
+#EXTGRP:🇧🇷 Brasil • Geral
+http://200.77.176.130:8000/udp/224.0.0.4:49152
+#EXTINF:-1 tvg-id="RedeBrasil.br@SD" tvg-name="Rede Brasil" tvg-logo="https://i.imgur.com/TXJKwzZ.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede Brasil
+#EXTGRP:🇧🇷 Brasil • Geral
+https://redebrasil.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="RedeCNTRiodeJaneiro.br@SD" tvg-name="Rede CNT Rio de Janeiro" tvg-logo="https://i.imgur.com/jcasAmw.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede CNT Rio de Janeiro
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/CNT/index.m3u8
+#EXTINF:-1 tvg-id="RedeFamilia.br@SD" tvg-name="Rede Familia" tvg-logo="https://i.imgur.com/7KVFCrQ.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede Familia
+#EXTGRP:🇧🇷 Brasil • Geral
+http://186.219.52.187/rede_familia/index.m3u8
+#EXTINF:-1 tvg-id="RedeMeioNorte.br@SD" tvg-name="Rede Meio Norte" tvg-logo="https://i.imgur.com/KVdTi0M.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede Meio Norte
+#EXTGRP:🇧🇷 Brasil • Geral
+https://maystreaming.cloudecast.com/redemeio/index.m3u8
+#EXTINF:-1 tvg-id="RedeSPTV.br@SD" tvg-name="Rede SPTV" tvg-logo="https://i.imgur.com/kh3LGAP.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede SPTV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8
+#EXTINF:-1 tvg-id="RedeTV.br@SD" tvg-name="Rede TV!" tvg-logo="https://i.imgur.com/ZJgD38F.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede TV!
+#EXTGRP:🇧🇷 Brasil • Geral
+http://186.219.52.187/rede_tv/index.m3u8
+#EXTINF:-1 tvg-id="RedeTVMais.br@SD" tvg-name="Rede TV! Mais" tvg-logo="https://i.ibb.co/F0Tm2WP/2103f4c07b851d64b4c96955765a9a95.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Rede TV! Mais
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8
+#EXTINF:-1 tvg-id="RedeTVParana.br@SD" tvg-name="RedeTV! Parana" tvg-logo="https://i.imgur.com/D8R0Af4.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",RedeTV! Parana
+#EXTGRP:🇧🇷 Brasil • Geral
+https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTCuiaba.br@SD" tvg-name="SBT Cuiaba" tvg-logo="https://i.imgur.com/EZJWQ3i.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SBT Cuiaba
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTInterior.br@SD" tvg-name="SBT Interior" tvg-logo="https://i.imgur.com/IkZfa4j.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SBT Interior
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTNacional.br@SD" tvg-name="SBT Nacional" tvg-logo="https://i.imgur.com/tc1ALuu.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SBT Nacional
+#EXTGRP:🇧🇷 Brasil • Geral
+https://6836041ea1117.streamlock.net/cverde/cverde/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTNovaMutum.br@SD" tvg-name="SBT Nova Mutum" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/d/d0/Logotipo_do_SBT_Nova_Mutum.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SBT Nova Mutum
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTRondonopolis.br@SD" tvg-name="SBT Rondonopolis" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/d/d5/Logotipo_do_SBT_Rondon%C3%B3polis.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SBT Rondonopolis
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8
+#EXTINF:-1 tvg-id="SESCTV.br@SD" tvg-name="SESC TV" tvg-logo="https://i.imgur.com/Mu8O6CV.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SESC TV
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/SESC_TV/index.m3u8
+#EXTINF:-1 tvg-id="SICTV.br@SD" tvg-name="SIC TV" tvg-logo="https://i.imgur.com/mHxQyB2.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SIC TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8
+#EXTINF:-1 tvg-id="SonyChannel.br@SD" tvg-name="Sony Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/960px-Sony_Channel_Logo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Sony Channel
+#EXTGRP:🇧🇷 Brasil • Geral
+http://170.83.16.50/SONY_CHANNEL/index.m3u8
+#EXTINF:-1 tvg-id="SOUTV.br@SD" tvg-name="SOU TV" tvg-logo="https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",SOU TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8
+#EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Brazil" tvg-name="Studio Universal Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Studio Universal Latin America
+#EXTGRP:🇧🇷 Brasil • Geral
+http://187.102.210.46/universo/index.m3u8
+#EXTINF:-1 tvg-id="TNTLatinAmerica.us@Brazil" tvg-name="TNT Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TNT Latin America
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.171.64.30:6060/play/a03i/index.m3u8
+#EXTINF:-1 tvg-id="TVACritica.br@SD" tvg-name="TV A Critica" tvg-logo="https://i.imgur.com/j51rBro.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV A Critica
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
+#EXTINF:-1 tvg-id="TVAldeia.br@SD" tvg-name="TV Aldeia" tvg-logo="https://i.imgur.com/rsfnv4Z.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Aldeia
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stmv1.samcast.com.br/giovane7843/giovane7843/playlist.m3u8
+#EXTINF:-1 tvg-id="TVAlternativa.br@SD" tvg-name="TV Alternativa" tvg-logo="https://i.imgur.com/wM9xXhc.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Alternativa
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBahia.br@HD" tvg-name="TV Bahia" tvg-logo="https://i.imgur.com/sJOrvHg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Bahia
+#EXTGRP:🇧🇷 Brasil • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8
+#EXTINF:-1 tvg-id="TVBrasil.br@SD" tvg-name="TV Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Brasil
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/TV_BRASIL/index.m3u8
+#EXTINF:-1 tvg-id="TVBrasilOeste.br@SD" tvg-name="TV Brasil Oeste" tvg-logo="https://i.imgur.com/noqGfuy.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Brasil Oeste
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBRICSPortuguese.br@SD" tvg-name="TV BRICS Portuguese" tvg-logo="https://i.imgur.com/vLpm8tN.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV BRICS Portuguese
+#EXTGRP:🇧🇷 Brasil • Geral
+https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCamara.br@SD" tvg-name="TV Camara" tvg-logo="https://i.imgur.com/Sdou1Ab.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Camara
+#EXTGRP:🇧🇷 Brasil • Geral
+http://170.83.49.66:8083/TVCAMARAHD/index.m3u8
+#EXTINF:-1 tvg-id="TVCancaoNova.br@SD" tvg-name="TV Cancao Nova" tvg-logo="https://i.imgur.com/OaM9hkH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Cancao Nova
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/CANCAO_NOVA/index.m3u8
+#EXTINF:-1 tvg-id="TVCidadeVerdeCuiaba.br@SD" tvg-name="TV Cidade Verde Cuiaba" tvg-logo="https://i.imgur.com/e67h04h.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Cidade Verde Cuiaba
+#EXTGRP:🇧🇷 Brasil • Geral
+#EXTVLCOPT:http-referrer=https://www.tvcidadeverde.com.br
+https://televisaocidadeverde.brasilstream.com.br/hls/televisaocidadeverde/index.m3u8
+#EXTINF:-1 tvg-id="TVClube.br@SD" tvg-name="TV Clube" tvg-logo="https://i.imgur.com/CpXjcyE.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Clube
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8
+#EXTINF:-1 tvg-id="TVComunitaria.br@SD" tvg-name="TV Comunitaria" tvg-logo="https://i.imgur.com/uxefHY3.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Comunitaria
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=
+#EXTINF:-1 tvg-id="TVCultura.br@SD" tvg-name="TV Cultura" tvg-logo="https://i.ibb.co/nm0jXMM/cultura-3x.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Cultura
+#EXTGRP:🇧🇷 Brasil • Geral
+http://170.83.16.50/CULTURA/index.m3u8
+#EXTINF:-1 tvg-id="TVDifusao.br@SD" tvg-name="TV Difusao" tvg-logo="https://storage.googleapis.com/soultv-prod-media/media/brand/LOGO_TV_DIFUS%C3%83O_100x100px_doiivZN.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Difusao
+#EXTGRP:🇧🇷 Brasil • Geral
+https://tvdsoultv.acessaradios.com.br/tvdsoultv/tvdsoultv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVFronteira.br@SD" tvg-name="TV Fronteira" tvg-logo="https://i.imgur.com/NtcoW6G.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Fronteira
+#EXTGRP:🇧🇷 Brasil • Geral
+https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8
+#EXTINF:-1 tvg-id="TVGazeta.br@SD" tvg-name="TV Gazeta" tvg-logo="https://i.imgur.com/0sksWse.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Gazeta
+#EXTGRP:🇧🇷 Brasil • Geral
+http://186.219.52.187/gazeta/index.m3u8
+#EXTINF:-1 tvg-id="TVGuarapari.br@SD" tvg-name="TV Guarapari" tvg-logo="https://i.imgur.com/eDNzwK0.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Guarapari
+#EXTGRP:🇧🇷 Brasil • Geral
+#EXTVLCOPT:http-referrer=https://tvguarapari.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
+https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
+#EXTINF:-1 tvg-id="TVJustica.br@SD" tvg-name="TV Justica" tvg-logo="https://i.imgur.com/rOQKiMO.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Justica
+#EXTGRP:🇧🇷 Brasil • Geral
+http://170.83.16.50/TV_JUSTICA/index.m3u8
+#EXTINF:-1 tvg-id="TVMaisMarica.br@SD" tvg-name="TV Mais Marica" tvg-logo="https://i.imgur.com/lgCRX7q.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Mais Marica
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5cf4a2c2512a2.streamlock.net/tvmaismarica/tvmaismarica/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMarajoara.br@SD" tvg-name="TV Marajoara" tvg-logo="https://i.imgur.com/9d9vBN7.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Marajoara
+#EXTGRP:🇧🇷 Brasil • Geral
+https://tv02.zas.media:1936/tvmarajoara/tvmarajoara/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMetropole.br@SD" tvg-name="TV Metropole" tvg-logo="https://i.imgur.com/bJyjLpg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Metropole
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPantanalMS.br@SD" tvg-name="TV Pantanal MS" tvg-logo="https://i.imgur.com/0FOmktl.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Pantanal MS
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5a2b083e9f360.streamlock.net/tvpantanal/tvpantanal.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPassoFundo.br@SD" tvg-name="TV Passo Fundo" tvg-logo="https://i.imgur.com/QFE6TiV.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Passo Fundo
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5a57bda70564a.streamlock.net/tvpasso/tvpasso.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPetropolis.br@SD" tvg-name="TV Petropolis" tvg-logo="https://web2.petropolis.rj.gov.br/imc/film-commission/uploads/profissional/perfil/785b645d9c574b4d88504a85dbd6ef37.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Petropolis
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRaTimBum.br@SD" tvg-name="TV Ra Tim Bum" tvg-logo="https://i.imgur.com/JIQwz0w.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Ra Tim Bum
+#EXTGRP:🇧🇷 Brasil • Geral
+http://170.83.49.66:8083/TVRATIMBUMHD/index.m3u8
+#EXTINF:-1 tvg-id="TVSaoRaimundo.br@SD" tvg-name="TV Sao Raimundo" tvg-logo="https://i.imgur.com/f34CQIG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Sao Raimundo
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stmv1.voxtvhd.com.br/9030/9030/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSenado.br@SD" tvg-name="TV Senado" tvg-logo="https://i.imgur.com/duy6waL.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Senado
+#EXTGRP:🇧🇷 Brasil • Geral
+http://170.83.16.50/TV_SENADO/index.m3u8
+#EXTINF:-1 tvg-id="TVVilaReal.br@SD" tvg-name="TV Vila Real" tvg-logo="https://i.imgur.com/Z1uWe7g.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Vila Real
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-10841/LVW10841_mT77z9o2cP/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCRio.br@SD" tvg-name="TVC-Rio" tvg-logo="https://i.imgur.com/WDiikWv.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TVC-Rio
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video05.logicahost.com.br/comunitariario/comunitariario/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCOMMaceio.br@SD" tvg-name="TVCOM Maceio" tvg-logo="https://i.imgur.com/IE7IZzi.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TVCOM Maceio
+#EXTGRP:🇧🇷 Brasil • Geral
+https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8
+#EXTINF:-1 tvg-id="TVEBahia.br@SD" tvg-name="TVE Bahia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/960px-TVE_Bahia_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TVE Bahia
+#EXTGRP:🇧🇷 Brasil • Geral
+http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
+#EXTINF:-1 tvg-id="TVitape.br@SD" tvg-name="TVitape" tvg-logo="https://i.imgur.com/XeqcwKe.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TVitape
+#EXTGRP:🇧🇷 Brasil • Geral
+https://stream01.msolutionbrasil.com.br/hls/tvitape/live.m3u8
+#EXTINF:-1 tvg-id="TVLatinaSat.br@HD" tvg-name="TVLatinaSat" tvg-logo="https://latinasat.com.br/logo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TVLatinaSat
+#EXTGRP:🇧🇷 Brasil • Geral
+https://www.latinasat.com.br/hls/live/stream/index.m3u8
+#EXTINF:-1 tvg-id="TVNBN.br@SD" tvg-name="TVNBN" tvg-logo="https://i.imgur.com/zoHBxn1.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TVNBN
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8
+#EXTINF:-1 tvg-id="WooHoo.br@SD" tvg-name="WooHoo" tvg-logo="https://i.imgur.com/me622pa.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",WooHoo
+#EXTGRP:🇧🇷 Brasil • Geral
+http://45.162.64.114/WOOHOO/index.m3u8
+#EXTINF:-1 tvg-id="CNNPortugal.pt@SD" tvg-name="CNN Portugal" tvg-logo="https://i.imgur.com/bc6tYVZ.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Notícias",CNN Portugal
+#EXTGRP:🇵🇹 Portugal • Notícias
+https://github.com/thomraider12/canaistvpt/raw/main/m3u8s/cnnpt.m3u8
+#EXTINF:-1 tvg-id="EuronewsPortuguese.fr@SD" tvg-name="Euronews Portuguese" tvg-logo="https://i.imgur.com/8t9mdg9.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Notícias",Euronews Portuguese
+#EXTGRP:🇵🇹 Portugal • Notícias
+https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c1BvcnR1Z3Vlc19ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPNoticias.pt@HD" tvg-name="RTP Noticias" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpnoticias_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Notícias",RTP Noticias
+#EXTGRP:🇵🇹 Portugal • Notícias
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="FUELTV.pt@AU" tvg-name="FUEL TV" tvg-logo="https://i.imgur.com/I8mviBy.png" tvg-language="eng" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",FUEL TV
+#EXTGRP:🇵🇹 Portugal • Esportes
+https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AXNMovies.pt@SD" tvg-name="AXN Movies" tvg-logo="https://i.imgur.com/tJQckal.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Filmes",AXN Movies
+#EXTGRP:🇵🇹 Portugal • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://50.7.120.34:8080/AXN_BLACK/index.m3u8
+#EXTINF:-1 tvg-id="KuriakosCine.pt@SD" tvg-name="Kuriakos Cine" tvg-logo="https://i.imgur.com/CZViCwB.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Filmes",Kuriakos Cine
+#EXTGRP:🇵🇹 Portugal • Filmes
+https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVIFiccao.pt@SD" tvg-name="TVI Ficcao" tvg-logo="https://cdn.iol.pt/img/logostvi/branco/tvificcao.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Séries",TVI Ficcao
+#EXTGRP:🇵🇹 Portugal • Séries
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvificcao.m3u8
+#EXTINF:-1 tvg-id="KuriakosKids.pt@SD" tvg-name="Kuriakos Kids" tvg-logo="https://i.imgur.com/SRX6EPY.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Infantil",Kuriakos Kids
+#EXTGRP:🇵🇹 Portugal • Infantil
+https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVIReality.pt@SD" tvg-name="TVI Reality" tvg-logo="https://i.imgur.com/C9rxqA5.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Entretenimento",TVI Reality
+#EXTGRP:🇵🇹 Portugal • Entretenimento
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
+#EXTINF:-1 tvg-id="Famatv.pt@SD" tvg-name="Famatv" tvg-logo="https://i.ibb.co/tMmRp18/Fama-TV-cor-whitebg-hotizontal.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Música",Famatv
+#EXTGRP:🇵🇹 Portugal • Música
+https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
+#EXTINF:-1 tvg-id="KuriakosMusic.pt@SD" tvg-name="Kuriakos Music" tvg-logo="https://i.imgur.com/Zl40NYi.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Música",Kuriakos Music
+#EXTGRP:🇵🇹 Portugal • Música
+http://195.23.211.179:1935/kmusic/smil:kmusic.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ONFM.pt@SD" tvg-name="ON FM" tvg-logo="https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Música",ON FM
+#EXTGRP:🇵🇹 Portugal • Música
+https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RFPtv.pt@SD" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Música",RFPtv
+#EXTGRP:🇵🇹 Portugal • Música
+https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
+#EXTINF:-1 tvg-id="KuriakosTV.pt@SD" tvg-name="Kuriakos TV" tvg-logo="https://i.imgur.com/xdAW0D5.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Kuriakos TV
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/ktv/smil:ktv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ManaIgrejaOnline.pt@SD" tvg-name="Mana Igreja Online" tvg-logo="https://i.imgur.com/0IUvfcJ.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Mana Igreja Online
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/igrejaonline/smil:igrejaonline.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMana1.pt@SD" tvg-name="TV Mana 1" tvg-logo="https://i.imgur.com/6jNqpTP.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",TV Mana 1
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMana2.pt@SD" tvg-name="TV Mana 2" tvg-logo="https://i.imgur.com/VYNjVov.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",TV Mana 2
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaBrasil.pt@SD" tvg-name="TV Mana Brasil" tvg-logo="https://i.imgur.com/AFb712e.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",TV Mana Brasil
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ManaIglesiaOnline.pt@SD" tvg-name="Mana Iglesia Online" tvg-logo="https://i.imgur.com/0IUvfcJ.png" tvg-language="spa" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Mana Iglesia Online
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w2.manasat.com/iglesia-online/smil:iglesia-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaEspanhol.pt@SD" tvg-name="TV Mana Espanhol" tvg-logo="https://i.imgur.com/sUlrSwP.png" tvg-language="spa" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",TV Mana Espanhol
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/tvmana-espanol/smil:tvmana-espanol.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ManaChurchOnline.pt@SD" tvg-name="Mana Church Online" tvg-logo="https://i.imgur.com/FRDJSim.png" tvg-language="eng" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Mana Church Online
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w2.manasat.com/church-online/smil:church-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaEnglish.pt@SD" tvg-name="TV Mana English" tvg-logo="https://i.imgur.com/I66IkCw.png" tvg-language="eng" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",TV Mana English
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/tvmana-english/smil:tvmana-english.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ManaCirkevOnline.pt@SD" tvg-name="Mana Cirkev Online" tvg-logo="https://i.imgur.com/tYhXeRq.png" tvg-language="slk" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Mana Cirkev Online
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w2.manasat.com/cirkev-online/smil:cirkev-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ManaEgliseOnline.pt@SD" tvg-name="Mana Eglise Online" tvg-logo="https://i.imgur.com/xQYly8O.png" tvg-language="fra" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Mana Eglise Online
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w2.manasat.com/eglise-online/smil:eglise-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ManaTserkovOnlayn.pt@SD" tvg-name="Mana Tserkov' Onlayn" tvg-logo="https://i.imgur.com/PruXLqS.png" tvg-language="rus" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Mana Tserkov' Onlayn
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w2.manasat.com/tserkov-online/smil:tserkov-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaRusskiy.pt@SD" tvg-name="TV Mana Russkiy" tvg-logo="https://i.imgur.com/fACHqmY.png" tvg-language="rus" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",TV Mana Russkiy
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://w1.manasat.com/tvmana-leste/smil:tvmana-leste.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ARTV.pt@SD" tvg-name="ARTV" tvg-logo="https://i.imgur.com/y00t9hr.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",ARTV
+#EXTGRP:🇵🇹 Portugal • Geral
+https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8
+#EXTINF:-1 tvg-id="PortoCanal.pt@SD" tvg-name="Porto Canal" tvg-logo="https://i.imgur.com/DwziwMY.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",Porto Canal
+#EXTGRP:🇵🇹 Portugal • Geral
+https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/smil:pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioSines.pt@SD" tvg-name="Radio Sines" tvg-logo="https://i.imgur.com/Oe6F1nL.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",Radio Sines
+#EXTGRP:🇵🇹 Portugal • Geral
+https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTP1.pt@HD" tvg-name="RTP 1" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtp1_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP 1
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/rtp1HD.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTP2.pt@HD" tvg-name="RTP 2" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtp2_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP 2
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPAcores.pt@HD" tvg-name="RTP Acores" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpacores_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Acores
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPAfrica.pt@SD" tvg-name="RTP Africa" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpafrica_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Africa
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMadeira.pt@SD" tvg-name="RTP Madeira" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpmadeira_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Madeira
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMundo.pt@SD" tvg-name="RTP Mundo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Mundo
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SICAltaDefinicao.pt@SD" tvg-name="SIC Alta Definicao" tvg-logo="https://i.imgur.com/VdPwyQv.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",SIC Alta Definicao
+#EXTGRP:🇵🇹 Portugal • Geral
+https://production-fast-sic.content.okast.tv/fa2e8c4385712f9aa54bbe52b1bd9b6b/channels/d9070446-8448-455e-8075-773b1ba12562/fc831b20-f252-4e7d-8cc5-2d05f4d43c1c/media_.m3u8
+#EXTINF:-1 tvg-id="SICReplay.pt@SD" tvg-name="SIC Replay" tvg-logo="https://i.imgur.com/fj84mXz.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",SIC Replay
+#EXTGRP:🇵🇹 Portugal • Geral
+https://production-fast-sic.content.okast.tv/fa2e8c4385712f9a7dce4ff2dcebac2e/channels/d9070446-8448-455e-8075-773b1ba12562/d47eae0f-ad77-414a-9a1d-2a6628ba18c3/media_.m3u8
+#EXTINF:-1 tvg-id="TVI.pt@SD" tvg-name="TVI" tvg-logo="https://i.imgur.com/H8Tgl7m.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",TVI
+#EXTGRP:🇵🇹 Portugal • Geral
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvi.m3u8
+#EXTINF:-1 tvg-id="VPlusTVI.pt@SD" tvg-name="V+ TVI" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/e/ef/V%2BTVI_Logo.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",V+ TVI
+#EXTGRP:🇵🇹 Portugal • Geral
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/vmaistvi.m3u8
