@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T04:53:08.725Z",
+ "generatedAt": "2026-10-24T05:10:22.778Z",
  "repo": {
   "owner": "melocalex",
   "name": "iptv-br-playlist",
@@ -261,7 +261,15 @@
    "unknownChannel": 72640,
    "malformed": 0
   },
-  "missingChannelsCount": 675
+  "missingChannelsCount": 675,
+  "slices": {
+   "files": 179,
+   "programmes": 6092,
+   "horizonHours": 24,
+   "totalKB": 1471.2,
+   "largestKB": 30.8,
+   "indexUrl": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/docs/epg/index.json"
+  }
  },
  "playlists": [
   {

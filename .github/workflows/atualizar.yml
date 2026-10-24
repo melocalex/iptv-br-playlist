@@ -242,6 +242,11 @@ jobs:
             if [ -f "$f" ]; then git add -- "$f"; fi
           done
 
+          # As fatias de EPG sao um arquivo por canal (centenas), entao nao cabem numa
+          # lista fixa: entram por padrao estrito, conferido logo abaixo. '-A' tambem
+          # pega remocao, porque canal que perdeu a grade nao pode continuar publicado.
+          git add -A -- docs/epg
+
           if git diff --cached --quiet; then
             echo "nada mudou"
             exit 0
@@ -251,11 +256,22 @@ jobs:
           # com 'while read': o exit de um subshell nao derrubaria a job.
           echo "$PERMITIDOS" | tr -d ' ' | grep -v '^$' | sort > /tmp/permitidos.txt
           git diff --cached --name-only | sort > /tmp/staged.txt
-          FORA=$(comm -23 /tmp/staged.txt /tmp/permitidos.txt)
+
+          # Fatia tem de casar o padrao exato; nada de barra extra ou travessia.
+          grep -E '^docs/epg/' /tmp/staged.txt > /tmp/fatias.txt || true
+          INVALIDAS=$(grep -vE '^docs/epg/[A-Za-z0-9._-]+\.json$' /tmp/fatias.txt || true)
+          if [ -n "$INVALIDAS" ]; then
+            echo "::error::fatia de EPG com caminho invalido: $(echo "$INVALIDAS" | tr '\n' ' ')"
+            exit 1
+          fi
+
+          grep -vE '^docs/epg/' /tmp/staged.txt > /tmp/resto.txt || true
+          FORA=$(comm -23 /tmp/resto.txt /tmp/permitidos.txt)
           if [ -n "$FORA" ]; then
             echo "::error::caminho fora da lista permitida no commit: $(echo "$FORA" | tr '\n' ' ')"
             exit 1
           fi
+          echo "fatias de EPG no commit: $(wc -l < /tmp/fatias.txt)"
 
           echo "arquivos no commit:"
           git diff --cached --name-only | sed 's/^/  /'

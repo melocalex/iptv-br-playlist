@@ -62,6 +62,15 @@ export interface StatusPayload {
     sources: EpgResult['sources'];
     dropped: EpgResult['dropped'];
     missingChannelsCount: number;
+    /** Fatias por canal: grade curta em JSON, para consumidor que nao parseia XMLTV. */
+    slices: {
+      files: number;
+      programmes: number;
+      horizonHours: number;
+      totalKB: number;
+      largestKB: number;
+      indexUrl: string;
+    } | null;
   };
   playlists: WrittenPlaylist[];
   limitations: string[];
@@ -91,6 +100,7 @@ export function buildStatus(
    * e usar o denominador velho infla a cobertura.
    */
   epgWantedTotal: number,
+  slices: { files: number; programmes: number; horizonHours: number; bytes: number; largestBytes: number } | null,
 ): StatusPayload {
   // 'eligible' inclui stream sem metadado, que fica fora das playlists validadas.
   // Todo numero publicado usa 'publishable', para bater com o arquivo gerado.
@@ -184,6 +194,16 @@ export function buildStatus(
       sources: epg.sources,
       dropped: epg.dropped,
       missingChannelsCount: epg.missing.length,
+      slices: slices
+        ? {
+            files: slices.files,
+            programmes: slices.programmes,
+            horizonHours: slices.horizonHours,
+            totalKB: Number((slices.bytes / 1024).toFixed(1)),
+            largestKB: Number((slices.largestBytes / 1024).toFixed(1)),
+            indexUrl: rawUrl(cfg, `${cfg.output.epgSliceDir}/index.json`),
+          }
+        : null,
     },
     playlists: written,
     limitations,
@@ -336,6 +356,28 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
       ['Canais sem grade', s.epg.missingChannelsCount],
     ]),
   );
+  if (s.epg.slices) {
+    md.push('');
+    md.push('### Fatias por canal');
+    md.push('');
+    md.push(
+      'Grade curta em JSON, um arquivo por canal, para consumidor que nao parseia XMLTV. ' +
+        'Horario em **epoch de segundos, UTC**. O indice publica o nome de arquivo pronto, ' +
+        'entao o consumidor nao precisa reproduzir nenhuma transformacao do `tvg-id`.',
+    );
+    md.push('');
+    md.push(
+      table([
+        ['Metrica', 'Valor'],
+        ['Arquivos', s.epg.slices.files],
+        ['Programas', s.epg.slices.programmes],
+        ['Janela', `${s.epg.slices.horizonHours} h`],
+        ['Tamanho total', `${s.epg.slices.totalKB} KB`],
+        ['Maior arquivo', `${s.epg.slices.largestKB} KB`],
+        ['Indice', `\`${s.epg.slices.indexUrl}\``],
+      ]),
+    );
+  }
   md.push('');
   md.push(
     'Cobertura de EPG do iptv-org e parcial por natureza. O numero acima e o **medido**, ' +

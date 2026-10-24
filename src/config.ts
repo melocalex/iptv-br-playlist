@@ -66,6 +66,10 @@ export interface Config {
     grabberDir: string;
     maxChannelsPerSite: number;
     programmeHorizonHours: number;
+    /** Janela das fatias por canal. Curta de proposito: e uma grade de TV, nao um arquivo. */
+    sliceHorizonHours: number;
+    sliceDescMaxChars: number;
+    maxSliceFiles: number;
   };
   filters: { excludeNsfw: boolean; excludeClosedChannels: boolean };
   classification: { internationalAreas: string[]; internationalMinCountries: number };
@@ -80,6 +84,8 @@ export interface Config {
     epgCoverageFile: string;
     /** Indice tvg-id -> numero de programas, para a etapa de build rodar sem o grabber. */
     epgIndexFile: string;
+    /** Diretorio das fatias por canal, servido tambem pelo GitHub Pages. */
+    epgSliceDir: string;
     validationReportFile: string;
   };
 }

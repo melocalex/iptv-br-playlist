@@ -50,7 +50,10 @@
     "grabberRef": "d43b000cbbb41aad7df42c556678e899c7f2a25e",
     "grabberDir": ".epg-grabber",
     "maxChannelsPerSite": 400,
-    "programmeHorizonHours": 72
+    "programmeHorizonHours": 72,
+    "sliceHorizonHours": 24,
+    "sliceDescMaxChars": 300,
+    "maxSliceFiles": 2000
   },
   "filters": {
     "excludeNsfw": true,
@@ -70,6 +73,7 @@
     "healthFile": "data/health.json",
     "epgCoverageFile": "data/epg-coverage.json",
     "epgIndexFile": "data/epg-index.json",
+    "epgSliceDir": "docs/epg",
     "validationReportFile": "data/validation-report.json"
   }
 }

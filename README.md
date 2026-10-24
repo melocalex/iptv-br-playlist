@@ -151,6 +151,56 @@ Os elementos reemitidos são `title`, `sub-title`, `desc`, `category`, `country`
 **A cobertura publicada é a medida.** O número está em [`STATUS.md`](STATUS.md) e em
 `status.json`; a cobertura do iptv-org é parcial por natureza e o projeto não arredonda para cima.
 
+### Grade fatiada por canal, em JSON
+
+Para quem não consegue parsear XMLTV — um player de TV com pouca memória, por exemplo — a grade
+sai também em um JSON por canal, com janela curta:
+
+```
+https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/docs/epg/index.json
+```
+
+O índice lista cada canal com o **nome de arquivo pronto**, então o consumidor nunca precisa
+reproduzir a transformação do `tvg-id` (`Globo.br@SD` → `Globo.br_at_SD.json`):
+
+```json
+{
+  "horizonHours": 24,
+  "timeFormat": "epoch-seconds-utc",
+  "channels": 179,
+  "items": [{ "id": "GloboNews.br@SD", "name": "GloboNews",
+              "file": "GloboNews.br_at_SD.json", "count": 29,
+              "from": 1792816200, "to": 1792902600 }]
+}
+```
+
+Cada fatia:
+
+```json
+{
+  "id": "GloboNews.br@SD", "name": "GloboNews", "logo": "https://…",
+  "horizonHours": 24, "now": 0, "count": 29,
+  "programmes": [
+    { "s": 1792816200, "e": 1792819200,
+      "t": "Jornal GloboNews - Edição Da Meia-Noite - Ao Vivo", "d": "", "c": [] }
+  ]
+}
+```
+
+- `s` / `e` são **epoch em segundos, UTC** — inteiro, não timestamp XMLTV. Parsear
+  `20261024120000 +0000` em BrightScript é sofrimento; `s` é aritmética direta.
+- `now` é o índice do programa em curso dentro de `programmes`, ou `-1` se nenhum. Dá para
+  desenhar "no ar agora" sem varrer o array.
+- `t` título, `d` descrição (cortada em `epg.sliceDescMaxChars`), `c` categorias.
+- `programmes` vem ordenado por início, e inclui o programa que já começou e ainda não acabou.
+
+Tamanho medido: **179 arquivos, 6.092 programas, 1.471 KB no total, média 8,2 KB, maior 30,8 KB**
+(um canal de desenhos curtos). O consumidor lê um arquivo por vez.
+
+As fatias são geradas na etapa de `build`, a partir do `epg.xml.gz` **já verificado**, e não na
+job isolada do grabber — assim o JSON publicado não sai de um workspace onde código de terceiro
+rodou. Canal que perde a grade tem a fatia removida; o diretório é refeito a cada execução.
+
 ## Configuração
 
 Nenhum limite, timeout ou concorrência vive no código. Tudo em `config/` e tudo sobrescrevível

@@ -74,6 +74,8 @@ Published to the repository and served over HTTPS, no server involved:
 | `data/health.json` | per-stream, per-vantage observation history | evidence and freshness |
 | `data/epg-index.json` | `tvg-id` → programme count | guide coverage signal |
 | `epg.xml.gz` | XMLTV, 179 channels, 9,058 programmes | temporal grounding |
+| `docs/epg/<channel>.json` | per-channel 24 h slice, epoch seconds, ~8 KB each | per-channel temporal retrieval |
+| `docs/epg/index.json` | channel → file, with programme counts and time range | slice discovery |
 | `status.json` | aggregate counts per vantage and category | corpus-level priors |
 | `docs/dashboard-data.json` | compact per-channel summary, ~158 KB | lightweight index |
 
@@ -100,7 +102,5 @@ Named so the gap is explicit, not implied:
 
 - No embedding index, no vector store, no retrieval or generation code. This repository produces
   the corpus; the RAG layer over it does not exist.
-- No per-channel programme slices. `data/epg-index.json` holds counts, not schedules, so a
-  consumer that cannot parse 4.6 MB of XMLTV has nothing smaller to read.
 - No evaluation set. There are no reference question/answer pairs, so none of the research
   questions above can be scored today.

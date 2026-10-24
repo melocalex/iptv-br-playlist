@@ -11,8 +11,11 @@ import {
   rebuildChildren,
   isBalancedXml,
   readIndex,
+  sliceFileName,
+  writeEpgSlices,
 } from '../src/epg.ts';
-import { mkdirSync, writeFileSync, rmSync } from 'node:fs';
+import { gzipSync } from 'node:zlib';
+import { readFileSync, existsSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { ROOT } from '../src/config.ts';
 import { resolutionLabel, isPortuguese } from '../src/validate.ts';
@@ -349,6 +352,122 @@ test('readIndex devolve null em JSON quebrado', () => {
   } finally {
     config.output.epgIndexFile = original;
     rmSync(abs, { force: true });
+  }
+});
+
+test('sliceFileName gera nome seguro e o id continua legivel', () => {
+  assert.equal(sliceFileName('Globo.br@SD'), 'Globo.br_at_SD.json');
+  assert.equal(sliceFileName('AELatinAmerica.us@Brazil'), 'AELatinAmerica.us_at_Brazil.json');
+  assert.equal(sliceFileName('Sem.feed'), 'Sem.feed.json');
+  // Nada fora de [A-Za-z0-9._-] sobrevive: sem barra, sem espaco, sem travessia.
+  assert.equal(sliceFileName('../../etc/passwd'), '.._.._etc_passwd.json');
+  assert.equal(sliceFileName('a b/c:d?e'), 'a_b_c_d_e.json');
+  assert.ok(/^[A-Za-z0-9._-]+\.json$/.test(sliceFileName('x y@z/w')));
+});
+
+test('writeEpgSlices corta na janela, marca o programa em curso e usa epoch', () => {
+  const sliceDir = 'tmp/teste-slices';
+  const gzRel = 'tmp/teste-guia.xml.gz';
+  const origDir = config.output.epgSliceDir;
+  const origGz = config.output.epgFile;
+  const origHorizon = config.epg.sliceHorizonHours;
+  config.output.epgSliceDir = sliceDir;
+  config.output.epgFile = gzRel;
+  config.epg.sliceHorizonHours = 24;
+
+  const now = Date.now();
+  const ts = (offsetH: number) => {
+    const d = new Date(now + offsetH * 3600_000);
+    const p = (n: number, w = 2) => String(n).padStart(w, '0');
+    return (
+      `${p(d.getUTCFullYear(), 4)}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}` +
+      `${p(d.getUTCHours())}${p(d.getUTCMinutes())}${p(d.getUTCSeconds())} +0000`
+    );
+  };
+
+  try {
+    mkdirSync(resolve(ROOT, 'tmp'), { recursive: true });
+    const xml =
+      '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv>\n' +
+      '<channel id="A.br@SD"><display-name>A</display-name></channel>\n' +
+      // Ja terminou: fora.
+      `<programme start="${ts(-5)}" stop="${ts(-4)}" channel="A.br@SD"><title>Passado</title></programme>\n` +
+      // Em curso agora.
+      `<programme start="${ts(-1)}" stop="${ts(1)}" channel="A.br@SD"><title>Agora</title>` +
+      '<desc>Em curso</desc><category>News</category></programme>\n' +
+      // Dentro da janela.
+      `<programme start="${ts(2)}" stop="${ts(3)}" channel="A.br@SD"><title>Depois</title></programme>\n` +
+      // Alem de 24 h: fora.
+      `<programme start="${ts(30)}" stop="${ts(31)}" channel="A.br@SD"><title>Longe</title></programme>\n` +
+      // Canal que nao esta na playlist: fora.
+      `<programme start="${ts(1)}" stop="${ts(2)}" channel="Z.br@SD"><title>Alheio</title></programme>\n` +
+      '</tv>\n';
+    writeFileSync(resolve(ROOT, gzRel), gzipSync(Buffer.from(xml)));
+
+    const r = writeEpgSlices(config, [
+      { tvgId: 'A.br@SD', name: 'Canal A', logo: 'https://e/a.png' },
+      { tvgId: 'SemGrade.br@SD', name: 'Sem Grade', logo: null },
+      { tvgId: null, name: 'Sem Id', logo: null },
+    ]);
+
+    assert.equal(r.files, 1, 'so o canal com grade vira arquivo');
+    assert.equal(r.skippedNoGuide, 1, 'canal sem grade e contado, nao publicado');
+    assert.equal(r.programmes, 2, 'passado e alem da janela ficam de fora');
+
+    const slice = JSON.parse(
+      readFileSync(resolve(ROOT, sliceDir, 'A.br_at_SD.json'), 'utf8'),
+    ) as { id: string; name: string; now: number; count: number; programmes: { s: number; e: number; t: string; d: string; c: string[] }[] };
+    assert.equal(slice.id, 'A.br@SD');
+    assert.equal(slice.name, 'Canal A', 'nome vem da playlist, nao do guia');
+    assert.equal(slice.count, 2);
+    assert.deepEqual(slice.programmes.map((p) => p.t), ['Agora', 'Depois'], 'em ordem de inicio');
+    assert.equal(slice.now, 0, 'aponta o programa em curso');
+    assert.equal(slice.programmes[0]!.d, 'Em curso');
+    assert.deepEqual(slice.programmes[0]!.c, ['News']);
+    // Epoch em segundos, nao milissegundos nem string.
+    for (const p of slice.programmes) {
+      assert.equal(typeof p.s, 'number');
+      assert.ok(Number.isInteger(p.s) && p.s > 1_000_000_000 && p.s < 10_000_000_000, `epoch em segundos: ${p.s}`);
+      assert.ok(p.e > p.s);
+    }
+
+    const idx = JSON.parse(readFileSync(resolve(ROOT, sliceDir, 'index.json'), 'utf8')) as {
+      channels: number; timeFormat: string; items: { id: string; file: string; count: number }[];
+    };
+    assert.equal(idx.channels, 1);
+    assert.equal(idx.timeFormat, 'epoch-seconds-utc');
+    assert.equal(idx.items[0]!.file, 'A.br_at_SD.json', 'indice publica o nome pronto');
+    assert.ok(existsSync(resolve(ROOT, sliceDir, idx.items[0]!.file)), 'arquivo do indice existe');
+    assert.ok(!existsSync(resolve(ROOT, sliceDir, 'Z.br_at_SD.json')), 'canal alheio nao vira arquivo');
+  } finally {
+    config.output.epgSliceDir = origDir;
+    config.output.epgFile = origGz;
+    config.epg.sliceHorizonHours = origHorizon;
+    rmSync(resolve(ROOT, sliceDir), { recursive: true, force: true });
+    rmSync(resolve(ROOT, gzRel), { force: true });
+  }
+});
+
+test('writeEpgSlices limpa fatia de canal que perdeu a grade', () => {
+  const sliceDir = 'tmp/teste-slices-limpeza';
+  const origDir = config.output.epgSliceDir;
+  const origGz = config.output.epgFile;
+  config.output.epgSliceDir = sliceDir;
+  config.output.epgFile = 'tmp/nao-existe.xml.gz';
+  try {
+    mkdirSync(resolve(ROOT, sliceDir), { recursive: true });
+    writeFileSync(resolve(ROOT, sliceDir, 'Velho.br_at_SD.json'), '{"stale":true}');
+    const r = writeEpgSlices(config, []);
+    assert.equal(r.files, 0);
+    assert.ok(
+      !existsSync(resolve(ROOT, sliceDir, 'Velho.br_at_SD.json')),
+      'arquivo velho nao pode continuar publicado',
+    );
+    assert.ok(existsSync(resolve(ROOT, sliceDir, 'index.json')), 'indice vazio ainda e escrito');
+  } finally {
+    config.output.epgSliceDir = origDir;
+    config.output.epgFile = origGz;
+    rmSync(resolve(ROOT, sliceDir), { recursive: true, force: true });
   }
 });
 

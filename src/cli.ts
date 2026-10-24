@@ -10,6 +10,7 @@ import {
   writeIndex,
   readIndex,
   verifyEpgArtifacts,
+  writeEpgSlices,
   type EpgResult,
 } from './epg.ts';
 import { buildViews, writePlaylists, writeMetadata, writeDashboardData, type ChannelView } from './build.ts';
@@ -340,6 +341,14 @@ async function main(): Promise<void> {
   const metaCount = writeMetadata(cfg, views);
   info(`metadados: ${metaCount} canais em ${cfg.output.metadataFile}`);
 
+  // Fatias por canal, geradas aqui a partir do guia ja verificado.
+  const slices = writeEpgSlices(
+    cfg,
+    views
+      .filter((v) => v.eligible && v.channel.classified && v.channel.tvgId)
+      .map((v) => ({ tvgId: v.channel.tvgId, name: v.channel.name, logo: v.channel.logo })),
+  );
+
   const status = buildStatus(
     cfg,
     taxonomy,
@@ -350,6 +359,7 @@ async function main(): Promise<void> {
     written,
     limitations(cfg, catalog, views, epgResult, runs, wanted.size),
     wanted.size,
+    slices,
   );
   writeStatus(cfg, status);
 

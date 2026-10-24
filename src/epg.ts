@@ -954,6 +954,177 @@ export function verifyEpgArtifacts(cfg: Config): string[] {
   return problems;
 }
 
+/** Texto de um filho simples do bloco, ja decodificado. '' quando nao existe. */
+function childText(inner: string, name: string): string {
+  const m = new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}\\s*>`, 'i').exec(inner);
+  return m ? unescapeXml((m[1] ?? '').trim()) : '';
+}
+
+function childTextAll(inner: string, name: string): string[] {
+  const out: string[] = [];
+  for (const m of inner.matchAll(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}\\s*>`, 'gi'))) {
+    const v = unescapeXml((m[1] ?? '').trim());
+    if (v) out.push(v);
+  }
+  return out;
+}
+
+/**
+ * Nome de arquivo para um tvg-id. O id tem '@' e '.' ('Globo.br@SD'), que em URL dao
+ * trabalho a consumidor simples; aqui o '@' vira '_at_' e o resto fora de
+ * [A-Za-z0-9._-] vira '_'. O consumidor NAO precisa reproduzir essa transformacao:
+ * o indice publica o nome de arquivo pronto.
+ */
+export function sliceFileName(tvgId: string): string {
+  return tvgId.replace(/@/g, '_at_').replace(/[^A-Za-z0-9._-]/g, '_') + '.json';
+}
+
+export interface SliceReport {
+  files: number;
+  programmes: number;
+  bytes: number;
+  largestBytes: number;
+  horizonHours: number;
+  skippedNoGuide: number;
+}
+
+/**
+ * Fatia o guia em um JSON por canal, com janela curta.
+ *
+ * Roda na etapa de build, a partir do epg.xml.gz JA verificado, e nao na job isolada
+ * do grabber: assim o JSON publicado nao sai de um workspace onde codigo de terceiro
+ * rodou. Horario sai em epoch de segundos porque o consumidor alvo (BrightScript numa
+ * Roku de entrada) faz aritmetica de inteiro trivialmente e nao tem parser de
+ * timestamp XMLTV.
+ */
+export function writeEpgSlices(
+  cfg: Config,
+  channels: { tvgId: string | null; name: string; logo: string | null }[],
+): SliceReport {
+  const dir = outPath(cfg, cfg.output.epgSliceDir);
+  const gz = outPath(cfg, cfg.output.epgFile);
+  const report: SliceReport = {
+    files: 0,
+    programmes: 0,
+    bytes: 0,
+    largestBytes: 0,
+    horizonHours: cfg.epg.sliceHorizonHours,
+    skippedNoGuide: 0,
+  };
+
+  // Recria o diretorio do zero: canal que perdeu a grade nao pode continuar
+  // publicado com dado velho.
+  rmSync(dir, { recursive: true, force: true });
+  mkdirSync(dir, { recursive: true });
+
+  if (!existsSync(gz)) {
+    warn(`${cfg.output.epgFile} nao existe; nenhuma fatia gerada`);
+    writeFileSync(
+      resolve(dir, 'index.json'),
+      JSON.stringify({ generatedAt: new Date().toISOString(), channels: 0, items: [] }) + '\n',
+    );
+    return report;
+  }
+
+  const xml = gunzipSync(readFileSync(gz), {
+    maxOutputLength: cfg.http.maxDecompressedBytes,
+  }).toString('utf8');
+
+  const wanted = new Map<string, { name: string; logo: string | null }>();
+  for (const c of channels) {
+    if (c.tvgId) wanted.set(c.tvgId, { name: c.name, logo: c.logo });
+  }
+
+  const now = Date.now();
+  const until = now + cfg.epg.sliceHorizonHours * 3600_000;
+  const byChannel = new Map<string, { s: number; e: number; t: string; d: string; c: string[] }[]>();
+
+  for (const p of extractProgrammes(xml)) {
+    if (!wanted.has(p.channel)) continue;
+    const startMs = parseXmltvTime(p.start);
+    const stopMs = p.stop ? parseXmltvTime(p.stop) : null;
+    if (startMs === null) continue;
+    const endMs = stopMs ?? startMs;
+    // Mantem o programa em curso (ja comecou, ainda nao acabou) e o que vem na janela.
+    if (endMs <= now || startMs >= until) continue;
+    const title = childText(p.inner, 'title');
+    if (!title) continue;
+    const list = byChannel.get(p.channel) ?? [];
+    list.push({
+      s: Math.floor(startMs / 1000),
+      e: Math.floor(endMs / 1000),
+      t: title,
+      d: childText(p.inner, 'desc').slice(0, cfg.epg.sliceDescMaxChars),
+      c: childTextAll(p.inner, 'category'),
+    });
+    byChannel.set(p.channel, list);
+  }
+
+  const items: {
+    id: string;
+    name: string;
+    file: string;
+    count: number;
+    from: number;
+    to: number;
+  }[] = [];
+
+  for (const [id, meta] of wanted) {
+    const progs = byChannel.get(id);
+    if (!progs || progs.length === 0) {
+      report.skippedNoGuide++;
+      continue;
+    }
+    if (report.files >= cfg.epg.maxSliceFiles) {
+      warn(`teto epg.maxSliceFiles (${cfg.epg.maxSliceFiles}) atingido; fatias restantes nao geradas`);
+      break;
+    }
+    progs.sort((a, b) => a.s - b.s);
+    const file = sliceFileName(id);
+    const payload = {
+      id,
+      name: meta.name,
+      logo: meta.logo,
+      generatedAt: new Date(now).toISOString(),
+      horizonHours: cfg.epg.sliceHorizonHours,
+      // Epoch em SEGUNDOS, UTC. 'now' e o indice do programa em curso, -1 se nenhum.
+      now: progs.findIndex((x) => x.s <= Math.floor(now / 1000) && x.e > Math.floor(now / 1000)),
+      count: progs.length,
+      programmes: progs,
+    };
+    const text = JSON.stringify(payload) + '\n';
+    writeFileSync(resolve(dir, file), text);
+    report.files++;
+    report.programmes += progs.length;
+    report.bytes += Buffer.byteLength(text);
+    report.largestBytes = Math.max(report.largestBytes, Buffer.byteLength(text));
+    items.push({
+      id,
+      name: meta.name,
+      file,
+      count: progs.length,
+      from: progs[0]!.s,
+      to: progs[progs.length - 1]!.e,
+    });
+  }
+
+  items.sort((a, b) => a.id.localeCompare(b.id));
+  const index = {
+    generatedAt: new Date(now).toISOString(),
+    horizonHours: cfg.epg.sliceHorizonHours,
+    timeFormat: 'epoch-seconds-utc',
+    channels: items.length,
+    programmes: report.programmes,
+    items,
+  };
+  writeFileSync(resolve(dir, 'index.json'), JSON.stringify(index, null, 1) + '\n');
+  info(
+    `fatias de EPG: ${report.files} arquivos, ${report.programmes} programas, ` +
+      `${(report.bytes / 1024).toFixed(0)} KB no total, maior ${(report.largestBytes / 1024).toFixed(1)} KB`,
+  );
+  return report;
+}
+
 export function writeCoverage(cfg: Config, result: EpgResult, wantedTotal: number): void {
   const p = outPath(cfg, cfg.output.epgCoverageFile);
   mkdirSync(dirname(p), { recursive: true });

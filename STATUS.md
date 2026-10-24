@@ -1,6 +1,6 @@
 # Painel de status
 
-Gerado em **2026-10-24T04:53:08.725Z**.
+Gerado em **2026-10-24T05:10:22.778Z**.
 
 ## Descoberta
 
@@ -102,6 +102,19 @@ Estes sao os canais que entram nas playlists validadas: elegiveis **e** com meta
 | Programas no guia | 9058 |
 | Horizonte | 72 h |
 | Canais sem grade | 675 |
+
+### Fatias por canal
+
+Grade curta em JSON, um arquivo por canal, para consumidor que nao parseia XMLTV. Horario em **epoch de segundos, UTC**. O indice publica o nome de arquivo pronto, entao o consumidor nao precisa reproduzir nenhuma transformacao do `tvg-id`.
+
+| Metrica | Valor |
+| --- | --- |
+| Arquivos | 179 |
+| Programas | 6092 |
+| Janela | 24 h |
+| Tamanho total | 1471.2 KB |
+| Maior arquivo | 30.8 KB |
+| Indice | `https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/docs/epg/index.json` |
 
 Cobertura de EPG do iptv-org e parcial por natureza. O numero acima e o **medido**, sem arredondamento para cima. A lista completa de canais sem grade esta em `data/epg-coverage.json`.
 
