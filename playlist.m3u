@@ -47,6 +47,9 @@ https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8
 #EXTINF:-1 tvg-id="TCM10HD.br@SD" tvg-name="TCM 10 HD" tvg-logo="https://i.imgur.com/aMuMVvB.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TCM 10 HD
 #EXTGRP:🇧🇷 Brasil • Notícias
 https://live.tcm10.com.br/tcm10hd/stream.m3u8
+#EXTINF:-1 tvg-id="TimesBrasil.br@SD" tvg-name="Times Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Times_Brasil_CNBC_logo_2025.svg/960px-Times_Brasil_CNBC_logo_2025.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",Times Brasil
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://ssai2-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/21fdb6dd7491406bba86497a24390a25/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAFolha.br@SD" tvg-name="TV A Folha" tvg-logo="https://i.imgur.com/I7XGMhj.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV A Folha
 #EXTGRP:🇧🇷 Brasil • Notícias
 https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8
@@ -983,6 +986,10 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
 #EXTGRP:🇵🇹 Portugal • Geral
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMemoria.pt@SD" tvg-name="RTP Memoria" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpmemoria_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Memoria
+#EXTGRP:🇵🇹 Portugal • Geral
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPMundo.pt@SD" tvg-name="RTP Mundo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Mundo
 #EXTGRP:🇵🇹 Portugal • Geral
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0

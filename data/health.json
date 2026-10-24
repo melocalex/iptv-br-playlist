@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-24T04:14:21.128Z",
+ "updatedAt": "2026-10-24T04:26:58.791Z",
  "streams": {
   "0002ead79b1dee16": {
    "url": "https://d7i20u8nlyf1b.cloudfront.net/VevoHipHopRB_GB.m3u8",
@@ -296,6 +296,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:18.568Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playplusnews&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;nws&#",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -342,6 +355,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:12.065Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:33.388Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:33.388Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -622,6 +660,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html> <head><title>403 Forbidden</title></head> <body> <center><h1>403 Forbidden</h1></center> <hr><center>nginx</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly err",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:51.941Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -1170,6 +1221,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:08.370Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:20.205Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:20.205Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -1744,6 +1822,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:44.619Z",
+     "http": 504,
+     "reason": "http_504",
+     "evidence": "{\"message\":\"failed to generate manifest: Unable to obtain template playlist. sessionId:[43965f46-c8da-4c9b-be59-a15134afda56]\"}",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -1946,6 +2037,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:54.026Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:23.945Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:23.945Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -2196,6 +2314,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:17.161Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:17.161Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1080,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -2211,6 +2356,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:20.945Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:50.136Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:50.136Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -2797,6 +2969,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:12.812Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:12.812Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -3180,6 +3382,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:07.768Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 23.98,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:28.984Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:28.984Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -3702,6 +3929,34 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:23.720Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:23.720Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -3988,6 +4243,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:11.285Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:30.988Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:30.988Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -4393,6 +4673,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:52.260Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:52.260Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -4495,6 +4805,38 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:58.859Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:17.225Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:17.225Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -4753,6 +5095,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:28.645Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:28.645Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 852,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 24,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -4960,6 +5327,38 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:14.501Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:14.501Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -5011,6 +5410,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:50.405Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:18.075Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:18.075Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -5774,6 +6203,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:24.460Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<html><head><title>Forbidden</title></head><body>Forbidden</body></html>",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -5973,6 +6415,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:38.872Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -6113,6 +6568,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:34.564Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:34.564Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -6197,6 +6679,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:47:55.258Z",
+     "http": 404,
+     "reason": "http_404",
+     "evidence": "Not found",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:24.918Z",
      "http": 404,
      "reason": "http_404",
      "evidence": "Not found",
@@ -6422,6 +6917,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:26.980Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:26.980Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "es",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -6437,6 +6962,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:53.260Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:23.574Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:23.574Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -6723,6 +7275,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:44.733Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:44.733Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -6793,6 +7370,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE html> <html> <head> <title>Streaming server</title> <meta name=\"fragment\" content=\"!\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta charset=\"utf8\">",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:58.590Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -7096,6 +7686,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:29.332Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -7164,6 +7767,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE html> <html> <head> <title>Streaming server</title> <meta name=\"fragment\" content=\"!\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta charset=\"utf8\">",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:23.477Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -7259,6 +7875,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:48.303Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:16.803Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:16.803Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -8136,6 +8782,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:27.783Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:27.783Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -8146,6 +8817,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:11.704Z",
+     "http": 404,
+     "reason": "http_404",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:29.928Z",
      "http": 404,
      "reason": "http_404",
      "evidence": null,
@@ -8170,6 +8854,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:20.018Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:45.279Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:45.279Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -8361,6 +9070,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:31.736Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:31.736Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -8418,6 +9152,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:46.843Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -8431,6 +9178,19 @@
      "http": 404,
      "reason": "http_404",
      "evidence": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY> An error occurred while processing your request.<p> Reference&#32;&#35;216&#46;377a56bd&#46;1792813671&#46;26a80b0c <P>https&#58;&#47;&#47;errors&#46;edge",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:20.633Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playpluspoa&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;poa&#6",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -8567,6 +9327,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:16.136Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 576,
+      "resolution": "576p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:42.362Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:42.362Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -8836,6 +9621,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:47.510Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:47.510Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 1,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -8870,6 +9682,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:15.592Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 1,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:41.199Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:41.199Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -9179,6 +10016,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:14.332Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:14.332Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -9296,6 +10163,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:06.897Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> </body></html>",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:25.681Z",
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> </body></html>",
@@ -9755,6 +10635,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:03.850Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:22.947Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:22.947Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -10500,6 +11407,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:39.600Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:39.600Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -10683,6 +11615,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:48.022Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:48.022Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 1,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -10715,6 +11674,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:24.102Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -11119,6 +12091,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:20.418Z",
+     "http": 400,
+     "reason": "http_400",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -11258,6 +12243,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:14.427Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:14.427Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -11273,6 +12288,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:20.555Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 854,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:44.027Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:44.027Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -12022,6 +13062,19 @@
      "http": 404,
      "reason": "http_404",
      "evidence": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY> An error occurred while processing your request.<p> Reference&#32;&#35;216&#46;1f7a56bd&#46;1792813671&#46;1d3b9d3 <P>https&#58;&#47;&#47;errors&#46;edges",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:21.202Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playpluspa&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;pa&#64;",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -14320,6 +15373,19 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:35.079Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -14330,6 +15396,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:31.602Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:55.367Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -15004,6 +16083,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:30.409Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:30.409Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -15019,6 +16123,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:46.495Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:15.118Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:15.118Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -15286,6 +16415,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:38.167Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:38.167Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 59.94,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -15510,6 +16664,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:39.847Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:39.847Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -15638,6 +16817,38 @@
       "height": 360,
       "resolution": "360p",
       "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:27.287Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:27.287Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 0,
+      "height": 0,
+      "resolution": null,
+      "fps": null,
       "audioCodec": "aac",
       "audioChannels": 2,
       "audioLanguages": [
@@ -15919,6 +17130,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:41.580Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:41.580Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 576,
+      "height": 324,
+      "resolution": "240p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -16009,6 +17245,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:21.578Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:46.055Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:46.055Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -16233,6 +17494,34 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:01.255Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "eng",
+       "ads"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:23.874Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:23.874Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -17217,6 +18506,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:26.217Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -17460,6 +18762,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:48.740Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:48.740Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -17642,6 +18971,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:09.646Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -17657,6 +18999,38 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:31.050Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:51.826Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:51.826Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -17873,6 +19247,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:31.059Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:31.059Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -17989,6 +19388,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:47:55.799Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:25.242Z",
      "http": null,
      "reason": "net:ENOTFOUND",
      "evidence": "ENOTFOUND",
@@ -18324,6 +19736,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:47:49.244Z",
+     "http": 404,
+     "reason": "http_404",
+     "evidence": "Not found",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:18.951Z",
      "http": 404,
      "reason": "http_404",
      "evidence": "Not found",
@@ -18772,6 +20197,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:28.540Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -20470,6 +21908,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:48.255Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -20520,6 +21971,31 @@
      "history": [
       "UNSTABLE"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:19.195Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:19.195Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -20566,6 +22042,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:47.284Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:16.126Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:16.126Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -20636,6 +22142,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html> <head><title>403 Forbidden</title></head> <body> <center><h1>403 Forbidden</h1></center> <hr><center>nginx</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly err",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:34.649Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -20714,6 +22233,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:08.515Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:36.897Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:36.897Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -20997,6 +22541,34 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:55.229Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:16.390Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:16.390Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -21437,6 +23009,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:48.760Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:48.760Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "mp3",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -21452,6 +23049,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:12.047Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 576,
+      "resolution": "576p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:33.602Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:33.602Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -21604,6 +23226,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:14.708Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 576,
+      "resolution": "576p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:38.842Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:38.842Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -22148,6 +23795,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:22.709Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -22306,6 +23966,19 @@
      "http": null,
      "reason": "net:20",
      "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:36.339Z",
+     "http": 504,
+     "reason": "http_504",
+     "evidence": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY> An error occurred while processing your request.<p> Reference&#32;&#35;221&#46;38e84217&#46;1792815924&#46;127e6693 <P>https&#58;&#47;&#47;errors&#46;edge",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -22541,6 +24214,38 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:13.907Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:13.907Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -22592,6 +24297,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE html> <html> <head> <title>Streaming server</title> <meta name=\"fragment\" content=\"!\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta charset=\"utf8\">",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:31.925Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -23115,6 +24833,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:48.827Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:17.474Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:17.474Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -23839,6 +25582,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:12.474Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:45.387Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:45.387Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -24895,6 +26663,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:25.892Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -24996,6 +26777,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:55.356Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:25.876Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:25.876Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -25470,6 +27278,34 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:14.859Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:14.859Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -25646,6 +27482,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:10.572Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:32.574Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:32.574Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -25917,6 +27780,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:20.748Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 854,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:51.266Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:51.266Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -26712,6 +28602,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:17.138Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:17.138Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "es",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -26852,6 +28772,34 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:03.594Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:22.785Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:22.785Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -27189,6 +29137,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:12.524Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:12.524Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -27487,6 +29465,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:46.407Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:46.407Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 59.94,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -27609,6 +29612,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:12.605Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:35.834Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:35.834Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -28200,6 +30228,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:37.097Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:37.097Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -28508,6 +30561,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:15.376Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:15.376Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -28521,6 +30601,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE html> <html> <head> <title>Streaming server</title> <meta name=\"fragment\" content=\"!\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta charset=\"utf8\">",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:34.304Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -28783,6 +30876,38 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:12.886Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:12.886Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 426,
+      "height": 240,
+      "resolution": "240p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "en",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -28865,6 +30990,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:00.361Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:26.527Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -28963,6 +31101,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:10.529Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:30.394Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:30.394Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -29379,6 +31544,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:22.251Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -29602,6 +31780,31 @@
       "height": 360,
       "resolution": "360p",
       "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:32.435Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:32.435Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
       "audioCodec": "aac",
       "audioChannels": 2,
       "audioLanguages": [],
@@ -29861,6 +32064,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:51.283Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:14.742Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:14.742Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -30433,6 +32661,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:45.602Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:45.602Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -30518,6 +32771,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:54.335Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:19.785Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:19.785Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -30987,6 +33265,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:23.948Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:23.948Z",
+     "media": {
+      "container": "mpegts",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac_latm",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": null,
+        "codec": "arib_caption"
+       }
+      ],
+      "subtitleDetectionReliable": true
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -31175,6 +33483,31 @@
      "media": null,
      "history": [
       "UNSUPPORTED"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:37.982Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:37.982Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
      ]
     }
    }
@@ -31379,6 +33712,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:25.675Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -31535,6 +33881,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:29.641Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:29.641Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -31569,6 +33940,38 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:04.309Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 0,
+      "height": 0,
+      "resolution": null,
+      "fps": null,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:21.966Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:21.966Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -31754,6 +34157,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:42.443Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -31882,6 +34298,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:20.168Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:20.168Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -31933,6 +34374,19 @@
      "http": 400,
      "reason": "http_400",
      "evidence": "<HTML><HEAD> <TITLE>Invalid URL</TITLE> </HEAD><BODY> <H1>Invalid URL</H1> The requested URL \"&#91;no&#32;URL&#93;\", is invalid.<p> Reference&#32;&#35;9&#46;656604bd&#46;1792813693&#46;53ccc40 <P>http",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:42.466Z",
+     "http": 400,
+     "reason": "http_400",
+     "evidence": "<HTML><HEAD> <TITLE>Invalid URL</TITLE> </HEAD><BODY> <H1>Invalid URL</H1> The requested URL \"&#91;no&#32;URL&#93;\", is invalid.<p> Reference&#32;&#35;9&#46;170ec617&#46;1792815942&#46;4909ecc3 <P>htt",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -32261,6 +34715,19 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "UNSUPPORTED",
+     "checkedAt": "2026-10-24T04:25:21.972Z",
+     "http": 206,
+     "reason": "ffprobe_failed",
+     "evidence": "https://redebrasil.nuvemplay.live/hls/stream.m3u8: Server returned 5XX Server Error reply",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "UNSUPPORTED"
+     ]
     }
    }
   },
@@ -32460,6 +34927,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:23.515Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "es",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:48.976Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:48.976Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -32696,6 +35193,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:24.747Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -32919,6 +35429,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:30.730Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:30.730Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -33080,6 +35615,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:55.549Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 852,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:19.807Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:19.807Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -33862,6 +36422,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:20.072Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:20.072Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 1,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -34598,6 +37183,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:31.301Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:31.301Z",
+     "media": {
+      "container": "mpegts",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": true
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -34790,6 +37402,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:23.317Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -35588,6 +38213,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:42.027Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:42.027Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -35686,6 +38336,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:29.958Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:29.958Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -35739,6 +38414,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:00.038Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 576,
+      "resolution": "576p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:32.124Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:32.124Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -36012,6 +38712,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:37.673Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:37.673Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -36155,6 +38880,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:47.472Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:47.472Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 1,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -36189,6 +38939,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:49.946Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 852,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:22.572Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:22.572Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -36865,6 +39640,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:08.267Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 0,
+      "height": 0,
+      "resolution": null,
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:29.394Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:29.394Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -37759,6 +40559,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:37.107Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:37.107Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -37808,6 +40633,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:19.781Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -38003,6 +40841,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE html> <html> <head> <title>Streaming server</title> <meta name=\"fragment\" content=\"!\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta charset=\"utf8\">",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:18.202Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -38336,6 +41187,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:14.649Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:39.914Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:39.914Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -39712,6 +42588,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:40.635Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -39870,6 +42759,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:55.146Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:24.698Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:24.698Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -40421,6 +43335,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:48.159Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:48.159Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -40570,6 +43509,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:43.330Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:13.693Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:13.693Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -41007,6 +43976,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:40.261Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:40.261Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -41389,6 +44383,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:18.353Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:18.353Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 1,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -41542,6 +44563,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:18.598Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -41557,6 +44591,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:58.473Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:29.762Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:29.762Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -42176,6 +45235,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:23.736Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:23.736Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 576,
+      "resolution": "576p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -42613,6 +45697,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:21.355Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playplusbsa&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;bsa&#6",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -43023,6 +46120,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:44.009Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -43227,6 +46337,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:49.174Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:49.174Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -43318,6 +46453,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:01.927Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:36.869Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:36.869Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -43788,6 +46948,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:48.526Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:48.526Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -44142,6 +47327,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:46.539Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:46.539Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -44152,6 +47362,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:45.841Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:11.500Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -44342,6 +47565,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:16.730Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:16.730Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -44357,6 +47605,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:09.227Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 852,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 24,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:31.239Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:31.239Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -44997,6 +48270,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:45.549Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -45504,6 +48790,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:48.776Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:48.776Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -45519,6 +48835,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:19.625Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:39.075Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:39.075Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -45961,6 +49304,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:22.407Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:43.869Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:43.869Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -46610,6 +49978,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:42.743Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -46620,6 +50001,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:30.892Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:01.023Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -47022,6 +50416,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:53.580Z",
+     "media": {
+      "container": "mpegts",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": true
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:15.123Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:15.123Z",
      "media": {
       "container": "mpegts",
       "videoCodec": "h264",
@@ -48006,6 +51425,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:20.390Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:20.390Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -48542,6 +51988,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:32.806Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -48629,6 +52088,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:01.519Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:34.924Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:34.924Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -48787,6 +52271,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:16.539Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:16.539Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -48818,6 +52332,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:18.940Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:18.940Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -48828,6 +52367,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:13.133Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:41.201Z",
      "http": null,
      "reason": "net:ENOTFOUND",
      "evidence": "ENOTFOUND",
@@ -48881,6 +52433,19 @@
      "http": 404,
      "reason": "http_404",
      "evidence": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY> An error occurred while processing your request.<p> Reference&#32;&#35;216&#46;2c7a56bd&#46;1792813672&#46;261451f5 <P>https&#58;&#47;&#47;errors&#46;edge",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:21.540Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playplusgoya&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;gna&#",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -48943,6 +52508,33 @@
      "media": null,
      "history": [
       "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:20.159Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:20.159Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
      ]
     }
    }
@@ -49152,6 +52744,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:12.232Z",
+     "http": 404,
+     "reason": "http_404",
+     "evidence": "Not found",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:41.041Z",
      "http": 404,
      "reason": "http_404",
      "evidence": "Not found",
@@ -49976,6 +53581,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:53.738Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:53.738Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 854,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 24,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -50362,6 +53992,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:32.884Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -50375,6 +54018,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:31.542Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -50580,6 +54236,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:47.447Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -50727,6 +54396,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:58.170Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:28.706Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:28.706Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -51038,6 +54732,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:17.063Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:17.063Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -51315,6 +55039,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:50.751Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:50.751Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 960,
+      "height": 540,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -51552,6 +55301,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:11.236Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> </body></html>",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:30.610Z",
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> </body></html>",
@@ -51814,6 +55576,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:27.757Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:27.757Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -51958,6 +55747,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<!DOCTYPE html> <html> <head> <title>Streaming server</title> <meta name=\"fragment\" content=\"!\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta charset=\"utf8\">",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:55.848Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -52413,6 +56215,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:36.781Z",
+     "http": 404,
+     "reason": "http_404",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -52595,6 +56410,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:08.467Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -52651,6 +56479,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:10.223Z",
+     "http": 503,
+     "reason": "http_503",
+     "evidence": "<html><body><h1>503 Service Unavailable</h1> No server is available to handle this request. </body></html>",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:31.084Z",
      "http": 503,
      "reason": "http_503",
      "evidence": "<html><body><h1>503 Service Unavailable</h1> No server is available to handle this request. </body></html>",
@@ -52847,6 +56688,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:43.810Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:09.425Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -53827,6 +57681,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:21.041Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:21.041Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -54206,6 +58085,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:28.590Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:28.590Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -54221,6 +58125,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:08.739Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:29.281Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:29.281Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -54483,6 +58414,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:06.357Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:25.949Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:25.949Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -55097,6 +59053,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:54.307Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -55192,6 +59161,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:43.822Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:43.822Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -55207,6 +59203,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:05.647Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:25.269Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:25.269Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -55524,6 +59547,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:09.098Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:38.442Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:38.442Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -55870,6 +59918,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:49.464Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:49.464Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -56064,6 +60137,19 @@
      "http": 200,
      "reason": "ffprobe_failed",
      "evidence": "[http @ 0xc5b01c000] Stream ends prematurely at 0, should be 18446744073709551615 http://168.205.87.198:8555/live/1368/123456/150.m3u8: Input/output error",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "UNSUPPORTED"
+     ]
+    },
+    "github-us": {
+     "status": "UNSUPPORTED",
+     "checkedAt": "2026-10-24T04:25:22.701Z",
+     "http": 200,
+     "reason": "ffprobe_failed",
+     "evidence": "[http @ 0x5f45194699c0] Stream ends prematurely at 0, should be 18446744073709551615 http://168.205.87.198:8555/live/1368/123456/150.m3u8: Input/output error",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -56704,6 +60790,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:19.760Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:19.760Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 256,
+      "height": 144,
+      "resolution": "baixa",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -56775,6 +60886,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:10.955Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:38.813Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:38.813Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -57091,6 +61227,34 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:20.670Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:20.670Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "eng",
+       "spa"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -57106,6 +61270,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:00.991Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:35.134Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:35.134Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -57195,6 +61384,19 @@
      "http": 504,
      "reason": "http_504",
      "evidence": "{\"message\":\"failed to generate manifest: Unable to obtain template playlist. sessionId:[8f78d961-cb38-47b7-83f5-fdf4c777ba86]\"}",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:39.900Z",
+     "http": 504,
+     "reason": "http_504",
+     "evidence": "{\"message\":\"failed to generate manifest: Unable to obtain template playlist. sessionId:[c99c14ee-3bbe-495d-90ca-9e0a7ae5ea3c]\"}",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -57453,6 +61655,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:15.399Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:15.399Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -57466,6 +61698,19 @@
      "http": 404,
      "reason": "http_404",
      "evidence": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY> An error occurred while processing your request.<p> Reference&#32;&#35;216&#46;357a56bd&#46;1792813673&#46;100094c5 <P>https&#58;&#47;&#47;errors&#46;edge",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:22.005Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playplusrjo&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;rj&#64",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -57622,6 +61867,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:45.126Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:13.706Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:13.706Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -57902,6 +62177,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:58.782Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -57986,6 +62274,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:47:59.401Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:30.274Z",
      "http": null,
      "reason": "net:ENOTFOUND",
      "evidence": "ENOTFOUND",
@@ -58317,6 +62618,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:57.169Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:57.169Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -58502,6 +62828,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:17.527Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -58920,6 +63259,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:21.973Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playplusspo&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;sp&#64",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -59210,6 +63562,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:46.595Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -59382,6 +63747,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:37.784Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:37.784Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 0,
+      "height": 0,
+      "resolution": null,
+      "fps": null,
+      "audioCodec": "aac",
+      "audioChannels": 0,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -59418,6 +63808,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:13.077Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:13.077Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "es",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -59428,6 +63848,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:44.444Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:09.462Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -59553,6 +63986,38 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:16.026Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:16.026Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "en"
+      ],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -59610,6 +64075,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:37.371Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -59655,6 +64133,19 @@
      "http": 404,
      "reason": "http_404",
      "evidence": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY> An error occurred while processing your request.<p> Reference&#32;&#35;216&#46;3d7a56bd&#46;1792813672&#46;1ddfff8 <P>https&#58;&#47;&#47;errors&#46;edges",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:21.787Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access \"http&#58;&#47;&#47;playplussdr&#45;lh&#46;akamaihd&#46;net&#47;i&#47;pp&#95;sdr&#6",
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -60095,6 +64586,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:18.068Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:18.068Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -60110,6 +64631,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:01.081Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:21.250Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:21.250Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -60502,6 +65050,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:47.129Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -60550,6 +65111,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:01.516Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<html><head><title>Forbidden</title></head><body>Forbidden</body></html>",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:22.966Z",
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>Forbidden</title></head><body>Forbidden</body></html>",
@@ -60702,6 +65276,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:49.881Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -60712,6 +65299,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:47:53.365Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:22.652Z",
      "http": null,
      "reason": "net:ENOTFOUND",
      "evidence": "ENOTFOUND",
@@ -61423,6 +66023,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:36.584Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:36.584Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -61438,6 +66063,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:55.877Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:26.848Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:26.848Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -61538,6 +66188,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:49.209Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:15.792Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -61914,6 +66577,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:52.444Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:52.444Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -61998,6 +66691,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:14.814Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1078,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:39.091Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:39.091Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -62131,6 +66851,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:32.576Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -62442,6 +67175,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:18.225Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -62670,6 +67416,34 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:21.486Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:21.486Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "mpeg2video",
+      "width": 720,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 29.97,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -62849,6 +67623,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align:",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:24.512Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -63506,6 +68293,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:24.409Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:24.409Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -63521,6 +68333,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:47:50.311Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:20.492Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:20.492Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -63578,6 +68415,31 @@
       "height": 480,
       "resolution": "480p",
       "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:33.159Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:33.159Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 29.97,
       "audioCodec": "aac",
       "audioChannels": 2,
       "audioLanguages": [],
@@ -63697,6 +68559,31 @@
      "media": null,
      "history": [
       "UNSUPPORTED"
+     ]
+    },
+    "github-us": {
+     "status": "UNSTABLE",
+     "checkedAt": "2026-10-24T04:26:42.905Z",
+     "http": 200,
+     "reason": "oscilou_na_execucao",
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:42.905Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 960,
+      "height": 540,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "UNSTABLE"
      ]
     }
    }
@@ -63940,6 +68827,34 @@
      "media": null,
      "history": [
       "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:13.202Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:13.202Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 59.94,
+      "audioCodec": "mp2",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "spa",
+       "eng"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
      ]
     }
    }
@@ -64252,6 +69167,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:13.721Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 720,
+      "height": 576,
+      "resolution": "576p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:44.198Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:44.198Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -65116,6 +70056,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:52.126Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:52.126Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -65219,6 +70189,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:13.080Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 718,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:36.935Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:36.935Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -65549,6 +70544,36 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:13.588Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:13.588Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -65652,6 +70677,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:09.046Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "resolution": "1080p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:28.307Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:28.307Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -66059,6 +71109,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:14.338Z",
+     "http": null,
+     "reason": "net:UND_ERR_SOCKET",
+     "evidence": "UND_ERR_SOCKET",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:41.849Z",
      "http": null,
      "reason": "net:UND_ERR_SOCKET",
      "evidence": "UND_ERR_SOCKET",
@@ -66664,6 +71727,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:19.916Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:19.916Z",
+     "media": {
+      "container": "mpegts",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": true
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -67157,6 +72245,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:13.051Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -67224,6 +72325,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:43.153Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:09.327Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -67950,6 +73064,19 @@
      "http": 403,
      "reason": "http_403",
      "evidence": "<html> <head><title>403 Forbidden</title></head> <body> <center><h1>403 Forbidden</h1></center> <hr><center>nginx</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly err",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:48.340Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
      "consecutiveFailures": 1,
      "lastSuccessAt": null,
      "media": null,
@@ -68906,6 +74033,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:34.558Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:34.558Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 25,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -68921,6 +74073,33 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:13.000Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 1280,
+      "height": 720,
+      "resolution": "720p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:43.069Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:43.069Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -69098,6 +74277,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:18.101Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> </body></html>",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -69108,6 +74300,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:48:31.764Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:01.397Z",
      "http": null,
      "reason": "net:20",
      "evidence": 20,
@@ -69441,6 +74646,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:36.546Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:36.546Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 896,
+      "height": 504,
+      "resolution": "480p",
+      "fps": 50,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -69645,6 +74875,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:07.238Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:25.542Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:25.542Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -69943,6 +75203,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:19.854Z",
+     "http": 403,
+     "reason": "http_403",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -69953,6 +75226,19 @@
     "local-br": {
      "status": "OFFLINE",
      "checkedAt": "2026-10-24T03:49:07.656Z",
+     "http": 404,
+     "reason": "http_404",
+     "evidence": null,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:26:28.085Z",
      "http": 404,
      "reason": "http_404",
      "evidence": null,
@@ -70838,6 +76124,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:54.298Z",
+     "http": null,
+     "reason": "net:20",
+     "evidence": 20,
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -71277,6 +76576,31 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:21.821Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:21.821Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 852,
+      "height": 480,
+      "resolution": "480p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -71635,6 +76959,33 @@
      "history": [
       "WORKING"
      ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:42.570Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:42.570Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 320,
+      "height": 180,
+      "resolution": "baixa",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [
+       "por"
+      ],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
     }
    }
   },
@@ -71775,6 +77126,19 @@
      "history": [
       "OFFLINE"
      ]
+    },
+    "github-us": {
+     "status": "OFFLINE",
+     "checkedAt": "2026-10-24T04:25:26.034Z",
+     "http": null,
+     "reason": "net:ENOTFOUND",
+     "evidence": "ENOTFOUND",
+     "consecutiveFailures": 1,
+     "lastSuccessAt": null,
+     "media": null,
+     "history": [
+      "OFFLINE"
+     ]
     }
    }
   },
@@ -71882,6 +77246,36 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:48:29.418Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 30,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [
+       {
+        "language": "pt",
+        "codec": "webvtt"
+       }
+      ],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:25:52.223Z",
+     "http": 200,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:25:52.223Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
@@ -72063,6 +77457,31 @@
      "evidence": null,
      "consecutiveFailures": 0,
      "lastSuccessAt": "2026-10-24T03:49:26.731Z",
+     "media": {
+      "container": "hls",
+      "videoCodec": "h264",
+      "width": 640,
+      "height": 360,
+      "resolution": "360p",
+      "fps": 29.97,
+      "audioCodec": "aac",
+      "audioChannels": 2,
+      "audioLanguages": [],
+      "subtitleTracks": [],
+      "subtitleDetectionReliable": false
+     },
+     "history": [
+      "WORKING"
+     ]
+    },
+    "github-us": {
+     "status": "WORKING",
+     "checkedAt": "2026-10-24T04:26:45.701Z",
+     "http": 206,
+     "reason": null,
+     "evidence": null,
+     "consecutiveFailures": 0,
+     "lastSuccessAt": "2026-10-24T04:26:45.701Z",
      "media": {
       "container": "hls",
       "videoCodec": "h264",
