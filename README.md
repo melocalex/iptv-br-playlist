@@ -3,6 +3,11 @@
 Agregador, validador e classificador de playlists IPTV públicas, com guia de programação XMLTV.
 Uma playlist M3U organizada em seções, gerada e republicada sozinha por GitHub Actions.
 
+> **Research objective — channel RAG with AI.** O objetivo de pesquisa está em
+> **[RESEARCH.md](RESEARCH.md)**, em inglês: usar este corpus como substrato de recuperação para
+> um modelo responder o que está no ar, onde, em qual idioma e **se de fato toca** — com base em
+> evidência medida, nunca no nome do canal. A documentação operacional abaixo segue em português.
+
 A fonte primária é o [iptv-org](https://github.com/iptv-org/iptv). Nada aqui contorna DRM,
 autenticação, paywall ou geobloqueio — o projeto só agrega, mede e organiza o que já é público.
 
