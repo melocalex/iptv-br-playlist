@@ -123,6 +123,8 @@ export interface RagConfig {
     maxObservationsPerChannel: number;
     maxNextProgrammes: number;
     maxDescChars: number;
+    /** Teto de nome de canal e titulo de programa, que vem de fonte de terceiro. */
+    maxTextChars: number;
   };
   generation: {
     enabled: boolean;

@@ -398,6 +398,22 @@ código de terceiro (o grabber). As defesas são por isso, não por formalidade:
   `<channel>` declarado, índice dentro dos tipos e tetos esperados. Ela não confia na etapa
   anterior só porque é do mesmo projeto.
 
+- **Texto de terceiro que vai para o contexto do modelo é dado, nunca instrução.** Nome de canal
+  e título de programa saem do iptv-org e dos grabbers, e podem trazer tentativa de instrução
+  embutida. Antes de entrar no bloco de evidência eles são achatados numa linha — controle e
+  quebra fora — e cortados em `rag.answer.maxTextChars`, para não conseguirem se passar por uma
+  seção nova do prompt. O bloco carrega o aviso disso, e a regra do sistema manda ignorar
+  comando que apareça nesses campos. Filtro de semântica não existe: um texto que *diga* algo
+  continua chegando, só não consegue fingir que é prompt.
+- **A conferência da resposta gerada é lista de permissão.** Qualquer token com cara de endereço
+  (`://`, `//host`, `www.`, `.m3u8`, `.mpd`) tem de ser exatamente uma URL do bloco de
+  evidência, e todo `tvg-id` citado tem de estar lá. Casar só `https?://` deixaria passar
+  `www.outro/live` e `outro/playlist.m3u8`, que num player viram link igual. Violação derruba o
+  texto do modelo e vale a redação determinística.
+- **A saída do servidor MCP não é autorização.** O que ele devolve é evidência de terceiro
+  encapsulada em JSON. Cliente MCP não deve aprovar ação automaticamente com base nela, e o
+  servidor não executa nada: só lê arquivo publicado, sem rede e sem escrita.
+
 Risco residual assumido: o `node_modules` do grabber vem do cache do Actions e não é coberto
 pela checagem de árvore limpa (não é versionado no repositório dele). A job é sem credencial e
 descartável, então o alcance fica no conteúdo do próprio guia — que já é dado de terceiro por

@@ -77,7 +77,10 @@ export interface Abstention {
 
 export interface RetrievalCounts {
   indexed: number;
+  /** Depois do filtro estrutural (pais, categoria, idioma) ou do tvg-id citado. */
   afterFilters: number;
+  /** Depois da busca lexical restringir o universo. Igual ao anterior quando nao ha texto. */
+  afterText: number;
   afterEvidence: number;
   excludedStale: number;
   excludedRefused: number;
@@ -306,6 +309,7 @@ export function retrieve(
   const counts: RetrievalCounts = {
     indexed: corpus.channels.length,
     afterFilters,
+    afterText: pool.length,
     afterEvidence: 0,
     excludedStale: 0,
     excludedRefused: 0,

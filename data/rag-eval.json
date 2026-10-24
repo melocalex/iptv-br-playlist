@@ -1,6 +1,6 @@
 {
- "geradoEm": "2026-10-24T05:59:09.381Z",
- "nowUsado": "2026-10-24T05:59:09.363Z",
+ "geradoEm": "2026-10-24T06:06:00.043Z",
+ "nowUsado": "2026-10-24T06:06:00.030Z",
  "corpus": {
   "metadadosGeradosEm": "2026-10-24T05:36:21.691Z",
   "gradeGeradaEm": "2026-10-24T05:36:22.198Z",
@@ -13,7 +13,7 @@
    "id": "noticia-pt-agora",
    "pergunta": "o que tem de noticia em portugues tocando agora",
    "porque": "Pergunta central da pesquisa: categoria, idioma e janela temporal, com evidencia por ponto de observacao.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -126,7 +126,7 @@
    "id": "grade-canal-sem-grade",
    "pergunta": "o que esta passando na CazeTV agora",
    "porque": "Canal com stream confirmado e sem grade: tem de abster da parte de programacao e nao inventar programa.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -182,7 +182,7 @@
    "id": "ponto-de-observacao-divergente",
    "pergunta": "o que esta passando na RTP Memoria",
    "porque": "Canal confirmado apenas do runner dos EUA: o veredito nao pode ser 'funciona daqui'.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -270,7 +270,7 @@
    "id": "mesmo-canal-do-outro-ponto",
    "pergunta": "o que esta passando na RTP Memoria",
    "porque": "A mesma pergunta do ponto de observacao dos EUA tem de virar confirmacao local: disponibilidade e funcao do observador.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -353,7 +353,7 @@
    "id": "evidencia-vencida",
    "pergunta": "o que tem de noticia em portugues tocando agora",
    "porque": "Tres dias depois da ultima checagem toda evidencia vence: a resposta certa e abster, nao recomendar o que funcionava.",
-   "nowDoCaso": "2026-10-27T05:59:09.363Z",
+   "nowDoCaso": "2026-10-27T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -377,7 +377,7 @@
    "id": "filtro-sem-resultado",
    "pergunta": "tem canal de esporte em alemao no brasil",
    "porque": "Combinacao que o corpus nao tem: abstencao por ausencia de candidato, sem resposta inventada.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -415,7 +415,7 @@
    "id": "tvg-id-explicito",
    "pergunta": "o canal GloboNews.br@SD esta funcionando daqui",
    "porque": "tvg-id na pergunta e filtro exato: um unico canal, sem casamento por nome.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -454,7 +454,7 @@
    "id": "esporte-brasil",
    "pergunta": "quero ver futebol brasileiro",
    "porque": "'futebol' cai em esportes e 'brasileiro' no grupo BR, sem deduzir categoria do nome do canal.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -538,7 +538,7 @@
    "id": "infantil-portugues",
    "pergunta": "tem algum canal infantil em portugues que funciona",
    "porque": "Pergunta de disponibilidade, nao de grade: nao deve abster por falta de programacao.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -631,7 +631,7 @@
    "id": "filme-portugal",
    "pergunta": "o que tem de filme em portugues de Portugal",
    "porque": "Idioma e pais separados: 'portugues' e idioma, 'Portugal' e grupo de pais.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -682,7 +682,7 @@
    "id": "noticia-ingles",
    "pergunta": "o que tem de noticia em ingles",
    "porque": "Idioma declarado diferente do portugues, sem arrastar o filtro de pais.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -775,7 +775,7 @@
    "id": "pergunta-em-ingles",
    "pergunta": "what news channels in english are on right now",
    "porque": "O lexico tem de funcionar tambem em ingles, sem traduzir a pergunta antes.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -863,7 +863,7 @@
    "id": "espanha-espanhol",
    "pergunta": "tem canal da espanha em espanhol",
    "porque": "Pais e idioma coerentes entre si, sem confundir ES com LATAM.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -951,7 +951,7 @@
    "id": "documentario-no-ar",
    "pergunta": "quais canais de documentario estao no ar",
    "porque": "'no ar' e janela temporal; a resposta precisa separar stream que abre de programa conhecido.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -1039,7 +1039,7 @@
    "id": "nome-de-canal",
    "pergunta": "tem Globo no ar?",
    "porque": "Busca lexical por nome, com o texto livre restringindo o universo.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -1094,7 +1094,7 @@
    "id": "nome-inexistente",
    "pergunta": "o que esta passando no canal Zorblax",
    "porque": "Nome que nao existe no corpus e sem filtro estrutural: devolver os oito primeiros canais do catalogo responderia outra pergunta, entao a resposta e abster.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {
@@ -1123,7 +1123,7 @@
    "id": "musica-agora",
    "pergunta": "canal de musica que toca agora",
    "porque": "Categoria com cobertura de grade quase nula: mede se o buraco e declarado em vez de preenchido.",
-   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "nowDoCaso": "2026-10-24T06:06:00.030Z",
    "aprovado": true,
    "verificacoes": [
     {

@@ -15,8 +15,8 @@ import { resolve } from 'node:path';
 import { ROOT, type Config, type RagConfig, type Taxonomy } from './config.ts';
 import type { Corpus } from './corpus.ts';
 import { planQuery, type Query } from './plan.ts';
-import { availabilityOf, programmeOf, retrieve } from './retrieve.ts';
-import { buildEvidence } from './ask.ts';
+import { availabilityOf, programmeOf, retrieve, type ProgrammeNow } from './retrieve.ts';
+import { buildEvidence, flattenUntrusted, TRUST_WARNING } from './ask.ts';
 
 const PROTOCOL_VERSION = '2025-06-18';
 
@@ -25,6 +25,19 @@ const GROUNDING_RULE =
   'checkedAt). Veredito diferente de CONFIRMED_HERE nao garante que abre de onde a pessoa ' +
   'esta. Veredito de grade diferente de ON_AIR significa que o que esta passando e ' +
   'desconhecido: diga isso em vez de descrever programacao.';
+
+/**
+ * Texto de terceiro tambem sai por aqui, e do outro lado do stdio tem um modelo.
+ * Achata nome e titulo pelo mesmo caminho usado no bloco de evidencia.
+ */
+function safeProgramme(rag: RagConfig, p: ProgrammeNow): ProgrammeNow {
+  const one = (x: { title: string; desc: string; start: number; end: number; categories: string[] }) => ({
+    ...x,
+    title: flattenUntrusted(x.title, rag.answer.maxTextChars),
+    desc: flattenUntrusted(x.desc, rag.answer.maxDescChars),
+  });
+  return { ...p, current: p.current ? one(p.current) : null, next: p.next.map(one) };
+}
 
 interface JsonRpcRequest {
   jsonrpc?: string;
@@ -222,8 +235,9 @@ function callTool(ctx: ToolContext, name: string, params: Record<string, unknown
           motivo: excluded.eligible
             ? 'canal sem metadado de classificacao na fonte: fica fora das playlists validadas'
             : 'canal checado e nunca confirmado em nenhum ponto de observacao',
+          avisoDeConfianca: TRUST_WARNING,
           evidenciaDaExclusao: {
-            nome: excluded.name,
+            nome: flattenUntrusted(excluded.name, ctx.rag.answer.maxTextChars),
             grupoPais: excluded.countryGroup,
             classificado: excluded.classified,
             elegivel: excluded.eligible,
@@ -245,9 +259,10 @@ function callTool(ctx: ToolContext, name: string, params: Record<string, unknown
     }
     return {
       instrucaoDeFundamentacao: GROUNDING_RULE,
+      avisoDeConfianca: TRUST_WARNING,
       encontrado: true,
       tvgId,
-      nome: channel.name,
+      nome: flattenUntrusted(channel.name, ctx.rag.answer.maxTextChars),
       grupoPais: channel.countryGroup,
       motivoDoGrupo: channel.countryGroupReason,
       secao: channel.section,
@@ -256,7 +271,7 @@ function callTool(ctx: ToolContext, name: string, params: Record<string, unknown
       fusos: channel.timezones,
       site: channel.website,
       disponibilidade: availabilityOf(ctx.rag, channel, vantage, now),
-      grade: programmeOf(ctx.rag, ctx.corpus, channel, now),
+      grade: safeProgramme(ctx.rag, programmeOf(ctx.rag, ctx.corpus, channel, now)),
       streams: channel.streams.map((s) => ({
         chave: s.key,
         url: s.url,
@@ -280,9 +295,10 @@ function callTool(ctx: ToolContext, name: string, params: Record<string, unknown
       if (!channel) return { tvgId, encontrado: false, motivo: 'tvg-id fora do corpus indexado' };
       return {
         instrucaoDeFundamentacao: GROUNDING_RULE,
+        avisoDeConfianca: TRUST_WARNING,
         tvgId,
-        nome: channel.name,
-        grade: programmeOf(ctx.rag, ctx.corpus, channel, now),
+        nome: flattenUntrusted(channel.name, ctx.rag.answer.maxTextChars),
+        grade: safeProgramme(ctx.rag, programmeOf(ctx.rag, ctx.corpus, channel, now)),
         disponibilidade: availabilityOf(ctx.rag, channel, vantage, now),
       };
     }
