@@ -8,7 +8,8 @@ import {
   extractGuideChannels,
   escapeXml,
   unescapeXml,
-  hasUnsafeInnerXml,
+  rebuildChildren,
+  isBalancedXml,
 } from '../src/epg.ts';
 import { resolutionLabel, isPortuguese } from '../src/validate.ts';
 import { effectiveStatus, needsCheck, type VantageHealth } from '../src/health.ts';
@@ -170,15 +171,61 @@ test('escapeXml protege os caracteres que quebram XMLTV', () => {
   assert.equal(escapeXml('A & B <c> "d"'), 'A &amp; B &lt;c&gt; &quot;d&quot;');
 });
 
-test('hasUnsafeInnerXml barra bloco que injetaria estrutura no guia publicado', () => {
-  assert.equal(hasUnsafeInnerXml('<title lang="pt">Jornal</title><desc>x</desc>'), false);
-  assert.equal(hasUnsafeInnerXml('<title>A &amp; B</title>'), false);
-  // Estes propagariam XMLTV malformado para quem consome o guia.
-  assert.equal(hasUnsafeInnerXml('<title>x</title></programme><programme start="1">'), true);
-  assert.equal(hasUnsafeInnerXml('<title>x</title><channel id="falso">'), true);
-  assert.equal(hasUnsafeInnerXml('</tv>'), true);
-  assert.equal(hasUnsafeInnerXml('<![CDATA[x]]>'), true);
-  assert.equal(hasUnsafeInnerXml('<?xml version="1.0"?>'), true);
+const PROG = {
+  title: ['lang'],
+  desc: ['lang'],
+  category: ['lang'],
+  'episode-num': ['system'],
+  icon: ['src'],
+};
+
+test('rebuildChildren reconstroi os filhos permitidos e reescapa', () => {
+  const out = rebuildChildren(
+    '<title lang="pt">Jornal &amp; Cia</title><desc lang="pt">Resumo</desc>' +
+      '<category lang="pt">News</category><episode-num system="xmltv_ns">1.2.</episode-num>',
+    PROG,
+  );
+  assert.match(out, /<title lang="pt">Jornal &amp; Cia<\/title>/);
+  assert.match(out, /<desc lang="pt">Resumo<\/desc>/);
+  assert.match(out, /<episode-num system="xmltv_ns">1\.2\.<\/episode-num>/);
+  assert.ok(isBalancedXml(out), 'saida tem de ser balanceada');
+});
+
+test('rebuildChildren nao propaga estrutura estranha da fonte', () => {
+  // Um denylist de regex deixaria passar tag sem fechar ou '</programme >'.
+  // Reconstruindo, nada disso chega ao arquivo publicado.
+  const out = rebuildChildren(
+    '<title>ok</title></programme ><programme start="1"><title>falso</title>' +
+      '<evil onload="x">y</evil><script>z</script><![CDATA[w]]>',
+    PROG,
+  );
+  assert.ok(isBalancedXml(out));
+  assert.ok(!out.includes('<evil'), 'elemento fora da lista nao sai');
+  assert.ok(!out.includes('<script'));
+  assert.ok(!out.includes('CDATA'));
+  assert.ok(!/<\/?programme/.test(out), 'nao reabre nem fecha programme');
+});
+
+test('rebuildChildren aceita so icon com esquema http(s)', () => {
+  assert.match(rebuildChildren('<icon src="https://e/a.png" />', PROG), /src="https:\/\/e\/a\.png"/);
+  assert.equal(rebuildChildren('<icon src="javascript:alert(1)" />', PROG), '');
+  assert.equal(rebuildChildren('<icon src="data:image/png;base64,x" />', PROG), '');
+});
+
+test('rebuildChildren devolve vazio quando nao sobra nada util', () => {
+  assert.equal(rebuildChildren('<credits><actor>A</actor></credits>', PROG), '');
+  assert.equal(rebuildChildren('<title>   </title>', PROG), '', 'titulo so com espaco nao conta');
+  assert.equal(rebuildChildren('', PROG), '');
+});
+
+test('isBalancedXml separa documento bem formado de malformado', () => {
+  assert.equal(isBalancedXml('<tv><channel id="a"><display-name>X</display-name></channel></tv>'), true);
+  assert.equal(isBalancedXml('<tv><programme start="1"><title>x</title></programme></tv>'), true);
+  assert.equal(isBalancedXml('<tv><icon src="u" /></tv>'), true);
+  assert.equal(isBalancedXml('<tv><title>sem fechar</tv>'), false);
+  assert.equal(isBalancedXml('<tv></channel></tv>'), false);
+  assert.equal(isBalancedXml('<tv>'), false);
+  assert.equal(isBalancedXml('<tv></tv><'), false, 'sobra de < solto');
 });
 
 test('unescapeXml evita o escape duplo em nome vindo cru do XML', () => {

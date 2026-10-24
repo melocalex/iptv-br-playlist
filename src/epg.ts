@@ -8,7 +8,7 @@ import {
   writeFileSync,
 } from 'node:fs';
 import { dirname, resolve } from 'node:path';
-import { gzipSync } from 'node:zlib';
+import { gzipSync, gunzipSync } from 'node:zlib';
 import { ROOT, outPath, type Config, type EpgConfig } from './config.ts';
 import { fetchCached } from './http.ts';
 import type { Channel } from './catalog.ts';
@@ -130,13 +130,109 @@ export function extractProgrammes(xml: string): { channel: string; start: string
 }
 
 /**
- * O conteudo interno de <programme> e copiado literalmente para o guia que publicamos.
- * Um bloco que traga estrutura propria (outro <programme>, <tv>, declaracao ou CDATA)
- * geraria XMLTV malformado no arquivo final e quebraria o player de quem consome.
- * Bloco assim e descartado em vez de propagado.
+ * Elementos filhos que reemitimos, com os atributos que cada um conserva.
+ * O que nao esta aqui e descartado: perde-se <credits>, <rating> e <star-rating>,
+ * que sao aninhados. A spec pede titulo, descricao, inicio e fim, e esses ficam.
  */
-export function hasUnsafeInnerXml(inner: string): boolean {
-  return /<\s*\/?\s*(programme|tv|channel)\b/i.test(inner) || /<[!?]/.test(inner);
+const PROGRAMME_CHILDREN: Record<string, string[]> = {
+  title: ['lang'],
+  'sub-title': ['lang'],
+  desc: ['lang'],
+  category: ['lang'],
+  country: ['lang'],
+  language: ['lang'],
+  'orig-language': ['lang'],
+  date: [],
+  'episode-num': ['system'],
+  length: ['units'],
+  icon: ['src'],
+};
+
+const CHANNEL_CHILDREN: Record<string, string[]> = {
+  'display-name': ['lang'],
+  icon: ['src'],
+  url: [],
+};
+
+function attrValue(tag: string, name: string): string | null {
+  const m = new RegExp(`\\b${name}="([^"]*)"`, 'i').exec(tag);
+  return m?.[1] ?? null;
+}
+
+function safeIconSrc(v: string): string | null {
+  try {
+    const u = new URL(v);
+    return u.protocol === 'http:' || u.protocol === 'https:' ? v : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Reconstroi os filhos de um bloco XMLTV a partir dos valores extraidos, reescapando
+ * tudo, em vez de copiar o conteudo cru da fonte.
+ *
+ * Copiar cru exigiria confiar que a fonte emite XML bem formado, e nenhuma denylist
+ * de padroes perigosos resolve isso: '<title>sem fechar' ou '</programme >' passariam
+ * por qualquer regex de bloqueio e sairiam no guia publicado, quebrando o player de
+ * quem consome. Reconstruindo, o arquivo final e bem formado por construcao.
+ */
+export function rebuildChildren(inner: string, allowed: Record<string, string[]>): string {
+  const out: string[] = [];
+  for (const [name, attrs] of Object.entries(allowed)) {
+    const paired = new RegExp(`<${name}\\b([^>]*)>([\\s\\S]*?)</${name}\\s*>`, 'gi');
+    const selfClosing = new RegExp(`<${name}\\b([^>]*?)/>`, 'gi');
+    const emit = (tag: string, text: string | null): void => {
+      const parts: string[] = [];
+      for (const a of attrs) {
+        const raw = attrValue(tag, a);
+        if (raw === null) continue;
+        const value = unescapeXml(raw);
+        if (a === 'src') {
+          const safe = safeIconSrc(value);
+          if (!safe) return;
+          parts.push(`src="${escapeXml(safe)}"`);
+          continue;
+        }
+        parts.push(`${a}="${escapeXml(value)}"`);
+      }
+      const head = `${name}${parts.length ? ' ' + parts.join(' ') : ''}`;
+      if (text === null) {
+        out.push(`<${head} />`);
+        return;
+      }
+      // Texto cru da fonte: decodifica e reescapa, para nao gerar escape duplo
+      // nem deixar passar '<' solto.
+      const clean = escapeXml(unescapeXml(text.replace(/<[^>]*>/g, '').trim()));
+      if (!clean) return;
+      out.push(`<${head}>${clean}</${name}>`);
+    };
+    for (const m of inner.matchAll(paired)) emit(m[1] ?? '', m[2] ?? '');
+    for (const m of inner.matchAll(selfClosing)) emit(m[1] ?? '', null);
+  }
+  return out.join('');
+}
+
+/** Checagem de boa formacao suficiente para XMLTV: tags pareadas e nada solto. */
+export function isBalancedXml(xml: string): boolean {
+  const stack: string[] = [];
+  const re = /<(\/?)([A-Za-z][\w:-]*)\b([^>]*?)(\/?)>/g;
+  let consumed = 0;
+  for (const m of xml.matchAll(re)) {
+    const between = xml.slice(consumed, m.index);
+    if (between.includes('<')) return false;
+    consumed = m.index + m[0].length;
+    const closing = m[1] === '/';
+    const name = m[2]!;
+    const self = m[4] === '/';
+    if (self) continue;
+    if (closing) {
+      if (stack.pop() !== name) return false;
+    } else {
+      stack.push(name);
+    }
+  }
+  return stack.length === 0 && !xml.slice(consumed).includes('<');
 }
 
 export function extractGuideChannels(xml: string): Map<string, string> {
@@ -318,7 +414,9 @@ export async function buildEpg(
         dropped.unknownChannel++;
         continue;
       }
-      if (hasUnsafeInnerXml(p.inner)) {
+      const children = rebuildChildren(p.inner, PROGRAMME_CHILDREN);
+      if (!children) {
+        // Nada reaproveitavel: sem titulo nem descricao nao ha grade para publicar.
         dropped.malformed++;
         continue;
       }
@@ -347,7 +445,7 @@ export async function buildEpg(
         stop,
         xml:
           `  <programme start="${start}" stop="${stop}" channel="${escapeXml(p.channel)}">` +
-          `${p.inner.trim()}</programme>`,
+          `${children}</programme>`,
       });
       touched.add(p.channel);
       progs++;
@@ -512,8 +610,10 @@ export async function buildEpg(
   for (const id of chanIds) {
     const ch = byChannel.get(id);
     const inner = guideChannels.get(id);
-    if (inner && inner.trim()) {
-      parts.push(`  <channel id="${escapeXml(id)}">${inner.trim()}</channel>`);
+    // Mesma regra do <programme>: reconstroi, nao copia cru da fonte.
+    const rebuilt = inner ? rebuildChildren(inner, CHANNEL_CHILDREN) : '';
+    if (rebuilt) {
+      parts.push(`  <channel id="${escapeXml(id)}">${rebuilt}</channel>`);
       continue;
     }
     const lang = ch?.declaredLanguages[0] ?? 'pt';
@@ -613,6 +713,86 @@ export function readIndex(cfg: Config): EpgResult | null {
     warn(`indice de EPG invalido em ${p}: ${(err as Error).message}`);
     return null;
   }
+}
+
+/**
+ * Reconfere os arquivos de EPG antes de publicar.
+ *
+ * Eles sao produzidos numa job onde codigo de terceiro roda (o grabber e o
+ * postinstall dele). Mesmo tendo sido escritos pelo nosso codigo, chegam aqui como
+ * artifact de um workspace nao confiavel: a job que publica valida de novo em vez
+ * de confiar na etapa anterior. Devolve a lista de problemas; vazia significa ok.
+ */
+export function verifyEpgArtifacts(cfg: Config): string[] {
+  const problems: string[] = [];
+
+  const gz = outPath(cfg, cfg.output.epgFile);
+  if (!existsSync(gz)) {
+    problems.push(`${cfg.output.epgFile} nao existe`);
+  } else {
+    try {
+      const raw = readFileSync(gz);
+      if (!(raw.length > 2 && raw[0] === 0x1f && raw[1] === 0x8b)) {
+        problems.push(`${cfg.output.epgFile} nao e gzip`);
+      } else {
+        const xml = gunzipSync(raw, { maxOutputLength: cfg.http.maxDecompressedBytes }).toString('utf8');
+        if (!/^\s*<\?xml/.test(xml)) problems.push('XMLTV sem declaracao <?xml');
+        if (!/<tv[\s>]/.test(xml)) problems.push('XMLTV sem elemento raiz <tv>');
+        if (!/<\/tv>\s*$/.test(xml)) problems.push('XMLTV nao termina em </tv>');
+        // Boa formacao de verdade, nao ausencia de padrao suspeito.
+        const body = xml.replace(/<\?xml[\s\S]*?\?>/g, '').replace(/<!DOCTYPE[^>]*>/g, '');
+        if (!isBalancedXml(body)) problems.push('XMLTV nao esta balanceado');
+        const progs = extractProgrammes(xml);
+        const semTempo = progs.filter((p) => parseXmltvTime(p.start) === null);
+        if (semTempo.length) {
+          problems.push(`${semTempo.length} programa(s) com timestamp XMLTV invalido`);
+        }
+        const ids = new Set(extractGuideChannels(xml).keys());
+        const orfaos = progs.filter((p) => !ids.has(p.channel));
+        if (orfaos.length) {
+          problems.push(`${orfaos.length} programa(s) para canal sem <channel> declarado`);
+        }
+        info(`verificacao do guia: ${ids.size} canais, ${progs.length} programas`);
+      }
+    } catch (err) {
+      problems.push(`${cfg.output.epgFile} nao pode ser lido: ${(err as Error).message}`);
+    }
+  }
+
+  const idxPath = outPath(cfg, cfg.output.epgIndexFile);
+  if (existsSync(idxPath)) {
+    try {
+      const raw: unknown = JSON.parse(readFileSync(idxPath, 'utf8'));
+      const obj = raw as Record<string, unknown>;
+      const byChannel = obj['byChannel'];
+      if (typeof byChannel !== 'object' || byChannel === null || Array.isArray(byChannel)) {
+        problems.push('epg-index: byChannel nao e objeto');
+      } else {
+        const entries = Object.entries(byChannel as Record<string, unknown>);
+        if (entries.length > 100_000) problems.push(`epg-index: ${entries.length} canais, acima do teto`);
+        for (const [k, v] of entries) {
+          if (k.length > 200 || /[\r\n<>"]/.test(k)) {
+            problems.push(`epg-index: chave invalida '${k.slice(0, 40)}'`);
+            break;
+          }
+          if (typeof v !== 'number' || !Number.isInteger(v) || v < 0) {
+            problems.push(`epg-index: valor invalido em '${k.slice(0, 40)}'`);
+            break;
+          }
+        }
+      }
+      for (const field of ['channelsInGuide', 'programmes', 'horizonHours']) {
+        const v = obj[field];
+        if (typeof v !== 'number' || !Number.isFinite(v) || v < 0) {
+          problems.push(`epg-index: ${field} invalido`);
+        }
+      }
+    } catch (err) {
+      problems.push(`epg-index ilegivel: ${(err as Error).message}`);
+    }
+  }
+
+  return problems;
 }
 
 export function writeCoverage(cfg: Config, result: EpgResult, wantedTotal: number): void {

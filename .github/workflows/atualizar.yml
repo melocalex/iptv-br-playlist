@@ -24,6 +24,12 @@ concurrency:
   group: atualizar
   cancel-in-progress: false
 
+env:
+  # O runner do GitHub fica nos Estados Unidos. O resultado aqui NAO e o mesmo de
+  # uma maquina no Brasil, e o relatorio guarda os dois separados. Vale para todas
+  # as jobs, para nenhuma gravar resultado sob o ponto de observacao errado.
+  IPTV_VANTAGE: github-us
+
 jobs:
   # ---------------------------------------------------------------------------
   # 1. Validacao: so codigo do projeto e ffprobe. Sem permissao de escrita.
@@ -33,10 +39,6 @@ jobs:
     timeout-minutes: 90
     permissions:
       contents: read
-    env:
-      # O runner do GitHub fica nos Estados Unidos. O resultado aqui NAO e o mesmo
-      # de uma maquina no Brasil, e o relatorio guarda os dois separados.
-      IPTV_VANTAGE: github-us
     steps:
       - uses: actions/checkout@v4
         with:
@@ -118,14 +120,13 @@ jobs:
           name: health
           path: data
 
-      # Somente leitura: esta job roda codigo de terceiro e nao pode gravar cache.
+      # Somente leitura, e so a chave exata gravada pela job 'validar' DESTE run.
+      # Sem fallback por prefixo: nada de outra execucao entra aqui.
       - name: Cache das fontes HTTP (so leitura)
         uses: actions/cache/restore@v4
         with:
           path: cache
           key: fontes-validar-${{ github.run_id }}
-          restore-keys: |
-            fontes-validar-
 
       # config.json carrega epg.grabberRef (commit SHA fixado): mudar o pin invalida
       # o cache. O codigo tambem confere HEAD e arvore limpa a cada execucao e
@@ -187,15 +188,21 @@ jobs:
           name: epg
           path: .
 
-      # Somente leitura, e apenas do cache gravado pela job 'validar'. Nunca do
-      # prefixo generico: a job 'epg' nao pode influenciar o que e lido aqui.
+      # Somente leitura, e so a chave exata gravada pela job 'validar' DESTE run.
+      # Sem fallback por prefixo: a job que publica nao le cache de outra execucao.
       - name: Cache das fontes HTTP (so leitura)
         uses: actions/cache/restore@v4
         with:
           path: cache
           key: fontes-validar-${{ github.run_id }}
-          restore-keys: |
-            fontes-validar-
+
+      # Os arquivos de EPG vieram de um workspace onde codigo de terceiro rodou.
+      # Antes de publicar, sao conferidos de novo aqui: gzip valido, XMLTV
+      # balanceado, timestamps validos, nenhum programa orfao, indice com
+      # tipos e tamanhos dentro do esperado.
+      - name: Verificar arquivos de EPG
+        if: ${{ needs.epg.result == 'success' }}
+        run: node src/cli.ts verify-epg
 
       # build nao roda grabber: le data/epg-index.json entregue pela job anterior.
       - name: Gerar playlists e relatorios

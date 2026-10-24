@@ -4,7 +4,14 @@ import { buildCatalog, type Catalog, type Channel } from './catalog.ts';
 import { fetchJson } from './http.ts';
 import { loadHealth, saveHealth } from './health.ts';
 import { validateCatalog, type ValidationRunReport } from './validate.ts';
-import { buildEpg, writeCoverage, writeIndex, readIndex, type EpgResult } from './epg.ts';
+import {
+  buildEpg,
+  writeCoverage,
+  writeIndex,
+  readIndex,
+  verifyEpgArtifacts,
+  type EpgResult,
+} from './epg.ts';
 import { buildViews, writePlaylists, writeMetadata, writeDashboardData, type ChannelView } from './build.ts';
 import { buildStatus, writeStatus } from './report.ts';
 import { info, warn, error } from './log.ts';
@@ -38,8 +45,17 @@ function parseArgs(argv: string[]): Args {
   return out;
 }
 
+/** Comandos que de fato chamam o ffprobe. Os outros nao exigem ffmpeg instalado. */
+const NEEDS_FFPROBE = new Set(['check', 'validate', 'all']);
+
 /** Checagens de inicializacao. Config invalida falha agora, nao no meio da execucao. */
-async function bootCheck(cfg: Config, tax: Taxonomy, baseUrl: string, files: Record<string, string>) {
+async function bootCheck(
+  cfg: Config,
+  tax: Taxonomy,
+  baseUrl: string,
+  files: Record<string, string>,
+  cmd: string,
+) {
   const problems: string[] = [];
 
   const v = cfg.validation;
@@ -53,14 +69,18 @@ async function bootCheck(cfg: Config, tax: Taxonomy, baseUrl: string, files: Rec
     problems.push('repo.owner e repo.name precisam estar preenchidos (entram no url-tvg)');
   }
 
-  const ff = spawnSync(v.ffprobePath, ['-version'], { encoding: 'utf8' });
-  if (ff.status !== 0) {
-    problems.push(
-      `ffprobe nao executou em '${v.ffprobePath}' (${ff.error?.message ?? ff.status}). ` +
-        'Instale o ffmpeg ou ajuste IPTV_VALIDATION_FFPROBEPATH.',
-    );
-  } else {
-    info(`ffprobe ok: ${ff.stdout.split('\n')[0]}`);
+  // So os comandos que validam stream precisam do ffprobe. As etapas de EPG e de
+  // build rodam em jobs que nao instalam ffmpeg, e exigir o binario ali so quebra.
+  if (NEEDS_FFPROBE.has(cmd)) {
+    const ff = spawnSync(v.ffprobePath, ['-version'], { encoding: 'utf8' });
+    if (ff.status !== 0) {
+      problems.push(
+        `ffprobe nao executou em '${v.ffprobePath}' (${ff.error?.message ?? ff.status}). ` +
+          'Instale o ffmpeg ou ajuste IPTV_VALIDATION_FFPROBEPATH.',
+      );
+    } else {
+      info(`ffprobe ok: ${ff.stdout.split('\n')[0]}`);
+    }
   }
 
   // A taxonomia precisa casar com os codigos reais da fonte, senao um grupo inteiro
@@ -224,8 +244,19 @@ async function main(): Promise<void> {
   if (envApplied.length) info(`config sobrescrita por env: ${envApplied.join(', ')}`);
   info(`comando: ${args.cmd} | vantage: ${cfg.vantage} | repo: ${cfg.repo.owner}/${cfg.repo.name}`);
 
-  await bootCheck(cfg, taxonomy, sources.api.baseUrl, sources.api.files);
+  await bootCheck(cfg, taxonomy, sources.api.baseUrl, sources.api.files, args.cmd);
   if (args.cmd === 'check') return;
+
+  // Reconfere os arquivos de EPG que chegaram da job isolada antes de publicar.
+  if (args.cmd === 'verify-epg') {
+    const problems = verifyEpgArtifacts(cfg);
+    if (problems.length) {
+      for (const p of problems) error(p);
+      throw new Error(`${problems.length} problema(s) nos arquivos de EPG; nao publique`);
+    }
+    info('arquivos de EPG verificados');
+    return;
+  }
 
   const catalog = await buildCatalog(cfg, sources, taxonomy, {
     force: args.force,
