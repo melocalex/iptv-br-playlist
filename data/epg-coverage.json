@@ -1,9 +1,9 @@
 {
  "generatedAt": "2026-10-24T04:46:21.596Z",
  "horizonHours": 72,
- "channelsRequested": 854,
+ "channelsRequested": 1169,
  "channelsWithGuide": 179,
- "coveragePercent": 20.96,
+ "coveragePercent": 15.31,
  "programmes": 9058,
  "sources": [
   {

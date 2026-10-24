@@ -159,6 +159,7 @@ function limitations(
   views: ChannelView[],
   epg: EpgResult,
   runs: ValidationRunReport[],
+  wantedTotal: number,
 ): string[] {
   const out: string[] = [];
   const vantages = [...new Set(views.flatMap((v) => v.streams.flatMap((s) => Object.keys(s.byVantage))))];
@@ -183,10 +184,19 @@ function limitations(
         `\`validation.maxChecksPerRun\` = ${cfg.validation.maxChecksPerRun}; a cobertura cresce a cada rodada.`,
     );
   }
+  const semGrade = Math.max(0, wantedTotal - epg.channelsInGuide);
   out.push(
-    `Cobertura de EPG medida: ${epg.channelsInGuide} de ${epg.channelsInGuide + epg.missing.length} ` +
-      `canais da playlist principal (${epg.missing.length} sem grade). Numero medido, sem arredondar para cima.`,
+    `Cobertura de EPG medida: ${epg.channelsInGuide} de ${wantedTotal} canais da playlist ` +
+      `principal (${semGrade} sem grade). Numero medido, sem arredondar para cima.`,
   );
+  if (epg.sources.length === 0 && epg.channelsInGuide > 0) {
+    out.push(
+      `O guia nao foi regerado nesta execucao: os dados de EPG sao do indice de ` +
+        `${epg.generatedAt}. Canal que entrou na playlist depois disso ainda nao foi pedido ` +
+        'a nenhuma fonte de grade, entao aparece como sem cobertura ate a proxima execucao ' +
+        'completa.',
+    );
+  }
   const failedEpg = epg.sources.filter((s) => !s.ok);
   if (failedEpg.length) {
     out.push(
@@ -338,7 +348,8 @@ async function main(): Promise<void> {
     epgResult,
     runs,
     written,
-    limitations(cfg, catalog, views, epgResult, runs),
+    limitations(cfg, catalog, views, epgResult, runs, wanted.size),
+    wanted.size,
   );
   writeStatus(cfg, status);
 

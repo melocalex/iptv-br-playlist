@@ -20,6 +20,15 @@ https://jmp2.uk/plu-5f32d2db0af67400077f29c4.m3u8
 #EXTINF:-1 tvg-id="FUELTV.pt@AU" tvg-name="FUEL TV" tvg-logo="https://i.imgur.com/I8mviBy.png" tvg-language="eng" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",FUEL TV
 #EXTGRP:🇵🇹 Portugal • Esportes
 https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AyMSports.mx@SD" tvg-name="AyM Sports" tvg-logo="https://i.imgur.com/yu3Bpbd.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Esportes",AyM Sports
+#EXTGRP:🌎 América Latina • Esportes
+http://168.196.127.137:6001/play/a06v/index.m3u8
+#EXTINF:-1 tvg-id="AztecaDeportesNetwork.mx@SD" tvg-name="Azteca Deportes Network" tvg-logo="https://match-images.icdb.tv/5913207f2494844101287828e87625eb.jpg" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Esportes",Azteca Deportes Network
+#EXTGRP:🌎 América Latina • Esportes
+https://live-manifest.production-public.tubi.io/live/6bf131c3-d664-424c-93c9-49188a788980/playlist.m3u8
+#EXTINF:-1 tvg-id="beINSPORTSXTRAenEspanol.us@SD" tvg-name="beIN SPORTS XTRA en Espanol" tvg-logo="https://i.imgur.com/V562tpO.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Esportes",beIN SPORTS XTRA en Espanol
+#EXTGRP:🇺🇸 United States • Esportes
+https://aegis-cloudfront-1.tubi.video/01f6c149-449b-4248-8bda-2278799205ec/playlist.m3u8
 #EXTINF:-1 tvg-id="30AGolfKingdom.us@SD" tvg-name="30A Golf Kingdom" tvg-logo="https://i.imgur.com/Lv53nh4.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",30A Golf Kingdom
 #EXTGRP:🇺🇸 United States • Esportes
 https://30a-tv.com/feeds/vidaa/golf.m3u8
@@ -32,9 +41,21 @@ http://23.239.31.26:8989/accnetwork/index.m3u8
 #EXTINF:-1 tvg-id="AmericanNinjaWarrior.us@SD" tvg-name="American Ninja Warrior" tvg-logo="https://raw.githubusercontent.com/RoqueDJ/iptv-svg/main/1792421696158.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",American Ninja Warrior
 #EXTGRP:🇺🇸 United States • Esportes
 https://d4whmvwm0rdvi.cloudfront.net/10007/99951318/hls/master.m3u8?ads.xumo_channelId=99951318&ads.asnw=169843&ads.afid=405342864&ads.sfid=19647852&ads.csid=xumo_web_NBCUAmericanNinjaWarrior_ssai_cro&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads._fw_did=a5090924-15b1-4b7f-b6cd-2f06e2ba51e1&ads._fw_vcid2=512116:a5090924-15b1-4b7f-b6cd-2f06e2ba51e1&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads._fw_content_category=&ads._fw_content_genre=&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads._fw_deviceType=3-Connected_TV&ads.appVersion=1.0.0&ads.appName=XumoPlay&ads.xumo_contentId=4063&ads.xumo_contentName=NBCUAmericanNinjaWarrior&ads.xumo_providerId=4063&ads.xumo_providerName=NBCUAmericanNinjaWarrior&ads.channelId=99951318
+#EXTINF:-1 tvg-id="beINSPORTSXTRA.us@SD" tvg-name="beIN SPORTS XTRA" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",beIN SPORTS XTRA
+#EXTGRP:🇺🇸 United States • Esportes
+https://bein-xtra-bein.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="BEKSports.us@West" tvg-name="BEK Sports" tvg-logo="https://i.imgur.com/1l3t5jd.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",BEK Sports
+#EXTGRP:🇺🇸 United States • Esportes
+https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BellatorMMA.us@SD" tvg-name="Bellator MMA" tvg-logo="https://i.imgur.com/VBKoLHk.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",Bellator MMA
+#EXTGRP:🇺🇸 United States • Esportes
+https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8
 #EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-name="Africa 24 Sport" tvg-logo="https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1" tvg-language="fra" tvg-country="FR" group-title="🏳️ Other Countries • Notícias",Africa 24 Sport
 #EXTGRP:🏳️ Other Countries • Notícias
 https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 tvg-id="ASpor.tr@SD" tvg-name="A Spor" tvg-logo="https://i.imgur.com/ZhkZzLf.png" tvg-language="tur" tvg-country="TR" group-title="🏳️ Other Countries • Esportes",A Spor
+#EXTGRP:🏳️ Other Countries • Esportes
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
 #EXTINF:-1 tvg-id="ACISportTV.it@SD" tvg-name="ACI Sport TV" tvg-logo="https://i.imgur.com/U8cHMOt.png" tvg-language="ita" tvg-country="IT" group-title="🏳️ Other Countries • Esportes",ACI Sport TV
 #EXTGRP:🏳️ Other Countries • Esportes
 https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
@@ -59,3 +80,18 @@ http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vgvje3t-Jiqa5d94ZBmKAqSVr
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" tvg-name="Arryadia" tvg-logo="https://i.imgur.com/XjzK3gZ.png" tvg-language="ara" tvg-country="MA" group-title="🏳️ Other Countries • Esportes",Arryadia
 #EXTGRP:🏳️ Other Countries • Esportes
 http://149.100.11.252:8000/play/a065/index.m3u8
+#EXTINF:-1 tvg-id="ATGLive.se@SD" tvg-name="ATG Live" tvg-logo="https://i.imgur.com/bPWFXkL.png" tvg-language="swe" tvg-country="SE" group-title="🏳️ Other Countries • Esportes",ATG Live
+#EXTGRP:🏳️ Other Countries • Esportes
+https://kanal75xto-llhls.akamaized.net/live/Data/atg-kanal-15-02a-rr/HLS-Legacy-HL/atg-kanal-15-02a-rr.m3u8
+#EXTINF:-1 tvg-id="BahrainSports1.bh@SD" tvg-name="Bahrain Sports 1" tvg-logo="https://i.imgur.com/fBpLsbC.png" tvg-language="ara" tvg-country="BH" group-title="🏳️ Other Countries • Esportes",Bahrain Sports 1
+#EXTGRP:🏳️ Other Countries • Esportes
+https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
+#EXTINF:-1 tvg-id="BahrainSports2.bh@SD" tvg-name="Bahrain Sports 2" tvg-logo="https://i.imgur.com/ZkuZmIo.png" tvg-language="ara" tvg-country="BH" group-title="🏳️ Other Countries • Esportes",Bahrain Sports 2
+#EXTGRP:🏳️ Other Countries • Esportes
+https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
+#EXTINF:-1 tvg-id="Belarus5.by@HD" tvg-name="Belarus-5" tvg-logo="https://i.imgur.com/NJsRFud.png" tvg-language="rus" tvg-country="BY" group-title="🏳️ Other Countries • Esportes",Belarus-5
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/33/index.m3u8
+#EXTINF:-1 tvg-id="BoksTV.ru@SD" tvg-name="Boks TV" tvg-logo="https://i.imgur.com/R1UjyfX.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Boks TV
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/154/index.m3u8

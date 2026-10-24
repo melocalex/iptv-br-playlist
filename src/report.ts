@@ -85,6 +85,12 @@ export function buildStatus(
   runs: ValidationRunReport[],
   written: WrittenPlaylist[],
   limitations: string[],
+  /**
+   * Quantos canais a playlist atual pede ao EPG. Tem de vir de fora: o indice de
+   * EPG pode ser de uma execucao anterior, quando a playlist tinha outro tamanho,
+   * e usar o denominador velho infla a cobertura.
+   */
+  epgWantedTotal: number,
 ): StatusPayload {
   // 'eligible' inclui stream sem metadado, que fica fora das playlists validadas.
   // Todo numero publicado usa 'publishable', para bater com o arquivo gerado.
@@ -167,11 +173,11 @@ export function buildStatus(
       channelsWithAlternativeStreams: eligible.filter((v) => v.streams.length > 1).length,
     },
     epg: {
-      channelsRequested: epg.index.size + epg.missing.length,
+      channelsRequested: epgWantedTotal,
       channelsWithGuide: epg.channelsInGuide,
       coveragePercent:
-        epg.index.size + epg.missing.length > 0
-          ? Number(((epg.channelsInGuide / (epg.index.size + epg.missing.length)) * 100).toFixed(2))
+        epgWantedTotal > 0
+          ? Number(((epg.channelsInGuide / epgWantedTotal) * 100).toFixed(2))
           : 0,
       programmes: epg.programmes,
       horizonHours: epg.horizonHours,

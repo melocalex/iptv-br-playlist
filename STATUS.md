@@ -1,6 +1,6 @@
 # Painel de status
 
-Gerado em **2026-10-24T04:47:28.007Z**.
+Gerado em **2026-10-24T04:53:08.725Z**.
 
 ## Descoberta
 
@@ -17,13 +17,13 @@ Validacao depende de onde o teste roda. O runner do GitHub Actions fica nos Esta
 
 | Status | github-us | local-br |
 | --- | --- | --- |
-| WORKING | 1298 | 1338 |
-| UNSTABLE | 10 | 39 |
-| OFFLINE | 458 | 641 |
-| TIMEOUT | 22 | 46 |
+| WORKING | 1298 | 2388 |
+| UNSTABLE | 10 | 87 |
+| OFFLINE | 458 | 1309 |
+| TIMEOUT | 22 | 204 |
 | GEO_BLOCKED | 0 | 0 |
-| AUTH_REQUIRED | 2 | 17 |
-| UNSUPPORTED | 49 | 84 |
+| AUTH_REQUIRED | 2 | 21 |
+| UNSUPPORTED | 49 | 144 |
 | UNKNOWN | 0 | 0 |
 
 | Ponto de observacao | Ultima execucao | Checados | Elegiveis | Frescos (pulados) |
@@ -35,14 +35,14 @@ Status do canal e o melhor entre os streams dele. `UNKNOWN` domina porque cada e
 
 | Status | Canais |
 | --- | --- |
-| WORKING | 1679 |
-| UNSTABLE | 30 |
+| WORKING | 1995 |
+| UNSTABLE | 29 |
 | OFFLINE | 0 |
-| TIMEOUT | 54 |
+| TIMEOUT | 88 |
 | GEO_BLOCKED | 0 |
 | AUTH_REQUIRED | 0 |
 | UNSUPPORTED | 0 |
-| UNKNOWN | 10489 |
+| UNKNOWN | 10140 |
 
 ## Canais publicados
 
@@ -50,55 +50,55 @@ Estes sao os canais que entram nas playlists validadas: elegiveis **e** com meta
 
 | Metrica | Valor |
 | --- | --- |
-| Canais publicados na playlist principal | 854 |
-| Destes, com status WORKING | 847 |
-| Destes, instaveis | 7 |
+| Canais publicados na playlist principal | 1169 |
+| Destes, com status WORKING | 1163 |
+| Destes, instaveis | 6 |
 | Canais brasileiros | 290 |
-| Canais internacionais | 564 |
-| Com stream alternativo guardado | 279 |
+| Canais internacionais | 879 |
+| Com stream alternativo guardado | 386 |
 | Com cobertura de EPG | 179 |
 | Com audio em portugues **verificado** | 50 |
-| Com legenda **verificada** | 170 |
-| Com deteccao de legenda nao confiavel (HLS) | 838 |
+| Com legenda **verificada** | 233 |
+| Com deteccao de legenda nao confiavel (HLS) | 1150 |
 
 ### Por grupo de pais
 
 | Grupo | Canais publicados |
 | --- | --- |
-| OTHER | 323 |
+| OTHER | 498 |
 | BR | 290 |
-| US | 102 |
-| LATAM | 63 |
+| US | 179 |
+| LATAM | 104 |
 | PT | 40 |
-| ES | 19 |
-| UK | 11 |
-| INT | 6 |
+| ES | 26 |
+| UK | 18 |
+| INT | 14 |
 
 ### Por categoria
 
 | Categoria | Canais publicados |
 | --- | --- |
-| Geral | 249 |
-| Notícias | 129 |
-| Cultura | 118 |
-| Entretenimento | 76 |
-| Filmes | 54 |
-| Música | 47 |
-| Séries | 47 |
-| Infantil | 36 |
-| Variedades | 34 |
-| Esportes | 19 |
-| Documentários | 17 |
-| Educação | 15 |
-| Animação | 13 |
+| Geral | 339 |
+| Notícias | 167 |
+| Cultura | 144 |
+| Entretenimento | 118 |
+| Filmes | 81 |
+| Música | 66 |
+| Séries | 66 |
+| Variedades | 57 |
+| Infantil | 49 |
+| Esportes | 31 |
+| Documentários | 21 |
+| Educação | 16 |
+| Animação | 14 |
 
 ## EPG
 
 | Metrica | Valor |
 | --- | --- |
-| Canais pedidos ao EPG | 854 |
+| Canais pedidos ao EPG | 1169 |
 | Canais com grade | 179 |
-| Cobertura medida | 20.96% |
+| Cobertura medida | 15.31% |
 | Programas no guia | 9058 |
 | Horizonte | 72 h |
 | Canais sem grade | 675 |
@@ -122,21 +122,21 @@ Cobertura de EPG do iptv-org e parcial por natureza. O numero acima e o **medido
 
 | Arquivo | Conteudo | Canais | Entradas | Secoes |
 | --- | --- | --- | --- | --- |
-| `playlist.m3u` | Principal (todas as secoes, validada) | 854 | 854 | 73 |
+| `playlist.m3u` | Principal (todas as secoes, validada) | 1169 | 1169 | 80 |
 | `playlist-br.m3u` | Brasil | 290 | 290 | 13 |
 | `playlist-pt.m3u` | Portugues (PT + lusofonos) | 329 | 329 | 22 |
-| `playlist-movies.m3u` | Filmes | 54 | 54 | 6 |
-| `playlist-series.m3u` | Series | 49 | 49 | 10 |
-| `playlist-sports.m3u` | Esportes | 20 | 20 | 5 |
-| `playlist-international.m3u` | Internacional (tudo fora do Brasil) | 564 | 564 | 60 |
+| `playlist-movies.m3u` | Filmes | 81 | 81 | 8 |
+| `playlist-series.m3u` | Series | 72 | 72 | 10 |
+| `playlist-sports.m3u` | Esportes | 32 | 32 | 6 |
+| `playlist-international.m3u` | Internacional (tudo fora do Brasil) | 879 | 879 | 67 |
 | `playlist-all.m3u` | Tudo, inclusive nao verificado e indisponivel | 12252 | 17965 | 101 |
 
 ## Limitacoes conhecidas
 
 - Resultados de 2 pontos de observacao (local-br, github-us) sao reportados separadamente e **nao somam**: o mesmo stream pode estar WORKING em um e GEO_BLOCKED em outro.
-- 10489 canais ainda nunca foram checados. O limite por execucao e `validation.maxChecksPerRun` = 1200; a cobertura cresce a cada rodada.
-- Cobertura de EPG medida: 179 de 854 canais da playlist principal (675 sem grade). Numero medido, sem arredondar para cima.
-- Em 1689 canais o stream e HLS. O ffprobe nao abre a playlist de variante de legenda, logo **ausencia de faixa de legenda nao prova ausencia de legenda** nesses canais.
+- 10140 canais ainda nunca foram checados. O limite por execucao e `validation.maxChecksPerRun` = 1200; a cobertura cresce a cada rodada.
+- Cobertura de EPG medida: 179 de 1169 canais da playlist principal (990 sem grade). Numero medido, sem arredondar para cima.
+- Em 2001 canais o stream e HLS. O ffprobe nao abre a playlist de variante de legenda, logo **ausencia de faixa de legenda nao prova ausencia de legenda** nesses canais.
 - Nenhuma playlist faz failover automatico. Streams alternativos ficam guardados em `data/channels.json`, mas trocar de stream depende do player: o projeto nao implementa nem testou failover, e por isso nao alega que exista.
 - Nada aqui contorna DRM, autenticacao, paywall ou geobloqueio. `GEO_BLOCKED` e apenas um rotulo de diagnostico, baseado em HTTP 451 ou em texto explicito da resposta.
 - 2033 streams nao tem metadado de canal na fonte. Ficam fora das playlists validadas e aparecem apenas em `playlist-all.m3u`, porque classificar pelo nome do canal seria adivinhacao.
