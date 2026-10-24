@@ -34,7 +34,13 @@ jobs:
       # de uma maquina no Brasil, e o relatorio guarda os dois separados.
       IPTV_VANTAGE: github-us
     steps:
+      # persist-credentials: false e a trava principal deste workflow. A etapa de EPG
+      # roda codigo de terceiro (o grabber do iptv-org/epg, e o postinstall dele).
+      # Sem o token no .git/config, esse codigo nao tem como escrever no repositorio;
+      # a credencial entra apenas na etapa final de commit, por cabecalho.
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v4
         with:
@@ -48,7 +54,8 @@ jobs:
           ffprobe -version | head -1
 
       - name: Instalar dependencias do projeto
-        run: npm ci
+        # O projeto nao tem script de ciclo de vida; desligar reduz a superficie.
+        run: npm ci --ignore-scripts
 
       # Cache do GET condicional das fontes: evita rebaixar channels.json/guides.json
       # quando a origem nao mudou (ETag / Last-Modified).
@@ -65,10 +72,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .epg-grabber
-          key: epg-grabber-${{ hashFiles('config/epg.json') }}-${{ github.run_id }}
+          # config.json carrega epg.grabberRef (commit SHA fixado): mudar o pin invalida o cache.
+          key: epg-grabber-${{ hashFiles('config/epg.json', 'config/config.json') }}-${{ github.run_id }}
           restore-keys: |
-            epg-grabber-${{ hashFiles('config/epg.json') }}-
-            epg-grabber-
+            epg-grabber-${{ hashFiles('config/epg.json', 'config/config.json') }}-
 
       - name: Checar configuracao
         run: node src/cli.ts check
@@ -84,6 +91,9 @@ jobs:
           node src/cli.ts all $args
 
       - name: Comitar resultado
+        env:
+          # Credencial so existe nesta etapa, depois de o codigo de terceiro ja ter rodado.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -93,7 +103,9 @@ jobs:
             exit 0
           fi
           git commit -m "chore(dados): atualiza playlists, EPG e relatorios"
-          git push
+          AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c http.extraheader="Authorization: Basic $AUTH" \
+              push "https://github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
 
       - name: Resumo da execucao
         if: always()

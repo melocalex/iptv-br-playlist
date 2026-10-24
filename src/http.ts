@@ -92,7 +92,7 @@ export async function fetchCached(
       if (res.status === 304 && meta) {
         info(`cache 304 ${url}`);
         const raw = readFileSync(bodyPath);
-        return { body: maybeGunzip(raw, url, opts.gunzip), fromCache: true };
+        return { body: maybeGunzip(c, raw, url, opts.gunzip), fromCache: true };
       }
       if (!res.ok) {
         throw new HttpProbeError(
@@ -102,7 +102,7 @@ export async function fetchCached(
           headerMap(res.headers),
         );
       }
-      const raw = Buffer.from(await res.arrayBuffer());
+      const raw = await readCapped(res, c.http.maxDownloadBytes, url);
       writeFileSync(bodyPath, raw);
       const next: CacheMeta = { fetchedAt: new Date().toISOString(), url };
       const etag = res.headers.get('etag');
@@ -110,7 +110,7 @@ export async function fetchCached(
       if (etag) next.etag = etag;
       if (lm) next.lastModified = lm;
       writeFileSync(metaPath, JSON.stringify(next, null, 2));
-      return { body: maybeGunzip(raw, url, opts.gunzip), fromCache: false };
+      return { body: maybeGunzip(c, raw, url, opts.gunzip), fromCache: false };
     } catch (err) {
       lastErr = err;
       const transient =
@@ -126,17 +126,46 @@ export async function fetchCached(
   // Cache velho e melhor que nada quando a fonte caiu: evita playlist vazia por falha de rede.
   if (meta && existsSync(bodyPath)) {
     warn(`usando cache de ${meta.fetchedAt} para ${url} (fonte indisponivel agora)`);
-    return { body: maybeGunzip(readFileSync(bodyPath), url, opts.gunzip), fromCache: true };
+    return { body: maybeGunzip(c, readFileSync(bodyPath), url, opts.gunzip), fromCache: true };
   }
   throw lastErr;
 }
 
-function maybeGunzip(raw: Buffer, url: string, want?: boolean): Buffer {
+/** Le o corpo em pedacos e aborta ao passar do teto: nada de arrayBuffer sem limite. */
+async function readCapped(res: Response, maxBytes: number, url: string): Promise<Buffer> {
+  const declared = Number(res.headers.get('content-length') ?? '0');
+  if (declared > maxBytes) {
+    throw new HttpProbeError(
+      `${url} declara ${declared} bytes, acima de http.maxDownloadBytes (${maxBytes})`,
+      'network',
+    );
+  }
+  if (!res.body) return Buffer.alloc(0);
+  const chunks: Buffer[] = [];
+  let total = 0;
+  const reader = res.body.getReader();
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > maxBytes) {
+      await reader.cancel().catch(() => {});
+      throw new HttpProbeError(
+        `${url} passou de http.maxDownloadBytes (${maxBytes})`,
+        'network',
+      );
+    }
+    chunks.push(Buffer.from(value));
+  }
+  return Buffer.concat(chunks);
+}
+
+function maybeGunzip(c: Config, raw: Buffer, url: string, want?: boolean): Buffer {
   const isGz = raw.length > 2 && raw[0] === 0x1f && raw[1] === 0x8b;
   if (want === false) return raw;
-  if (!isGz && !url.endsWith('.gz')) return raw;
   if (!isGz) return raw;
-  return gunzipSync(raw);
+  // Teto de saida: .gz de fonte publica pode ser bomba de descompressao.
+  return gunzipSync(raw, { maxOutputLength: c.http.maxDecompressedBytes });
 }
 
 export async function fetchJson<T>(c: Config, url: string, force = false): Promise<T> {
@@ -175,8 +204,14 @@ export async function probeHttp(
     const res = await fetch(url, { headers, signal: ac.signal, redirect: 'follow' });
     let snippet = '';
     if (!res.ok) {
-      const buf = Buffer.from(await res.arrayBuffer());
-      snippet = buf.subarray(0, c.http.errorBodySnippetBytes).toString('utf8');
+      // So o trecho que serve de evidencia; o resto do corpo e descartado sem ler.
+      snippet = (
+        await readCapped(res, c.http.errorBodySnippetBytes, url).catch((err) =>
+          err instanceof HttpProbeError ? Buffer.alloc(0) : Promise.reject(err),
+        )
+      )
+        .subarray(0, c.http.errorBodySnippetBytes)
+        .toString('utf8');
     } else {
       // Fecha o corpo sem ler tudo: nao queremos baixar o stream.
       await res.body?.cancel().catch(() => {});

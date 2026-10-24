@@ -91,6 +91,21 @@ export function escapeXml(s: string): string {
 }
 
 /**
+ * Desfaz as entidades do texto lido cru de um XML. Sem isso, um nome como 'A&amp;E'
+ * passaria por escapeXml e sairia 'A&amp;amp;E' no guia publicado.
+ */
+export function unescapeXml(s: string): string {
+  return s
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, d: string) => String.fromCodePoint(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h: string) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&amp;/g, '&');
+}
+
+/**
  * Extrai blocos <programme> de um XMLTV. XMLTV e gerado por maquina e muito regular,
  * por isso a varredura por bloco e suficiente e evita carregar um DOM de dezenas de MB.
  */
@@ -145,7 +160,8 @@ function readSiteChannels(grabberDir: string, site: string): SiteChannelRow[] {
         siteId,
         lang: attrOf(tag, 'lang') ?? 'en',
         xmltvId,
-        name: (m[2] ?? '').trim(),
+        // Texto cru do XML: decodifica aqui, porque e reescapado na escrita.
+        name: unescapeXml((m[2] ?? '').trim()),
       });
     }
   }
@@ -187,20 +203,40 @@ function run(
 
 async function ensureGrabber(cfg: Config): Promise<string | null> {
   const dir = resolve(ROOT, cfg.epg.grabberDir);
+  const ref = cfg.epg.grabberRef;
+  const isSha = /^[0-9a-f]{40}$/i.test(ref);
+  if (!isSha) {
+    // Ref movel significa executar codigo de terceiro que pode mudar entre execucoes.
+    warn(`epg.grabberRef '${ref}' nao e um commit SHA: o codigo do grabber pode mudar sem aviso`);
+  }
   if (!existsSync(resolve(dir, 'package.json'))) {
-    info(`clonando grabber ${cfg.epg.grabberRepo} (${cfg.epg.grabberRef}) em ${cfg.epg.grabberDir}`);
+    info(`clonando grabber ${cfg.epg.grabberRepo} em ${cfg.epg.grabberDir} (ref ${ref})`);
     mkdirSync(dirname(dir), { recursive: true });
     rmSync(dir, { recursive: true, force: true });
-    const clone = await run(
-      'git',
-      ['clone', '--depth', '1', '-b', cfg.epg.grabberRef, cfg.epg.grabberRepo, dir],
-      ROOT,
-      cfg.epg.grabTimeoutMs,
-    );
-    if (clone.code !== 0) {
-      error(`clone do grabber falhou: ${clone.stderr.slice(0, 400)}`);
+    mkdirSync(dir, { recursive: true });
+    // SHA fixo nao da para passar em 'clone -b'; busca rasa do commit exato.
+    const steps: string[][] = isSha
+      ? [
+          ['init', '-q'],
+          ['remote', 'add', 'origin', cfg.epg.grabberRepo],
+          ['fetch', '-q', '--depth', '1', 'origin', ref],
+          ['checkout', '-q', 'FETCH_HEAD'],
+        ]
+      : [['clone', '--depth', '1', '-b', ref, cfg.epg.grabberRepo, '.']];
+    for (const args of steps) {
+      const r = await run('git', args, dir, cfg.epg.grabTimeoutMs);
+      if (r.code !== 0) {
+        error(`grabber: 'git ${args[0]}' falhou: ${r.stderr.slice(0, 400)}`);
+        return null;
+      }
+    }
+    const head = await run('git', ['rev-parse', 'HEAD'], dir, 60_000);
+    const got = head.stdout.trim();
+    if (isSha && got.toLowerCase() !== ref.toLowerCase()) {
+      error(`grabber: HEAD ${got} nao e o ref fixado ${ref}`);
       return null;
     }
+    info(`grabber em ${got}`);
   }
   if (!existsSync(resolve(dir, 'node_modules'))) {
     info('instalando dependencias do grabber (uma vez)');

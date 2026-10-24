@@ -1,7 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseM3u, serializeM3u } from '../src/m3u.ts';
-import { parseXmltvTime, formatXmltvTime, extractProgrammes, extractGuideChannels, escapeXml } from '../src/epg.ts';
+import { parseM3u, serializeM3u, isSafeStreamUrl } from '../src/m3u.ts';
+import {
+  parseXmltvTime,
+  formatXmltvTime,
+  extractProgrammes,
+  extractGuideChannels,
+  escapeXml,
+  unescapeXml,
+} from '../src/epg.ts';
 import { resolutionLabel, isPortuguese } from '../src/validate.ts';
 import { effectiveStatus, needsCheck, type VantageHealth } from '../src/health.ts';
 import { splitTvgId } from '../src/catalog.ts';
@@ -70,6 +77,57 @@ test('parseM3u ignora #EXTINF sem URL (entrada truncada no fim do arquivo)', () 
   assert.equal(doc.entries[0]!.name, 'A');
 });
 
+test('serializeM3u nao deixa o upstream injetar linha na playlist', () => {
+  // channels.json do iptv-org e editavel por terceiros: um nome com \n viraria
+  // diretiva ou URL de stream nova no arquivo publicado.
+  const out = serializeM3u({
+    header: {},
+    entries: [
+      {
+        attrs: { 'tvg-id': 'X.br@SD', 'group-title': 'Brasil\n#EXTINF:-1,Falso' },
+        name: 'Canal\n#EXTINF:-1,Injetado\nhttp://mau.exemplo/evil.m3u8',
+        duration: '-1',
+        directives: ['#EXTVLCOPT:http-user-agent=A', '#EXTINF:-1,NaoPermitido', '#RANDOM:x'],
+        url: 'https://bom.exemplo/x.m3u8',
+      },
+    ],
+  });
+  const lines = out.trim().split('\n');
+  assert.equal(lines.length, 4, `esperado cabecalho + EXTINF + 1 diretiva + URL, veio:\n${out}`);
+  assert.equal(lines[0], '#EXTM3U');
+  assert.match(lines[1]!, /^#EXTINF:-1 /);
+  assert.equal(lines[2], '#EXTVLCOPT:http-user-agent=A', 'diretiva fora da lista permitida cai');
+  assert.equal(lines[3], 'https://bom.exemplo/x.m3u8');
+  // O texto injetado sobra como parte do nome, achatado na MESMA linha. Isso e inofensivo:
+  // o que nao pode e virar linha nova. Logo: nenhuma linha extra, nenhuma URL extra.
+  assert.ok(!lines.some((l) => l.startsWith('http://mau.exemplo')), 'URL injetada nao virou linha');
+  assert.equal(lines.filter((l) => l.startsWith('#EXTINF:')).length, 1, 'so um #EXTINF');
+  // Reparsear o resultado tem de dar exatamente uma entrada, com a URL boa.
+  const again = parseM3u(out);
+  assert.equal(again.entries.length, 1);
+  assert.equal(again.entries[0]!.url, 'https://bom.exemplo/x.m3u8');
+});
+
+test('serializeM3u descarta entrada com URL que nao e http(s)', () => {
+  const mk = (url: string) => ({
+    header: {},
+    entries: [{ attrs: {}, name: 'C', duration: '-1', directives: [], url }],
+  });
+  for (const bad of ['javascript:alert(1)', 'file:///etc/passwd', 'data:text/plain,x', 'nao-url']) {
+    assert.equal(parseM3u(serializeM3u(mk(bad))).entries.length, 0, `${bad} deveria cair`);
+  }
+  assert.equal(parseM3u(serializeM3u(mk('http://e/a.m3u8'))).entries.length, 1);
+});
+
+test('isSafeStreamUrl aceita so http(s) sem espaco', () => {
+  assert.equal(isSafeStreamUrl('https://e/a.m3u8?t=1'), true);
+  assert.equal(isSafeStreamUrl('http://1.2.3.4:8080/x'), true);
+  assert.equal(isSafeStreamUrl('rtmp://e/a'), false);
+  assert.equal(isSafeStreamUrl('https://e/a b.m3u8'), false);
+  assert.equal(isSafeStreamUrl('https://e/a\nb'), false);
+  assert.equal(isSafeStreamUrl(''), false);
+});
+
 test('splitTvgId separa canal e feed', () => {
   assert.deepEqual(splitTvgId('Globo.br@SD'), ['Globo.br', 'SD']);
   assert.deepEqual(splitTvgId('AELatinAmerica.us@Brazil'), ['AELatinAmerica.us', 'Brazil']);
@@ -107,8 +165,19 @@ test('extractProgrammes e extractGuideChannels leem XMLTV real', () => {
   assert.equal(progs[1]!.stop, '', 'programa sem stop e aceito e tratado depois');
 });
 
-test('escapeXml protege os cinco caracteres que quebram XMLTV', () => {
+test('escapeXml protege os caracteres que quebram XMLTV', () => {
   assert.equal(escapeXml('A & B <c> "d"'), 'A &amp; B &lt;c&gt; &quot;d&quot;');
+});
+
+test('unescapeXml evita o escape duplo em nome vindo cru do XML', () => {
+  // sites/*.channels.xml do grabber tras 'A&amp;E'; sem decodificar, o guia
+  // publicado saia com 'A&amp;amp;E' no display-name.
+  assert.equal(unescapeXml('A&amp;E'), 'A&E');
+  assert.equal(escapeXml(unescapeXml('A&amp;E')), 'A&amp;E', 'round-trip estavel');
+  assert.equal(unescapeXml('&lt;b&gt; &quot;x&quot; &apos;y&apos;'), '<b> "x" \'y\'');
+  assert.equal(unescapeXml('&#65;&#x42;'), 'AB');
+  // &amp; e desfeito por ultimo: '&amp;lt;' tem de virar '&lt;', nao '<'.
+  assert.equal(unescapeXml('&amp;lt;'), '&lt;');
 });
 
 test('resolutionLabel usa a escada de config, nunca numero chumbado', () => {

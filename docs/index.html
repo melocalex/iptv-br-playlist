@@ -131,13 +131,37 @@ try {
   if (saved) document.documentElement.setAttribute('data-theme', saved);
 } catch {}
 
+// Nome de canal, logo e textos de erro vem da base do iptv-org, que terceiros editam.
+// Nada desse material entra como HTML: tudo passa por esc() ou por textContent.
+function esc(v) {
+  return String(v ?? '').replace(/[&<>"']/g, (ch) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  })[ch]);
+}
+
+function safeHttpUrl(u) {
+  try {
+    const p = new URL(String(u), location.href);
+    return (p.protocol === 'http:' || p.protocol === 'https:') ? p.href : null;
+  } catch { return null; }
+}
+
 function card(v, k) {
-  return `<div class="card"><div class="v">${v}</div><div class="k">${k}</div></div>`;
+  return `<div class="card"><div class="v">${esc(v)}</div><div class="k">${esc(k)}</div></div>`;
 }
 
 function urlRow(label, url) {
-  return `<div class="urlrow"><b>${label}</b><code>${url}</code>
-    <button data-copy="${url}">Copiar</button></div>`;
+  const safe = safeHttpUrl(url);
+  if (!safe) return '';
+  return `<div class="urlrow"><b>${esc(label)}</b><code>${esc(safe)}</code>`
+    + `<button data-copy="${esc(safe)}">Copiar</button></div>`;
+}
+
+/** Converte `codigo` e **negrito** em marcacao, escapando o texto ANTES. */
+function inlineMarkup(text) {
+  return esc(text)
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 }
 
 let all = [];
@@ -154,19 +178,76 @@ function render() {
   $('count').textContent = `${hit.length} de ${all.length} canais`;
   // Teto de linhas: a tabela inteira com 10k nós travaria a pagina.
   const slice = hit.slice(0, 600);
-  $('rows').innerHTML = slice.map(c => `<tr>
-    <td>${c.logo ? `<img class="logo" loading="lazy" src="${c.logo}" alt="" onerror="this.remove()">` : ''}</td>
-    <td>${c.n}${c.pt ? ' <span title="audio em portugues verificado">🇧🇷</span>' : ''}</td>
-    <td>${c.g} · ${c.c}</td>
-    <td class="hide-s">${c.r ?? '—'}</td>
-    <td><span class="pill ${c.s}">${c.s}</span></td>
-    <td class="num">${c.e || '—'}</td>
-    <td class="num hide-s">${c.alt || '—'}</td>
-  </tr>`).join('');
-  if (hit.length > slice.length) {
-    $('rows').innerHTML += `<tr><td colspan="7" style="color:var(--muted)">
-      mostrando as primeiras ${slice.length}; refine a busca para ver o resto</td></tr>`;
+  const body = document.createDocumentFragment();
+
+  for (const c of slice) {
+    const tr = document.createElement('tr');
+
+    const tdLogo = document.createElement('td');
+    const logo = safeHttpUrl(c.logo);
+    if (logo) {
+      const img = document.createElement('img');
+      img.className = 'logo';
+      img.loading = 'lazy';
+      img.alt = '';
+      img.src = logo;
+      img.addEventListener('error', () => img.remove());
+      tdLogo.appendChild(img);
+    }
+    tr.appendChild(tdLogo);
+
+    const tdName = document.createElement('td');
+    tdName.textContent = c.n ?? '';
+    if (c.pt) {
+      const flag = document.createElement('span');
+      flag.title = 'audio em portugues verificado';
+      flag.textContent = ' 🇧🇷';
+      tdName.appendChild(flag);
+    }
+    tr.appendChild(tdName);
+
+    const tdSection = document.createElement('td');
+    tdSection.textContent = `${c.g ?? ''} · ${c.c ?? ''}`;
+    tr.appendChild(tdSection);
+
+    const tdRes = document.createElement('td');
+    tdRes.className = 'hide-s';
+    tdRes.textContent = c.r ?? '—';
+    tr.appendChild(tdRes);
+
+    const tdStatus = document.createElement('td');
+    const pill = document.createElement('span');
+    // classList recebe o status so se for um dos rotulos conhecidos.
+    pill.className = 'pill';
+    if (c.s === 'WORKING' || c.s === 'UNSTABLE') pill.classList.add(c.s);
+    pill.textContent = c.s ?? '';
+    tdStatus.appendChild(pill);
+    tr.appendChild(tdStatus);
+
+    const tdEpg = document.createElement('td');
+    tdEpg.className = 'num';
+    tdEpg.textContent = c.e ? String(c.e) : '—';
+    tr.appendChild(tdEpg);
+
+    const tdAlt = document.createElement('td');
+    tdAlt.className = 'num hide-s';
+    tdAlt.textContent = c.alt ? String(c.alt) : '—';
+    tr.appendChild(tdAlt);
+
+    body.appendChild(tr);
   }
+
+  if (hit.length > slice.length) {
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = 7;
+    td.style.color = 'var(--muted)';
+    td.textContent = `mostrando as primeiras ${slice.length}; refine a busca para ver o resto`;
+    tr.appendChild(td);
+    body.appendChild(tr);
+  }
+
+  $('rows').replaceChildren(body);
 }
 
 function fillSelect(el, values) {
@@ -198,11 +279,11 @@ fetch('dashboard-data.json', { cache: 'no-cache' })
     const vantages = Object.keys(s.vantages || {});
     $('note').innerHTML =
       `<strong>Como ler estes números.</strong> A validação foi feita de `
-      + `${vantages.length || 0} ponto(s) de observação (${vantages.join(', ') || 'nenhum'}). `
+      + `${vantages.length || 0} ponto(s) de observação (${esc(vantages.join(', ')) || 'nenhum'}). `
       + `Resultados de pontos diferentes <strong>não somam</strong>: o mesmo stream pode estar `
       + `disponível no Brasil e bloqueado num runner nos Estados Unidos. A cobertura de EPG `
-      + `(${e.channelsWithGuide ?? 0} de ${e.channelsRequested ?? 0} canais, ${e.programmes ?? 0} `
-      + `programas) é o valor medido, sem arredondar para cima.`;
+      + `(${esc(e.channelsWithGuide ?? 0)} de ${esc(e.channelsRequested ?? 0)} canais, `
+      + `${esc(e.programmes ?? 0)} programas) é o valor medido, sem arredondar para cima.`;
 
     $('urls').innerHTML = (s.playlists || [])
       .map(p => urlRow(p.file, (s.urls || {})[p.file] || ''))
@@ -212,9 +293,8 @@ fetch('dashboard-data.json', { cache: 'no-cache' })
     fillSelect($('grp'), [...new Map(all.map(x => [x.gc, x.g])).entries()]);
     fillSelect($('cat'), [...new Set(all.map(x => x.c))].sort().map(x => [x, x]));
     fillSelect($('st'), [...new Set(all.map(x => x.s))].sort().map(x => [x, x]));
-    $('lims').innerHTML = (s.limitations || []).map(l =>
-      `<li>${l.replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</li>`
-    ).join('') || '<li>nenhuma registrada</li>';
+    $('lims').innerHTML = (s.limitations || []).map(l => `<li>${inlineMarkup(l)}</li>`).join('')
+      || '<li>nenhuma registrada</li>';
 
     for (const el of ['q', 'grp', 'cat', 'st', 'epgonly', 'ptonly']) {
       $(el).addEventListener('input', render);

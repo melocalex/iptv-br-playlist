@@ -3,7 +3,7 @@
 export interface M3uEntry {
   /** Atributos do #EXTINF, na ordem em que apareceram. */
   attrs: Record<string, string>;
-  /** Nome exibido: o texto depois da ultima virgula do #EXTINF. Preservado como veio. */
+  /** Nome exibido: o texto depois da primeira virgula fora de aspas. Preservado como veio. */
   name: string;
   /** Duracao declarada; o iptv-org usa -1. */
   duration: string;
@@ -87,10 +87,37 @@ export function parseM3u(text: string): M3uDocument {
   return doc;
 }
 
+// Separadores de linha, inclusive os dois do Unicode que alguns parsers tratam como
+// quebra. Escrito via RegExp para o arquivo nao carregar o caractere literal.
+const LINE_BREAKS = new RegExp('[\\r\\n\\u2028\\u2029]+', 'g');
+
+/**
+ * Nome, atributo e URL vem de base editavel por terceiros (channels.json do iptv-org).
+ * Um valor com CR ou LF viraria linha nova na M3U publicada, ou seja, o upstream
+ * poderia injetar diretiva ou outra URL de stream na nossa playlist. Tudo que entra
+ * na serializacao passa por aqui.
+ */
+function oneLine(v: string): string {
+  return v.replace(LINE_BREAKS, ' ').trim();
+}
+
+/** Diretivas copiadas do upstream, limitadas ao que de fato serve a um player. */
+const ALLOWED_DIRECTIVES = /^#(EXTGRP|EXTVLCOPT|KODIPROP|EXTIMG):/i;
+
+export function isSafeStreamUrl(url: string): boolean {
+  if (/\s/.test(url)) return false;
+  try {
+    const u = new URL(url);
+    return u.protocol === 'http:' || u.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
 function attrString(attrs: Record<string, string>): string {
   return Object.entries(attrs)
     .filter(([, v]) => v !== undefined && v !== '')
-    .map(([k, v]) => `${k}="${v.replace(/"/g, '')}"`)
+    .map(([k, v]) => `${oneLine(k)}="${oneLine(v).replace(/"/g, '')}"`)
     .join(' ');
 }
 
@@ -99,9 +126,13 @@ export function serializeM3u(doc: M3uDocument): string {
   const head = attrString(doc.header);
   out.push(head ? `#EXTM3U ${head}` : '#EXTM3U');
   for (const e of doc.entries) {
+    if (!isSafeStreamUrl(e.url)) continue;
     const a = attrString(e.attrs);
-    out.push(`#EXTINF:${e.duration}${a ? ' ' + a : ''},${e.name}`);
-    for (const d of e.directives) out.push(d);
+    out.push(`#EXTINF:${oneLine(e.duration)}${a ? ' ' + a : ''},${oneLine(e.name)}`);
+    for (const d of e.directives) {
+      const line = oneLine(d);
+      if (ALLOWED_DIRECTIVES.test(line)) out.push(line);
+    }
     out.push(e.url);
   }
   return out.join('\n') + '\n';

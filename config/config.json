@@ -11,7 +11,9 @@
     "retries": 2,
     "retryBackoffMs": 1500,
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-    "errorBodySnippetBytes": 512
+    "errorBodySnippetBytes": 512,
+    "maxDownloadBytes": 134217728,
+    "maxDecompressedBytes": 536870912
   },
   "validation": {
     "concurrency": 10,
@@ -45,7 +47,7 @@
     "requestTimeoutMs": 30000,
     "grabTimeoutMs": 1800000,
     "grabberRepo": "https://github.com/iptv-org/epg.git",
-    "grabberRef": "master",
+    "grabberRef": "d43b000cbbb41aad7df42c556678e899c7f2a25e",
     "grabberDir": ".epg-grabber",
     "maxChannelsPerSite": 400,
     "programmeHorizonHours": 72

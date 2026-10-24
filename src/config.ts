@@ -35,6 +35,9 @@ export interface Config {
     retryBackoffMs: number;
     userAgent: string;
     errorBodySnippetBytes: number;
+    /** Teto do corpo baixado e do conteudo descomprimido: fonte publica nao e confiavel. */
+    maxDownloadBytes: number;
+    maxDecompressedBytes: number;
   };
   validation: {
     concurrency: number;
