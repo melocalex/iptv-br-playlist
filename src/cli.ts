@@ -1,5 +1,7 @@
 import { spawnSync } from 'node:child_process';
-import { load, type Config, type Taxonomy } from './config.ts';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
+import { load, outPath, type Config, type RagConfig, type Taxonomy } from './config.ts';
 import { buildCatalog, type Catalog, type Channel } from './catalog.ts';
 import { fetchJson } from './http.ts';
 import { loadHealth, saveHealth } from './health.ts';
@@ -15,7 +17,11 @@ import {
 } from './epg.ts';
 import { buildViews, writePlaylists, writeMetadata, writeDashboardData, type ChannelView } from './build.ts';
 import { buildStatus, writeStatus } from './report.ts';
-import { info, warn, error } from './log.ts';
+import { loadCorpus } from './corpus.ts';
+import { ask } from './ask.ts';
+import { serveMcp } from './mcp.ts';
+import { loadEvalSet, runEval, formatReport } from './evaluate.ts';
+import { info, warn, error, sendLogsToStderr } from './log.ts';
 
 interface Args {
   cmd: string;
@@ -24,6 +30,13 @@ interface Args {
   only: string | undefined;
   verifyRedundancy: boolean;
   skipEpg: boolean;
+  /** Argumentos posicionais: a pergunta de `ask`. */
+  rest: string[];
+  json: boolean;
+  noModel: boolean;
+  vantage: string | undefined;
+  now: string | undefined;
+  out: string | undefined;
 }
 
 function parseArgs(argv: string[]): Args {
@@ -34,16 +47,95 @@ function parseArgs(argv: string[]): Args {
     only: undefined,
     verifyRedundancy: false,
     skipEpg: false,
+    rest: [],
+    json: false,
+    noModel: false,
+    vantage: undefined,
+    now: undefined,
+    out: undefined,
   };
   for (const a of argv.slice(1)) {
     if (a === '--force') out.force = true;
     else if (a === '--verify-redundancy') out.verifyRedundancy = true;
     else if (a === '--skip-epg') out.skipEpg = true;
+    else if (a === '--json') out.json = true;
+    else if (a === '--no-model') out.noModel = true;
     else if (a.startsWith('--limit=')) out.limit = Number(a.slice('--limit='.length));
     else if (a.startsWith('--only=')) out.only = a.slice('--only='.length);
+    else if (a.startsWith('--vantage=')) out.vantage = a.slice('--vantage='.length);
+    else if (a.startsWith('--now=')) out.now = a.slice('--now='.length);
+    else if (a.startsWith('--out=')) out.out = a.slice('--out='.length);
+    else if (!a.startsWith('--')) out.rest.push(a);
     else throw new Error(`argumento desconhecido: ${a}`);
   }
   return out;
+}
+
+/** Comandos da camada de recuperacao: nao tocam a fonte, nao precisam de ffprobe nem de rede. */
+const RAG_COMMANDS = new Set(['ask', 'mcp', 'rag-eval']);
+
+function parseNow(value: string | undefined): number {
+  if (!value) return Date.now();
+  const at = Date.parse(value);
+  if (Number.isNaN(at)) throw new Error(`--now nao e uma data ISO valida: ${value}`);
+  return at;
+}
+
+async function runRag(cfg: Config, rag: RagConfig, tax: Taxonomy, args: Args): Promise<void> {
+  const corpus = loadCorpus(rag, tax);
+  info(
+    `corpus: ${corpus.stats.channelsIndexed} canais indexados, ` +
+      `${corpus.stats.channelsWithGuide} com grade (${corpus.stats.guideCoveragePercent}%), ` +
+      `${corpus.stats.programmesInGuide} programas na janela`,
+  );
+
+  if (args.cmd === 'mcp') {
+    info('servidor MCP em stdio; aguardando JSON-RPC');
+    await serveMcp(cfg, rag, tax, corpus);
+    return;
+  }
+
+  if (args.cmd === 'rag-eval') {
+    const report = runEval(cfg, rag, tax, corpus, loadEvalSet(), parseNow(args.now));
+    const file = args.out ?? 'data/rag-eval.json';
+    const path = outPath(cfg, file);
+    mkdirSync(dirname(path), { recursive: true });
+    writeFileSync(path, JSON.stringify(report, null, 1) + '\n');
+    if (args.json) console.log(JSON.stringify(report, null, 1));
+    else console.log(formatReport(report));
+    info(`relatorio em ${file}`);
+    if (report.totais.casosAprovados < report.totais.casos) {
+      throw new Error(
+        `${report.totais.casos - report.totais.casosAprovados} caso(s) de avaliacao falharam`,
+      );
+    }
+    return;
+  }
+
+  const question = args.rest.join(' ').trim();
+  if (!question) throw new Error('uso: node src/cli.ts ask "sua pergunta"');
+  const result = await ask(cfg, rag, tax, corpus, question, {
+    vantage: args.vantage,
+    limit: args.limit,
+    useModel: !args.noModel,
+    now: parseNow(args.now),
+  });
+  if (args.json) {
+    console.log(JSON.stringify(result, null, 1));
+    return;
+  }
+  if (result.failure) warn(result.failure);
+  if (result.groundingViolations.length) {
+    for (const v of result.groundingViolations) warn(v);
+  }
+  console.log('');
+  console.log(result.answer);
+  console.log('');
+  info(
+    `fonte do texto: ${result.source}${result.model ? ` (${result.model})` : ''} | ` +
+      `candidatos: ${result.retrieval.candidates.length} | ` +
+      `abstencoes: ${result.retrieval.abstentions.map((a) => a.kind).join(',') || 'nenhuma'}`,
+  );
 }
 
 /** Comandos que de fato chamam o ffprobe. Os outros nao exigem ffmpeg instalado. */
@@ -251,9 +343,17 @@ function limitations(
 
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
-  const { config: cfg, taxonomy, sources, epg: epgCfg, envApplied } = load();
+  // O MCP usa o stdout para o protocolo: o log tem de sair pelo stderr desde a primeira linha.
+  if (args.cmd === 'mcp') sendLogsToStderr();
+  const { config: cfg, taxonomy, sources, epg: epgCfg, rag, envApplied } = load();
   if (envApplied.length) info(`config sobrescrita por env: ${envApplied.join(', ')}`);
   info(`comando: ${args.cmd} | vantage: ${cfg.vantage} | repo: ${cfg.repo.owner}/${cfg.repo.name}`);
+
+  // A camada de recuperacao le o que ja foi publicado: sem rede, sem ffprobe, sem boot check.
+  if (RAG_COMMANDS.has(args.cmd)) {
+    await runRag(cfg, rag, taxonomy, args);
+    return;
+  }
 
   await bootCheck(cfg, taxonomy, sources.api.baseUrl, sources.api.files, args.cmd);
   if (args.cmd === 'check') return;

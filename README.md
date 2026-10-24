@@ -211,6 +211,92 @@ As fatias são geradas na etapa de `build`, a partir do `epg.xml.gz` **já verif
 job isolada do grabber — assim o JSON publicado não sai de um workspace onde código de terceiro
 rodou. Canal que perde a grade tem a fatia removida; o diretório é refeito a cada execução.
 
+## Pergunta em português sobre o que está no ar
+
+O corpus publicado também é substrato de recuperação: dá para perguntar em português e receber
+resposta **fundamentada na observação que a sustenta**, ou uma abstenção explícita. O objetivo de
+pesquisa está em [`RESEARCH.md`](RESEARCH.md), em inglês de propósito.
+
+```bash
+node src/cli.ts ask "o que tem de notícia em português tocando agora"
+node src/cli.ts ask "o canal GloboNews.br@SD funciona daqui" --vantage=local-br
+node src/cli.ts ask "o que está passando na CazeTV" --no-model   # sem chamar a API
+```
+
+Saída real, resumida:
+
+```
+- GloboNews (`GloboNews.br@SD`, BR) — confirmado do seu ponto de observacao: WORKING
+  em `local-br` em 2026-10-24T03:44:46.074Z (ha 2.08 h)
+  URL: http://79.127.238.228:14093
+  No ar: Globo Repórter (05:20–06:00 UTC)
+
+Evidencia: 28 canais passaram no filtro, 28 tem observacao valida, 11 desses tem grade
+e 10 tem programa no ar. A grade cobre 179 dos 1169 canais indexados (15.31%).
+```
+
+Três decisões que definem a camada:
+
+- **Sem banco vetorial.** 1.169 canais publicados e ~6 mil programas na janela cabem em memória;
+  o índice é BM25 escrito à mão (`src/lexical.ts`) combinado com filtro estrutural — país,
+  categoria, idioma, ponto de observação, janela de horário. Custa menos, responde mais rápido e,
+  acima de tudo, é depurável: dá para apontar qual termo trouxe qual canal. Medido: o corpus
+  inteiro carrega e indexa em ~600 ms. Trocar por vetor precisa de número que justifique.
+- **Disponibilidade é função do observador.** O veredito por canal distingue `CONFIRMED_HERE` de
+  `CONFIRMED_ELSEWHERE`; o mesmo stream está `WORKING` do Brasil e recusado do runner dos EUA, e
+  a resposta nunca promete que abre daqui quando a confirmação veio de outro ponto.
+- **"Não sei" é resposta.** Evidência vencida, canal sem grade ou nome que não existe no corpus
+  geram abstenção declarada, com o número medido no motivo. O modo de falha a derrotar é
+  recomendar com confiança um stream que não toca.
+- **O programa no ar sai do relógio, não de ponteiro pré-calculado.** A camada compara `s`/`e` da
+  fatia contra o instante da pergunta, e o `generatedAt` da fatia decide se o dado está velho
+  demais para responder (`rag.freshness.guideStaleAfterHours`). Por isso a mesma pergunta tem
+  resposta diferente conforme a hora em que a grade foi gerada — veja
+  [Fronteira de dia da fonte](#fronteira-de-dia-da-fonte).
+
+Toda resposta que passa pelo modelo é conferida antes de sair: `tvg-id` ou URL que não esteja no
+bloco de evidência derruba o texto gerado e vale a redação determinística.
+
+### Servidor MCP
+
+A mesma camada expõe quatro ferramentas por stdio, em JSON-RPC, sem dependência:
+
+| Ferramenta | O que devolve |
+| --- | --- |
+| `search_channels` | canais do filtro, com disponibilidade por ponto de observação e veredito de grade |
+| `channel_evidence` | toda observação de um `tvg-id`, com HTTP, motivo, mídia medida e frescor |
+| `now_playing` | o que está no ar segundo a grade, ou a declaração de que é desconhecido |
+| `corpus_stats` | números medidos do corpus, para não generalizar sobre o catálogo |
+
+```bash
+npm run mcp
+```
+
+[`.mcp.json`](.mcp.json) já registra o servidor para clientes que leem essa configuração no
+projeto. Canal que ficou fora do índice continua consultável: `channel_evidence` responde com a
+evidência da exclusão — status, HTTP e `checkedAt` — em vez de "não conheço esse canal".
+
+### Geração
+
+A redação final pode vir da API da Anthropic. A chave sai de `ANTHROPIC_API_KEY` no ambiente,
+nunca do código. Sem a chave a recuperação funciona igual e a resposta sai determinística, com
+aviso dizendo isso. Modelo, teto de tokens e timeout ficam em `config/rag.json`.
+
+### Avaliação
+
+```bash
+npm run rag:eval
+```
+
+[`config/eval.json`](config/eval.json) tem 17 perguntas com o que se espera do plano (filtros
+extraídos), da recuperação (quem tem de aparecer) e da abstenção. O comando falha se algum caso
+falhar e grava `data/rag-eval.json` com o `now` usado — a nota depende do instante, porque
+evidência vence e a janela da grade dura 24 h. Para reproduzir uma medição antiga:
+
+```bash
+node src/cli.ts rag-eval --now=2026-10-24T05:52:00Z
+```
+
 ## Configuração
 
 Nenhum limite, timeout ou concorrência vive no código. Tudo em `config/` e tudo sobrescrevível
@@ -223,9 +309,12 @@ por variável de ambiente — veja [`.env.example`](.env.example).
 | `config/taxonomy.json` | grupos de país, categorias em pt-BR, ordem das seções |
 | `config/evidence.json` | padrões que classificam uma falha por evidência, escada de resolução |
 | `config/epg.json` | sites do grabber e guias publicados, com o que foi medido em cada um |
+| `config/rag.json` | pesos do BM25, frescor da evidência por status, tamanho do bloco de evidência, modelo e léxico da busca em português |
+| `config/eval.json` | conjunto de avaliação da recuperação, com o piso de acerto que o teste exige |
 
 Regra do override: `IPTV_` + caminho da chave em maiúscula.
-`validation.concurrency` → `IPTV_VALIDATION_CONCURRENCY`.
+`validation.concurrency` → `IPTV_VALIDATION_CONCURRENCY`. A camada de recuperação usa prefixo
+próprio: `rag.retrieval.bm25K1` → `IPTV_RAG_RETRIEVAL_BM25K1`.
 
 ### Fontes redundantes
 
@@ -259,7 +348,13 @@ node src/cli.ts validate --only=BR --limit=200 # valida uma fatia
 node src/cli.ts epg                            # só o EPG
 node src/cli.ts build --skip-epg               # gera playlists com o health que já existe
 node src/cli.ts all                            # tudo
+node src/cli.ts ask "pergunta"                 # resposta fundamentada sobre o corpus
+node src/cli.ts mcp                            # servidor MCP em stdio
+node src/cli.ts rag-eval                       # pontua a recuperação
 ```
+
+`ask`, `mcp` e `rag-eval` leem apenas o que já foi publicado: não baixam fonte, não pedem rede e
+não precisam de ffmpeg.
 
 `--only` aceita grupos separados por vírgula (`--only=BR,PT`). `--limit=0` remove o teto.
 `--force` ignora o cache HTTP.
@@ -307,6 +402,22 @@ código de terceiro (o grabber). As defesas são por isso, não por formalidade:
   raiz `<tv>`, XML balanceado por contagem de tags, timestamp XMLTV válido, nenhum programa sem
   `<channel>` declarado, índice dentro dos tipos e tetos esperados. Ela não confia na etapa
   anterior só porque é do mesmo projeto.
+
+- **Texto de terceiro que vai para o contexto do modelo é dado, nunca instrução.** Nome de canal
+  e título de programa saem do iptv-org e dos grabbers, e podem trazer tentativa de instrução
+  embutida. Antes de entrar no bloco de evidência eles são achatados numa linha — controle e
+  quebra fora — e cortados em `rag.answer.maxTextChars`, para não conseguirem se passar por uma
+  seção nova do prompt. O bloco carrega o aviso disso, e a regra do sistema manda ignorar
+  comando que apareça nesses campos. Filtro de semântica não existe: um texto que *diga* algo
+  continua chegando, só não consegue fingir que é prompt.
+- **A conferência da resposta gerada é lista de permissão.** Qualquer token com cara de endereço
+  (`://`, `//host`, `www.`, `.m3u8`, `.mpd`) tem de ser exatamente uma URL do bloco de
+  evidência, e todo `tvg-id` citado tem de estar lá. Casar só `https?://` deixaria passar
+  `www.outro/live` e `outro/playlist.m3u8`, que num player viram link igual. Violação derruba o
+  texto do modelo e vale a redação determinística.
+- **A saída do servidor MCP não é autorização.** O que ele devolve é evidência de terceiro
+  encapsulada em JSON. Cliente MCP não deve aprovar ação automaticamente com base nela, e o
+  servidor não executa nada: só lê arquivo publicado, sem rede e sem escrita.
 
 Risco residual assumido: o `node_modules` do grabber vem do cache do Actions e não é coberto
 pela checagem de árvore limpa (não é versionado no repositório dele). A job é sem credencial e

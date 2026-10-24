@@ -1,0 +1,142 @@
+{
+  "comment": [
+    "Camada de recuperacao e resposta sobre o corpus publicado. Nenhum numero de limite,",
+    "peso, janela ou teto vive no codigo: tudo esta aqui e aceita sobrescrita por env com",
+    "o prefixo IPTV_RAG_ (IPTV_RAG_RETRIEVAL_TOPK, IPTV_RAG_GENERATION_MODEL, ...).",
+    "O lexico tambem e dado: os termos sao comparados sem acento e em minuscula."
+  ],
+  "corpus": {
+    "channelsFile": "data/channels.json",
+    "epgSliceDir": "docs/epg",
+    "statusFile": "status.json",
+    "comment": [
+      "Identidade e sempre o tvg-id (canal@feed): canal sem tvg-id nao entra, porque o",
+      "casamento com a playlist e com o guia seria por nome, e nome nao casa nada.",
+      "requireEligible=true deixa no indice so o que ja funcionou em algum ponto de",
+      "observacao; o que ficou de fora continua consultavel por tvg-id, com a evidencia",
+      "da exclusao."
+    ],
+    "requireClassified": true,
+    "requireEligible": true
+  },
+  "retrieval": {
+    "bm25K1": 1.2,
+    "bm25B": 0.75,
+    "minTokenLength": 2,
+    "programmeTopK": 12,
+    "minScore": 0,
+    "fieldWeights": {
+      "name": 4,
+      "section": 2,
+      "category": 2,
+      "language": 1,
+      "country": 1,
+      "tvgId": 1,
+      "programmeTitle": 3,
+      "programmeDesc": 1,
+      "programmeCategory": 1
+    },
+    "vantageBonus": 1.5,
+    "guideBonus": 1,
+    "onAirBonus": 2,
+    "verifiedAudioBonus": 1,
+    "defaultLimit": 8,
+    "maxLimit": 50
+  },
+  "freshness": {
+    "comment": [
+      "Horas de validade da observacao, por status. Passado esse prazo a evidencia e",
+      "tratada como vencida e o canal sai das recomendacoes, mesmo que o ultimo",
+      "resultado tenha sido WORKING."
+    ],
+    "staleAfterHours": {
+      "WORKING": 48,
+      "UNSTABLE": 24,
+      "OFFLINE": 168,
+      "TIMEOUT": 168,
+      "GEO_BLOCKED": 336,
+      "AUTH_REQUIRED": 336,
+      "UNSUPPORTED": 336,
+      "UNKNOWN": 0
+    },
+    "programmeToleranceSeconds": 300,
+    "guideStaleAfterHours": 36
+  },
+  "answer": {
+    "maxCandidates": 8,
+    "maxObservationsPerChannel": 4,
+    "maxNextProgrammes": 2,
+    "maxDescChars": 240,
+    "maxTextChars": 120
+  },
+  "generation": {
+    "enabled": true,
+    "baseUrl": "https://api.anthropic.com",
+    "apiVersion": "2023-06-01",
+    "model": "claude-sonnet-5-5",
+    "maxTokens": 1500,
+    "temperature": 0,
+    "timeoutMs": 60000,
+    "retries": 2,
+    "retryBackoffMs": 1500
+  },
+  "lexicon": {
+    "stopwords": [
+      "o", "a", "os", "as", "um", "uma", "uns", "umas", "de", "do", "da", "dos", "das",
+      "em", "no", "na", "nos", "nas", "ao", "aos", "pelo", "pela", "que", "qual", "quais",
+      "tem", "ter", "tenho", "esta", "estao", "eh", "sao", "para", "pra", "por", "com",
+      "sem", "me", "mostra", "mostre", "quero", "queria", "ver", "assistir", "achar",
+      "canal", "canais", "tv", "televisao", "algum", "alguma", "alguns", "algumas",
+      "coisa", "lista", "liste", "diga", "fala", "qualquer", "melhor", "melhores",
+      "what", "is", "are", "on", "the", "in", "of", "show", "me", "any", "list", "there",
+      "right", "channel", "channels", "watch", "can", "i", "do", "does"
+    ],
+    "temporalNow": [
+      "agora", "neste momento", "nesse momento", "no ar", "ao vivo", "nesse instante",
+      "right now", "now", "live"
+    ],
+    "guideIntent": [
+      "o que esta passando", "o que passa", "o que tem passando", "esta passando",
+      "programacao", "grade", "que programa", "qual programa", "tocando", "toca",
+      "whats on", "what is on", "what is playing", "playing"
+    ],
+    "availabilityIntent": [
+      "funciona", "funcionando", "abre", "toca", "tocando", "disponivel", "no ar",
+      "esta de pe", "works", "working", "available"
+    ],
+    "vantageHere": ["daqui", "aqui", "do brasil daqui", "na minha casa", "from here"],
+    "categories": {
+      "news": ["noticia", "noticias", "jornal", "jornais", "jornalismo", "telejornal", "news"],
+      "sports": ["esporte", "esportes", "futebol", "jogo", "jogos", "sports", "esportivo"],
+      "movies": ["filme", "filmes", "cinema", "movie", "movies"],
+      "series": ["serie", "series", "seriado", "seriados"],
+      "documentary": ["documentario", "documentarios", "documentary"],
+      "kids": ["infantil", "crianca", "criancas", "kids"],
+      "animation": ["animacao", "desenho", "desenhos", "anime", "animation", "cartoon"],
+      "entertainment": ["entretenimento", "comedia", "humor", "entertainment"],
+      "music": ["musica", "musicas", "clipe", "clipes", "music"],
+      "education": ["educacao", "educativo", "educativa", "ciencia", "science", "education"],
+      "culture": ["cultura", "cultural", "religioso", "religiosa", "religiao"],
+      "variety": ["variedades", "culinaria", "gastronomia", "viagem", "lifestyle"],
+      "general": ["geral", "aberto", "abertos", "generalista"]
+    },
+    "languages": {
+      "por": ["portugues", "portuguesa", "pt-br", "ptbr", "portuguese"],
+      "spa": ["espanhol", "espanhola", "castelhano", "spanish"],
+      "eng": ["ingles", "inglesa", "english"],
+      "fra": ["frances", "francesa", "french"],
+      "deu": ["alemao", "alema", "german"],
+      "ita": ["italiano", "italiana", "italian"]
+    },
+    "countryGroups": {
+      "BR": ["brasil", "brasileiro", "brasileira", "brasileiros", "brasileiras", "brazil"],
+      "PT": ["portugal", "portugues de portugal", "portuguesa de portugal"],
+      "LATAM": ["america latina", "latino", "latina", "latinoamericano", "hispanico"],
+      "ES": ["espanha", "espanhol da espanha", "spain"],
+      "US": ["estados unidos", "eua", "americano", "americana", "usa", "united states"],
+      "UK": ["reino unido", "inglaterra", "britanico", "britanica", "united kingdom"],
+      "INT": ["global"],
+      "OTHER": []
+    }
+  }
+}

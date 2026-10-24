@@ -5,8 +5,19 @@ function stamp(): string {
   return `[${s}s]`;
 }
 
+/**
+ * O servidor MCP fala JSON-RPC pelo stdout. Nesse modo nenhuma linha de log pode
+ * sair por ali, senao o cliente le log como mensagem de protocolo.
+ */
+let infoToStderr = false;
+
+export function sendLogsToStderr(): void {
+  infoToStderr = true;
+}
+
 export function info(...args: unknown[]): void {
-  console.log(stamp(), ...args);
+  if (infoToStderr) console.error(stamp(), ...args);
+  else console.log(stamp(), ...args);
 }
 
 export function warn(...args: unknown[]): void {

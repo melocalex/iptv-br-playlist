@@ -90,6 +90,65 @@ export interface Config {
   };
 }
 
+/** Camada de recuperacao e resposta. Nenhum peso, janela ou teto fica no codigo. */
+export interface RagConfig {
+  corpus: {
+    channelsFile: string;
+    epgSliceDir: string;
+    statusFile: string;
+    requireClassified: boolean;
+    requireEligible: boolean;
+  };
+  retrieval: {
+    bm25K1: number;
+    bm25B: number;
+    minTokenLength: number;
+    programmeTopK: number;
+    minScore: number;
+    fieldWeights: Record<string, number>;
+    vantageBonus: number;
+    guideBonus: number;
+    onAirBonus: number;
+    verifiedAudioBonus: number;
+    defaultLimit: number;
+    maxLimit: number;
+  };
+  freshness: {
+    staleAfterHours: Record<string, number>;
+    programmeToleranceSeconds: number;
+    guideStaleAfterHours: number;
+  };
+  answer: {
+    maxCandidates: number;
+    maxObservationsPerChannel: number;
+    maxNextProgrammes: number;
+    maxDescChars: number;
+    /** Teto de nome de canal e titulo de programa, que vem de fonte de terceiro. */
+    maxTextChars: number;
+  };
+  generation: {
+    enabled: boolean;
+    baseUrl: string;
+    apiVersion: string;
+    model: string;
+    maxTokens: number;
+    temperature: number;
+    timeoutMs: number;
+    retries: number;
+    retryBackoffMs: number;
+  };
+  lexicon: {
+    stopwords: string[];
+    temporalNow: string[];
+    guideIntent: string[];
+    availabilityIntent: string[];
+    vantageHere: string[];
+    categories: Record<string, string[]>;
+    languages: Record<string, string[]>;
+    countryGroups: Record<string, string[]>;
+  };
+}
+
 export interface CountryGroup {
   code: string;
   label: string;
@@ -187,6 +246,7 @@ let cached: {
   taxonomy: Taxonomy;
   sources: Sources;
   epg: EpgConfig;
+  rag: RagConfig;
   envApplied: string[];
 } | null = null;
 
@@ -195,11 +255,15 @@ export function load() {
   const config = readJson<Config>('config/config.json');
   const envApplied: string[] = [];
   applyEnvOverrides(config, 'IPTV', envApplied);
+  // Prefixo proprio: config.json nao tem chave 'rag', entao IPTV_RAG_* nunca colide.
+  const rag = readJson<RagConfig>('config/rag.json');
+  applyEnvOverrides(rag, 'IPTV_RAG', envApplied);
   cached = {
     config,
     taxonomy: readJson<Taxonomy>('config/taxonomy.json'),
     sources: readJson<Sources>('config/sources.json'),
     epg: readJson<EpgConfig>('config/epg.json'),
+    rag,
     envApplied,
   };
   return cached;
