@@ -716,30 +716,111 @@ export function writeIndex(cfg: Config, result: EpgResult): void {
   );
 }
 
-/** Le o indice gravado por uma execucao anterior de `epg`. Null quando nao existe. */
+const MAX_INDEX_CHANNELS = 100_000;
+const MAX_SOURCES = 200;
+
+/** Inteiro nao negativo, ou 0. Nunca propaga NaN, Infinity nem numero negativo. */
+function uint(v: unknown): number {
+  return typeof v === 'number' && Number.isFinite(v) && v >= 0 ? Math.floor(v) : 0;
+}
+
+/**
+ * Texto de fonte nao confiavel, saneado: tamanho limitado e sem caractere que
+ * quebre a tabela de Markdown do STATUS.md nem vire markup.
+ */
+function text(v: unknown, max: number): string {
+  if (typeof v !== 'string') return '';
+  return v
+    .replace(/[\r\n\t]+/g, ' ')
+    .replace(/[<>|`[\]]/g, '')
+    .slice(0, max)
+    .trim();
+}
+
+/**
+ * Le o indice gravado pela etapa de EPG e **reconstroi** o objeto a partir de
+ * primitivos validados, em vez de confiar no JSON.
+ *
+ * O arquivo chega de uma job onde codigo de terceiro rodou, e seus campos viram
+ * texto no STATUS.md e no painel. Validar campo a campo vira caca ao erro; aqui
+ * nenhum valor do arquivo passa adiante sem ter sido reconstruido no tipo certo.
+ */
 export function readIndex(cfg: Config): EpgResult | null {
   const p = outPath(cfg, cfg.output.epgIndexFile);
   if (!existsSync(p)) return null;
   try {
-    const raw = JSON.parse(readFileSync(p, 'utf8')) as {
-      generatedAt: string;
-      horizonHours: number;
-      channelsInGuide: number;
-      programmes: number;
-      sources: EpgResult['sources'];
-      dropped: EpgResult['dropped'];
-      missing: EpgResult['missing'];
-      byChannel: Record<string, number>;
-    };
+    const parsed: unknown = JSON.parse(readFileSync(p, 'utf8'));
+    if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
+      throw new Error('raiz nao e objeto');
+    }
+    const raw = parsed as Record<string, unknown>;
+
+    const byChannel = raw['byChannel'];
+    const index = new Map<string, number>();
+    if (typeof byChannel === 'object' && byChannel !== null && !Array.isArray(byChannel)) {
+      for (const [k, v] of Object.entries(byChannel as Record<string, unknown>)) {
+        if (index.size >= MAX_INDEX_CHANNELS) break;
+        const id = text(k, 200);
+        const n = uint(v);
+        if (id && n > 0) index.set(id, n);
+      }
+    }
+
+    const rawSources = Array.isArray(raw['sources']) ? raw['sources'].slice(0, MAX_SOURCES) : [];
+    const sources: EpgResult['sources'] = [];
+    for (const s of rawSources) {
+      if (typeof s !== 'object' || s === null) continue;
+      const o = s as Record<string, unknown>;
+      const id = text(o['id'], 120);
+      if (!id) continue;
+      sources.push({
+        id,
+        kind: o['kind'] === 'grabber' ? 'grabber' : 'published',
+        ok: o['ok'] === true,
+        requestedChannels: o['requestedChannels'] === -1 ? -1 : uint(o['requestedChannels']),
+        channelsWithProgrammes: uint(o['channelsWithProgrammes']),
+        programmes: uint(o['programmes']),
+        note: text(o['note'], 500) || null,
+      });
+    }
+
+    const rawMissing = Array.isArray(raw['missing'])
+      ? raw['missing'].slice(0, MAX_INDEX_CHANNELS)
+      : [];
+    const missing: EpgResult['missing'] = [];
+    for (const m of rawMissing) {
+      if (typeof m !== 'object' || m === null) continue;
+      const o = m as Record<string, unknown>;
+      const tvgId = text(o['tvgId'], 200);
+      if (!tvgId) continue;
+      const sites = Array.isArray(o['guideSites']) ? o['guideSites'].slice(0, 20) : [];
+      missing.push({
+        tvgId,
+        name: text(o['name'], 300) || tvgId,
+        countryGroup: text(o['countryGroup'], 20) || 'OTHER',
+        guideSites: sites.map((x) => text(x, 120)).filter(Boolean),
+      });
+    }
+
+    const d = (raw['dropped'] ?? {}) as Record<string, unknown>;
+    const generatedAt = text(raw['generatedAt'], 40);
+
     return {
-      index: new Map(Object.entries(raw.byChannel ?? {})),
-      channelsInGuide: raw.channelsInGuide ?? 0,
-      programmes: raw.programmes ?? 0,
-      horizonHours: raw.horizonHours ?? 0,
-      generatedAt: raw.generatedAt,
-      sources: raw.sources ?? [],
-      missing: raw.missing ?? [],
-      dropped: raw.dropped ?? { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0, malformed: 0 },
+      index,
+      channelsInGuide: uint(raw['channelsInGuide']),
+      programmes: uint(raw['programmes']),
+      horizonHours: uint(raw['horizonHours']),
+      generatedAt: Number.isNaN(Date.parse(generatedAt)) ? new Date().toISOString() : generatedAt,
+      sources,
+      missing,
+      // Exatamente os cinco contadores, nada alem disso.
+      dropped: {
+        duplicates: uint(d['duplicates']),
+        outOfHorizon: uint(d['outOfHorizon']),
+        invalidTimestamp: uint(d['invalidTimestamp']),
+        unknownChannel: uint(d['unknownChannel']),
+        malformed: uint(d['malformed']),
+      },
     };
   } catch (err) {
     warn(`indice de EPG invalido em ${p}: ${(err as Error).message}`);

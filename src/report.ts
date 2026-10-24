@@ -33,6 +33,13 @@ export interface StatusPayload {
     channelsNeverChecked: number;
   };
   catalog: {
+    /**
+     * Contagens dos canais que de fato entram nas playlists validadas, ou seja,
+     * elegiveis E com metadado na fonte. Stream sem metadado nunca e publicado, entao
+     * conta-lo aqui inflaria o numero em relacao ao arquivo que o usuario abre.
+     */
+    publishableChannels: number;
+    eligibleButUnclassified: number;
     validatedWorkingChannels: number;
     brazilianChannels: number;
     internationalChannels: number;
@@ -79,7 +86,10 @@ export function buildStatus(
   written: WrittenPlaylist[],
   limitations: string[],
 ): StatusPayload {
-  const eligible = views.filter((v) => v.eligible);
+  // 'eligible' inclui stream sem metadado, que fica fora das playlists validadas.
+  // Todo numero publicado usa 'publishable', para bater com o arquivo gerado.
+  const eligibleAll = views.filter((v) => v.eligible);
+  const eligible = eligibleAll.filter((v) => v.channel.classified);
   const catLabel = new Map(tax.categories.map((c) => [c.code, c.label]));
 
   const streamsByStatus: Record<string, number> = {};
@@ -132,7 +142,9 @@ export function buildStatus(
         .length,
     },
     catalog: {
-      validatedWorkingChannels: views.filter((v) => v.bestStatus === 'WORKING').length,
+      publishableChannels: eligible.length,
+      eligibleButUnclassified: eligibleAll.length - eligible.length,
+      validatedWorkingChannels: eligible.filter((v) => v.bestStatus === 'WORKING').length,
       brazilianChannels: eligible.filter((v) => v.channel.countryGroup === 'BR').length,
       internationalChannels: eligible.filter((v) => v.channel.countryGroup !== 'BR').length,
       byCountryGroup: countBy(eligible, (v) => v.channel.countryGroup),
@@ -151,8 +163,8 @@ export function buildStatus(
         v.streams.some((s) => s.media && !s.media.subtitleDetectionReliable),
       ).length,
       offlineChannels: views.filter((v) => v.bestStatus === 'OFFLINE').length,
-      unstableChannels: views.filter((v) => v.bestStatus === 'UNSTABLE').length,
-      channelsWithAlternativeStreams: views.filter((v) => v.streams.length > 1).length,
+      unstableChannels: eligible.filter((v) => v.bestStatus === 'UNSTABLE').length,
+      channelsWithAlternativeStreams: eligible.filter((v) => v.streams.length > 1).length,
     },
     epg: {
       channelsRequested: epg.index.size + epg.missing.length,
@@ -172,11 +184,21 @@ export function buildStatus(
   };
 }
 
+/**
+ * Celula de tabela Markdown. O '|' e a quebra de linha encerram a celula e a linha,
+ * entao qualquer texto vindo da fonte precisa passar por aqui antes de virar tabela.
+ */
+function cell(v: string | number): string {
+  return String(v).replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ');
+}
+
 function table(rows: (string | number)[][]): string {
   if (rows.length === 0) return '';
   const head = rows[0]!;
   const sep = head.map(() => '---');
-  return [head, sep, ...rows.slice(1)].map((r) => `| ${r.join(' | ')} |`).join('\n');
+  return [head, sep, ...rows.slice(1)]
+    .map((r) => `| ${r.map(cell).join(' | ')} |`)
+    .join('\n');
 }
 
 export function writeStatus(cfg: Config, s: StatusPayload): void {
@@ -237,18 +259,39 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
     );
   }
   md.push('');
-  md.push('## Canais validados');
+  md.push('## Status por canal');
+  md.push('');
+  md.push(
+    'Status do canal e o melhor entre os streams dele. `UNKNOWN` domina porque cada execucao ' +
+      'checa no maximo `validation.maxChecksPerRun` streams, e um canal com qualquer stream ' +
+      'ainda nao checado conta como desconhecido, nao como indisponivel.',
+  );
+  md.push('');
+  md.push(
+    table([
+      ['Status', 'Canais'],
+      ...ALL_STATUSES.map((st) => [st, s.validation.channelsByStatus[st] ?? 0]),
+    ]),
+  );
+  md.push('');
+  md.push('## Canais publicados');
+  md.push('');
+  md.push(
+    'Estes sao os canais que entram nas playlists validadas: elegiveis **e** com metadado na ' +
+      'fonte. Stream sem metadado de canal nunca e publicado, entao nao entra nestas contas — ' +
+      `foram ${s.catalog.eligibleButUnclassified} streams nessa situacao nesta execucao, e eles ` +
+      'aparecem apenas em `playlist-all.m3u`.',
+  );
   md.push('');
   md.push(
     table([
       ['Metrica', 'Valor'],
-      ['Canais funcionando (WORKING)', s.catalog.validatedWorkingChannels],
-      ['Canais brasileiros validados', s.catalog.brazilianChannels],
-      ['Canais internacionais validados', s.catalog.internationalChannels],
-      ['Canais instaveis', s.catalog.unstableChannels],
-      ['Canais offline', s.catalog.offlineChannels],
-      ['Canais nunca checados', s.validation.channelsNeverChecked],
-      ['Canais com stream alternativo guardado', s.catalog.channelsWithAlternativeStreams],
+      ['Canais publicados na playlist principal', s.catalog.publishableChannels],
+      ['Destes, com status WORKING', s.catalog.validatedWorkingChannels],
+      ['Destes, instaveis', s.catalog.unstableChannels],
+      ['Canais brasileiros', s.catalog.brazilianChannels],
+      ['Canais internacionais', s.catalog.internationalChannels],
+      ['Com stream alternativo guardado', s.catalog.channelsWithAlternativeStreams],
       ['Com cobertura de EPG', s.catalog.withEpgCoverage],
       ['Com audio em portugues **verificado**', s.catalog.withVerifiedPortugueseAudio],
       ['Com legenda **verificada**', s.catalog.withVerifiedSubtitles],
@@ -260,7 +303,7 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
   md.push('');
   md.push(
     table([
-      ['Grupo', 'Canais validados'],
+      ['Grupo', 'Canais publicados'],
       ...Object.entries(s.catalog.byCountryGroup).sort((a, b) => b[1] - a[1]),
     ]),
   );
@@ -269,7 +312,7 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
   md.push('');
   md.push(
     table([
-      ['Categoria', 'Canais validados'],
+      ['Categoria', 'Canais publicados'],
       ...Object.entries(s.catalog.byCategory).sort((a, b) => b[1] - a[1]),
     ]),
   );

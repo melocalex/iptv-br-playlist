@@ -10,7 +10,11 @@ import {
   unescapeXml,
   rebuildChildren,
   isBalancedXml,
+  readIndex,
 } from '../src/epg.ts';
+import { mkdirSync, writeFileSync, rmSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { ROOT } from '../src/config.ts';
 import { resolutionLabel, isPortuguese } from '../src/validate.ts';
 import { effectiveStatus, needsCheck, type VantageHealth } from '../src/health.ts';
 import { splitTvgId } from '../src/catalog.ts';
@@ -267,6 +271,84 @@ test('isPortuguese reconhece as variantes da fonte e recusa o resto', () => {
   }
   for (const c of ['spa', 'eng', 'und', '', null, undefined]) {
     assert.equal(isPortuguese(c as string | null), false, `${String(c)} nao e portugues`);
+  }
+});
+
+test('readIndex reconstroi o indice a partir de primitivos validados', () => {
+  // O arquivo vem de uma job onde codigo de terceiro rodou, e seus campos viram
+  // texto no STATUS.md. Nada dele pode passar adiante sem reconstrucao.
+  const rel = 'tmp/teste-epg-index.json';
+  const abs = resolve(ROOT, rel);
+  mkdirSync(resolve(ROOT, 'tmp'), { recursive: true });
+  const original = config.output.epgIndexFile;
+  config.output.epgIndexFile = rel;
+  try {
+    writeFileSync(
+      abs,
+      JSON.stringify({
+        generatedAt: 'nao-e-data',
+        horizonHours: -5,
+        channelsInGuide: 1.9,
+        programmes: 'muitos',
+        byChannel: { 'Globo.br@SD': 12, 'ruim<>|': 3, 'Zero.br@SD': 0, 'Neg.br@SD': -4 },
+        sources: [
+          { id: 'mi.tv', kind: 'grabber', ok: true, programmes: 10, channelsWithProgrammes: 2, note: null },
+          { id: 'mau|id\ncom quebra', kind: 'inventado', ok: 'sim', programmes: -1, note: '`x` <b>y</b>' },
+          { id: '', kind: 'grabber' },
+          'nem objeto',
+        ],
+        dropped: { duplicates: 3, inventado: 99, malformed: -2 },
+        missing: [{ tvgId: 'X.br@SD', name: 'A|B', countryGroup: 'BR', guideSites: ['mi.tv', 7] }],
+        campoExtra: { qualquer: 'coisa' },
+      }),
+    );
+
+    const r = readIndex(config);
+    assert.ok(r, 'deveria ler');
+    // Numeros saneados.
+    assert.equal(r!.horizonHours, 0, 'negativo vira 0');
+    assert.equal(r!.channelsInGuide, 1, 'fracionario e truncado');
+    assert.equal(r!.programmes, 0, 'string vira 0');
+    assert.ok(!Number.isNaN(Date.parse(r!.generatedAt)), 'data invalida e substituida');
+    // Indice: so chave limpa e contagem positiva.
+    assert.deepEqual([...r!.index.entries()], [['Globo.br@SD', 12], ['ruim', 3]]);
+    // Fontes: entrada sem id ou que nao e objeto cai; kind desconhecido vira 'published'.
+    assert.equal(r!.sources.length, 2);
+    assert.equal(r!.sources[0]!.id, 'mi.tv');
+    assert.equal(r!.sources[1]!.kind, 'published');
+    assert.equal(r!.sources[1]!.ok, false, "ok: 'sim' nao e true");
+    assert.equal(r!.sources[1]!.programmes, 0);
+    assert.ok(!/[|<>`\[\]\r\n]/.test(r!.sources[1]!.id), 'id sem caractere que quebre a tabela');
+    assert.ok(!/[<>`]/.test(r!.sources[1]!.note ?? ''), 'note sem markup');
+    // dropped: exatamente os cinco contadores.
+    assert.deepEqual(Object.keys(r!.dropped).sort(), [
+      'duplicates', 'invalidTimestamp', 'malformed', 'outOfHorizon', 'unknownChannel',
+    ]);
+    assert.equal(r!.dropped.duplicates, 3);
+    assert.equal(r!.dropped.malformed, 0, 'negativo vira 0');
+    // missing: texto saneado, guideSites so com string.
+    assert.equal(r!.missing[0]!.name, 'AB');
+    assert.deepEqual(r!.missing[0]!.guideSites, ['mi.tv']);
+  } finally {
+    config.output.epgIndexFile = original;
+    rmSync(abs, { force: true });
+  }
+});
+
+test('readIndex devolve null em JSON quebrado', () => {
+  const rel = 'tmp/teste-epg-index-ruim.json';
+  const abs = resolve(ROOT, rel);
+  mkdirSync(resolve(ROOT, 'tmp'), { recursive: true });
+  const original = config.output.epgIndexFile;
+  config.output.epgIndexFile = rel;
+  try {
+    writeFileSync(abs, '{ isso nao e json');
+    assert.equal(readIndex(config), null);
+    writeFileSync(abs, '[1,2,3]');
+    assert.equal(readIndex(config), null, 'raiz que nao e objeto');
+  } finally {
+    config.output.epgIndexFile = original;
+    rmSync(abs, { force: true });
   }
 });
 
