@@ -1087,8 +1087,12 @@ export function writeEpgSlices(
       logo: meta.logo,
       generatedAt: new Date(now).toISOString(),
       horizonHours: cfg.epg.sliceHorizonHours,
-      // Epoch em SEGUNDOS, UTC. 'now' e o indice do programa em curso, -1 se nenhum.
-      now: progs.findIndex((x) => x.s <= Math.floor(now / 1000) && x.e > Math.floor(now / 1000)),
+      // Horario em epoch de SEGUNDOS, UTC.
+      //
+      // Nao existe campo apontando "o que esta no ar": ele so valeria no instante da
+      // geracao, e o arquivo e servido por horas. Um consumidor que confiasse nele
+      // mostraria o programa errado. Com 's' e 'e' e o relogio local, achar o
+      // programa em curso e uma varredura de algumas dezenas de itens.
       count: progs.length,
       programmes: progs,
     };

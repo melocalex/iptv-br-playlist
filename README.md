@@ -179,7 +179,7 @@ Cada fatia:
 ```json
 {
   "id": "GloboNews.br@SD", "name": "GloboNews", "logo": "https://…",
-  "horizonHours": 24, "now": 0, "count": 29,
+  "horizonHours": 24, "count": 29,
   "programmes": [
     { "s": 1792816200, "e": 1792819200,
       "t": "Jornal GloboNews - Edição Da Meia-Noite - Ao Vivo", "d": "", "c": [] }
@@ -189,10 +189,20 @@ Cada fatia:
 
 - `s` / `e` são **epoch em segundos, UTC** — inteiro, não timestamp XMLTV. Parsear
   `20261024120000 +0000` em BrightScript é sofrimento; `s` é aritmética direta.
-- `now` é o índice do programa em curso dentro de `programmes`, ou `-1` se nenhum. Dá para
-  desenhar "no ar agora" sem varrer o array.
 - `t` título, `d` descrição (cortada em `epg.sliceDescMaxChars`), `c` categorias.
 - `programmes` vem ordenado por início, e inclui o programa que já começou e ainda não acabou.
+- **Não há campo apontando "o que está no ar".** Existia um, e foi removido: ele era calculado
+  na geração e o arquivo é servido por horas, então ficava errado e induzia o consumidor a
+  mostrar o programa errado. Ache pelo relógio local — `p.s <= agora && p.e > agora` numa lista
+  de algumas dezenas de itens.
+
+#### Fronteira de dia da fonte
+
+A grade de alguns canais começa às 06:00 UTC (03:00 em Brasília), que é a virada de dia de
+sites como o `mi.tv`. Gerar a playlist **antes** dessa hora deixa esses canais sem programa no
+ar até lá — medido numa execução manual às 05:10 UTC: 29 dos 179 canais nessa situação. O cron
+diário roda às **06:10 UTC**, logo depois da virada, e no mesmo conjunto de dados isso cairia
+para **1 canal**. Se você disparar o workflow à mão, prefira depois das 06:10 UTC.
 
 Tamanho medido: **179 arquivos, 6.092 programas, 1.471 KB no total, média 8,2 KB, maior 30,8 KB**
 (um canal de desenhos curtos). O consumidor lê um arquivo por vez.

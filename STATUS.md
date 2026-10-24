@@ -1,6 +1,6 @@
 # Painel de status
 
-Gerado em **2026-10-24T05:10:22.778Z**.
+Gerado em **2026-10-24T05:36:22.400Z**.
 
 ## Descoberta
 
@@ -110,10 +110,10 @@ Grade curta em JSON, um arquivo por canal, para consumidor que nao parseia XMLTV
 | Metrica | Valor |
 | --- | --- |
 | Arquivos | 179 |
-| Programas | 6092 |
+| Programas | 6073 |
 | Janela | 24 h |
-| Tamanho total | 1471.2 KB |
-| Maior arquivo | 30.8 KB |
+| Tamanho total | 1464.5 KB |
+| Maior arquivo | 31.2 KB |
 | Indice | `https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/docs/epg/index.json` |
 
 Cobertura de EPG do iptv-org e parcial por natureza. O numero acima e o **medido**, sem arredondamento para cima. A lista completa de canais sem grade esta em `data/epg-coverage.json`.

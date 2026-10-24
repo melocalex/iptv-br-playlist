@@ -416,13 +416,20 @@ test('writeEpgSlices corta na janela, marca o programa em curso e usa epoch', ()
 
     const slice = JSON.parse(
       readFileSync(resolve(ROOT, sliceDir, 'A.br_at_SD.json'), 'utf8'),
-    ) as { id: string; name: string; now: number; count: number; programmes: { s: number; e: number; t: string; d: string; c: string[] }[] };
+    ) as Record<string, unknown> & { id: string; name: string; count: number; programmes: { s: number; e: number; t: string; d: string; c: string[] }[] };
     assert.equal(slice.id, 'A.br@SD');
     assert.equal(slice.name, 'Canal A', 'nome vem da playlist, nao do guia');
     assert.equal(slice.count, 2);
     assert.deepEqual(slice.programmes.map((p) => p.t), ['Agora', 'Depois'], 'em ordem de inicio');
-    assert.equal(slice.now, 0, 'aponta o programa em curso');
+    // Nenhum campo "no ar agora": so valeria no instante da geracao e o arquivo e
+    // servido por horas, entao seria armadilha para quem consome.
+    assert.ok(!('now' in slice), 'a fatia nao pode carregar ponteiro de programa em curso');
     assert.equal(slice.programmes[0]!.d, 'Em curso');
+    // O programa em curso continua presente; quem consome acha pelo relogio dele.
+    const agoraS = Math.floor(Date.now() / 1000);
+    const emCurso = slice.programmes.filter((p) => p.s <= agoraS && p.e > agoraS);
+    assert.equal(emCurso.length, 1, 'da para achar o programa no ar com s/e e o relogio');
+    assert.equal(emCurso[0]!.t, 'Agora');
     assert.deepEqual(slice.programmes[0]!.c, ['News']);
     // Epoch em segundos, nao milissegundos nem string.
     for (const p of slice.programmes) {
