@@ -20,3 +20,42 @@ https://jmp2.uk/plu-5f32d2db0af67400077f29c4.m3u8
 #EXTINF:-1 tvg-id="FUELTV.pt@AU" tvg-name="FUEL TV" tvg-logo="https://i.imgur.com/I8mviBy.png" tvg-language="eng" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",FUEL TV
 #EXTGRP:🇵🇹 Portugal • Esportes
 https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="30AGolfKingdom.us@SD" tvg-name="30A Golf Kingdom" tvg-logo="https://i.imgur.com/Lv53nh4.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",30A Golf Kingdom
+#EXTGRP:🇺🇸 United States • Esportes
+https://30a-tv.com/feeds/vidaa/golf.m3u8
+#EXTINF:-1 tvg-id="ACCDigitalNetwork.us@SD" tvg-name="ACC Digital Network" tvg-logo="https://i.imgur.com/V6Kaqha.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",ACC Digital Network
+#EXTGRP:🇺🇸 United States • Esportes
+https://d53csymoczzde.cloudfront.net/ACC_Digital_Network.m3u8
+#EXTINF:-1 tvg-id="ACCNetwork.us@SD" tvg-name="ACC Network" tvg-logo="https://i.imgur.com/TpCkbkT.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",ACC Network
+#EXTGRP:🇺🇸 United States • Esportes
+http://23.239.31.26:8989/accnetwork/index.m3u8
+#EXTINF:-1 tvg-id="AmericanNinjaWarrior.us@SD" tvg-name="American Ninja Warrior" tvg-logo="https://raw.githubusercontent.com/RoqueDJ/iptv-svg/main/1792421696158.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",American Ninja Warrior
+#EXTGRP:🇺🇸 United States • Esportes
+https://d4whmvwm0rdvi.cloudfront.net/10007/99951318/hls/master.m3u8?ads.xumo_channelId=99951318&ads.asnw=169843&ads.afid=405342864&ads.sfid=19647852&ads.csid=xumo_web_NBCUAmericanNinjaWarrior_ssai_cro&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads._fw_did=a5090924-15b1-4b7f-b6cd-2f06e2ba51e1&ads._fw_vcid2=512116:a5090924-15b1-4b7f-b6cd-2f06e2ba51e1&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads._fw_content_category=&ads._fw_content_genre=&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads._fw_deviceType=3-Connected_TV&ads.appVersion=1.0.0&ads.appName=XumoPlay&ads.xumo_contentId=4063&ads.xumo_contentName=NBCUAmericanNinjaWarrior&ads.xumo_providerId=4063&ads.xumo_providerName=NBCUAmericanNinjaWarrior&ads.channelId=99951318
+#EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-name="Africa 24 Sport" tvg-logo="https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1" tvg-language="fra" tvg-country="FR" group-title="🏳️ Other Countries • Notícias",Africa 24 Sport
+#EXTGRP:🏳️ Other Countries • Notícias
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 tvg-id="ACISportTV.it@SD" tvg-name="ACI Sport TV" tvg-logo="https://i.imgur.com/U8cHMOt.png" tvg-language="ita" tvg-country="IT" group-title="🏳️ Other Countries • Esportes",ACI Sport TV
+#EXTGRP:🏳️ Other Countries • Esportes
+https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
+#EXTINF:-1 tvg-id="AlIraqiaSport.iq@SD" tvg-name="Al Iraqia Sport" tvg-logo="https://i.imgur.com/DrrlxTO.png" tvg-language="ara" tvg-country="IQ" group-title="🏳️ Other Countries • Esportes",Al Iraqia Sport
+#EXTGRP:🏳️ Other Countries • Esportes
+https://imn-live.esite-lab.com/hls/iraqia-sports-1.m3u8
+#EXTINF:-1 tvg-id="ArenaSport1Premium.rs@SD" tvg-name="Arena Sport 1 Premium" tvg-logo="https://i.imgur.com/csv6YsL.png" tvg-language="srp" tvg-country="RS" group-title="🏳️ Other Countries • Esportes",Arena Sport 1 Premium
+#EXTGRP:🏳️ Other Countries • Esportes
+http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vmRdlEHaaMaQAQw3LRAakpnghBMtR57sXXgLEXZF8gVD
+#EXTINF:-1 tvg-id="ArenaSport1Premium.si@SD" tvg-name="Arena Sport 1 Premium" tvg-logo="https://i.imgur.com/csv6YsL.png" tvg-language="slv" tvg-country="SI" group-title="🏳️ Other Countries • Esportes",Arena Sport 1 Premium
+#EXTGRP:🏳️ Other Countries • Esportes
+http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vhWLdkJ_3C0RZgs4W19uhl8S3kU0l__4SxERjFMDgcT6
+#EXTINF:-1 tvg-id="ArenaSportPremiumM1.mk@SD" tvg-name="Arena Sport Premium M1" tvg-logo="https://tvarenasport.mk/wp-content/themes/tvarenasport-mk/assets/channels/arena-m1.png" tvg-language="mak" tvg-country="MK" group-title="🏳️ Other Countries • Esportes",Arena Sport Premium M1
+#EXTGRP:🏳️ Other Countries • Esportes
+http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vgvje3t-Jiqa5d94ZBmKAqQgIFxl-Ch6B37eGpkVDb28
+#EXTINF:-1 tvg-id="ArenaSportPremiumM2.mk@SD" tvg-name="Arena Sport Premium M2" tvg-logo="https://tvarenasport.mk/wp-content/themes/tvarenasport-mk/assets/channels/arena-m2.png" tvg-language="mak" tvg-country="MK" group-title="🏳️ Other Countries • Esportes",Arena Sport Premium M2
+#EXTGRP:🏳️ Other Countries • Esportes
+http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vgvje3t-Jiqa5d94ZBmKAqR25sVNOuyj97sUY8aJBFf4
+#EXTINF:-1 tvg-id="ArenaSportPremiumM3.mk@SD" tvg-name="Arena Sport Premium M3" tvg-logo="https://tvarenasport.mk/wp-content/themes/tvarenasport-mk/assets/channels/arena-m3.png" tvg-language="mak" tvg-country="MK" group-title="🏳️ Other Countries • Esportes",Arena Sport Premium M3
+#EXTGRP:🏳️ Other Countries • Esportes
+http://telekomsrbije.com:2095/play/lhpjmkfVyhON1JAiZCx7vgvje3t-Jiqa5d94ZBmKAqSVr5S9_a_TNo_sg7gE1yvH
+#EXTINF:-1 tvg-id="Arryadia.ma@SD" tvg-name="Arryadia" tvg-logo="https://i.imgur.com/XjzK3gZ.png" tvg-language="ara" tvg-country="MA" group-title="🏳️ Other Countries • Esportes",Arryadia
+#EXTGRP:🏳️ Other Countries • Esportes
+http://149.100.11.252:8000/play/a065/index.m3u8

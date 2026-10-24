@@ -78,3 +78,72 @@ https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 #EXTINF:-1 tvg-id="TVIFiccao.pt@SD" tvg-name="TVI Ficcao" tvg-logo="https://cdn.iol.pt/img/logostvi/branco/tvificcao.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Séries",TVI Ficcao
 #EXTGRP:🇵🇹 Portugal • Séries
 https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvificcao.m3u8
+#EXTINF:-1 tvg-id="13T.cl@SD" tvg-name="13T" tvg-logo="https://i.imgur.com/csBNi2L.png" tvg-language="spa" tvg-country="CL" group-title="🌎 América Latina • Séries",13T
+#EXTGRP:🌎 América Latina • Séries
+https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
+#EXTINF:-1 tvg-id="Anaylos7.us@Spain" tvg-name="Ana y los 7" tvg-logo="https://i.imgur.com/X5g6gXS.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Séries",Ana y los 7
+#EXTGRP:🇪🇸 España • Séries
+https://jmp2.uk/plu-5f1acce7f17797000718f9be.m3u8
+#EXTINF:-1 tvg-id="3CatPlatsbruts.es@SD" tvg-name="3Cat Plats bruts" tvg-logo="https://i.imgur.com/49ZENis.png" tvg-language="cat" tvg-country="ES" group-title="🇪🇸 España • Séries",3Cat Plats bruts
+#EXTGRP:🇪🇸 España • Séries
+https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
+#EXTINF:-1 tvg-id="50CentAction.us@SD" tvg-name="50 Cent Action" tvg-logo="https://provider-static.plex.tv/epg/cms/production/bcfb9977-809f-49ae-acc7-430f2c6ffb26/50CentAction_Logo_1500x1000_DarkBG_-_Chris_Connors.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",50 Cent Action
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-68487fb3f212bedacf5a53e3.m3u8
+#EXTINF:-1 tvg-id="AcapulcoShore.us@LatAm" tvg-name="Acapulco Shore" tvg-logo="https://images.pluto.tv/channels/61a52615cbef2500072876e2/colorLogoPNG_1756972226445.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Séries",Acapulco Shore
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-61a52615cbef2500072876e2.m3u8
+#EXTINF:-1 tvg-id="48Hours.us@CA" tvg-name="48 Hours" tvg-logo="https://images.pluto.tv/channels/6176f39e709f160007ec61c3/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",48 Hours
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-6176f39e709f160007ec61c3.m3u8
+#EXTINF:-1 tvg-id="AllRealitybyWEtv.us@SD" tvg-name="All Reality by WE tv" tvg-logo="https://i.imgur.com/HZTz5HJ.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",All Reality by WE tv
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-5e82530945600e0007ca076c.m3u8
+#EXTINF:-1 tvg-id="AllWeddingsWEtv.us@SD" tvg-name="All Weddings WE tv" tvg-logo="https://i.imgur.com/OjLCew5.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",All Weddings WE tv
+#EXTGRP:🇺🇸 United States • Séries
+https://pb-amiq9wz02dhco.akamaized.net/playlist.m3u8
+#EXTINF:-1 tvg-id="AlwaysFunnyVideos.us@SD" tvg-name="Always Funny Videos" tvg-logo="https://i.imgur.com/vfdN5Xl.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Always Funny Videos
+#EXTGRP:🇺🇸 United States • Séries
+https://d24l3uppudokci.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="AngerManagementChannel.us@SD" tvg-name="Anger Management Channel" tvg-logo="https://i.imgur.com/VXZgrNy.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Anger Management Channel
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-65cf8bdaa25d5e00081e1e5d.m3u8
+#EXTINF:-1 tvg-id="AntiquesRoadshowUK.us@SD" tvg-name="Antiques Roadshow UK" tvg-logo="https://i.imgur.com/rKWLv48.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Antiques Roadshow UK
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-5ce44810b421747ae467b7cd.m3u8
+#EXTINF:-1 tvg-id="AreWeThereYet.us@SD" tvg-name="Are We There Yet?" tvg-logo="https://i.imgur.com/3BJQiHP.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Are We There Yet?
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-65cf8b9328730900087c5324.m3u8
+#EXTINF:-1 tvg-id="AlerteaMalibu.us@France" tvg-name="Alerte a Malibu" tvg-logo="https://i.imgur.com/hBiB6uk.png" tvg-language="fra" tvg-country="US" group-title="🇺🇸 United States • Séries",Alerte a Malibu
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-60afaa535580be0007ac9ee4.m3u8
+#EXTINF:-1 tvg-id="Andromeda.us@Italy" tvg-name="Andromeda" tvg-logo="https://i.imgur.com/6ot2lmd.png" tvg-language="ita" tvg-country="US" group-title="🇺🇸 United States • Séries",Andromeda
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-60802d37ee238e0007c94e64.m3u8
+#EXTINF:-1 tvg-id="5Cops.us@UK" tvg-name="5 Cops" tvg-logo="https://i.imgur.com/QFPRaXK.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",5 Cops
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://jmp2.uk/plu-5d2c571faeb3e2738ae27933.m3u8
+#EXTINF:-1 tvg-id="AnthonyBourdainPartsUnknown.us@UK" tvg-name="Anthony Bourdain: Parts Unknown" tvg-logo="https://i.imgur.com/dAO9llk.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Anthony Bourdain: Parts Unknown
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://jmp2.uk/plu-69173ce8abd4703b27f71d44.m3u8
+#EXTINF:-1 tvg-id="AMCSeriesLatinAmerica.us@Panregional" tvg-name="AMC Series Latin America" tvg-logo="https://amc-series.s3.amazonaws.com/menu/hbfen1Gom0_k1cyqi7rw4-amc-series-train-w.png" tvg-language="spa" group-title="🌐 International • Séries",AMC Series Latin America
+#EXTGRP:🌐 International • Séries
+https://streaming.onnethn.com/AMC/playlist.m3u8
+#EXTINF:-1 tvg-id="90210.de@DACH" tvg-name="90210" tvg-logo="https://images.pluto.tv/channels/65a67dd13af63d0008257f17/colorLogoPNG.png" tvg-language="deu" group-title="🌐 International • Séries",90210
+#EXTGRP:🌐 International • Séries
+https://jmp2.uk/plu-65a67dd13af63d0008257f17.m3u8
+#EXTINF:-1 tvg-id="AmediaHit.ru@SD" tvg-name="Amedia Hit" tvg-logo="https://i.imgur.com/a8ZBGBw.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Amedia Hit
+#EXTGRP:🏳️ Other Countries • Filmes
+http://stream.mcquack.net/162/index.m3u8
+#EXTINF:-1 tvg-id="2900Happiness.se@DK" tvg-name="2900 Happiness" tvg-logo="https://images.pluto.tv/channels/6720bc6cdaad7f000872a6e2/colorLogoPNG.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",2900 Happiness
+#EXTGRP:🏳️ Other Countries • Séries
+https://jmp2.uk/plu-6720bc6cdaad7f000872a6e2.m3u8
+#EXTINF:-1 tvg-id="7thHeaven.se@DK" tvg-name="7th Heaven" tvg-logo="https://images.pluto.tv/channels/6728c9c85534bb0008b320a4/colorLogoPNG.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",7th Heaven
+#EXTGRP:🏳️ Other Countries • Séries
+https://jmp2.uk/plu-6728c9c85534bb0008b320a4.m3u8
+#EXTINF:-1 tvg-id="4everDrama.ua@SD" tvg-name="4ever Drama" tvg-logo="https://i.imgur.com/CD3vZU6.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Séries",4ever Drama
+#EXTGRP:🏳️ Other Countries • Séries
+http://stream.mcquack.net/260/index.m3u8
+#EXTINF:-1 tvg-id="5minuttishiny.ru@SD" tvg-name="5 minut tishiny" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/5minut_live.jpg" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Séries",5 minut tishiny
+#EXTGRP:🏳️ Other Countries • Séries
+https://cdn-dvr.ntv.ru/5_minut_tishiny/index.m3u8

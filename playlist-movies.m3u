@@ -90,3 +90,79 @@ http://50.7.120.34:8080/AXN_BLACK/index.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt@SD" tvg-name="Kuriakos Cine" tvg-logo="https://i.imgur.com/CZViCwB.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Filmes",Kuriakos Cine
 #EXTGRP:🇵🇹 Portugal • Filmes
 https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlternaTV.ar@SD" tvg-name="AlternaTV" tvg-logo="https://tv.alterna.ar/alternatv.png" tvg-language="spa" tvg-country="AR" group-title="🌎 América Latina • Filmes",AlternaTV
+#EXTGRP:🌎 América Latina • Filmes
+https://tv.alterna.ar/stream/hls/live.m3u8
+#EXTINF:-1 tvg-id="AneflixLive.us@HD" tvg-name="Aneflix Live" tvg-logo="https://cdn.pixabay.com/photo/2021/06/26/18/11/live-6366830_960_720.png" tvg-language="eng;spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Aneflix Live
+#EXTGRP:🇺🇸 United States • Filmes
+#EXTVLCOPT:http-referrer=https://vaughn.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+https://stream-cdn-iad.vaughnsoft.net/play/live_a_neflix01.flv
+#EXTINF:-1 tvg-id="00sReplay.us@SD" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",00s Replay
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
+#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-name="24 Hour Free Movies" tvg-logo="https://i.imgur.com/iSVnzR1.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",24 Hour Free Movies
+#EXTGRP:🇺🇸 United States • Filmes
+https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8
+#EXTINF:-1 tvg-id="30ATVClassicMovies.us@SD" tvg-name="30A TV Classic Movies" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",30A TV Classic Movies
+#EXTGRP:🇺🇸 United States • Filmes
+https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
+#EXTINF:-1 tvg-id="50CentAction.us@SD" tvg-name="50 Cent Action" tvg-logo="https://provider-static.plex.tv/epg/cms/production/bcfb9977-809f-49ae-acc7-430f2c6ffb26/50CentAction_Logo_1500x1000_DarkBG_-_Chris_Connors.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",50 Cent Action
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-68487fb3f212bedacf5a53e3.m3u8
+#EXTINF:-1 tvg-id="70sCinema.us@SD" tvg-name="70s Cinema" tvg-logo="https://i.imgur.com/mgXeEE4.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",70s Cinema
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-5f4d878d3d19b30007d2e782.m3u8
+#EXTINF:-1 tvg-id="80sRewind.us@SD" tvg-name="80s Rewind" tvg-logo="https://i.imgur.com/nkEeYfI.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",80s Rewind
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-5ca525b650be2571e3943c63.m3u8
+#EXTINF:-1 tvg-id="90sThrowback.us@SD" tvg-name="90s Throwback" tvg-logo="https://i.imgur.com/KoGko6M.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",90s Throwback
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-5f4d86f519358a00072b978e.m3u8
+#EXTINF:-1 tvg-id="ABNBibleMoviesChannel.us@SD" tvg-name="ABN Bible Movies Channel" tvg-logo="https://i.imgur.com/NCqZdaL.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",ABN Bible Movies Channel
+#EXTGRP:🇺🇸 United States • Filmes
+https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8
+#EXTINF:-1 tvg-id="AMC.us@EastHD" tvg-name="AMC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",AMC
+#EXTGRP:🇺🇸 United States • Filmes
+http://23.239.31.26:8989/amc/index.m3u8
+#EXTINF:-1 tvg-id="AmericanHorrors.us@SD" tvg-name="American Horrors" tvg-logo="https://image.roku.com/developer_channels/prod/16f5571a82819e8992a748c70b256cbe63105f4b546b73d129668dc2cb701d91.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",American Horrors
+#EXTGRP:🇺🇸 United States • Filmes
+http://107.167.7.162:8081/playlist/amhor/playlist.m3u8
+#EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-name="ARTFLIX Movie Classics" tvg-logo="https://i.imgur.com/5pOZQB4.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",ARTFLIX Movie Classics
+#EXTGRP:🇺🇸 United States • Filmes
+https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AMCEurope.uk@Bulgary" tvg-name="AMC Europe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-language="bul" tvg-country="UK" group-title="🇬🇧 United Kingdom • Filmes",AMC Europe
+#EXTGRP:🇬🇧 United Kingdom • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://212.70.131.37:8000/play/a05k
+#EXTINF:-1 tvg-id="AlloCine.cm@SD" tvg-name="Allo Cine" tvg-logo="https://raw.githubusercontent.com/songwenhui239/Songwenhui239/refs/heads/main/Allo%20Cine.jpeg" tvg-language="fre;eng" tvg-country="CM" group-title="🏳️ Other Countries • Filmes",Allo Cine
+#EXTGRP:🏳️ Other Countries • Filmes
+https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8
+#EXTINF:-1 tvg-id="AndTV.in@International" tvg-name="&TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",&TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://3f56f997.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9BbmRUVl9ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="4everCinema.ua@SD" tvg-name="4ever Cinema" tvg-logo="https://i.imgur.com/vFOgVbG.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",4ever Cinema
+#EXTGRP:🏳️ Other Countries • Filmes
+http://stream.mcquack.net/258/index.m3u8
+#EXTINF:-1 tvg-id="Action24.gr@SD" tvg-name="Action 24" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/Action24-logo-small.png" tvg-language="ell" tvg-country="GR" group-title="🏳️ Other Countries • Filmes",Action 24
+#EXTGRP:🏳️ Other Countries • Filmes
+http://actionlive.siliconweb.com/actionabr/actiontv/playlist.m3u8
+#EXTINF:-1 tvg-id="Aflam.sa@SD" tvg-name="Aflam" tvg-logo="https://i.imgur.com/cTLj7Yt.png" tvg-language="arz;ara" tvg-country="SA" group-title="🏳️ Other Countries • Filmes",Aflam
+#EXTGRP:🏳️ Other Countries • Filmes
+https://shd-amg-fast.edgenextcdn.net/tx001/playlist.m3u8
+#EXTINF:-1 tvg-id="AfraFilm.ir@SD" tvg-name="Afra Film" tvg-language="fas" tvg-country="IR" group-title="🏳️ Other Countries • Filmes",Afra Film
+#EXTGRP:🏳️ Other Countries • Filmes
+https://afrafhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AlankarTV.in@SD" tvg-name="Alankar TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALANKAR/images/LOGO_HD/image.png" tvg-language="ori" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Alankar TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://livetv.tarangplus.in/alankar-origin/live/playlist.m3u8
+#EXTINF:-1 tvg-id="AllTimeMovies.in@SD" tvg-name="All Time Movies" tvg-logo="https://yt3.googleusercontent.com/U4INXhwmEUOABHoemQBpI6C9t4jb9iBmDvZ3ZT3lAb9Au_jVl32NL8XDpy-9cBjRJ2LP69Ovzg=s900-c-k-c0x00ffffff-no-rj" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",All Time Movies
+#EXTGRP:🏳️ Other Countries • Filmes
+https://samitaorigin.tangotv.in/ALLTIMEMOVIES/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="AmediaHit.ru@SD" tvg-name="Amedia Hit" tvg-logo="https://i.imgur.com/a8ZBGBw.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Amedia Hit
+#EXTGRP:🏳️ Other Countries • Filmes
+http://stream.mcquack.net/162/index.m3u8
+#EXTINF:-1 tvg-id="ArmeniaPremium.am@SD" tvg-name="Armenia Premium" tvg-language="hye" tvg-country="AM" group-title="🏳️ Other Countries • Filmes",Armenia Premium
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://stream.mcquack.net/123/index.m3u8
