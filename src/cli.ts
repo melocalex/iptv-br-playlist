@@ -4,7 +4,7 @@ import { buildCatalog, type Catalog, type Channel } from './catalog.ts';
 import { fetchJson } from './http.ts';
 import { loadHealth, saveHealth } from './health.ts';
 import { validateCatalog, type ValidationRunReport } from './validate.ts';
-import { buildEpg, writeCoverage, type EpgResult } from './epg.ts';
+import { buildEpg, writeCoverage, writeIndex, readIndex, type EpgResult } from './epg.ts';
 import { buildViews, writePlaylists, writeMetadata, writeDashboardData, type ChannelView } from './build.ts';
 import { buildStatus, writeStatus } from './report.ts';
 import { info, warn, error } from './log.ts';
@@ -262,21 +262,33 @@ async function main(): Promise<void> {
 
   let epgResult: EpgResult;
   if (args.skipEpg || args.cmd === 'build') {
-    info('EPG pulado nesta execucao');
-    epgResult = {
-      index: new Map(),
-      channelsInGuide: 0,
-      programmes: 0,
-      horizonHours: cfg.epg.programmeHorizonHours,
-      generatedAt: new Date().toISOString(),
-      sources: [],
-      missing: [...wanted].map((id) => ({ tvgId: id, name: id, countryGroup: 'OTHER', guideSites: [] })),
-      dropped: { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0 },
-    };
+    // Sem rodar o grabber: aproveita o indice de uma execucao anterior, se houver.
+    // E assim que a etapa de EPG roda numa job isolada e so entrega o arquivo.
+    const prior = readIndex(cfg);
+    if (prior) {
+      info(
+        `EPG nao executado agora; usando indice de ${prior.generatedAt} ` +
+          `(${prior.channelsInGuide} canais, ${prior.programmes} programas)`,
+      );
+      epgResult = prior;
+    } else {
+      info('EPG pulado e nenhum indice anterior encontrado: cobertura fica zerada');
+      epgResult = {
+        index: new Map(),
+        channelsInGuide: 0,
+        programmes: 0,
+        horizonHours: cfg.epg.programmeHorizonHours,
+        generatedAt: new Date().toISOString(),
+        sources: [],
+        missing: [...wanted].map((id) => ({ tvgId: id, name: id, countryGroup: 'OTHER', guideSites: [] })),
+        dropped: { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0 },
+      };
+    }
   } else {
     info(`EPG pedido para ${wanted.size} canais da playlist validada`);
     epgResult = await buildEpg(cfg, epgCfg, catalog.channels, wanted);
     writeCoverage(cfg, epgResult, wanted.size);
+    writeIndex(cfg, epgResult);
   }
   if (args.cmd === 'epg') return;
 

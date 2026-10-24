@@ -67,15 +67,52 @@ export function loadHealth(cfg: Config): HealthStore {
   }
 }
 
+/**
+ * Grava unindo com o que ja esta em disco, por stream e por ponto de observacao.
+ *
+ * Nao e otimizacao: a execucao local carrega o arquivo no inicio e salva no fim, e
+ * nesse meio o arquivo pode ter recebido o resultado de OUTRO ponto de observacao
+ * (um `git pull` do que o runner comitou). Sobrescrever o store inteiro apagaria
+ * esse vantage. Aqui o que esta em memoria vence apenas no que ele mediu.
+ */
 export function saveHealth(cfg: Config, store: HealthStore): void {
   const p = outPath(cfg, cfg.output.healthFile);
   mkdirSync(dirname(p), { recursive: true });
+
+  const onDisk = existsSync(p) ? safeRead(p) : null;
+  const merged: Record<string, StreamHealth> = {};
+  for (const [key, entry] of Object.entries(onDisk?.streams ?? {})) {
+    merged[key] = { ...entry, vantages: { ...entry.vantages } };
+  }
+  for (const [key, entry] of Object.entries(store.streams)) {
+    const target = merged[key];
+    if (!target) {
+      merged[key] = { ...entry, vantages: { ...entry.vantages } };
+      continue;
+    }
+    target.url = entry.url;
+    target.channelId = entry.channelId;
+    for (const [vantage, v] of Object.entries(entry.vantages)) target.vantages[vantage] = v;
+  }
+
+  const kept = Object.keys(merged).length - Object.keys(store.streams).length;
+  if (onDisk && kept > 0) info(`health: ${kept} streams preservados do arquivo em disco`);
+
   store.updatedAt = new Date().toISOString();
   // Chaves ordenadas: diff do git fica estavel entre execucoes.
   const ordered: Record<string, StreamHealth> = {};
-  for (const k of Object.keys(store.streams).sort()) ordered[k] = store.streams[k]!;
+  for (const k of Object.keys(merged).sort()) ordered[k] = merged[k]!;
   store.streams = ordered;
   writeFileSync(p, JSON.stringify(store, null, 1) + '\n');
+}
+
+function safeRead(p: string): HealthStore | null {
+  try {
+    const parsed = JSON.parse(readFileSync(p, 'utf8')) as HealthStore;
+    return parsed.streams ? parsed : null;
+  } catch {
+    return null;
+  }
 }
 
 /** Grava um resultado de checagem, atualizando historico e contagem de falhas. */

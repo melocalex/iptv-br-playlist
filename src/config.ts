@@ -78,6 +78,8 @@ export interface Config {
     metadataFile: string;
     healthFile: string;
     epgCoverageFile: string;
+    /** Indice tvg-id -> numero de programas, para a etapa de build rodar sem o grabber. */
+    epgIndexFile: string;
     validationReportFile: string;
   };
 }

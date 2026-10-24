@@ -16,28 +16,28 @@ on:
         type: boolean
         default: false
 
-# Permissao minima: so escrever no proprio repositorio para comitar o que foi gerado.
-# Nenhum segredo e usado; GITHUB_TOKEN do proprio run basta.
-permissions:
-  contents: write
+# Nenhuma permissao no nivel do workflow. Cada job pede o minimo que precisa, e
+# so a ultima recebe escrita. Nenhum segredo alem do GITHUB_TOKEN do proprio run.
+permissions: {}
 
 concurrency:
   group: atualizar
   cancel-in-progress: false
 
 jobs:
-  atualizar:
+  # ---------------------------------------------------------------------------
+  # 1. Validacao: so codigo do projeto e ffprobe. Sem permissao de escrita.
+  # ---------------------------------------------------------------------------
+  validar:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 90
+    permissions:
+      contents: read
     env:
       # O runner do GitHub fica nos Estados Unidos. O resultado aqui NAO e o mesmo
       # de uma maquina no Brasil, e o relatorio guarda os dois separados.
       IPTV_VANTAGE: github-us
     steps:
-      # persist-credentials: false e a trava principal deste workflow. A etapa de EPG
-      # roda codigo de terceiro (o grabber do iptv-org/epg, e o postinstall dele).
-      # Sem o token no .git/config, esse codigo nao tem como escrever no repositorio;
-      # a credencial entra apenas na etapa final de commit, por cabecalho.
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
@@ -57,7 +57,7 @@ jobs:
         # O projeto nao tem script de ciclo de vida; desligar reduz a superficie.
         run: npm ci --ignore-scripts
 
-      # Cache do GET condicional das fontes: evita rebaixar channels.json/guides.json
+      # GET condicional das fontes: evita rebaixar channels.json/guides.json
       # quando a origem nao mudou (ETag / Last-Modified).
       - name: Cache das fontes HTTP
         uses: actions/cache@v4
@@ -67,41 +67,183 @@ jobs:
           restore-keys: |
             fontes-
 
-      # node_modules do grabber de EPG: instalar a cada execucao custa minutos.
+      - name: Checar configuracao
+        run: node src/cli.ts check
+
+      - name: Validar streams
+        env:
+          IPTV_VALIDATION_MAXCHECKSPERRUN: ${{ inputs.max_checks }}
+        run: node src/cli.ts validate
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: health
+          path: data/health.json
+          retention-days: 2
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  # 2. EPG: esta e a UNICA job que executa codigo de terceiro — o grabber do
+  #    iptv-org/epg e o postinstall dele. Por isso ela nao tem permissao de
+  #    escrita, nao recebe credencial e entrega apenas arquivos por artifact.
+  #    O workspace dela e descartado no fim e nunca vira commit.
+  # ---------------------------------------------------------------------------
+  epg:
+    runs-on: ubuntu-latest
+    needs: validar
+    if: ${{ inputs.skip_epg != true }}
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Instalar dependencias do projeto
+        run: npm ci --ignore-scripts
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: health
+          path: data
+
+      - name: Cache das fontes HTTP
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: fontes-epg-${{ github.run_id }}
+          restore-keys: |
+            fontes-
+
+      # config.json carrega epg.grabberRef (commit SHA fixado): mudar o pin invalida
+      # o cache. O codigo tambem confere HEAD e arvore limpa a cada execucao e
+      # refaz o clone se o diretorio em cache divergir do pin.
       - name: Cache do grabber de EPG
         uses: actions/cache@v4
         with:
           path: .epg-grabber
-          # config.json carrega epg.grabberRef (commit SHA fixado): mudar o pin invalida o cache.
           key: epg-grabber-${{ hashFiles('config/epg.json', 'config/config.json') }}-${{ github.run_id }}
           restore-keys: |
             epg-grabber-${{ hashFiles('config/epg.json', 'config/config.json') }}-
 
-      - name: Checar configuracao
-        run: node src/cli.ts check
+      - name: Montar o guia
+        run: node src/cli.ts epg
 
-      - name: Rodar pipeline
-        env:
-          # Entradas do workflow_dispatch passam por env, nunca interpoladas no shell.
-          IPTV_VALIDATION_MAXCHECKSPERRUN: ${{ inputs.max_checks }}
-          SKIP_EPG: ${{ inputs.skip_epg }}
-        run: |
-          args=""
-          if [ "$SKIP_EPG" = "true" ]; then args="--skip-epg"; fi
-          node src/cli.ts all $args
+      - uses: actions/upload-artifact@v4
+        with:
+          name: epg
+          path: |
+            epg.xml.gz
+            data/epg-coverage.json
+            data/epg-index.json
+          retention-days: 2
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  # 3. Publicacao: checkout limpo, recebe os artifacts das jobs anteriores e e a
+  #    unica com escrita. Nenhum codigo de terceiro roda aqui, e o commit aceita
+  #    apenas os caminhos da lista — arquivo fora dela derruba a job.
+  # ---------------------------------------------------------------------------
+  publicar:
+    runs-on: ubuntu-latest
+    needs: [validar, epg]
+    if: ${{ always() && needs.validar.result == 'success' && needs.epg.result != 'failure' }}
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Instalar dependencias do projeto
+        run: npm ci --ignore-scripts
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: health
+          path: data
+
+      - uses: actions/download-artifact@v4
+        if: ${{ needs.epg.result == 'success' }}
+        with:
+          name: epg
+          path: .
+
+      - name: Cache das fontes HTTP
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: fontes-pub-${{ github.run_id }}
+          restore-keys: |
+            fontes-
+
+      # build nao roda grabber: le data/epg-index.json entregue pela job anterior.
+      - name: Gerar playlists e relatorios
+        run: node src/cli.ts build
 
       - name: Comitar resultado
         env:
-          # Credencial so existe nesta etapa, depois de o codigo de terceiro ja ter rodado.
+          # Credencial so existe nesta etapa, num workspace onde nada de terceiro rodou.
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A playlist*.m3u epg.xml.gz status.json STATUS.md data docs
+
+          # Lista fechada. Nada entra no commit por estar na pasta certa.
+          PERMITIDOS="
+          playlist.m3u
+          playlist-br.m3u
+          playlist-pt.m3u
+          playlist-movies.m3u
+          playlist-series.m3u
+          playlist-sports.m3u
+          playlist-international.m3u
+          playlist-all.m3u
+          epg.xml.gz
+          status.json
+          STATUS.md
+          data/health.json
+          data/channels.json
+          data/epg-coverage.json
+          data/epg-index.json
+          docs/dashboard-data.json
+          "
+          for f in $PERMITIDOS; do
+            # if/then, nao 'test && cmd': com set -e um arquivo ausente abortaria o job.
+            if [ -f "$f" ]; then git add -- "$f"; fi
+          done
+
           if git diff --cached --quiet; then
             echo "nada mudou"
             exit 0
           fi
+
+          # Confere que o que foi preparado esta mesmo dentro da lista. Sem pipeline
+          # com 'while read': o exit de um subshell nao derrubaria a job.
+          echo "$PERMITIDOS" | tr -d ' ' | grep -v '^$' | sort > /tmp/permitidos.txt
+          git diff --cached --name-only | sort > /tmp/staged.txt
+          FORA=$(comm -23 /tmp/staged.txt /tmp/permitidos.txt)
+          if [ -n "$FORA" ]; then
+            echo "::error::caminho fora da lista permitida no commit: $(echo "$FORA" | tr '\n' ' ')"
+            exit 1
+          fi
+
+          echo "arquivos no commit:"
+          git diff --cached --name-only | sed 's/^/  /'
+
           git commit -m "chore(dados): atualiza playlists, EPG e relatorios"
           AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
           git -c http.extraheader="Authorization: Basic $AUTH" \

@@ -209,6 +209,26 @@ async function ensureGrabber(cfg: Config): Promise<string | null> {
     // Ref movel significa executar codigo de terceiro que pode mudar entre execucoes.
     warn(`epg.grabberRef '${ref}' nao e um commit SHA: o codigo do grabber pode mudar sem aviso`);
   }
+  // O diretorio pode vir do cache do Actions, ou seja, de fora desta execucao.
+  // Entao o pin e conferido SEMPRE, nao so no clone: HEAD igual ao SHA e arvore limpa.
+  // Qualquer divergencia descarta o diretorio e refaz do zero.
+  if (existsSync(resolve(dir, 'package.json'))) {
+    const head = await run('git', ['rev-parse', 'HEAD'], dir, 60_000);
+    const dirty = await run('git', ['status', '--porcelain'], dir, 60_000);
+    const got = head.stdout.trim();
+    const modified = dirty.stdout.trim();
+    const mismatch = isSha && got.toLowerCase() !== ref.toLowerCase();
+    if (head.code !== 0 || mismatch || modified !== '') {
+      warn(
+        `grabber em cache rejeitado (HEAD=${got || 'desconhecido'}, ref=${ref}` +
+          `${modified ? `, ${modified.split('\n').length} arquivo(s) alterado(s)` : ''}); refazendo`,
+      );
+      rmSync(dir, { recursive: true, force: true });
+    } else {
+      info(`grabber em cache aceito: HEAD ${got}, arvore limpa`);
+    }
+  }
+
   if (!existsSync(resolve(dir, 'package.json'))) {
     info(`clonando grabber ${cfg.epg.grabberRepo} em ${cfg.epg.grabberDir} (ref ${ref})`);
     mkdirSync(dirname(dir), { recursive: true });
@@ -514,6 +534,65 @@ export async function buildEpg(
     missing,
     dropped,
   };
+}
+
+/**
+ * Resultado do EPG em arquivo, para a etapa de build nao precisar do grabber.
+ * E o que permite rodar o grabber numa job isolada, sem permissao de escrita.
+ */
+export function writeIndex(cfg: Config, result: EpgResult): void {
+  const p = outPath(cfg, cfg.output.epgIndexFile);
+  mkdirSync(dirname(p), { recursive: true });
+  const programmes: Record<string, number> = {};
+  for (const k of [...result.index.keys()].sort()) programmes[k] = result.index.get(k)!;
+  writeFileSync(
+    p,
+    JSON.stringify(
+      {
+        generatedAt: result.generatedAt,
+        horizonHours: result.horizonHours,
+        channelsInGuide: result.channelsInGuide,
+        programmes: result.programmes,
+        sources: result.sources,
+        dropped: result.dropped,
+        missing: result.missing,
+        byChannel: programmes,
+      },
+      null,
+      1,
+    ) + '\n',
+  );
+}
+
+/** Le o indice gravado por uma execucao anterior de `epg`. Null quando nao existe. */
+export function readIndex(cfg: Config): EpgResult | null {
+  const p = outPath(cfg, cfg.output.epgIndexFile);
+  if (!existsSync(p)) return null;
+  try {
+    const raw = JSON.parse(readFileSync(p, 'utf8')) as {
+      generatedAt: string;
+      horizonHours: number;
+      channelsInGuide: number;
+      programmes: number;
+      sources: EpgResult['sources'];
+      dropped: EpgResult['dropped'];
+      missing: EpgResult['missing'];
+      byChannel: Record<string, number>;
+    };
+    return {
+      index: new Map(Object.entries(raw.byChannel ?? {})),
+      channelsInGuide: raw.channelsInGuide ?? 0,
+      programmes: raw.programmes ?? 0,
+      horizonHours: raw.horizonHours ?? 0,
+      generatedAt: raw.generatedAt,
+      sources: raw.sources ?? [],
+      missing: raw.missing ?? [],
+      dropped: raw.dropped ?? { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0 },
+    };
+  } catch (err) {
+    warn(`indice de EPG invalido em ${p}: ${(err as Error).message}`);
+    return null;
+  }
 }
 
 export function writeCoverage(cfg: Config, result: EpgResult, wantedTotal: number): void {

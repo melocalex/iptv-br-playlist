@@ -69,6 +69,7 @@
     "metadataFile": "data/channels.json",
     "healthFile": "data/health.json",
     "epgCoverageFile": "data/epg-coverage.json",
+    "epgIndexFile": "data/epg-index.json",
     "validationReportFile": "data/validation-report.json"
   }
 }
