@@ -1,0 +1,72 @@
+{
+  "repo": {
+    "owner": "melocalex",
+    "name": "iptv-br-playlist",
+    "branch": "main"
+  },
+  "vantage": "local-br",
+  "http": {
+    "connectTimeoutMs": 8000,
+    "readTimeoutMs": 30000,
+    "retries": 2,
+    "retryBackoffMs": 1500,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "errorBodySnippetBytes": 512
+  },
+  "validation": {
+    "concurrency": 10,
+    "connectTimeoutMs": 8000,
+    "probeTimeoutMs": 15000,
+    "attemptsPerStream": 2,
+    "retryBackoffMs": 1200,
+    "maxChecksPerRun": 1200,
+    "dropAfterFailures": 3,
+    "historyWindow": 4,
+    "unstableMinMixed": 1,
+    "ffprobePath": "ffprobe",
+    "analyzeDurationUs": 3000000,
+    "probeSizeBytes": 2000000,
+    "priorityCountryGroups": ["BR", "PT"],
+    "recheckHours": {
+      "UNKNOWN": 0,
+      "WORKING": 24,
+      "UNSTABLE": 12,
+      "OFFLINE": 72,
+      "TIMEOUT": 48,
+      "GEO_BLOCKED": 168,
+      "AUTH_REQUIRED": 168,
+      "UNSUPPORTED": 168
+    }
+  },
+  "epg": {
+    "enabled": true,
+    "days": 2,
+    "maxConnections": 5,
+    "requestTimeoutMs": 30000,
+    "grabTimeoutMs": 1800000,
+    "grabberRepo": "https://github.com/iptv-org/epg.git",
+    "grabberRef": "master",
+    "grabberDir": ".epg-grabber",
+    "maxChannelsPerSite": 400,
+    "programmeHorizonHours": 72
+  },
+  "filters": {
+    "excludeNsfw": true,
+    "excludeClosedChannels": true
+  },
+  "classification": {
+    "internationalAreas": ["r/WW", "r/UN"],
+    "internationalMinCountries": 3
+  },
+  "output": {
+    "dir": ".",
+    "epgFile": "epg.xml.gz",
+    "mainPlaylist": "playlist.m3u",
+    "statusJson": "status.json",
+    "statusMarkdown": "STATUS.md",
+    "metadataFile": "data/channels.json",
+    "healthFile": "data/health.json",
+    "epgCoverageFile": "data/epg-coverage.json",
+    "validationReportFile": "data/validation-report.json"
+  }
+}

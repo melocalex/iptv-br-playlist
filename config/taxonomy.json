@@ -1,0 +1,57 @@
+{
+  "comment": [
+    "Mapeamentos de classificacao. Nada aqui e deduzido do nome do canal:",
+    "'countries' casa com channels.json#country (ISO 3166-1 alpha-2) e",
+    "'from' casa com channels.json#categories (ids de categories.json do iptv-org).",
+    "A ordem dos arrays 'countryOrder' e 'categoryOrder' define a ordem das secoes na playlist unica."
+  ],
+  "countryGroups": [
+    { "code": "BR", "label": "Brasil", "flag": "🇧🇷", "countries": ["BR"] },
+    { "code": "PT", "label": "Portugal", "flag": "🇵🇹", "countries": ["PT"] },
+    {
+      "code": "LATAM",
+      "label": "América Latina",
+      "flag": "🌎",
+      "countries": [
+        "AR", "BO", "CL", "CO", "CR", "CU", "DO", "EC", "GT", "HN",
+        "MX", "NI", "PA", "PE", "PR", "PY", "SV", "UY", "VE", "BZ"
+      ]
+    },
+    { "code": "ES", "label": "España", "flag": "🇪🇸", "countries": ["ES"] },
+    { "code": "US", "label": "United States", "flag": "🇺🇸", "countries": ["US"] },
+    { "code": "UK", "label": "United Kingdom", "flag": "🇬🇧", "countries": ["UK"] },
+    { "code": "INT", "label": "International", "flag": "🌐", "countries": [] },
+    { "code": "OTHER", "label": "Other Countries", "flag": "🏳️", "countries": [] }
+  ],
+  "countryOrder": ["BR", "PT", "LATAM", "ES", "US", "UK", "INT", "OTHER"],
+  "languagePriority": ["por", "spa", "eng"],
+  "categories": [
+    { "code": "movies", "label": "Filmes", "from": ["movies"] },
+    { "code": "series", "label": "Séries", "from": ["series"] },
+    { "code": "sports", "label": "Esportes", "from": ["sports"] },
+    { "code": "news", "label": "Notícias", "from": ["news", "weather"] },
+    { "code": "documentary", "label": "Documentários", "from": ["documentary"] },
+    { "code": "kids", "label": "Infantil", "from": ["kids", "family"] },
+    { "code": "animation", "label": "Animação", "from": ["animation"] },
+    { "code": "entertainment", "label": "Entretenimento", "from": ["entertainment", "comedy"] },
+    { "code": "music", "label": "Música", "from": ["music"] },
+    { "code": "education", "label": "Educação", "from": ["education", "science"] },
+    { "code": "culture", "label": "Cultura", "from": ["culture", "religious"] },
+    {
+      "code": "variety",
+      "label": "Variedades",
+      "from": [
+        "lifestyle", "cooking", "travel", "outdoor", "auto", "business",
+        "shop", "relax", "classic", "interactive"
+      ]
+    },
+    { "code": "general", "label": "Geral", "from": ["general", "public", "legislative"] }
+  ],
+  "categoryOrder": [
+    "news", "sports", "movies", "series", "documentary", "kids", "animation",
+    "entertainment", "music", "culture", "education", "variety", "general"
+  ],
+  "fallbackCategory": "general",
+  "excludeSourceCategories": ["xxx"],
+  "sectionSeparator": " • "
+}

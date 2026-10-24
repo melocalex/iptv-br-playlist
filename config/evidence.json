@@ -1,0 +1,68 @@
+{
+  "comment": [
+    "Padroes usados para classificar uma falha por EVIDENCIA, nunca por suposicao.",
+    "GEO_BLOCKED exige HTTP 451 ou um destes padroes no corpo/cabecalho da resposta.",
+    "AUTH_REQUIRED exige HTTP 401, cabecalho WWW-Authenticate, ou um destes padroes.",
+    "Um HTTP 403 sem nenhum padrao fica OFFLINE com reason 'http_403' e o trecho do corpo",
+    "guardado como evidencia: recusa comprovada, motivo nao comprovado."
+  ],
+  "geoPatterns": [
+    "not available in your (country|region|location|territory)",
+    "unavailable in your (country|region|location)",
+    "geo[- ]?blocked",
+    "geo[- ]?restrict",
+    "geoblocking",
+    "outside (of )?(the )?(united states|brazil|uk|eu)",
+    "this content is not available in",
+    "conteudo n[aã]o dispon[ií]vel (na|em) sua regi[aã]o",
+    "n[aã]o dispon[ií]vel no seu pa[ií]s",
+    "region[ _-]?lock",
+    "country[ _-]?block"
+  ],
+  "authPatterns": [
+    "unauthorized",
+    "authentication (required|failed)",
+    "invalid (token|key|credential|session)",
+    "token (expired|missing|invalid)",
+    "subscription required",
+    "please (log ?in|sign ?in)",
+    "acesso restrito",
+    "assinatura necess[aá]ria"
+  ],
+  "ffprobeAuthPatterns": [
+    "server returned 40[13]",
+    "http error 40[13]",
+    "authentication"
+  ],
+  "ffprobeNotFoundPatterns": [
+    "server returned 4(0[0456789]|1[0-9])",
+    "http error 4\\d\\d",
+    "no such file or directory",
+    "name or service not known",
+    "failed to resolve hostname",
+    "connection refused",
+    "connection reset by peer",
+    "network is unreachable",
+    "end of file"
+  ],
+  "ffprobeTimeoutPatterns": [
+    "operation timed out",
+    "connection timed out",
+    "timed out",
+    "immediate exit requested"
+  ],
+  "resolutionLadder": [
+    { "minHeight": 2160, "label": "2160p" },
+    { "minHeight": 1440, "label": "1440p" },
+    { "minHeight": 1080, "label": "1080p" },
+    { "minHeight": 720, "label": "720p" },
+    { "minHeight": 576, "label": "576p" },
+    { "minHeight": 480, "label": "480p" },
+    { "minHeight": 360, "label": "360p" },
+    { "minHeight": 240, "label": "240p" },
+    { "minHeight": 0, "label": "baixa" }
+  ],
+  "portugueseAudioCodes": ["por", "pt", "pt-br", "pb", "ptb", "pt_br", "bra"],
+  "hlsUrlPatterns": ["\\.m3u8($|\\?)", "/playlist($|\\?)", "/master($|\\?)"],
+  "transientStatuses": ["TIMEOUT", "OFFLINE", "UNKNOWN"]
+}

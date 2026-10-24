@@ -1,0 +1,122 @@
+name: atualizar
+
+on:
+  schedule:
+    # 06:10 UTC = 03:10 em Sao Paulo (UTC-3).
+    - cron: '10 6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_checks:
+        description: 'Limite de streams validados nesta execucao (vazio usa config/config.json)'
+        required: false
+        type: string
+      skip_epg:
+        description: 'Pular a etapa de EPG'
+        required: false
+        type: boolean
+        default: false
+
+# Permissao minima: so escrever no proprio repositorio para comitar o que foi gerado.
+# Nenhum segredo e usado; GITHUB_TOKEN do proprio run basta.
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      # O runner do GitHub fica nos Estados Unidos. O resultado aqui NAO e o mesmo
+      # de uma maquina no Brasil, e o relatorio guarda os dois separados.
+      IPTV_VANTAGE: github-us
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Instalar ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg
+          ffprobe -version | head -1
+
+      - name: Instalar dependencias do projeto
+        run: npm ci
+
+      # Cache do GET condicional das fontes: evita rebaixar channels.json/guides.json
+      # quando a origem nao mudou (ETag / Last-Modified).
+      - name: Cache das fontes HTTP
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: fontes-${{ github.run_id }}
+          restore-keys: |
+            fontes-
+
+      # node_modules do grabber de EPG: instalar a cada execucao custa minutos.
+      - name: Cache do grabber de EPG
+        uses: actions/cache@v4
+        with:
+          path: .epg-grabber
+          key: epg-grabber-${{ hashFiles('config/epg.json') }}-${{ github.run_id }}
+          restore-keys: |
+            epg-grabber-${{ hashFiles('config/epg.json') }}-
+            epg-grabber-
+
+      - name: Checar configuracao
+        run: node src/cli.ts check
+
+      - name: Rodar pipeline
+        env:
+          # Entradas do workflow_dispatch passam por env, nunca interpoladas no shell.
+          IPTV_VALIDATION_MAXCHECKSPERRUN: ${{ inputs.max_checks }}
+          SKIP_EPG: ${{ inputs.skip_epg }}
+        run: |
+          args=""
+          if [ "$SKIP_EPG" = "true" ]; then args="--skip-epg"; fi
+          node src/cli.ts all $args
+
+      - name: Comitar resultado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A playlist*.m3u epg.xml.gz status.json STATUS.md data docs
+          if git diff --cached --quiet; then
+            echo "nada mudou"
+            exit 0
+          fi
+          git commit -m "chore(dados): atualiza playlists, EPG e relatorios"
+          git push
+
+      - name: Resumo da execucao
+        if: always()
+        run: |
+          if [ -f status.json ]; then
+            node -e '
+              const s = require("./status.json");
+              const l = [];
+              l.push("## Resultado");
+              l.push("");
+              l.push("| Metrica | Valor |");
+              l.push("| --- | --- |");
+              l.push(`| Canais descobertos | ${s.discovery.channelsDiscovered} |`);
+              l.push(`| Streams descobertos | ${s.discovery.streamsDiscovered} |`);
+              l.push(`| Canais BR validados | ${s.catalog.brazilianChannels} |`);
+              l.push(`| Canais internacionais validados | ${s.catalog.internationalChannels} |`);
+              l.push(`| Cobertura de EPG medida | ${s.epg.coveragePercent}% |`);
+              l.push(`| Programas no guia | ${s.epg.programmes} |`);
+              l.push("");
+              l.push("Pontos de observacao medidos (nao somaveis): " +
+                Object.keys(s.validation.streamsByVantageAndStatus).join(", "));
+              require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, l.join("\n") + "\n");
+            '
+          else
+            echo "status.json nao foi gerado" >> "$GITHUB_STEP_SUMMARY"
+          fi

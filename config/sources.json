@@ -1,0 +1,96 @@
+{
+  "comment": [
+    "Registro modular de fontes. 'kind' decide o leitor usado.",
+    "iptv-org-api: metadados autoritativos (classificacao vem daqui, nunca do nome do canal).",
+    "m3u: lista de streams. 'coveredBy' marca a fonte como redundante quando a master ja",
+    "contem as mesmas entradas; o pipeline nao baixa fonte redundante salvo --no-dedupe-sources.",
+    "Para somar outra fonte publica depois, acrescente um objeto com kind 'm3u' e enabled true."
+  ],
+  "api": {
+    "kind": "iptv-org-api",
+    "enabled": true,
+    "baseUrl": "https://iptv-org.github.io/api",
+    "files": {
+      "channels": "channels.json",
+      "feeds": "feeds.json",
+      "streams": "streams.json",
+      "categories": "categories.json",
+      "countries": "countries.json",
+      "languages": "languages.json",
+      "guides": "guides.json"
+    }
+  },
+  "playlists": [
+    {
+      "id": "iptv-org-index",
+      "kind": "m3u",
+      "enabled": true,
+      "master": true,
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "note": "Playlist mestre do iptv-org: contem todas as entradas das demais listas de pais/categoria."
+    },
+    {
+      "id": "iptv-org-br",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/countries/br.m3u"
+    },
+    {
+      "id": "iptv-org-por",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/languages/por.m3u"
+    },
+    {
+      "id": "iptv-org-movies",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/movies.m3u"
+    },
+    {
+      "id": "iptv-org-series",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/series.m3u"
+    },
+    {
+      "id": "iptv-org-sports",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/sports.m3u"
+    },
+    {
+      "id": "iptv-org-news",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/news.m3u"
+    },
+    {
+      "id": "iptv-org-documentary",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u"
+    },
+    {
+      "id": "iptv-org-animation",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/animation.m3u"
+    },
+    {
+      "id": "iptv-org-entertainment",
+      "kind": "m3u",
+      "enabled": true,
+      "coveredBy": "iptv-org-index",
+      "url": "https://iptv-org.github.io/iptv/categories/entertainment.m3u"
+    }
+  ]
+}

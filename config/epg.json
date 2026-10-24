@@ -1,0 +1,60 @@
+{
+  "comment": [
+    "Fontes de EPG. Medido em 2026-10-24:",
+    "  - https://iptv-org.github.io/epg/guides/  -> HTTP 404 (nao existe mais)",
+    "  - iptv-org/epg nao publica releases nem branch gh-pages",
+    "  - GUIDES.md (lista comunitaria) estava com todos os hosts em status vermelho, 0 canais",
+    "Por isso o caminho primario e rodar o grabber do proprio iptv-org/epg, que emite XMLTV",
+    "com xmltv_id identico ao tvg-id da playlist (ex.: 'Globo.br@SD'). Casamento exato, sem adivinhar.",
+    "",
+    "'publishedGuides' aceita XMLTV ja publicado. Cada entrada e verificada em tempo de",
+    "execucao (HTTP + parse XMLTV) antes de ser usada.",
+    "  idFormat 'iptv-org': os ids do guia JA sao 'canal@feed' do iptv-org. Casamento exato.",
+    "  idFormat 'foreign': ids proprios. Exige 'idMap' explicito; sem ele a fonte e ignorada,",
+    "  porque casar por semelhanca seria adivinhacao."
+  ],
+  "grabberSites": [
+    { "site": "mi.tv", "enabled": true, "note": "196 canais BR, 2 PT (medido em guides.json)" },
+    { "site": "meuguia.tv", "enabled": true, "note": "64 canais BR" },
+    { "site": "meo.pt", "enabled": true, "note": "82 canais PT, 5 BR" },
+    { "site": "nostv.pt", "enabled": true, "note": "79 canais PT, 1 BR" },
+    { "site": "gatotv.com", "enabled": true, "note": "cobertura LATAM ampla" },
+    { "site": "pluto.tv", "enabled": true, "note": "canais FAST" },
+    { "site": "plex.tv", "enabled": false, "note": "poucos canais BR/PT; ligue se quiser" },
+    { "site": "vodafone.pt", "enabled": false, "note": "47 canais PT" }
+  ],
+  "publishedGuides": [
+    {
+      "id": "kanya-us",
+      "enabled": true,
+      "url": "https://epg.kanya.io/us/guide.xml.gz",
+      "idFormat": "iptv-org",
+      "idMap": null,
+      "note": "Guia apontado pelo proprio x-tvg-url do index.m3u do iptv-org. Medido em 2026-10-24: 1401 canais, 65766 programas, ids em formato canal@feed. Cobre 466 dos 11555 tvg-ids do catalogo, porem 0 de 394 canais BR e 2 de 66 PT."
+    },
+    {
+      "id": "kanya-ke",
+      "enabled": true,
+      "url": "https://epg.kanya.io/ke/guide.xml.gz",
+      "idFormat": "iptv-org",
+      "idMap": null,
+      "note": "Mesmo host, recorte Quenia. HTTP 200 verificado em 2026-10-24."
+    },
+    {
+      "id": "mjh-plutotv-br",
+      "enabled": false,
+      "url": "https://i.mjh.nz/PlutoTV/br.xml.gz",
+      "idFormat": "foreign",
+      "idMap": null,
+      "note": "HTTP 200 verificado em 2026-10-24, mas usa ids proprios do Pluto. Sem idMap, nao e usado."
+    },
+    {
+      "id": "mjh-samsungtvplus-all",
+      "enabled": false,
+      "url": "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
+      "idFormat": "foreign",
+      "idMap": null,
+      "note": "HTTP 200 verificado em 2026-10-24; ids proprios."
+    }
+  ]
+}

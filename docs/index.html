@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Playlist IPTV — painel</title>
+<style>
+  :root {
+    --bg: #fbfbfd; --panel: #ffffff; --ink: #14161a; --muted: #5d6470;
+    --line: #e3e6ec; --accent: #1d6fd0; --accent-soft: #eaf2fd;
+    --ok: #1a7f46; --warn: #9a6400; --bad: #b3261e; --radius: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1115; --panel: #171a20; --ink: #e8eaee; --muted: #9aa2b1;
+      --line: #272c35; --accent: #65a6f3; --accent-soft: #16263c;
+      --ok: #52c17f; --warn: #e0ad3a; --bad: #f2776c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --panel: #171a20; --ink: #e8eaee; --muted: #9aa2b1;
+    --line: #272c35; --accent: #65a6f3; --accent-soft: #16263c;
+    --ok: #52c17f; --warn: #e0ad3a; --bad: #f2776c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 16px 72px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.015em; }
+  .sub { color: var(--muted); margin: 0 0 28px; font-size: 0.92rem; }
+  .cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-bottom: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+  .card .v { font-size: 1.5rem; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .card .k { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 2px; }
+  .note { background: var(--accent-soft); border: 1px solid var(--line); border-radius: var(--radius);
+          padding: 12px 16px; font-size: 0.88rem; margin-bottom: 22px; }
+  .note strong { font-weight: 600; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-bottom: 18px; }
+  section h2 { font-size: 1rem; margin: 0 0 14px; }
+  .urls { display: grid; gap: 8px; }
+  .urlrow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .urlrow code { flex: 1 1 320px; min-width: 0; overflow-x: auto; white-space: nowrap;
+                 background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; }
+  .urlrow b { flex: 0 0 150px; font-weight: 600; font-size: 0.85rem; }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel);
+           color: var(--ink); border-radius: 8px; padding: 7px 12px; font-size: 0.85rem; }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  input[type=search], select { font: inherit; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink); font-size: 0.88rem; }
+  input[type=search] { flex: 1 1 220px; min-width: 0; }
+  label.chk { display: inline-flex; gap: 6px; align-items: center; font-size: 0.86rem; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { position: sticky; top: 0; background: var(--panel); font-size: 0.76rem; text-transform: uppercase;
+       letter-spacing: 0.04em; color: var(--muted); z-index: 1; }
+  td.num { font-variant-numeric: tabular-nums; }
+  .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 0.74rem; font-weight: 600; }
+  .WORKING { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
+  .UNSTABLE { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+  .logo { width: 26px; height: 26px; object-fit: contain; border-radius: 5px; background: var(--bg); }
+  .tablewrap { max-height: 60vh; overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+  .count { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
+  ul.lim { margin: 0; padding-left: 20px; font-size: 0.88rem; color: var(--muted); }
+  ul.lim li { margin-bottom: 6px; }
+  .topbar { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .err { color: var(--bad); }
+  @media (max-width: 620px) { .urlrow b { flex-basis: 100%; } .hide-s { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div>
+      <h1>Playlist IPTV — painel</h1>
+      <p class="sub" id="sub">Carregando…</p>
+    </div>
+    <button id="theme" title="Alternar tema">Tema</button>
+  </div>
+
+  <div class="cards" id="cards"></div>
+  <div class="note" id="note"></div>
+
+  <section>
+    <h2>URLs para copiar</h2>
+    <div class="urls" id="urls"></div>
+  </section>
+
+  <section>
+    <h2>Canais validados</h2>
+    <div class="filters">
+      <input type="search" id="q" placeholder="Buscar canal…" />
+      <select id="grp"><option value="">Todos os grupos</option></select>
+      <select id="cat"><option value="">Todas as categorias</option></select>
+      <select id="st"><option value="">Qualquer status</option></select>
+      <label class="chk"><input type="checkbox" id="epgonly" /> só com EPG</label>
+      <label class="chk"><input type="checkbox" id="ptonly" /> só áudio PT verificado</label>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr>
+          <th></th><th>Canal</th><th>Seção</th>
+          <th class="hide-s">Resolução</th><th>Status</th>
+          <th class="num">EPG</th><th class="num hide-s">Alt.</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Limitações conhecidas</h2>
+    <ul class="lim" id="lims"></ul>
+  </section>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+$('theme').addEventListener('click', () => {
+  const now = document.documentElement.getAttribute('data-theme');
+  const next = now === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('tema', next); } catch {}
+});
+try {
+  const saved = localStorage.getItem('tema');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+} catch {}
+
+function card(v, k) {
+  return `<div class="card"><div class="v">${v}</div><div class="k">${k}</div></div>`;
+}
+
+function urlRow(label, url) {
+  return `<div class="urlrow"><b>${label}</b><code>${url}</code>
+    <button data-copy="${url}">Copiar</button></div>`;
+}
+
+let all = [];
+
+function render() {
+  const q = $('q').value.trim().toLowerCase();
+  const grp = $('grp').value, cat = $('cat').value, st = $('st').value;
+  const epgOnly = $('epgonly').checked, ptOnly = $('ptonly').checked;
+  const hit = all.filter(c =>
+    (!q || c.n.toLowerCase().includes(q)) &&
+    (!grp || c.gc === grp) && (!cat || c.c === cat) && (!st || c.s === st) &&
+    (!epgOnly || c.e > 0) && (!ptOnly || c.pt));
+
+  $('count').textContent = `${hit.length} de ${all.length} canais`;
+  // Teto de linhas: a tabela inteira com 10k nós travaria a pagina.
+  const slice = hit.slice(0, 600);
+  $('rows').innerHTML = slice.map(c => `<tr>
+    <td>${c.logo ? `<img class="logo" loading="lazy" src="${c.logo}" alt="" onerror="this.remove()">` : ''}</td>
+    <td>${c.n}${c.pt ? ' <span title="audio em portugues verificado">🇧🇷</span>' : ''}</td>
+    <td>${c.g} · ${c.c}</td>
+    <td class="hide-s">${c.r ?? '—'}</td>
+    <td><span class="pill ${c.s}">${c.s}</span></td>
+    <td class="num">${c.e || '—'}</td>
+    <td class="num hide-s">${c.alt || '—'}</td>
+  </tr>`).join('');
+  if (hit.length > slice.length) {
+    $('rows').innerHTML += `<tr><td colspan="7" style="color:var(--muted)">
+      mostrando as primeiras ${slice.length}; refine a busca para ver o resto</td></tr>`;
+  }
+}
+
+function fillSelect(el, values) {
+  for (const v of values) {
+    const o = document.createElement('option');
+    o.value = v[0]; o.textContent = v[1];
+    el.appendChild(o);
+  }
+}
+
+fetch('dashboard-data.json', { cache: 'no-cache' })
+  .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(d => {
+    all = d.channels || [];
+    const s = d.summary || {};
+    const c = s.catalog || {}, e = s.epg || {};
+    $('sub').textContent = `Gerado em ${new Date(d.generatedAt).toLocaleString('pt-BR')} · `
+      + `${all.length} canais validados`;
+
+    $('cards').innerHTML = [
+      card(s.discovery ?? '—', 'canais descobertos'),
+      card(s.streams ?? '—', 'streams descobertos'),
+      card(c.brazilianChannels ?? '—', 'BR validados'),
+      card(c.internationalChannels ?? '—', 'internacionais'),
+      card((e.coveragePercent ?? 0) + '%', 'cobertura de EPG'),
+      card(c.withVerifiedPortugueseAudio ?? '—', 'áudio PT verificado'),
+    ].join('');
+
+    const vantages = Object.keys(s.vantages || {});
+    $('note').innerHTML =
+      `<strong>Como ler estes números.</strong> A validação foi feita de `
+      + `${vantages.length || 0} ponto(s) de observação (${vantages.join(', ') || 'nenhum'}). `
+      + `Resultados de pontos diferentes <strong>não somam</strong>: o mesmo stream pode estar `
+      + `disponível no Brasil e bloqueado num runner nos Estados Unidos. A cobertura de EPG `
+      + `(${e.channelsWithGuide ?? 0} de ${e.channelsRequested ?? 0} canais, ${e.programmes ?? 0} `
+      + `programas) é o valor medido, sem arredondar para cima.`;
+
+    $('urls').innerHTML = (s.playlists || [])
+      .map(p => urlRow(p.file, (s.urls || {})[p.file] || ''))
+      .concat(s.urls && s.urls.epg ? [urlRow('epg.xml.gz', s.urls.epg)] : [])
+      .join('');
+
+    fillSelect($('grp'), [...new Map(all.map(x => [x.gc, x.g])).entries()]);
+    fillSelect($('cat'), [...new Set(all.map(x => x.c))].sort().map(x => [x, x]));
+    fillSelect($('st'), [...new Set(all.map(x => x.s))].sort().map(x => [x, x]));
+    $('lims').innerHTML = (s.limitations || []).map(l =>
+      `<li>${l.replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</li>`
+    ).join('') || '<li>nenhuma registrada</li>';
+
+    for (const el of ['q', 'grp', 'cat', 'st', 'epgonly', 'ptonly']) {
+      $(el).addEventListener('input', render);
+    }
+    render();
+  })
+  .catch(err => {
+    $('sub').innerHTML = `<span class="err">Não foi possível carregar dashboard-data.json (${err.message}). `
+      + `O painel aparece depois da primeira execução do workflow.</span>`;
+  });
+
+document.addEventListener('click', (ev) => {
+  const t = ev.target.closest('button[data-copy]');
+  if (!t) return;
+  navigator.clipboard.writeText(t.dataset.copy).then(() => {
+    const old = t.textContent;
+    t.textContent = 'Copiado';
+    setTimeout(() => { t.textContent = old; }, 1200);
+  });
+});
+</script>
+</body>
+</html>
