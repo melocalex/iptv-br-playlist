@@ -1,0 +1,80 @@
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-name="AWTV" tvg-logo="https://i.imgur.com/2tdMyef.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",AWTV
+#EXTGRP:🇧🇷 Brasil • Séries
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CSIMiami.us@BR" tvg-name="CSI: Miami" tvg-logo="https://images.pluto.tv/channels/63eb9c5351f5d000085e8d7e/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",CSI: Miami
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-63eb9c5351f5d000085e8d7e.m3u8
+#EXTINF:-1 tvg-id="DiffrentStrokesArnold.us@Brazil" tvg-name="Diff'rent Strokes Arnold" tvg-logo="https://i.imgur.com/jkmouY3.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Diff'rent Strokes Arnold
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-61f1d27a189ed10007b7393e.m3u8
+#EXTINF:-1 tvg-id="iCarly.us@BR" tvg-name="iCarly" tvg-logo="https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",iCarly
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-620ff46e0a576e0007dc2f89.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasANovaGeracao.us@BR" tvg-name="Jornada nas Estrelas: A Nova Geracao" tvg-logo="https://images.pluto.tv/channels/69162ad79505d0f3b1ebf07d/colorLogoPNG_1766066212478.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Jornada nas Estrelas: A Nova Geracao
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-69162ad79505d0f3b1ebf07d.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasDeepSpaceNine.us@BR" tvg-name="Jornada nas Estrelas: Deep Space Nine" tvg-logo="https://images.pluto.tv/channels/69162af591700f4c4c135c95/colorLogoPNG_1766066526851.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Jornada nas Estrelas: Deep Space Nine
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-69162af591700f4c4c135c95.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasVoyager.us@BR" tvg-name="Jornada nas Estrelas: Voyager" tvg-logo="https://images.pluto.tv/channels/69162b1ef189e235142b17ab/colorLogoPNG_1766150123044.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Jornada nas Estrelas: Voyager
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-69162b1ef189e235142b17ab.m3u8
+#EXTINF:-1 tvg-id="KenanKel.us@BR" tvg-name="Kenan & Kel" tvg-logo="https://images.pluto.tv/channels/5ffcc5130fd98c0007f2e216/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Kenan & Kel
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5ffcc5130fd98c0007f2e216.m3u8
+#EXTINF:-1 tvg-id="MasterChef.us@Brazil" tvg-name="MasterChef" tvg-logo="https://i.imgur.com/lOuySbz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MasterChef
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6077045b6031bd00078de127.m3u8
+#EXTINF:-1 tvg-id="MTVAreyoutheOne.us@BR" tvg-name="MTV Are you the One?" tvg-logo="https://images.pluto.tv/channels/5f6108d8cc331900075e98e4/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MTV Are you the One?
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5f6108d8cc331900075e98e4.m3u8
+#EXTINF:-1 tvg-id="MTVComoEx.us@BR" tvg-name="MTV Com o Ex" tvg-logo="https://images.pluto.tv/channels/61a528267e1b8b0007357920/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MTV Com o Ex
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-61a528267e1b8b0007357920.m3u8
+#EXTINF:-1 tvg-id="MTVDating.us@BR" tvg-name="MTV Dating" tvg-logo="https://images.pluto.tv/channels/6851bb3426beced4f2f67ee6/colorLogoPNG_1750686926779.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",MTV Dating
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6851bb3426beced4f2f67ee6.m3u8
+#EXTINF:-1 tvg-id="NCIS.us@BR" tvg-name="NCIS" tvg-logo="https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",NCIS
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-63eb9fdda995710008991c54.m3u8
+#EXTINF:-1 tvg-id="Numbers.us@BR" tvg-name="Numbers" tvg-logo="https://images.pluto.tv/channels/67f960c5441853fe50e7afc1/colorLogoPNG_1747430170532.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Numbers
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-67f960c5441853fe50e7afc1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAliens.us@BR" tvg-name="Pluto TV Aliens" tvg-logo="https://images.pluto.tv/channels/6806d65e84f24b70109485fa/colorLogoPNG_1746817107468.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Aliens
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6806d65e84f24b70109485fa.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelas.us@BR" tvg-name="Pluto TV Novelas" tvg-logo="https://images.pluto.tv/channels/5f512365abe1f50007d3ff56/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Novelas
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5f512365abe1f50007d3ff56.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesAcao.us@BR" tvg-name="Pluto TV Series Acao" tvg-logo="https://images.pluto.tv/channels/6474ab1da51cb80008bfb5f4/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Acao
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6474ab1da51cb80008bfb5f4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesComedia.us@BR" tvg-name="Pluto TV Series Comedia" tvg-logo="https://images.pluto.tv/channels/655e5bc94261ca000810cb17/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Comedia
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-655e5bc94261ca000810cb17.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesCriminais.us@BR" tvg-name="Pluto TV Series Criminais" tvg-logo="https://images.pluto.tv/channels/6474ab5cdc7a760008745008/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Criminais
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-6474ab5cdc7a760008745008.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesDrama.us@BR" tvg-name="Pluto TV Series Drama" tvg-logo="https://images.pluto.tv/channels/65f060d84e01740008d7421f/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Drama
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-65f060d84e01740008d7421f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesNovelescas.us@BR" tvg-name="Pluto TV Series Novelescas" tvg-logo="https://images.pluto.tv/channels/691627e4a29a6123e400b3e0/colorLogoPNG_1764878235665.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Novelescas
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-691627e4a29a6123e400b3e0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesSciFi.us@BR" tvg-name="Pluto TV Series Sci-Fi" tvg-logo="https://images.pluto.tv/channels/63d2ba2f60bc8f0008981a0e/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Pluto TV Series Sci-Fi
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-63d2ba2f60bc8f0008981a0e.m3u8
+#EXTINF:-1 tvg-id="StarTrek.us@BR" tvg-name="Star Trek" tvg-logo="https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",Star Trek
+#EXTGRP:🇧🇷 Brasil • Séries
+https://jmp2.uk/plu-5ec5761aabe4690007f6e047.m3u8
+#EXTINF:-1 tvg-id="TNTNovelas.us@Brazil" tvg-name="TNT Novelas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",TNT Novelas
+#EXTGRP:🇧🇷 Brasil • Séries
+http://190.61.47.54:8000/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="TVSeries.br@SD" tvg-name="TV Series" tvg-logo="https://i.imgur.com/Ff5mj0o.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",TV Series
+#EXTGRP:🇧🇷 Brasil • Séries
+https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
+#EXTINF:-1 tvg-id="TVIFiccao.pt@SD" tvg-name="TVI Ficcao" tvg-logo="https://cdn.iol.pt/img/logostvi/branco/tvificcao.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Séries",TVI Ficcao
+#EXTGRP:🇵🇹 Portugal • Séries
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvificcao.m3u8

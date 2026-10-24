@@ -1,0 +1,327 @@
+{
+ "generatedAt": "2026-10-24T03:57:23.873Z",
+ "repo": {
+  "owner": "melocalex",
+  "name": "iptv-br-playlist",
+  "branch": "main"
+ },
+ "urls": {
+  "epg": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz",
+  "playlist.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist.m3u",
+  "playlist-br.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-br.m3u",
+  "playlist-pt.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-pt.m3u",
+  "playlist-movies.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-movies.m3u",
+  "playlist-series.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-series.m3u",
+  "playlist-sports.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-sports.m3u",
+  "playlist-international.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-international.m3u",
+  "playlist-all.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-all.m3u",
+  "status.json": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/status.json",
+  "metadata": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/data/channels.json"
+ },
+ "discovery": {
+  "channelsDiscovered": 12323,
+  "streamsDiscovered": 18058,
+  "duplicateStreamUrlsCollapsed": 11323,
+  "unclassifiedChannels": 2033,
+  "sourcesFetched": [
+   {
+    "id": "iptv-org-index",
+    "url": "https://iptv-org.github.io/iptv/index.m3u",
+    "entries": 11323
+   }
+  ],
+  "sourcesSkippedRedundant": [
+   {
+    "id": "iptv-org-br",
+    "url": "https://iptv-org.github.io/iptv/countries/br.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-por",
+    "url": "https://iptv-org.github.io/iptv/languages/por.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-movies",
+    "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-series",
+    "url": "https://iptv-org.github.io/iptv/categories/series.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-sports",
+    "url": "https://iptv-org.github.io/iptv/categories/sports.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-news",
+    "url": "https://iptv-org.github.io/iptv/categories/news.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-documentary",
+    "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-animation",
+    "url": "https://iptv-org.github.io/iptv/categories/animation.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   },
+   {
+    "id": "iptv-org-entertainment",
+    "url": "https://iptv-org.github.io/iptv/categories/entertainment.m3u",
+    "coveredBy": "iptv-org-index",
+    "verified": false,
+    "missing": -1
+   }
+  ],
+  "sourcesFailed": []
+ },
+ "validation": {
+  "lastRunByVantage": {
+   "github-us": {
+    "finishedAt": "2026-10-24T03:56:40.773Z",
+    "checked": 400,
+    "eligible": 18058,
+    "skippedFresh": 0
+   }
+  },
+  "channelsByStatus": {
+   "UNKNOWN": 11925,
+   "WORKING": 327,
+   "UNSTABLE": 1
+  },
+  "streamsByStatus": {
+   "WORKING": 538,
+   "UNSTABLE": 1,
+   "OFFLINE": 0,
+   "TIMEOUT": 0,
+   "GEO_BLOCKED": 0,
+   "AUTH_REQUIRED": 0,
+   "UNSUPPORTED": 0,
+   "UNKNOWN": 17428
+  },
+  "streamsByVantageAndStatus": {
+   "local-br": {
+    "OFFLINE": 226,
+    "WORKING": 506,
+    "UNSUPPORTED": 9,
+    "UNSTABLE": 16,
+    "TIMEOUT": 8
+   },
+   "github-us": {
+    "OFFLINE": 85,
+    "WORKING": 307,
+    "UNSUPPORTED": 6
+   }
+  },
+  "channelsNeverChecked": 11925
+ },
+ "catalog": {
+  "validatedWorkingChannels": 327,
+  "brazilianChannels": 289,
+  "internationalChannels": 39,
+  "byCountryGroup": {
+   "BR": 289,
+   "PT": 39
+  },
+  "byCategory": {
+   "Geral": 95,
+   "Filmes": 30,
+   "Entretenimento": 32,
+   "Educação": 13,
+   "Notícias": 27,
+   "Cultura": 36,
+   "Infantil": 19,
+   "Séries": 26,
+   "Esportes": 7,
+   "Variedades": 13,
+   "Animação": 10,
+   "Documentários": 9,
+   "Música": 11
+  },
+  "withEpgCoverage": 138,
+  "withVerifiedPortugueseAudio": 50,
+  "withVerifiedSubtitles": 108,
+  "withSubtitleDetectionUnreliable": 323,
+  "offlineChannels": 0,
+  "unstableChannels": 1,
+  "channelsWithAlternativeStreams": 2616
+ },
+ "epg": {
+  "channelsRequested": 328,
+  "channelsWithGuide": 138,
+  "coveragePercent": 42.07,
+  "programmes": 7281,
+  "horizonHours": 72,
+  "sources": [
+   {
+    "id": "mi.tv",
+    "kind": "grabber",
+    "ok": true,
+    "requestedChannels": 60,
+    "channelsWithProgrammes": 57,
+    "programmes": 3789,
+    "note": null
+   },
+   {
+    "id": "meuguia.tv",
+    "kind": "grabber",
+    "ok": true,
+    "requestedChannels": 33,
+    "channelsWithProgrammes": 27,
+    "programmes": 371,
+    "note": null
+   },
+   {
+    "id": "meo.pt",
+    "kind": "grabber",
+    "ok": true,
+    "requestedChannels": 15,
+    "channelsWithProgrammes": 15,
+    "programmes": 776,
+    "note": null
+   },
+   {
+    "id": "nostv.pt",
+    "kind": "grabber",
+    "ok": true,
+    "requestedChannels": 15,
+    "channelsWithProgrammes": 15,
+    "programmes": 344,
+    "note": null
+   },
+   {
+    "id": "gatotv.com",
+    "kind": "grabber",
+    "ok": true,
+    "requestedChannels": 0,
+    "channelsWithProgrammes": 0,
+    "programmes": 0,
+    "note": "nenhum canal da playlist coberto por este site"
+   },
+   {
+    "id": "pluto.tv",
+    "kind": "grabber",
+    "ok": true,
+    "requestedChannels": 67,
+    "channelsWithProgrammes": 66,
+    "programmes": 2001,
+    "note": null
+   },
+   {
+    "id": "kanya-us",
+    "kind": "published",
+    "ok": true,
+    "requestedChannels": -1,
+    "channelsWithProgrammes": 0,
+    "programmes": 0,
+    "note": null
+   },
+   {
+    "id": "kanya-ke",
+    "kind": "published",
+    "ok": true,
+    "requestedChannels": -1,
+    "channelsWithProgrammes": 0,
+    "programmes": 0,
+    "note": null
+   }
+  ],
+  "dropped": {
+   "duplicates": 2059,
+   "outOfHorizon": 366,
+   "invalidTimestamp": 0,
+   "unknownChannel": 73885
+  },
+  "missingChannelsCount": 190
+ },
+ "playlists": [
+  {
+   "file": "playlist.m3u",
+   "title": "Principal (todas as secoes, validada)",
+   "channels": 328,
+   "entries": 328,
+   "sections": 22
+  },
+  {
+   "file": "playlist-br.m3u",
+   "title": "Brasil",
+   "channels": 289,
+   "entries": 289,
+   "sections": 13
+  },
+  {
+   "file": "playlist-pt.m3u",
+   "title": "Portugues (PT + lusofonos)",
+   "channels": 327,
+   "entries": 327,
+   "sections": 22
+  },
+  {
+   "file": "playlist-movies.m3u",
+   "title": "Filmes",
+   "channels": 30,
+   "entries": 30,
+   "sections": 2
+  },
+  {
+   "file": "playlist-series.m3u",
+   "title": "Series",
+   "channels": 26,
+   "entries": 26,
+   "sections": 2
+  },
+  {
+   "file": "playlist-sports.m3u",
+   "title": "Esportes",
+   "channels": 7,
+   "entries": 7,
+   "sections": 2
+  },
+  {
+   "file": "playlist-international.m3u",
+   "title": "Internacional (tudo fora do Brasil)",
+   "channels": 39,
+   "entries": 39,
+   "sections": 9
+  },
+  {
+   "file": "playlist-all.m3u",
+   "title": "Tudo, inclusive nao verificado e indisponivel",
+   "channels": 12253,
+   "entries": 17967,
+   "sections": 101
+  }
+ ],
+ "limitations": [
+  "Resultados de 2 pontos de observacao (local-br, github-us) sao reportados separadamente e **nao somam**: o mesmo stream pode estar WORKING em um e GEO_BLOCKED em outro.",
+  "11925 canais ainda nunca foram checados. O limite por execucao e `validation.maxChecksPerRun` = 400; a cobertura cresce a cada rodada.",
+  "Cobertura de EPG medida: 138 de 328 canais da playlist principal (190 sem grade). Numero medido, sem arredondar para cima.",
+  "Em 323 canais o stream e HLS. O ffprobe nao abre a playlist de variante de legenda, logo **ausencia de faixa de legenda nao prova ausencia de legenda** nesses canais.",
+  "Nenhuma playlist faz failover automatico. Streams alternativos ficam guardados em `data/channels.json`, mas trocar de stream depende do player: o projeto nao implementa nem testou failover, e por isso nao alega que exista.",
+  "Nada aqui contorna DRM, autenticacao, paywall ou geobloqueio. `GEO_BLOCKED` e apenas um rotulo de diagnostico, baseado em HTTP 451 ou em texto explicito da resposta.",
+  "2033 streams nao tem metadado de canal na fonte. Ficam fora das playlists validadas e aparecem apenas em `playlist-all.m3u`, porque classificar pelo nome do canal seria adivinhacao.",
+  "Nesta execucao foram checados 400 streams de 18058 elegiveis. O resto mantem o status da rodada anterior."
+ ]
+}

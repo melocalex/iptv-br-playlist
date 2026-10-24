@@ -1,0 +1,1267 @@
+{
+ "generatedAt": "2026-10-24T03:56:40.797Z",
+ "horizonHours": 72,
+ "channelsRequested": 328,
+ "channelsWithGuide": 138,
+ "coveragePercent": 42.07,
+ "programmes": 7281,
+ "sources": [
+  {
+   "id": "mi.tv",
+   "kind": "grabber",
+   "ok": true,
+   "requestedChannels": 60,
+   "channelsWithProgrammes": 57,
+   "programmes": 3789,
+   "note": null
+  },
+  {
+   "id": "meuguia.tv",
+   "kind": "grabber",
+   "ok": true,
+   "requestedChannels": 33,
+   "channelsWithProgrammes": 27,
+   "programmes": 371,
+   "note": null
+  },
+  {
+   "id": "meo.pt",
+   "kind": "grabber",
+   "ok": true,
+   "requestedChannels": 15,
+   "channelsWithProgrammes": 15,
+   "programmes": 776,
+   "note": null
+  },
+  {
+   "id": "nostv.pt",
+   "kind": "grabber",
+   "ok": true,
+   "requestedChannels": 15,
+   "channelsWithProgrammes": 15,
+   "programmes": 344,
+   "note": null
+  },
+  {
+   "id": "gatotv.com",
+   "kind": "grabber",
+   "ok": true,
+   "requestedChannels": 0,
+   "channelsWithProgrammes": 0,
+   "programmes": 0,
+   "note": "nenhum canal da playlist coberto por este site"
+  },
+  {
+   "id": "pluto.tv",
+   "kind": "grabber",
+   "ok": true,
+   "requestedChannels": 67,
+   "channelsWithProgrammes": 66,
+   "programmes": 2001,
+   "note": null
+  },
+  {
+   "id": "kanya-us",
+   "kind": "published",
+   "ok": true,
+   "requestedChannels": -1,
+   "channelsWithProgrammes": 0,
+   "programmes": 0,
+   "note": null
+  },
+  {
+   "id": "kanya-ke",
+   "kind": "published",
+   "ok": true,
+   "requestedChannels": -1,
+   "channelsWithProgrammes": 0,
+   "programmes": 0,
+   "note": null
+  }
+ ],
+ "dropped": {
+  "duplicates": 2059,
+  "outOfHorizon": 366,
+  "invalidTimestamp": 0,
+  "unknownChannel": 73885
+ },
+ "missingChannels": [
+  {
+   "tvgId": "PlusMaisUm.br@HD",
+   "name": "+MaisUm",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "AdessoTV.br@SD",
+   "name": "Adesso TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "AdultSwimLatinAmerica.us@Brazil",
+   "name": "Adult Swim Latin America",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "AgroCanal.br@SD",
+   "name": "AgroCanal",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ArarunaTV.br@SD",
+   "name": "Araruna TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "AratuOn.br@SD",
+   "name": "Aratu On",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "AvatarAlendadeAang.us@BR",
+   "name": "Avatar: A lenda de Aang",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "AWTV.br@HD",
+   "name": "AWTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "BabyFirst.us@Brazil",
+   "name": "BabyFirst",
+   "countryGroup": "BR",
+   "guideSites": [
+    "i.mjh.nz",
+    "pluto.tv"
+   ]
+  },
+  {
+   "tvgId": "BemMaisTV.br@HD",
+   "name": "Bem Mais TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Blitstv.br@SD",
+   "name": "Blitstv",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "BobEsponjaCalcaQuadrada.us@BR",
+   "name": "Bob Esponja Calca Quadrada",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "BoxKidsTV.br@SD",
+   "name": "Box Kids TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal25Jundiai.br@SD",
+   "name": "Canal 25 Jundiai",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal38.br@SD",
+   "name": "Canal 38",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalEducacao.br@SD",
+   "name": "Canal Educacao",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalFDR.br@SD",
+   "name": "Canal FDR",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalGov.br@SD",
+   "name": "Canal Gov",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalMetropolitanodeNoticias.br@SD",
+   "name": "Canal Metropolitano de Noticias",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalSete.br@SD",
+   "name": "Canal Sete",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalUOL.br@SD",
+   "name": "Canal UOL",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CatveFM.br@SD",
+   "name": "Catve FM",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CatveMasterTV.br@SD",
+   "name": "Catve Master TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Catve2.br@SD",
+   "name": "Catve2",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CazeTV.br@SD",
+   "name": "CazeTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ChromaTV.br@SD",
+   "name": "Chroma TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CINDIETV.br@HD",
+   "name": "CINDIE TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ClassiqueTV.br@SD",
+   "name": "Classique TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "COMBrasil.br@SD",
+   "name": "COM Brasil",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ComedyCentralBrasil.br@SD",
+   "name": "Comedy Central Brasil",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ComedyCentralSouthPark.us@BR",
+   "name": "Comedy Central South Park",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ConectaMaisTV.br@SD",
+   "name": "Conecta Mais TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ConecTVBrasil.br@SD",
+   "name": "ConecTV Brasil",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CSIMiami.us@BR",
+   "name": "CSI: Miami",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CulturaFast.br@SD",
+   "name": "Cultura Fast",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CulturaPara.br@SD",
+   "name": "Cultura Para",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "DemaisTV.br@SD",
+   "name": "Demais TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "DespertarTV.br@HD",
+   "name": "Despertar TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "DetetivesMedicos.us@BR",
+   "name": "Detetives Medicos",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "DiffrentStrokesArnold.us@Brazil",
+   "name": "Diff'rent Strokes Arnold",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "DumDum.br@SD",
+   "name": "DumDum",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ElementalChannel.br@SD",
+   "name": "Elemental Channel",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ElyTV.br@SD",
+   "name": "ElyTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ESPN3.br@SD",
+   "name": "ESPN 3",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ESPN4.br@SD",
+   "name": "ESPN 4",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "EUTV.br@SD",
+   "name": "EUTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "FalaLitoral.br@SD",
+   "name": "Fala Litoral",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "FilmesSuspense.us@BR",
+   "name": "Filmes Suspense",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "FonteTV.br@SD",
+   "name": "Fonte TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ForaTedioTV.br@SD",
+   "name": "Fora Tedio TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Futura.br@SD",
+   "name": "Futura",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "GloboplayNovelas.br@SD",
+   "name": "Globoplay Novelas",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "GospelCartoon.br@SD",
+   "name": "Gospel Cartoon",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "GospelMovieTV.br@SD",
+   "name": "Gospel Movie TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "iCarly.us@BR",
+   "name": "iCarly",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "IMPDTVWorldwide.br@SD",
+   "name": "IMPD TV Worldwide",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ISTV.br@SD",
+   "name": "ISTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "J3NEWSTV.br@SD",
+   "name": "J3NEWS TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "JornadanasEstrelasANovaGeracao.us@BR",
+   "name": "Jornada nas Estrelas: A Nova Geracao",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "JornadanasEstrelasDeepSpaceNine.us@BR",
+   "name": "Jornada nas Estrelas: Deep Space Nine",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "JornadanasEstrelasVoyager.us@BR",
+   "name": "Jornada nas Estrelas: Voyager",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "KenanKel.us@BR",
+   "name": "Kenan & Kel",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "KpopTVPlay.br@SD",
+   "name": "KpopTV Play",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Lke.br@SD",
+   "name": "L!ke",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "LamoreRockShowWebTV.br@SD",
+   "name": "Lamore Rock Show WebTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MacGyver.us@BR",
+   "name": "MacGyver",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVAreyoutheOne.us@BR",
+   "name": "MTV Are you the One?",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVBiggestPop.us@BR",
+   "name": "MTV Biggest Pop",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVCatfish.us@BR",
+   "name": "MTV Catfish",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVClassic.us@BR",
+   "name": "MTV Classic",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVComoEx.us@BR",
+   "name": "MTV Com o Ex",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVDating.us@BR",
+   "name": "MTV Dating",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVDrag.us@BR",
+   "name": "MTV Drag",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVJovenseMaes.us@BR",
+   "name": "MTV Jovens e Maes",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVReality.us@BR",
+   "name": "MTV Reality",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVRocks.us@BR",
+   "name": "MTV Rocks",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MTVShore.us@BR",
+   "name": "MTV Shore",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "MyTimeMovieNetwork.br@SD",
+   "name": "MyTime Movie Network",
+   "countryGroup": "BR",
+   "guideSites": [
+    "plex.tv"
+   ]
+  },
+  {
+   "tvgId": "NCIS.us@BR",
+   "name": "NCIS",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NickJrClub.us@BR",
+   "name": "Nick Jr. Club",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NickelodeonClassico.us@BR",
+   "name": "Nickelodeon Classico",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NickelodeonTeen.us@BR",
+   "name": "Nickelodeon Teen",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NickelodeonToons.us@BR",
+   "name": "Nickelodeon Toons",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NickOnline.br@HD",
+   "name": "NickOnline",
+   "countryGroup": "BR",
+   "guideSites": [
+    "x1co.com.br"
+   ]
+  },
+  {
+   "tvgId": "NovaEraTV.br@SD",
+   "name": "Nova Era TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NovoTempo.br@SD",
+   "name": "Novo Tempo",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "NTV.br@SD",
+   "name": "NTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Numbers.us@BR",
+   "name": "Numbers",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ODiaTV.br@SD",
+   "name": "O Dia TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "OggyeasBaratasTontas.us@BR",
+   "name": "Oggy e as Baratas Tontas",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "OnePiece.us@BR",
+   "name": "One Piece",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "PetloversTV.br@SD",
+   "name": "Petlovers TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "PlayTV.br@SD",
+   "name": "Play TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "PlenaTV.br@SD",
+   "name": "Plena TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "PlenitudeTV.br@SD",
+   "name": "Plenitude TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "PrimerTV.br@SD",
+   "name": "Primer TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ProntosocorroHistoriasDeEmergencia.us@Brazil",
+   "name": "Pronto-socorro: Historias De Emergencia",
+   "countryGroup": "BR",
+   "guideSites": [
+    "i.mjh.nz"
+   ]
+  },
+  {
+   "tvgId": "RecordTVInteriorSP.br@SD",
+   "name": "RecordTV Interior SP",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RedeCNTRiodeJaneiro.br@SD",
+   "name": "Rede CNT Rio de Janeiro",
+   "countryGroup": "BR",
+   "guideSites": [
+    "mi.tv"
+   ]
+  },
+  {
+   "tvgId": "RedeNGT.br@SD",
+   "name": "Rede NGT",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RedeSeculo21.br@SD",
+   "name": "Rede Seculo 21",
+   "countryGroup": "BR",
+   "guideSites": [
+    "mi.tv"
+   ]
+  },
+  {
+   "tvgId": "RedeSPTV.br@SD",
+   "name": "Rede SPTV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RedeTVMais.br@SD",
+   "name": "Rede TV! Mais",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RedeTVParana.br@SD",
+   "name": "RedeTV! Parana",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RetroCartoon.br@SD",
+   "name": "Retro Cartoon",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RITTV.br@SD",
+   "name": "RIT TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SBTCuiaba.br@SD",
+   "name": "SBT Cuiaba",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SBTInterior.br@SD",
+   "name": "SBT Interior",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SBTNews.br@SD",
+   "name": "SBT News",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SBTNovaMutum.br@SD",
+   "name": "SBT Nova Mutum",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SBTRondonopolis.br@SD",
+   "name": "SBT Rondonopolis",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SonyMovies.br@SD",
+   "name": "Sony Movies",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SOUTV.br@SD",
+   "name": "SOU TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SouthParkColecaoCartman.us@BR",
+   "name": "South Park: Colecao Cartman",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SouthParkColecaoKenny.us@BR",
+   "name": "South Park: Colecao Kenny",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SouthParkColecaoKyle.us@BR",
+   "name": "South Park: Colecao Kyle",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "SouthParkColecaoStan.us@BR",
+   "name": "South Park: Colecao Stan",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "STZTV.br@SD",
+   "name": "STZ TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TCM10HD.br@SD",
+   "name": "TCM 10 HD",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TikTokRadioBrasil.br@HD",
+   "name": "TikTok Radio Brasil",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TNTNovelas.us@Brazil",
+   "name": "TNT Novelas",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVAFolha.br@SD",
+   "name": "TV A Folha",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVAldeia.br@SD",
+   "name": "TV Aldeia",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVAlternativa.br@SD",
+   "name": "TV Alternativa",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVBrasilOeste.br@SD",
+   "name": "TV Brasil Oeste",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVBRICSPortuguese.br@SD",
+   "name": "TV BRICS Portuguese",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVBrusque.br@SD",
+   "name": "TV Brusque",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVComunitaria.br@SD",
+   "name": "TV Comunitaria",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVCultura.br@SD",
+   "name": "TV Cultura",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVCuruca.br@SD",
+   "name": "TV Curuca",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVDifusao.br@SD",
+   "name": "TV Difusao",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVEvangelizar.br@SD",
+   "name": "TV Evangelizar",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVFronteira.br@SD",
+   "name": "TV Fronteira",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVGRANDENATALHDTVBRASIL.br@SD",
+   "name": "TV GRANDE NATAL HDTV BRASIL",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVGuarapari.br@SD",
+   "name": "TV Guarapari",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVLifeAmerica.br@HD",
+   "name": "TV Life America",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVMaisMarica.br@SD",
+   "name": "TV Mais Marica",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVMarajoara.br@SD",
+   "name": "TV Marajoara",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVMetropole.br@SD",
+   "name": "TV Metropole",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVNatal.br@SD",
+   "name": "TV Natal",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVPadreCicero.br@SD",
+   "name": "TV Padre Cicero",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVPaiEterno.br@SD",
+   "name": "TV Pai Eterno",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVPantanalMS.br@SD",
+   "name": "TV Pantanal MS",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVParaense.br@HD",
+   "name": "TV Paraense",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVPassoFundo.br@SD",
+   "name": "TV Passo Fundo",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVPetropolis.br@SD",
+   "name": "TV Petropolis",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVSaoRaimundo.br@SD",
+   "name": "TV Sao Raimundo",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVSeries.br@SD",
+   "name": "TV Series",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVSimCachoeiro.br@SD",
+   "name": "TV Sim Cachoeiro",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVTerceiroAnjo.br@SD",
+   "name": "TV Terceiro Anjo",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVUFOP.br@HD",
+   "name": "TV UFOP",
+   "countryGroup": "BR",
+   "guideSites": [
+    "app.tvufop.com.br"
+   ]
+  },
+  {
+   "tvgId": "TVUniversal.br@SD",
+   "name": "TV Universal",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVVicosa.br@SD",
+   "name": "TV Vicosa",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVVilaReal.br@SD",
+   "name": "TV Vila Real",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVZoom.br@SD",
+   "name": "TV Zoom",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVPlusPet.br@SD",
+   "name": "TV+Pet",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVCRio.br@SD",
+   "name": "TVC-Rio",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVCOMMaceio.br@SD",
+   "name": "TVCOM Maceio",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVideoNews.br@SD",
+   "name": "TVideoNews",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVitape.br@SD",
+   "name": "TVitape",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVLatinaSat.br@HD",
+   "name": "TVLatinaSat",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVNBN.br@SD",
+   "name": "TVNBN",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "UMATV.br@HD",
+   "name": "UMA TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "UnisulTV.br@SD",
+   "name": "Unisul TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "VEJAPlusTV.br@HD",
+   "name": "VEJA+ TV",
+   "countryGroup": "BR",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Famatv.pt@SD",
+   "name": "Famatv",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "FUELTV.pt@AU",
+   "name": "FUEL TV",
+   "countryGroup": "PT",
+   "guideSites": [
+    "distro.tv",
+    "watch.whaletvplus.com"
+   ]
+  },
+  {
+   "tvgId": "KuriakosCine.pt@SD",
+   "name": "Kuriakos Cine",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "KuriakosKids.pt@SD",
+   "name": "Kuriakos Kids",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "KuriakosMusic.pt@SD",
+   "name": "Kuriakos Music",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ManaChurchOnline.pt@SD",
+   "name": "Mana Church Online",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ManaCirkevOnline.pt@SD",
+   "name": "Mana Cirkev Online",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ManaEgliseOnline.pt@SD",
+   "name": "Mana Eglise Online",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ManaIglesiaOnline.pt@SD",
+   "name": "Mana Iglesia Online",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ManaIgrejaOnline.pt@SD",
+   "name": "Mana Igreja Online",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ManaTserkovOnlayn.pt@SD",
+   "name": "Mana Tserkov' Onlayn",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ONFM.pt@SD",
+   "name": "ON FM",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RadioSines.pt@SD",
+   "name": "Radio Sines",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RFPtv.pt@SD",
+   "name": "RFPtv",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RTPMadeira.pt@SD",
+   "name": "RTP Madeira",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "RTPMundo.pt@SD",
+   "name": "RTP Mundo",
+   "countryGroup": "PT",
+   "guideSites": [
+    "programme-tv.net",
+    "rtp.pt",
+    "teleboy.ch",
+    "tv-programme.telecablesat.fr",
+    "tv.blue.ch",
+    "tv.post.lu",
+    "tv.sfr.fr",
+    "tv24.se",
+    "zap.co.ao"
+   ]
+  },
+  {
+   "tvgId": "SICAltaDefinicao.pt@SD",
+   "name": "SIC Alta Definicao",
+   "countryGroup": "PT",
+   "guideSites": [
+    "opto.sic.pt"
+   ]
+  },
+  {
+   "tvgId": "SICReplay.pt@SD",
+   "name": "SIC Replay",
+   "countryGroup": "PT",
+   "guideSites": [
+    "opto.sic.pt"
+   ]
+  },
+  {
+   "tvgId": "TVMana1.pt@SD",
+   "name": "TV Mana 1",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVMana2.pt@SD",
+   "name": "TV Mana 2",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVManaBrasil.pt@SD",
+   "name": "TV Mana Brasil",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVManaEnglish.pt@SD",
+   "name": "TV Mana English",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVManaEspanhol.pt@SD",
+   "name": "TV Mana Espanhol",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVManaRusskiy.pt@SD",
+   "name": "TV Mana Russkiy",
+   "countryGroup": "PT",
+   "guideSites": []
+  },
+  {
+   "tvgId": "TVIFiccao.pt@SD",
+   "name": "TVI Ficcao",
+   "countryGroup": "PT",
+   "guideSites": [
+    "chaines-tv.orange.fr",
+    "tv.blue.ch",
+    "tv.sfr.fr",
+    "tvi.iol.pt"
+   ]
+  }
+ ]
+}
