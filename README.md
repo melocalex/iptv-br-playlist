@@ -138,6 +138,11 @@ A grade é normalizada para timestamp XMLTV canônico, deduplicada por `(canal, 
 cortada no horizonte de `epg.programmeHorizonHours`. Nenhuma grade é inventada: canal sem fonte
 fica sem programa, e aparece na lista de `data/epg-coverage.json`.
 
+Os elementos reemitidos são `title`, `sub-title`, `desc`, `category`, `country`, `language`,
+`orig-language`, `date`, `episode-num`, `length` e `icon` no `<programme>`, e `display-name`,
+`icon` e `url` no `<channel>`. `credits`, `rating` e `star-rating` são aninhados e ficam de fora
+— título, descrição, início e fim, que é o que a spec pede, ficam.
+
 **A cobertura publicada é a medida.** O número está em [`STATUS.md`](STATUS.md) e em
 `status.json`; a cobertura do iptv-org é parcial por natureza e o projeto não arredonda para cima.
 
@@ -228,7 +233,15 @@ código de terceiro (o grabber). As defesas são por isso, não por formalidade:
   publicação usa para montar as playlists.
 - **Download tem teto.** Corpo lido em pedaços com limite e descompressão com `maxOutputLength`:
   um `.gz` de fonte pública pode ser bomba de descompressão.
-- **Bloco de programa com estrutura própria é descartado**, para não publicar XMLTV malformado.
+- **O XMLTV publicado é reconstruído, não copiado.** Os filhos permitidos de `<programme>` e
+  `<channel>` são extraídos, decodificados e reescapados; o resto é descartado. Copiar o
+  conteúdo cru exigiria confiar que a fonte emite XML bem formado, e nenhuma lista de padrões
+  proibidos resolve isso — `<title>sem fechar` passaria por qualquer regex e quebraria o player
+  de quem consome. Reconstruindo, o arquivo é bem formado por construção.
+- **A job que publica reconfere os arquivos de EPG** (`node src/cli.ts verify-epg`): gzip válido,
+  raiz `<tv>`, XML balanceado por contagem de tags, timestamp XMLTV válido, nenhum programa sem
+  `<channel>` declarado, índice dentro dos tipos e tetos esperados. Ela não confia na etapa
+  anterior só porque é do mesmo projeto.
 
 Risco residual assumido: o `node_modules` do grabber vem do cache do Actions e não é coberto
 pela checagem de árvore limpa (não é versionado no repositório dele). A job é sem credencial e

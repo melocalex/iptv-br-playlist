@@ -318,9 +318,11 @@ async function main(): Promise<void> {
   } else {
     info(`EPG pedido para ${wanted.size} canais da playlist validada`);
     epgResult = await buildEpg(cfg, epgCfg, catalog.channels, wanted);
-    writeCoverage(cfg, epgResult, wanted.size);
     writeIndex(cfg, epgResult);
   }
+  // Cobertura e sempre regravada aqui, nunca copiada da etapa anterior: assim o
+  // arquivo publicado sai da job que ja verificou o indice.
+  writeCoverage(cfg, epgResult, wanted.size);
   if (args.cmd === 'epg') return;
 
   views = buildViews(cfg, taxonomy, catalog.channels, store, epgResult.index);

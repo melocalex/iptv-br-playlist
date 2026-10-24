@@ -228,6 +228,19 @@ test('isBalancedXml separa documento bem formado de malformado', () => {
   assert.equal(isBalancedXml('<tv></tv><'), false, 'sobra de < solto');
 });
 
+test('unescapeXml nunca lanca com referencia numerica fora de faixa', () => {
+  // A fonte e editavel por terceiros. String.fromCodePoint estoura RangeError
+  // acima de 0x10FFFF, e isso derrubaria a montagem inteira do guia.
+  for (const bad of ['&#99999999;', '&#x110000;', '&#1114112;', '&#0;', '&#xFFFFFFFF;', '&#8;']) {
+    assert.doesNotThrow(() => unescapeXml(bad), `${bad} nao pode lancar`);
+    assert.equal(unescapeXml(bad), '', `${bad} deveria ser descartado`);
+  }
+  // Code point valido continua funcionando, inclusive fora do BMP.
+  assert.equal(unescapeXml('&#128512;'), '\u{1F600}');
+  assert.equal(unescapeXml('&#x1F600;'), '\u{1F600}');
+  assert.equal(unescapeXml('&#233;'), 'é');
+});
+
 test('unescapeXml evita o escape duplo em nome vindo cru do XML', () => {
   // sites/*.channels.xml do grabber tras 'A&amp;E'; sem decodificar, o guia
   // publicado saia com 'A&amp;amp;E' no display-name.

@@ -100,14 +100,39 @@ export function escapeXml(s: string): string {
  * Desfaz as entidades do texto lido cru de um XML. Sem isso, um nome como 'A&amp;E'
  * passaria por escapeXml e sairia 'A&amp;amp;E' no guia publicado.
  */
+/** Code point que o XML 1.0 permite em conteudo de texto. */
+function isAllowedCodePoint(cp: number): boolean {
+  if (!Number.isInteger(cp) || cp < 0 || cp > 0x10ffff) return false;
+  if (cp === 0x9 || cp === 0xa || cp === 0xd) return true;
+  if (cp >= 0x20 && cp <= 0xd7ff) return true;
+  if (cp >= 0xe000 && cp <= 0xfffd) return true;
+  return cp >= 0x10000 && cp <= 0x10ffff;
+}
+
+/**
+ * Referencia numerica de caractere, de forma total: nunca lanca.
+ * 'String.fromCodePoint' estoura RangeError em valor fora de faixa, e a fonte e
+ * editavel por terceiros — um '&#99999999;' derrubaria a montagem inteira do guia.
+ * Valor invalido e simplesmente descartado.
+ */
+function decodeCharRef(raw: string, radix: number): string {
+  const cp = parseInt(raw, radix);
+  if (!isAllowedCodePoint(cp)) return '';
+  try {
+    return String.fromCodePoint(cp);
+  } catch {
+    return '';
+  }
+}
+
 export function unescapeXml(s: string): string {
   return s
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
     .replace(/&apos;/g, "'")
-    .replace(/&#(\d+);/g, (_, d: string) => String.fromCodePoint(Number(d)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, h: string) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d: string) => decodeCharRef(d, 10))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h: string) => decodeCharRef(h, 16))
     .replace(/&amp;/g, '&');
 }
 
@@ -414,7 +439,14 @@ export async function buildEpg(
         dropped.unknownChannel++;
         continue;
       }
-      const children = rebuildChildren(p.inner, PROGRAMME_CHILDREN);
+      let children: string;
+      try {
+        children = rebuildChildren(p.inner, PROGRAMME_CHILDREN);
+      } catch {
+        // Entrada de terceiro nunca derruba a execucao: conta como malformada.
+        dropped.malformed++;
+        continue;
+      }
       if (!children) {
         // Nada reaproveitavel: sem titulo nem descricao nao ha grade para publicar.
         dropped.malformed++;
@@ -736,12 +768,29 @@ export function verifyEpgArtifacts(cfg: Config): string[] {
         problems.push(`${cfg.output.epgFile} nao e gzip`);
       } else {
         const xml = gunzipSync(raw, { maxOutputLength: cfg.http.maxDecompressedBytes }).toString('utf8');
-        if (!/^\s*<\?xml/.test(xml)) problems.push('XMLTV sem declaracao <?xml');
-        if (!/<tv[\s>]/.test(xml)) problems.push('XMLTV sem elemento raiz <tv>');
-        if (!/<\/tv>\s*$/.test(xml)) problems.push('XMLTV nao termina em </tv>');
+
+        // Prologo EXATO, no inicio do arquivo. Nao basta "tem <?xml": um DOCTYPE
+        // adulterado com subset interno traria declaracao de entidade, que vira
+        // XXE ou expansao exponencial no parser de QUEM CONSOME o guia.
+        const PROLOGO = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n';
+        if (!xml.startsWith(PROLOGO)) {
+          problems.push('XMLTV nao comeca com o prologo esperado');
+        }
+        const corpo = xml.slice(PROLOGO.length);
+        if (/<[?!]/.test(corpo)) {
+          problems.push('XMLTV tem instrucao de processamento ou declaracao fora do prologo');
+        }
+        // Entidade nomeada fora das cinco predefinidas exige DTD para resolver.
+        const entidades = [...corpo.matchAll(/&([A-Za-z][\w.:-]*);/g)]
+          .map((m) => m[1]!)
+          .filter((n) => !['amp', 'lt', 'gt', 'quot', 'apos'].includes(n));
+        if (entidades.length) {
+          problems.push(`XMLTV usa entidade nao predefinida: ${[...new Set(entidades)].slice(0, 5).join(', ')}`);
+        }
+        if (!/<tv[\s>]/.test(corpo)) problems.push('XMLTV sem elemento raiz <tv>');
+        if (!/<\/tv>\s*$/.test(corpo)) problems.push('XMLTV nao termina em </tv>');
         // Boa formacao de verdade, nao ausencia de padrao suspeito.
-        const body = xml.replace(/<\?xml[\s\S]*?\?>/g, '').replace(/<!DOCTYPE[^>]*>/g, '');
-        if (!isBalancedXml(body)) problems.push('XMLTV nao esta balanceado');
+        if (!isBalancedXml(corpo)) problems.push('XMLTV nao esta balanceado');
         const progs = extractProgrammes(xml);
         const semTempo = progs.filter((p) => parseXmltvTime(p.start) === null);
         if (semTempo.length) {
@@ -785,6 +834,35 @@ export function verifyEpgArtifacts(cfg: Config): string[] {
         const v = obj[field];
         if (typeof v !== 'number' || !Number.isFinite(v) || v < 0) {
           problems.push(`epg-index: ${field} invalido`);
+        }
+      }
+      if (typeof obj['generatedAt'] !== 'string' || Number.isNaN(Date.parse(obj['generatedAt']))) {
+        problems.push('epg-index: generatedAt nao e data valida');
+      }
+      // 'sources' e 'missing' viram texto em STATUS.md e no painel. Tudo o que
+      // readIndex consome e conferido aqui, com teto de tamanho e sem quebra de linha.
+      const textoLimpo = (v: unknown, max: number): boolean =>
+        v === null || (typeof v === 'string' && v.length <= max && !/[\r\n<>]/.test(v));
+      const sources = obj['sources'];
+      if (!Array.isArray(sources) || sources.length > 200) {
+        problems.push('epg-index: sources ausente ou grande demais');
+      } else {
+        for (const s of sources as Record<string, unknown>[]) {
+          if (!textoLimpo(s['id'], 120) || !textoLimpo(s['note'], 500)) {
+            problems.push(`epg-index: fonte com id ou note invalido`);
+            break;
+          }
+        }
+      }
+      const missing = obj['missing'];
+      if (!Array.isArray(missing) || missing.length > 100_000) {
+        problems.push('epg-index: missing ausente ou grande demais');
+      } else {
+        for (const m of missing as Record<string, unknown>[]) {
+          if (!textoLimpo(m['tvgId'], 200) || !textoLimpo(m['name'], 300)) {
+            problems.push('epg-index: canal sem grade com campo invalido');
+            break;
+          }
         }
       }
     } catch (err) {
