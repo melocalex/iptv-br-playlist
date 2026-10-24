@@ -1,22 +1,22 @@
 {
- "generatedAt": "2026-10-24T05:36:22.400Z",
+ "generatedAt": "2026-10-24T06:40:47.998Z",
  "repo": {
   "owner": "melocalex",
-  "name": "iptv-br-playlist",
+  "name": "lighteye",
   "branch": "main"
  },
  "urls": {
-  "epg": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz",
-  "playlist.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist.m3u",
-  "playlist-br.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-br.m3u",
-  "playlist-pt.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-pt.m3u",
-  "playlist-movies.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-movies.m3u",
-  "playlist-series.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-series.m3u",
-  "playlist-sports.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-sports.m3u",
-  "playlist-international.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-international.m3u",
-  "playlist-all.m3u": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/playlist-all.m3u",
-  "status.json": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/status.json",
-  "metadata": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/data/channels.json"
+  "epg": "https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz",
+  "playlist.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist.m3u",
+  "playlist-br.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-br.m3u",
+  "playlist-pt.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-pt.m3u",
+  "playlist-movies.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-movies.m3u",
+  "playlist-series.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-series.m3u",
+  "playlist-sports.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-sports.m3u",
+  "playlist-international.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-international.m3u",
+  "playlist-all.m3u": "https://raw.githubusercontent.com/melocalex/lighteye/main/playlist-all.m3u",
+  "status.json": "https://raw.githubusercontent.com/melocalex/lighteye/main/status.json",
+  "metadata": "https://raw.githubusercontent.com/melocalex/lighteye/main/data/channels.json"
  },
  "discovery": {
   "channelsDiscovered": 12323,
@@ -264,11 +264,11 @@
   "missingChannelsCount": 675,
   "slices": {
    "files": 179,
-   "programmes": 6073,
+   "programmes": 6015,
    "horizonHours": 24,
-   "totalKB": 1464.5,
-   "largestKB": 31.2,
-   "indexUrl": "https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/docs/epg/index.json"
+   "totalKB": 1449.7,
+   "largestKB": 32.1,
+   "indexUrl": "https://raw.githubusercontent.com/melocalex/lighteye/main/docs/epg/index.json"
   }
  },
  "playlists": [

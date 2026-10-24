@@ -1,167 +1,268 @@
-# iptv-br-playlist
+# LightEye
 
-Agregador, validador e classificador de playlists IPTV públicas, com guia de programação XMLTV.
-Uma playlist M3U organizada em seções, gerada e republicada sozinha por GitHub Actions.
+**Ask an AI what is on television right now, and get an answer grounded in evidence —
+or an explicit "I don't know".**
 
-> **Research objective — channel RAG with AI.** O objetivo de pesquisa está em
-> **[RESEARCH.md](RESEARCH.md)**, em inglês: usar este corpus como substrato de recuperação para
-> um modelo responder o que está no ar, onde, em qual idioma e **se de fato toca** — com base em
-> evidência medida, nunca no nome do canal. A documentação operacional abaixo segue em português.
+LightEye builds a corpus of live TV channels where every record carries the observation that
+produced it, and puts a retrieval layer on top of it. You can ask a question in plain language
+and get back channels, streams and programmes **with the measurement that backs each claim**:
+what was probed, from where, at what time, with what result.
 
-A fonte primária é o [iptv-org](https://github.com/iptv-org/iptv). Nada aqui contorna DRM,
-autenticação, paywall ou geobloqueio — o projeto só agrega, mede e organiza o que já é público.
+The research objective is stated in **[RESEARCH.md](RESEARCH.md)**. The thesis: *a channel
+catalogue becomes useful to a language model only once availability is measured rather than
+claimed.* Public directories are assertions, and an assertion is not retrievable ground truth.
 
-## A URL
-
-Uma playlist, todas as seções, só os streams que passaram na validação:
-
-```
-https://raw.githubusercontent.com/Mis4nthr0pic/iptv-br-playlist/main/playlist.m3u
+```bash
+node src/cli.ts ask "what news channels in Portuguese are on right now"
 ```
 
-Cole em VLC, Kodi, TiviMate ou IPTV Smarters. O EPG já vem referenciado no cabeçalho
-(`url-tvg`), então o player carrega a grade sozinho — não precisa configurar nada à parte.
+```
+- GloboNews (`GloboNews.br@SD`, BR) — confirmed from your observation point: WORKING
+  at `local-br` on 2026-10-24T03:44:46.074Z (2.08 h ago)
+  URL: http://79.127.238.228:14093
+  On air: Globo Repórter (05:20–06:00 UTC)
 
-### Fatias, para quem quiser menos
+Evidence: 28 channels passed the filter, 28 have a valid observation, 11 of those have a
+guide and 10 have a programme on air. The guide covers 179 of 1169 indexed channels (15.31%).
+```
 
-| Arquivo | Conteúdo |
+## Scope and limits
+
+LightEye aggregates and measures **publicly available** stream directories, primarily
+[iptv-org](https://github.com/iptv-org/iptv). It is deliberately built so that:
+
+- **No DRM, authentication, paywall or geoblocking is circumvented.** `GEO_BLOCKED` is a
+  diagnostic label derived from HTTP 451 or explicit text in a response — never an attempt to
+  work around one.
+- **No credentials are handled.** No login, no token, no Xtream support, by design.
+- **Nothing is re-hosted.** The project stores URLs and measurements, never stream content.
+
+These are properties of the design, not disclaimers. They are what makes the corpus
+reproducible by anyone from the same public sources.
+
+## The AI layer
+
+### Asking
+
+```bash
+node src/cli.ts ask "what is on CazeTV"
+node src/cli.ts ask "does GloboNews.br@SD work from here" --vantage=local-br
+node src/cli.ts ask "any football on now" --no-model   # retrieval only, no API call
+```
+
+Four decisions define this layer:
+
+- **No vector database.** 1,169 published channels and ~6,000 programmes in the window fit in
+  memory. The index is hand-written BM25 (`src/lexical.ts`) combined with structural filters —
+  country, category, language, observation point, time window. It costs less, answers faster
+  and, above all, is debuggable: you can point at which term retrieved which channel. Measured:
+  the whole corpus loads and indexes in ~600 ms. Replacing it with embeddings needs a number
+  that justifies the change.
+- **Availability is a function of the observer.** The per-channel verdict distinguishes
+  `CONFIRMED_HERE` from `CONFIRMED_ELSEWHERE`. The same stream is `WORKING` from Brazil and
+  refused from the US runner, and the answer never promises it opens for you when the
+  confirmation came from somewhere else.
+- **"I don't know" is an answer.** Stale evidence, a channel with no guide, or a name absent
+  from the corpus produce a declared abstention with the measured reason. The failure mode to
+  beat is confidently recommending a stream that does not play.
+- **What is on air comes from the clock, not a precomputed pointer.** The layer compares the
+  slice's `s`/`e` against the instant of the question, and the slice's `generatedAt` decides
+  whether the data is too old to answer (`rag.freshness.guideStaleAfterHours`).
+
+Every answer that passes through the model is checked before it is returned: a `tvg-id` or URL
+that is not in the evidence block drops the generated text and the deterministic wording stands.
+
+### MCP server
+
+The same layer exposes four tools over stdio, in JSON-RPC, with no dependencies:
+
+| Tool | Returns |
 | --- | --- |
-| `playlist.m3u` | **principal** — tudo validado, em seções, Brasil primeiro |
-| `playlist-br.m3u` | só Brasil |
-| `playlist-pt.m3u` | Portugal e canais em português |
-| `playlist-movies.m3u` | filmes |
-| `playlist-series.m3u` | séries |
-| `playlist-sports.m3u` | esportes |
-| `playlist-international.m3u` | tudo fora do Brasil |
-| `playlist-all.m3u` | tudo, **inclusive não verificado e indisponível** (traz `x-health` em cada entrada) |
-| `epg.xml.gz` | guia XMLTV |
-| `status.json` / [`STATUS.md`](STATUS.md) | painel com os números medidos |
-| `data/channels.json` | metadados completos, com streams alternativos e a evidência de cada validação |
+| `search_channels` | channels matching the filter, with availability per observation point and a guide verdict |
+| `channel_evidence` | every observation for a `tvg-id`, with HTTP, reason, measured media and freshness |
+| `now_playing` | what the guide says is on air, or a statement that it is unknown |
+| `corpus_stats` | measured corpus numbers, so nothing is generalized about the catalogue |
 
-Troque o nome do arquivo no fim da URL acima para pegar qualquer uma delas.
+```bash
+npm run mcp
+```
 
-### Sobre as "seções"
+[`.mcp.json`](.mcp.json) registers the server for clients that read that project
+configuration. A channel left out of the index stays queryable: `channel_evidence` answers with
+the evidence for its exclusion — status, HTTP and `checkedAt` — instead of "unknown channel".
 
-A seção vai no atributo `group-title` de cada entrada, no formato `País • Categoria`
-(`🇧🇷 Brasil • Notícias`, `🌐 International • Filmes`). A ordem do arquivo também é a ordem
-das seções: Brasil, Portugal, América Latina, España, United States, United Kingdom,
-International, Other Countries — e, dentro de cada país, notícias, esportes, filmes, séries,
-documentários, infantil, animação, entretenimento, música, cultura, educação, variedades, geral.
+### Generation
 
-**TiviMate, IPTV Smarters e Kodi mostram isso como seções navegáveis.** O VLC é a exceção: ele
-ignora `group-title` e achata a lista num bloco só — lá o que você percebe é a ordem. Não é
-limitação da playlist, é do VLC.
+The final wording can come from the Anthropic API. The key comes from `ANTHROPIC_API_KEY` in the
+environment, never from the code. Without it, retrieval works identically and the answer is
+deterministic, with a notice saying so. Model, token cap and timeout live in `config/rag.json`.
 
-## Como um canal é classificado
+### Evaluation
 
-País e categoria **nunca** saem do nome do canal. Saem dos metadados da fonte:
+```bash
+npm run rag:eval
+```
 
-- categoria: `channels.json#categories` do iptv-org, mapeada em [`config/taxonomy.json`](config/taxonomy.json);
-- país: `feeds.json#broadcast_area` tem precedência sobre `channels.json#country`, porque um feed
-  dedicado é o que de fato chega ao espectador. `AELatinAmerica.us@Brazil` tem `broadcast_area`
-  `c/BR`, então entra em **Brasil**, não em United States;
-- `International` só quando a área de transmissão é mundial (`r/WW`, `r/UN`) ou cobre três países
-  ou mais;
-- o motivo da decisão fica gravado em `countryGroupReason`, canal por canal, em `data/channels.json`.
+[`config/eval.json`](config/eval.json) holds 17 questions with expectations for the plan
+(extracted filters), the retrieval (who must appear) and the abstention. The command fails if
+any case fails and writes `data/rag-eval.json` with the `now` it used — the score depends on the
+instant, because evidence expires and the guide window lasts 24 h. To reproduce an old
+measurement:
 
-Stream sem metadado de canal na fonte fica fora das playlists validadas e aparece só em
-`playlist-all.m3u`. Adivinhar a categoria pelo nome seria mais bonito no relatório e errado.
+```bash
+node src/cli.ts rag-eval --now=2026-10-24T05:52:00Z
+```
 
-O boot check compara a taxonomia com `countries.json` e `categories.json` a cada execução e
-**aborta** se um código não existir. Foi assim que apareceu que o iptv-org usa `UK`, não `GB` —
-sem a checagem, o grupo United Kingdom ficaria silenciosamente vazio.
+## The corpus
 
-## Validação
+Everything is a static file served over HTTPS from the repository. There is no server.
 
-Cada stream passa por uma pré-checagem HTTP e, se responder, por um `ffprobe` de verdade.
-São gravados: resolução, codec de vídeo e de áudio, fps, canais de áudio, **idiomas de áudio
-detectados**, faixas de legenda, resposta HTTP, horário da checagem e o motivo da falha.
+Base URL: `https://raw.githubusercontent.com/melocalex/lighteye/main/`
 
-| Status | Quando |
+| Artifact | Contents |
 | --- | --- |
-| `WORKING` | ffprobe abriu e achou faixa de áudio ou de vídeo |
-| `UNSTABLE` | funcionou numa tentativa e falhou em outra, ou oscila entre execuções |
-| `OFFLINE` | erro de rede, 4xx/5xx sem motivo declarado |
-| `TIMEOUT` | estourou o tempo de conexão ou de probe |
-| `GEO_BLOCKED` | **só** com HTTP 451 ou texto explícito de bloqueio regional na resposta |
-| `AUTH_REQUIRED` | HTTP 401, `WWW-Authenticate`, ou texto explícito de autenticação |
-| `UNSUPPORTED` | respondeu, mas o ffprobe não achou nada tocável |
-| `UNKNOWN` | ainda não checado nesta janela |
+| `data/channels.json` | the document corpus: ~12,000 channels with country, category, languages, timezones, classification reason, and per-stream measurements |
+| `data/health.json` | observation history per stream, per observation point, with timestamps and evidence |
+| `docs/epg/index.json` + `docs/epg/<channel>.json` | per-channel programme slices, 24 h window, epoch seconds |
+| `epg.xml.gz` | full XMLTV guide |
+| `status.json` / [`STATUS.md`](STATUS.md) | aggregate counts, measured |
+| `playlist.m3u` and slices | the catalogue as a playable M3U, organized into sections |
 
-Duas regras que o relatório respeita:
+### As a playlist
 
-- **`GEO_BLOCKED` exige prova.** Um HTTP 403 pelado fica `OFFLINE` com `reason: http_403` e o
-  trecho do corpo guardado como evidência: recusa comprovada, motivo não comprovado.
-- **Ausência de legenda não é prova de ausência.** Em HLS o ffprobe não abre a playlist de
-  variante de legenda. Nesses casos `subtitleDetectionReliable` é `false` e o painel conta isso
-  separado, em vez de afirmar que o canal não tem legenda.
+The playlist is the human-facing view of the same corpus — the format television players
+already read. The guide is referenced in the header, so players load it automatically:
 
-Um stream não é descartado por uma falha. O histórico fica em `data/health.json` (versionado) e
-só depois de `validation.dropAfterFailures` falhas consecutivas ele sai das playlists validadas —
-continuando em `playlist-all.m3u`. Streams alternativos do mesmo canal ficam guardados nos
-metadados, ordenados por confiabilidade medida.
+```
+https://raw.githubusercontent.com/melocalex/lighteye/main/playlist.m3u
+```
 
-### Onde o teste roda muda o resultado
+Narrower slices: `playlist-br.m3u`, `playlist-pt.m3u`, `playlist-movies.m3u`,
+`playlist-series.m3u`, `playlist-sports.m3u`, `playlist-international.m3u`, and
+`playlist-all.m3u` (everything, including unverified and unavailable, each entry carrying an
+`x-health` attribute). Swap the file name at the end of the URL.
 
-O runner do GitHub Actions fica nos Estados Unidos. Boa parte dos canais brasileiros responde
-para quem está no Brasil e recusa de lá — e alguns fazem o contrário. Por isso cada resultado é
-gravado por **ponto de observação** (`local-br`, `github-us`) e o painel mostra os dois lado a
-lado. **Os números de pontos diferentes não somam.** Um canal entra nas playlists validadas se
-funcionou em pelo menos um ponto, e o metadado diz qual.
+The section is the `group-title` attribute, formatted `Country • Category`
+(`🇧🇷 Brasil • Notícias`). File order is section order: Brazil first, then Portugal, Latin
+America, Spain, United States, United Kingdom, International, Other Countries; within each
+country, categories follow a configured order.
 
-Para medir do Brasil, na sua máquina:
+TiviMate, IPTV Smarters and Kodi render these as navigable sections. VLC is the exception: it
+ignores `group-title` and flattens the list, so there you only perceive the ordering.
+
+## How a channel is categorized
+
+Country and category **never** come from the channel's name. They come from source metadata:
+
+- category: `channels.json#categories` from iptv-org, mapped in
+  [`config/taxonomy.json`](config/taxonomy.json);
+- country: `feeds.json#broadcast_area` takes precedence over `channels.json#country`, because a
+  dedicated feed is what actually reaches the viewer. `AELatinAmerica.us@Brazil` has
+  `broadcast_area` `c/BR`, so it lands in **Brazil**, not United States;
+- `International` only when the broadcast area is worldwide (`r/WW`, `r/UN`) or spans three or
+  more countries;
+- the reason for each decision is recorded per channel as `countryGroupReason`.
+
+A stream with no channel metadata in the source stays out of the validated playlists and appears
+only in `playlist-all.m3u`. Guessing a category from a channel name would look better in the
+report and be wrong.
+
+A boot check compares the taxonomy against `countries.json` and `categories.json` on every run
+and **aborts** if a code does not exist. That is how it surfaced that iptv-org uses `UK`, not
+`GB` — without the check, the United Kingdom group would have stayed silently empty.
+
+## Measurement
+
+Each stream goes through an HTTP pre-check and, if it responds, a real `ffprobe`. Recorded:
+resolution, video and audio codec, fps, audio channels, **detected audio languages**, subtitle
+tracks, HTTP response, probe timestamp and failure reason.
+
+| Status | When |
+| --- | --- |
+| `WORKING` | ffprobe opened it and found an audio or video track |
+| `UNSTABLE` | succeeded on one attempt and failed on another, or flaps between runs |
+| `OFFLINE` | network error, or 4xx/5xx with no declared reason |
+| `TIMEOUT` | connect or probe deadline exceeded |
+| `GEO_BLOCKED` | **only** with HTTP 451 or explicit regional-block text in the response |
+| `AUTH_REQUIRED` | HTTP 401, `WWW-Authenticate`, or explicit authentication text |
+| `UNSUPPORTED` | responded, but ffprobe found nothing playable |
+| `UNKNOWN` | not yet checked in this window |
+
+Two rules the reporting keeps:
+
+- **`GEO_BLOCKED` requires proof.** A bare HTTP 403 stays `OFFLINE` with `reason: http_403` and
+  a snippet of the body kept as evidence: refusal proven, motive not.
+- **Absence of subtitles is not proof of absence.** Over HLS, ffprobe does not open the subtitle
+  variant playlist. In those cases `subtitleDetectionReliable` is `false`, and the dashboard
+  counts them separately instead of asserting the channel has no subtitles.
+
+A stream is not dropped after one failure. History lives in `data/health.json` (versioned), and
+only after `validation.dropAfterFailures` consecutive failures does it leave the validated
+playlists — while remaining in `playlist-all.m3u`. Alternative streams for the same channel are
+kept in the metadata, ranked by measured reliability.
+
+### Where the probe runs changes the result
+
+The GitHub Actions runner sits in the United States. Many Brazilian channels answer a probe from
+Brazil and refuse one from there — and some do the opposite. So every result is recorded per
+**observation point** (`local-br`, `github-us`) and the report shows both side by side.
+**Numbers from different points do not add up.** A channel enters the validated playlists if it
+worked from at least one point, and the metadata says which.
+
+To measure from Brazil, on your own machine:
 
 ```bash
 IPTV_VANTAGE=local-br npm run all
 ```
 
-## EPG
+## Programme guide
 
-Aqui mora a parte que a documentação por aí ainda descreve errado. Medido em 2026-10-24:
+Measured on 2026-10-24, and worth stating because published documentation elsewhere is stale:
 
-- `https://iptv-org.github.io/epg/guides/` responde **HTTP 404**;
-- `iptv-org/epg` não publica release nem branch `gh-pages`;
-- o `GUIDES.md` do projeto, que lista guias da comunidade, estava com **todos os hosts em
-  status vermelho, 0 canais** e nenhuma linha de Brasil ou Portugal.
+- `https://iptv-org.github.io/epg/guides/` returns **HTTP 404**;
+- `iptv-org/epg` publishes no release and has no `gh-pages` branch;
+- its `GUIDES.md`, the community guide list, had **every host red, 0 channels**, and no Brazil
+  or Portugal entry at all.
 
-Ou seja: não existe hoje um guia pronto do iptv-org para baixar. O projeto usa dois caminhos:
+There is no ready-made guide to download. Two paths are used instead:
 
-1. **O grabber do próprio `iptv-org/epg`** (caminho primário). Ele emite XMLTV com `xmltv_id`
-   idêntico ao `tvg-id` da playlist (`AELatinAmerica.us@Brazil`), então o casamento é exato, sem
-   adivinhação. Rodamos só para os canais que entraram na playlist e só para os sites que cobrem
-   esses canais — `mi.tv` (196 canais BR), `meuguia.tv` (64 BR), `meo.pt` (82 PT), `nostv.pt`
-   (79 PT), `gatotv.com`, `pluto.tv`. A lista está em [`config/epg.json`](config/epg.json).
-2. **Guias publicados já verificados.** `https://epg.kanya.io/us/guide.xml.gz` é o guia que o
-   próprio `index.m3u` do iptv-org aponta em `x-tvg-url`, e os ids dele já são `canal@feed`.
-   Medido: 1.401 canais, 65.766 programas — mas **0 de 394 canais brasileiros** e 2 de 66
-   portugueses. Serve para internacionais, não resolve o Brasil.
+1. **The iptv-org grabber itself** (primary). It emits XMLTV whose `xmltv_id` is identical to
+   the playlist's `tvg-id` (`AELatinAmerica.us@Brazil`), so the join is exact, with no guessing.
+   It runs only for channels that made it into the playlist and only for sites covering them —
+   `mi.tv`, `meuguia.tv`, `meo.pt`, `nostv.pt`, `gatotv.com`, `pluto.tv`. See
+   [`config/epg.json`](config/epg.json).
+2. **Already-published, verified guides.** `https://epg.kanya.io/us/guide.xml.gz` is the guide
+   iptv-org's own `index.m3u` points at via `x-tvg-url`, and its ids are already `channel@feed`.
+   Measured: 1,401 channels, 65,766 programmes — but **0 of 394 Brazilian channels** and 2 of 66
+   Portuguese. Useful for international coverage; it does not solve Brazil.
 
-Guia de terceiro com id próprio (`i.mjh.nz`, por exemplo) fica **desligado** por padrão: casar
-por semelhança de nome seria adivinhação. Para ligar, preencha `idMap` explicitamente.
+A third-party guide with its own id scheme (`i.mjh.nz`, for example) stays **disabled** by
+default: matching by name similarity would be guessing. To enable one, supply an explicit
+`idMap`.
 
-A grade é normalizada para timestamp XMLTV canônico, deduplicada por `(canal, início, fim)` e
-cortada no horizonte de `epg.programmeHorizonHours`. Nenhuma grade é inventada: canal sem fonte
-fica sem programa, e aparece na lista de `data/epg-coverage.json`.
+The guide is normalized to canonical XMLTV timestamps, deduplicated by `(channel, start, stop)`
+and cut at `epg.programmeHorizonHours`. No schedule is invented: a channel without a source has
+no programmes and is listed in `data/epg-coverage.json`.
 
-Os elementos reemitidos são `title`, `sub-title`, `desc`, `category`, `country`, `language`,
-`orig-language`, `date`, `episode-num`, `length` e `icon` no `<programme>`, e `display-name`,
-`icon` e `url` no `<channel>`. `credits`, `rating` e `star-rating` são aninhados e ficam de fora
-— título, descrição, início e fim, que é o que a spec pede, ficam.
+Re-emitted elements are `title`, `sub-title`, `desc`, `category`, `country`, `language`,
+`orig-language`, `date`, `episode-num`, `length` and `icon` inside `<programme>`, and
+`display-name`, `icon` and `url` inside `<channel>`. `credits`, `rating` and `star-rating` are
+nested and are dropped; title, description, start and end are kept.
 
-**A cobertura publicada é a medida.** O número está em [`STATUS.md`](STATUS.md) e em
-`status.json`; a cobertura do iptv-org é parcial por natureza e o projeto não arredonda para cima.
+**Published coverage is measured coverage.** The number is in [`STATUS.md`](STATUS.md) and
+`status.json`. iptv-org's coverage is partial by nature and this project does not round up.
 
-### Grade fatiada por canal, em JSON
+### Per-channel guide slices
 
-Para quem não consegue parsear XMLTV — um player de TV com pouca memória, por exemplo — a grade
-sai também em um JSON por canal, com janela curta:
+For consumers that cannot parse XMLTV — a television player with little memory, for instance —
+the guide is also published as one small JSON per channel:
 
 ```
-https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/docs/epg/index.json
+https://raw.githubusercontent.com/melocalex/lighteye/main/docs/epg/index.json
 ```
 
-O índice lista cada canal com o **nome de arquivo pronto**, então o consumidor nunca precisa
-reproduzir a transformação do `tvg-id` (`Globo.br@SD` → `Globo.br_at_SD.json`):
+The index lists each channel with its **ready-made file name**, so a consumer never reproduces
+the `tvg-id` transformation (`Globo.br@SD` → `Globo.br_at_SD.json`):
 
 ```json
 {
@@ -174,7 +275,7 @@ reproduzir a transformação do `tvg-id` (`Globo.br@SD` → `Globo.br_at_SD.json
 }
 ```
 
-Cada fatia:
+Each slice:
 
 ```json
 {
@@ -187,151 +288,66 @@ Cada fatia:
 }
 ```
 
-- `s` / `e` são **epoch em segundos, UTC** — inteiro, não timestamp XMLTV. Parsear
-  `20261024120000 +0000` em BrightScript é sofrimento; `s` é aritmética direta.
-- `t` título, `d` descrição (cortada em `epg.sliceDescMaxChars`), `c` categorias.
-- `programmes` vem ordenado por início, e inclui o programa que já começou e ainda não acabou.
-- **Não há campo apontando "o que está no ar".** Existia um, e foi removido: ele era calculado
-  na geração e o arquivo é servido por horas, então ficava errado e induzia o consumidor a
-  mostrar o programa errado. Ache pelo relógio local — `p.s <= agora && p.e > agora` numa lista
-  de algumas dezenas de itens.
+- `s` / `e` are **epoch seconds, UTC** — an integer, not an XMLTV timestamp. Parsing
+  `20261024120000 +0000` on a constrained client is painful; `s` is plain arithmetic.
+- `t` title, `d` description (capped at `epg.sliceDescMaxChars`), `c` categories.
+- `programmes` is ordered by start time and includes the programme already in progress.
+- **There is no field pointing at what is on air.** One existed and was removed: it was computed
+  at generation time while the file is served for hours, so it went wrong and led consumers to
+  display the wrong programme. Find it against the local clock — `p.s <= now && p.e > now`.
 
-#### Fronteira de dia da fonte
+Measured: 179 files, ~6,000 programmes, ~1,460 KB total, ~8 KB average, 31 KB largest. A
+consumer reads one file at a time.
 
-A grade de alguns canais começa às 06:00 UTC (03:00 em Brasília), que é a virada de dia de
-sites como o `mi.tv`. Gerar a playlist **antes** dessa hora deixa esses canais sem programa no
-ar até lá — medido numa execução manual às 05:10 UTC: 29 dos 179 canais nessa situação. O cron
-diário roda às **06:10 UTC**, logo depois da virada, e no mesmo conjunto de dados isso cairia
-para **1 canal**. Se você disparar o workflow à mão, prefira depois das 06:10 UTC.
+Slices are generated during `build`, from the **already verified** `epg.xml.gz`, not in the
+isolated grabber job — so the published JSON does not come out of a workspace where third-party
+code ran. A channel that loses its guide has its slice removed; the directory is rebuilt on
+every run.
 
-Tamanho medido: **179 arquivos, 6.092 programas, 1.471 KB no total, média 8,2 KB, maior 30,8 KB**
-(um canal de desenhos curtos). O consumidor lê um arquivo por vez.
+#### Source day boundary
 
-As fatias são geradas na etapa de `build`, a partir do `epg.xml.gz` **já verificado**, e não na
-job isolada do grabber — assim o JSON publicado não sai de um workspace onde código de terceiro
-rodou. Canal que perde a grade tem a fatia removida; o diretório é refeito a cada execução.
+Some channels' listings only start at 06:00 UTC (03:00 in Brasília), which is the day rollover
+for sites like `mi.tv`. Generating **before** that hour leaves those channels with nothing on
+air until then — measured on a manual run at 05:10 UTC: 29 of 179 channels in that state. The
+daily cron runs at **06:10 UTC**, just after the rollover; on the same data that would drop to
+**1 channel**. If you trigger the workflow by hand, prefer after 06:10 UTC. The same question
+therefore has different answers depending on when the guide was generated.
 
-## Pergunta em português sobre o que está no ar
+## Configuration
 
-O corpus publicado também é substrato de recuperação: dá para perguntar em português e receber
-resposta **fundamentada na observação que a sustenta**, ou uma abstenção explícita. O objetivo de
-pesquisa está em [`RESEARCH.md`](RESEARCH.md), em inglês de propósito.
+No limit, timeout or concurrency number lives in the code. Everything is in `config/` and
+overridable by environment variable — see [`.env.example`](.env.example).
 
-```bash
-node src/cli.ts ask "o que tem de notícia em português tocando agora"
-node src/cli.ts ask "o canal GloboNews.br@SD funciona daqui" --vantage=local-br
-node src/cli.ts ask "o que está passando na CazeTV" --no-model   # sem chamar a API
-```
-
-Saída real, resumida:
-
-```
-- GloboNews (`GloboNews.br@SD`, BR) — confirmado do seu ponto de observacao: WORKING
-  em `local-br` em 2026-10-24T03:44:46.074Z (ha 2.08 h)
-  URL: http://79.127.238.228:14093
-  No ar: Globo Repórter (05:20–06:00 UTC)
-
-Evidencia: 28 canais passaram no filtro, 28 tem observacao valida, 11 desses tem grade
-e 10 tem programa no ar. A grade cobre 179 dos 1169 canais indexados (15.31%).
-```
-
-Três decisões que definem a camada:
-
-- **Sem banco vetorial.** 1.169 canais publicados e ~6 mil programas na janela cabem em memória;
-  o índice é BM25 escrito à mão (`src/lexical.ts`) combinado com filtro estrutural — país,
-  categoria, idioma, ponto de observação, janela de horário. Custa menos, responde mais rápido e,
-  acima de tudo, é depurável: dá para apontar qual termo trouxe qual canal. Medido: o corpus
-  inteiro carrega e indexa em ~600 ms. Trocar por vetor precisa de número que justifique.
-- **Disponibilidade é função do observador.** O veredito por canal distingue `CONFIRMED_HERE` de
-  `CONFIRMED_ELSEWHERE`; o mesmo stream está `WORKING` do Brasil e recusado do runner dos EUA, e
-  a resposta nunca promete que abre daqui quando a confirmação veio de outro ponto.
-- **"Não sei" é resposta.** Evidência vencida, canal sem grade ou nome que não existe no corpus
-  geram abstenção declarada, com o número medido no motivo. O modo de falha a derrotar é
-  recomendar com confiança um stream que não toca.
-- **O programa no ar sai do relógio, não de ponteiro pré-calculado.** A camada compara `s`/`e` da
-  fatia contra o instante da pergunta, e o `generatedAt` da fatia decide se o dado está velho
-  demais para responder (`rag.freshness.guideStaleAfterHours`). Por isso a mesma pergunta tem
-  resposta diferente conforme a hora em que a grade foi gerada — veja
-  [Fronteira de dia da fonte](#fronteira-de-dia-da-fonte).
-
-Toda resposta que passa pelo modelo é conferida antes de sair: `tvg-id` ou URL que não esteja no
-bloco de evidência derruba o texto gerado e vale a redação determinística.
-
-### Servidor MCP
-
-A mesma camada expõe quatro ferramentas por stdio, em JSON-RPC, sem dependência:
-
-| Ferramenta | O que devolve |
+| File | Defines |
 | --- | --- |
-| `search_channels` | canais do filtro, com disponibilidade por ponto de observação e veredito de grade |
-| `channel_evidence` | toda observação de um `tvg-id`, com HTTP, motivo, mídia medida e frescor |
-| `now_playing` | o que está no ar segundo a grade, ou a declaração de que é desconhecido |
-| `corpus_stats` | números medidos do corpus, para não generalizar sobre o catálogo |
+| `config/config.json` | repository identity, timeouts, concurrency, re-check grace periods, EPG, outputs |
+| `config/sources.json` | modular source registry; adding another public list is one new object |
+| `config/taxonomy.json` | country groups, categories, section ordering |
+| `config/evidence.json` | patterns that classify a failure by evidence, resolution ladder |
+| `config/epg.json` | grabber sites and published guides, each with what was measured |
+| `config/rag.json` | BM25 weights, evidence freshness per status, evidence block size, model, and the Portuguese search lexicon |
+| `config/eval.json` | retrieval evaluation set, with the pass floor the test enforces |
 
-```bash
-npm run mcp
-```
+Override rule: `IPTV_` + the key path in upper case.
+`validation.concurrency` → `IPTV_VALIDATION_CONCURRENCY`. The retrieval layer uses its own
+prefix: `rag.retrieval.bm25K1` → `IPTV_RAG_RETRIEVAL_BM25K1`.
 
-[`.mcp.json`](.mcp.json) já registra o servidor para clientes que leem essa configuração no
-projeto. Canal que ficou fora do índice continua consultável: `channel_evidence` responde com a
-evidência da exclusão — status, HTTP e `checkedAt` — em vez de "não conheço esse canal".
+### Redundant sources
 
-### Geração
-
-A redação final pode vir da API da Anthropic. A chave sai de `ANTHROPIC_API_KEY` no ambiente,
-nunca do código. Sem a chave a recuperação funciona igual e a resposta sai determinística, com
-aviso dizendo isso. Modelo, teto de tokens e timeout ficam em `config/rag.json`.
-
-### Avaliação
-
-```bash
-npm run rag:eval
-```
-
-[`config/eval.json`](config/eval.json) tem 17 perguntas com o que se espera do plano (filtros
-extraídos), da recuperação (quem tem de aparecer) e da abstenção. O comando falha se algum caso
-falhar e grava `data/rag-eval.json` com o `now` usado — a nota depende do instante, porque
-evidência vence e a janela da grade dura 24 h. Para reproduzir uma medição antiga:
-
-```bash
-node src/cli.ts rag-eval --now=2026-10-24T05:52:00Z
-```
-
-## Configuração
-
-Nenhum limite, timeout ou concorrência vive no código. Tudo em `config/` e tudo sobrescrevível
-por variável de ambiente — veja [`.env.example`](.env.example).
-
-| Arquivo | O que define |
-| --- | --- |
-| `config/config.json` | dono do repositório, timeouts, concorrência, carência de recheck, EPG, saídas |
-| `config/sources.json` | registro modular de fontes; acrescentar outra lista pública é um objeto novo |
-| `config/taxonomy.json` | grupos de país, categorias em pt-BR, ordem das seções |
-| `config/evidence.json` | padrões que classificam uma falha por evidência, escada de resolução |
-| `config/epg.json` | sites do grabber e guias publicados, com o que foi medido em cada um |
-| `config/rag.json` | pesos do BM25, frescor da evidência por status, tamanho do bloco de evidência, modelo e léxico da busca em português |
-| `config/eval.json` | conjunto de avaliação da recuperação, com o piso de acerto que o teste exige |
-
-Regra do override: `IPTV_` + caminho da chave em maiúscula.
-`validation.concurrency` → `IPTV_VALIDATION_CONCURRENCY`. A camada de recuperação usa prefixo
-próprio: `rag.retrieval.bm25K1` → `IPTV_RAG_RETRIEVAL_BM25K1`.
-
-### Fontes redundantes
-
-`index.m3u` do iptv-org já contém as entradas das listas de país e de categoria — medido: as
-11.323 URLs dele são todas subconjunto de `streams.json`. As listas redundantes estão declaradas
-em `config/sources.json` com `coveredBy` e **não são baixadas**. Para provar a redundância em vez
-de confiar nela:
+iptv-org's `index.m3u` already contains the entries of the country and category lists —
+measured: its 11,323 URLs are all a subset of `streams.json`. Redundant lists are declared in
+`config/sources.json` with `coveredBy` and **are not downloaded**. To prove the redundancy
+instead of trusting it:
 
 ```bash
 npm run all -- --verify-redundancy
 ```
 
-O relatório passa a trazer, por fonte, quantas entradas faltavam na master.
+The report then shows, per source, how many entries were missing from the master.
 
-## Rodando local (macOS)
+## Running locally
 
-Precisa de Node 22.6+ (o projeto roda TypeScript direto, sem build) e de ffmpeg.
+Requires Node 22.6+ (the project runs TypeScript directly, with no build step) and ffmpeg.
 
 ```bash
 brew install ffmpeg
@@ -340,111 +356,125 @@ npm run typecheck && npm test
 node src/cli.ts check
 ```
 
-Comandos:
+Commands:
 
 ```bash
-node src/cli.ts sources                        # só baixa e resume as fontes
-node src/cli.ts validate --only=BR --limit=200 # valida uma fatia
-node src/cli.ts epg                            # só o EPG
-node src/cli.ts build --skip-epg               # gera playlists com o health que já existe
-node src/cli.ts all                            # tudo
-node src/cli.ts ask "pergunta"                 # resposta fundamentada sobre o corpus
-node src/cli.ts mcp                            # servidor MCP em stdio
-node src/cli.ts rag-eval                       # pontua a recuperação
+node src/cli.ts sources                        # fetch and summarize the sources only
+node src/cli.ts validate --only=BR --limit=200 # validate a slice
+node src/cli.ts epg                            # build the guide only
+node src/cli.ts verify-epg                     # re-verify the guide artifacts
+node src/cli.ts build --skip-epg               # generate outputs from existing health data
+node src/cli.ts all                            # everything
+node src/cli.ts ask "question"                 # grounded answer over the corpus
+node src/cli.ts mcp                            # MCP server over stdio
+node src/cli.ts rag-eval                       # score the retrieval
 ```
 
-`ask`, `mcp` e `rag-eval` leem apenas o que já foi publicado: não baixam fonte, não pedem rede e
-não precisam de ffmpeg.
+`ask`, `mcp` and `rag-eval` read only what has already been published: no source downloads, no
+network, no ffmpeg.
 
-`--only` aceita grupos separados por vírgula (`--only=BR,PT`). `--limit=0` remove o teto.
-`--force` ignora o cache HTTP.
+`--only` takes comma-separated groups (`--only=BR,PT`). `--limit=0` removes the cap. `--force`
+ignores the HTTP cache.
 
-## Automação
+## Automation
 
-[`.github/workflows/atualizar.yml`](.github/workflows/atualizar.yml) roda todo dia às 03:10 de
-Brasília e também sob demanda. O workflow tem **uma** permissão, `contents: write`, não usa
-segredo nenhum e comita o que mudou.
+[`.github/workflows/atualizar.yml`](.github/workflows/atualizar.yml) runs daily at 06:10 UTC and
+on demand. It has three jobs and **no workflow-level permissions**:
 
-Custo controlado por três mecanismos: GET condicional com ETag nas fontes (cache de disco),
-`node_modules` do grabber em cache, e validação incremental — cada status tem sua carência em
-`validation.recheckHours`, e `validation.maxChecksPerRun` limita quanto cada execução checa.
-Canal nunca checado vai na frente; Brasil e Portugal têm prioridade.
+| Job | Permission | Role |
+| --- | --- | --- |
+| `validar` | `contents: read` | project code and ffprobe only |
+| `epg` | `contents: read` | the **only** job running third-party code; no credentials, workspace discarded |
+| `publicar` | `contents: write` | clean checkout, consumes artifacts, commits an allow-listed set of paths |
 
-## Postura de segurança
+Cost is bounded by three mechanisms: conditional GET with ETag on the sources, a cached grabber,
+and incremental validation — each status has its own grace period in
+`validation.recheckHours`, and `validation.maxChecksPerRun` caps each run. Never-checked
+channels go first; Brazil and Portugal have priority.
 
-Todo o conteúdo vem de base pública editável por terceiros (`channels.json` do iptv-org) e de
-código de terceiro (o grabber). As defesas são por isso, não por formalidade:
+## Security posture
 
-- **Nome, logo e URL nunca entram como HTML.** O painel monta a tabela por nó de DOM, com
-  `textContent`, e só aceita logo com esquema `http(s)`. Verificado injetando payload no
-  `dashboard-data.json` servido: renderiza como texto, nenhum script executa.
-- **Nada injeta linha na M3U publicada.** Valor com CR/LF é achatado numa linha, URL que não for
-  `http(s)` sem espaço é descartada, e diretiva copiada da fonte passa por lista permitida.
-  Sem isso, um nome de canal com `\n` viraria uma entrada nova apontando para outro stream.
-- **O grabber roda isolado.** É a única parte que executa código de terceiro, e roda numa job
-  com `contents: read`, sem credencial, cujo workspace é descartado. Ele entrega apenas
-  arquivos por artifact. A job que publica faz checkout limpo, não roda nada de terceiro e
-  comita **somente** os caminhos de uma lista fechada — arquivo fora dela derruba a execução.
-- **O pin do grabber é conferido sempre.** `epg.grabberRef` é um commit SHA; `HEAD` e
-  `git status --porcelain` são checados a cada execução, inclusive quando o diretório vem do
-  cache do Actions, e qualquer divergência refaz o clone.
-- **Só a job confiável grava cache.** As outras usam `actions/cache/restore`. Se a job do
-  grabber pudesse gravar o cache de fontes, ela envenenaria o `channels.json` que a job de
-  publicação usa para montar as playlists.
-- **Download tem teto.** Corpo lido em pedaços com limite e descompressão com `maxOutputLength`:
-  um `.gz` de fonte pública pode ser bomba de descompressão.
-- **O XMLTV publicado é reconstruído, não copiado.** Os filhos permitidos de `<programme>` e
-  `<channel>` são extraídos, decodificados e reescapados; o resto é descartado. Copiar o
-  conteúdo cru exigiria confiar que a fonte emite XML bem formado, e nenhuma lista de padrões
-  proibidos resolve isso — `<title>sem fechar` passaria por qualquer regex e quebraria o player
-  de quem consome. Reconstruindo, o arquivo é bem formado por construção.
-- **A job que publica reconfere os arquivos de EPG** (`node src/cli.ts verify-epg`): gzip válido,
-  raiz `<tv>`, XML balanceado por contagem de tags, timestamp XMLTV válido, nenhum programa sem
-  `<channel>` declarado, índice dentro dos tipos e tetos esperados. Ela não confia na etapa
-  anterior só porque é do mesmo projeto.
+All content comes from a publicly editable database (iptv-org's `channels.json`) and from
+third-party code (the grabber). The defences exist for that reason:
 
-- **Texto de terceiro que vai para o contexto do modelo é dado, nunca instrução.** Nome de canal
-  e título de programa saem do iptv-org e dos grabbers, e podem trazer tentativa de instrução
-  embutida. Antes de entrar no bloco de evidência eles são achatados numa linha — controle e
-  quebra fora — e cortados em `rag.answer.maxTextChars`, para não conseguirem se passar por uma
-  seção nova do prompt. O bloco carrega o aviso disso, e a regra do sistema manda ignorar
-  comando que apareça nesses campos. Filtro de semântica não existe: um texto que *diga* algo
-  continua chegando, só não consegue fingir que é prompt.
-- **A conferência da resposta gerada é lista de permissão.** Qualquer token com cara de endereço
-  (`://`, `//host`, `www.`, `.m3u8`, `.mpd`) tem de ser exatamente uma URL do bloco de
-  evidência, e todo `tvg-id` citado tem de estar lá. Casar só `https?://` deixaria passar
-  `www.outro/live` e `outro/playlist.m3u8`, que num player viram link igual. Violação derruba o
-  texto do modelo e vale a redação determinística.
-- **A saída do servidor MCP não é autorização.** O que ele devolve é evidência de terceiro
-  encapsulada em JSON. Cliente MCP não deve aprovar ação automaticamente com base nela, e o
-  servidor não executa nada: só lê arquivo publicado, sem rede e sem escrita.
+- **Names, logos and URLs never enter as HTML.** The dashboard builds its table from DOM nodes
+  with `textContent` and accepts only `http(s)` logo URLs. Verified by injecting a payload into
+  the served `dashboard-data.json`: it renders as text, no script executes.
+- **Nothing can inject a line into the published M3U.** Values carrying CR/LF are flattened, a
+  URL that is not `http(s)` without whitespace is dropped, and directives copied from the source
+  pass an allow list. Without this, a channel name containing `\n` would become a new entry
+  pointing at a different stream.
+- **The grabber runs isolated**, in a job with `contents: read`, no credentials, whose workspace
+  is discarded. The publishing job does a clean checkout, runs nothing third-party, and commits
+  **only** paths from a closed list — anything outside it fails the run.
+- **The grabber pin is always verified.** `epg.grabberRef` is a commit SHA; `HEAD` and
+  `git status --porcelain` are checked on every run, including when the directory comes from the
+  Actions cache, and any divergence re-clones.
+- **Only the trusted job writes cache.** The others use `actions/cache/restore`. If the grabber
+  job could write the source cache, it would poison the `channels.json` the publishing job uses.
+- **Downloads are capped.** Bodies are read in chunks with a limit and decompression uses
+  `maxOutputLength`: a `.gz` from a public source can be a decompression bomb.
+- **The published XMLTV is rebuilt, not copied.** Allowed children of `<programme>` and
+  `<channel>` are extracted, decoded and re-escaped; the rest is dropped. Copying raw content
+  would require trusting the source to emit well-formed XML, and no denylist fixes that —
+  `<title>unclosed` would pass any regex and break downstream parsers.
+- **The publishing job re-verifies the guide** (`node src/cli.ts verify-epg`): valid gzip, exact
+  prolog, balanced XML by tag counting, valid XMLTV timestamps, no orphan programmes, index
+  within expected types and caps. It does not trust the previous stage merely for being part of
+  the same project.
+- **Third-party text entering the model context is data, never instruction.** Channel names and
+  programme titles come from iptv-org and the grabbers and may carry an embedded instruction
+  attempt. Before entering the evidence block they are flattened to one line — control
+  characters and breaks removed — and capped at `rag.answer.maxTextChars`, so they cannot pose
+  as a new prompt section. The block carries a notice saying so, and the system rule is to
+  ignore any command appearing in those fields. There is no semantic filter: text that *says*
+  something still arrives, it just cannot pretend to be prompt.
+- **The generated answer is checked against an allow list.** Any token that looks like an
+  address (`://`, `//host`, `www.`, `.m3u8`, `.mpd`) must be exactly a URL from the evidence
+  block, and every cited `tvg-id` must be there. Matching only `https?://` would let through
+  `www.other/live` and `other/playlist.m3u8`, which a player treats as links all the same. A
+  violation drops the model's text and the deterministic wording stands.
+- **MCP server output is not authorization.** What it returns is third-party evidence wrapped in
+  JSON. An MCP client should not auto-approve actions based on it, and the server executes
+  nothing: it only reads published files, with no network and no writes.
 
-Risco residual assumido: o `node_modules` do grabber vem do cache do Actions e não é coberto
-pela checagem de árvore limpa (não é versionado no repositório dele). A job é sem credencial e
-descartável, então o alcance fica no conteúdo do próprio guia — que já é dado de terceiro por
-natureza. Para zerar também isso, desligue o cache `epg-grabber` no workflow.
+Accepted residual risk: the grabber's `node_modules` comes from the Actions cache and is not
+covered by the clean-tree check. That job is credential-free and disposable, so the blast radius
+stays within guide content — which is third-party data by nature. To close that too, disable the
+`epg-grabber` cache in the workflow.
 
-## Limitações conhecidas
+## Known limitations
 
-A lista completa é **gerada a partir do que foi medido** em cada execução, no fim de
-[`STATUS.md`](STATUS.md). As estruturais:
+The full list is **generated from what was measured** on each run, at the end of
+[`STATUS.md`](STATUS.md). The structural ones:
 
-- **Sem failover automático.** Streams alternativos ficam nos metadados, mas trocar de stream
-  depende do player. O projeto não implementa nem testou failover, então não alega que exista.
-- **Cobertura de EPG é parcial.** Pelos motivos da seção acima.
-- **Resultado depende do ponto de observação.** Vale o que está medido, não o que seria desejável.
-- **Streams públicos caem.** A lista do iptv-org muda todo dia; é por isso que existe histórico de
-  saúde em vez de uma decisão definitiva por stream.
-- **Legenda em HLS não é conclusiva.** Detectada quando aparece; ausência não é afirmada.
+- **No automatic failover.** Alternative streams are kept in the metadata, but switching streams
+  is up to the player. The project neither implements nor has tested failover, so it does not
+  claim one exists.
+- **Guide coverage is partial**, for the reasons above.
+- **Results depend on the observation point.** What is measured holds; what would be convenient
+  does not.
+- **`ffprobe` proves reachability, not correctness.** It shows a stream is decodable at an
+  instant. It does not prove the picture is right, that it keeps playing, or that it is the
+  channel it claims to be. Nothing here verifies broadcast content.
+- **Public streams churn.** The iptv-org list changes daily, which is why health history exists
+  instead of a permanent per-stream verdict.
 
-## Painel
+## Dashboard
 
-GitHub Pages serve [`docs/`](docs/) com filtro por país, categoria, status, cobertura de EPG e
-áudio em português verificado. Os dados vêm de `docs/dashboard-data.json`, gerado junto com as
-playlists.
+GitHub Pages serves [`docs/`](docs/) with filters by country, category, status, EPG coverage and
+verified Portuguese audio: **https://melocalex.github.io/lighteye/**
 
-## Usando com o MeloPlayer
+## Using it with MeloPlayer
 
-A URL da playlist principal serve direto como entrada no **MeloPlayer**, o canal Roku sideloaded
-que toca listas M3U. É só apontar o player para ela — a lista já vem validada, em seções e com
-EPG referenciado.
+The main playlist URL works directly as input to **MeloPlayer**, a sideloaded Roku channel that
+plays M3U lists. Point the player at it — the list arrives validated, in sections and with the
+guide referenced. MeloPlayer also consumes the per-channel slices above to draw its programme
+grid.
+
+## Documentation language
+
+This README, [`RESEARCH.md`](RESEARCH.md), [`.env.example`](.env.example) and the generated
+reports are in English. In-source comments and the commit history are in Brazilian Portuguese
+and have not been translated: rewriting them mechanically would risk introducing errors for
+little benefit, and history cannot be rewritten without a force push.

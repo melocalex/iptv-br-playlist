@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="AWTV.br@HD" tvg-name="AWTV" tvg-logo="https://i.imgur.com/2tdMyef.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Séries",AWTV
 #EXTGRP:🇧🇷 Brasil • Séries
 #EXTVLCOPT:http-referrer=https://awtv.com.br

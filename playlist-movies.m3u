@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="PlusMaisUm.br@HD" tvg-name="+MaisUm" tvg-logo="https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Filmes",+MaisUm
 #EXTGRP:🇧🇷 Brasil • Filmes
 https://stream.ichibansys.com:3230/hybrid/play.m3u8

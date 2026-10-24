@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="AgroMais.br@SD" tvg-name="AgroMais" tvg-logo="https://i.imgur.com/sFcOZeo.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",AgroMais
 #EXTGRP:🇧🇷 Brasil • Notícias
 http://45.177.114.115/agromais/index.m3u8

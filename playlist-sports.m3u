@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="BandSports.br@SD" tvg-name="Band Sports" tvg-logo="https://i.imgur.com/EuPvzJe.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Esportes",Band Sports
 #EXTGRP:🇧🇷 Brasil • Esportes
 http://45.162.64.114/BAND_SPORTS/index.m3u8

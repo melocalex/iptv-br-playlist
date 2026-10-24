@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/iptv-br-playlist/main/epg.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz" x-tvg-url="https://raw.githubusercontent.com/melocalex/lighteye/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="CNNPortugal.pt@SD" tvg-name="CNN Portugal" tvg-logo="https://i.imgur.com/bc6tYVZ.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Notícias",CNN Portugal
 #EXTGRP:🇵🇹 Portugal • Notícias
 https://github.com/thomraider12/canaistvpt/raw/main/m3u8s/cnnpt.m3u8

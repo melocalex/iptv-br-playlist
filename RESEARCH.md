@@ -1,7 +1,9 @@
-# Research objective — channel RAG with AI
+# LightEye — research objective
 
-> This document states the research objective in English. The operational documentation
-> (setup, configuration, workflow) stays in Brazilian Portuguese in [README.md](README.md).
+**Content categorization and availability measurement for retrieval-augmented generation.**
+
+> [README.md](README.md) covers what the project produces and how to run it. This document
+> states the research question it exists to answer.
 
 ## Objective
 
