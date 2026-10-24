@@ -59,13 +59,18 @@ jobs:
 
       # GET condicional das fontes: evita rebaixar channels.json/guides.json
       # quando a origem nao mudou (ETag / Last-Modified).
-      - name: Cache das fontes HTTP
+      #
+      # Esta e a UNICA job que grava este cache. As outras so restauram, com
+      # actions/cache/restore e este mesmo prefixo. Se a job 'epg' pudesse gravar,
+      # o codigo de terceiro que roda la envenenaria o channels.json que a job de
+      # publicacao usa para montar as playlists, anulando o isolamento.
+      - name: Cache das fontes HTTP (grava)
         uses: actions/cache@v4
         with:
           path: cache
-          key: fontes-${{ github.run_id }}
+          key: fontes-validar-${{ github.run_id }}
           restore-keys: |
-            fontes-
+            fontes-validar-
 
       - name: Checar configuracao
         run: node src/cli.ts check
@@ -113,13 +118,14 @@ jobs:
           name: health
           path: data
 
-      - name: Cache das fontes HTTP
-        uses: actions/cache@v4
+      # Somente leitura: esta job roda codigo de terceiro e nao pode gravar cache.
+      - name: Cache das fontes HTTP (so leitura)
+        uses: actions/cache/restore@v4
         with:
           path: cache
-          key: fontes-epg-${{ github.run_id }}
+          key: fontes-validar-${{ github.run_id }}
           restore-keys: |
-            fontes-
+            fontes-validar-
 
       # config.json carrega epg.grabberRef (commit SHA fixado): mudar o pin invalida
       # o cache. O codigo tambem confere HEAD e arvore limpa a cada execucao e
@@ -181,13 +187,15 @@ jobs:
           name: epg
           path: .
 
-      - name: Cache das fontes HTTP
-        uses: actions/cache@v4
+      # Somente leitura, e apenas do cache gravado pela job 'validar'. Nunca do
+      # prefixo generico: a job 'epg' nao pode influenciar o que e lido aqui.
+      - name: Cache das fontes HTTP (so leitura)
+        uses: actions/cache/restore@v4
         with:
           path: cache
-          key: fontes-pub-${{ github.run_id }}
+          key: fontes-validar-${{ github.run_id }}
           restore-keys: |
-            fontes-
+            fontes-validar-
 
       # build nao roda grabber: le data/epg-index.json entregue pela job anterior.
       - name: Gerar playlists e relatorios

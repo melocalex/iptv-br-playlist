@@ -39,7 +39,13 @@ export interface EpgResult {
   }[];
   /** Canais da playlist que ficaram sem grade. Publicado como lacuna medida. */
   missing: { tvgId: string; name: string; countryGroup: string; guideSites: string[] }[];
-  dropped: { duplicates: number; outOfHorizon: number; invalidTimestamp: number; unknownChannel: number };
+  dropped: {
+    duplicates: number;
+    outOfHorizon: number;
+    invalidTimestamp: number;
+    unknownChannel: number;
+    malformed: number;
+  };
 }
 
 const XMLTV_TS = /^(\d{14})(\s*[+-]\d{4})?$/;
@@ -121,6 +127,16 @@ export function extractProgrammes(xml: string): { channel: string; start: string
     out.push({ channel, start, stop: stop ?? '', inner: m[2] ?? '' });
   }
   return out;
+}
+
+/**
+ * O conteudo interno de <programme> e copiado literalmente para o guia que publicamos.
+ * Um bloco que traga estrutura propria (outro <programme>, <tv>, declaracao ou CDATA)
+ * geraria XMLTV malformado no arquivo final e quebraria o player de quem consome.
+ * Bloco assim e descartado em vez de propagado.
+ */
+export function hasUnsafeInnerXml(inner: string): boolean {
+  return /<\s*\/?\s*(programme|tv|channel)\b/i.test(inner) || /<[!?]/.test(inner);
 }
 
 export function extractGuideChannels(xml: string): Map<string, string> {
@@ -287,7 +303,7 @@ export async function buildEpg(
 
   const guideChannels = new Map<string, string>();
   const programmes = new Map<string, Programme>();
-  const dropped = { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0 };
+  const dropped = { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0, malformed: 0 };
   const now = Date.now();
   const horizonEnd = now + cfg.epg.programmeHorizonHours * 3600_000;
 
@@ -300,6 +316,10 @@ export async function buildEpg(
     for (const p of extractProgrammes(xml)) {
       if (!wanted.has(p.channel)) {
         dropped.unknownChannel++;
+        continue;
+      }
+      if (hasUnsafeInnerXml(p.inner)) {
+        dropped.malformed++;
         continue;
       }
       const startMs = parseXmltvTime(p.start);
@@ -587,7 +607,7 @@ export function readIndex(cfg: Config): EpgResult | null {
       generatedAt: raw.generatedAt,
       sources: raw.sources ?? [],
       missing: raw.missing ?? [],
-      dropped: raw.dropped ?? { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0 },
+      dropped: raw.dropped ?? { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0, malformed: 0 },
     };
   } catch (err) {
     warn(`indice de EPG invalido em ${p}: ${(err as Error).message}`);

@@ -281,7 +281,7 @@ async function main(): Promise<void> {
         generatedAt: new Date().toISOString(),
         sources: [],
         missing: [...wanted].map((id) => ({ tvgId: id, name: id, countryGroup: 'OTHER', guideSites: [] })),
-        dropped: { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0 },
+        dropped: { duplicates: 0, outOfHorizon: 0, invalidTimestamp: 0, unknownChannel: 0, malformed: 0 },
       };
     }
   } else {

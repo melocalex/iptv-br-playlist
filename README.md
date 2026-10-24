@@ -205,6 +205,36 @@ Custo controlado por três mecanismos: GET condicional com ETag nas fontes (cach
 `validation.recheckHours`, e `validation.maxChecksPerRun` limita quanto cada execução checa.
 Canal nunca checado vai na frente; Brasil e Portugal têm prioridade.
 
+## Postura de segurança
+
+Todo o conteúdo vem de base pública editável por terceiros (`channels.json` do iptv-org) e de
+código de terceiro (o grabber). As defesas são por isso, não por formalidade:
+
+- **Nome, logo e URL nunca entram como HTML.** O painel monta a tabela por nó de DOM, com
+  `textContent`, e só aceita logo com esquema `http(s)`. Verificado injetando payload no
+  `dashboard-data.json` servido: renderiza como texto, nenhum script executa.
+- **Nada injeta linha na M3U publicada.** Valor com CR/LF é achatado numa linha, URL que não for
+  `http(s)` sem espaço é descartada, e diretiva copiada da fonte passa por lista permitida.
+  Sem isso, um nome de canal com `\n` viraria uma entrada nova apontando para outro stream.
+- **O grabber roda isolado.** É a única parte que executa código de terceiro, e roda numa job
+  com `contents: read`, sem credencial, cujo workspace é descartado. Ele entrega apenas
+  arquivos por artifact. A job que publica faz checkout limpo, não roda nada de terceiro e
+  comita **somente** os caminhos de uma lista fechada — arquivo fora dela derruba a execução.
+- **O pin do grabber é conferido sempre.** `epg.grabberRef` é um commit SHA; `HEAD` e
+  `git status --porcelain` são checados a cada execução, inclusive quando o diretório vem do
+  cache do Actions, e qualquer divergência refaz o clone.
+- **Só a job confiável grava cache.** As outras usam `actions/cache/restore`. Se a job do
+  grabber pudesse gravar o cache de fontes, ela envenenaria o `channels.json` que a job de
+  publicação usa para montar as playlists.
+- **Download tem teto.** Corpo lido em pedaços com limite e descompressão com `maxOutputLength`:
+  um `.gz` de fonte pública pode ser bomba de descompressão.
+- **Bloco de programa com estrutura própria é descartado**, para não publicar XMLTV malformado.
+
+Risco residual assumido: o `node_modules` do grabber vem do cache do Actions e não é coberto
+pela checagem de árvore limpa (não é versionado no repositório dele). A job é sem credencial e
+descartável, então o alcance fica no conteúdo do próprio guia — que já é dado de terceiro por
+natureza. Para zerar também isso, desligue o cache `epg-grabber` no workflow.
+
 ## Limitações conhecidas
 
 A lista completa é **gerada a partir do que foi medido** em cada execução, no fim de

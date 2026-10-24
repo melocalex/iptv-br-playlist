@@ -316,7 +316,13 @@ export async function validateCatalog(
   const startedAt = new Date().toISOString();
   const priority = new Set(cfg.validation.priorityCountryGroups);
 
-  type Job = { stream: Stream; channel: Channel; prioritized: boolean; lastCheck: number };
+  type Job = {
+    stream: Stream;
+    channel: Channel;
+    prioritized: boolean;
+    classified: boolean;
+    lastCheck: number;
+  };
   const jobs: Job[] = [];
   let totalStreams = 0;
   let skippedFresh = 0;
@@ -334,14 +340,23 @@ export async function validateCatalog(
         stream: s,
         channel: ch,
         prioritized: priority.has(ch.countryGroup),
+        classified: ch.classified,
         lastCheck: v ? Date.parse(v.checkedAt) : 0,
       });
     }
   }
 
-  // Nunca checado primeiro, depois o mais antigo; grupos prioritarios na frente.
+  // Ordem do orcamento: grupo prioritario, depois canal COM metadado, depois o
+  // nunca checado / mais antigo.
+  //
+  // O criterio do meio nao e cosmetico. Stream sem metadado de canal na fonte nunca
+  // entra nas playlists validadas (classificar pelo nome seria adivinhacao), e eles
+  // aparecem cedo em streams.json. Sem este desempate, o teto de maxChecksPerRun era
+  // gasto quase todo neles: numa execucao de 1400 checagens, 855 dos 1183 streams
+  // aprovados eram nao classificados, ou seja, trabalho que nao vira canal publicado.
   jobs.sort((a, b) => {
     if (a.prioritized !== b.prioritized) return a.prioritized ? -1 : 1;
+    if (a.classified !== b.classified) return a.classified ? -1 : 1;
     return a.lastCheck - b.lastCheck;
   });
 

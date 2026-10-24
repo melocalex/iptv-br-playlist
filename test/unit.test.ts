@@ -8,6 +8,7 @@ import {
   extractGuideChannels,
   escapeXml,
   unescapeXml,
+  hasUnsafeInnerXml,
 } from '../src/epg.ts';
 import { resolutionLabel, isPortuguese } from '../src/validate.ts';
 import { effectiveStatus, needsCheck, type VantageHealth } from '../src/health.ts';
@@ -167,6 +168,17 @@ test('extractProgrammes e extractGuideChannels leem XMLTV real', () => {
 
 test('escapeXml protege os caracteres que quebram XMLTV', () => {
   assert.equal(escapeXml('A & B <c> "d"'), 'A &amp; B &lt;c&gt; &quot;d&quot;');
+});
+
+test('hasUnsafeInnerXml barra bloco que injetaria estrutura no guia publicado', () => {
+  assert.equal(hasUnsafeInnerXml('<title lang="pt">Jornal</title><desc>x</desc>'), false);
+  assert.equal(hasUnsafeInnerXml('<title>A &amp; B</title>'), false);
+  // Estes propagariam XMLTV malformado para quem consome o guia.
+  assert.equal(hasUnsafeInnerXml('<title>x</title></programme><programme start="1">'), true);
+  assert.equal(hasUnsafeInnerXml('<title>x</title><channel id="falso">'), true);
+  assert.equal(hasUnsafeInnerXml('</tv>'), true);
+  assert.equal(hasUnsafeInnerXml('<![CDATA[x]]>'), true);
+  assert.equal(hasUnsafeInnerXml('<?xml version="1.0"?>'), true);
 });
 
 test('unescapeXml evita o escape duplo em nome vindo cru do XML', () => {
