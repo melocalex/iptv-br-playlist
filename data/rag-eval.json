@@ -1,0 +1,1224 @@
+{
+ "geradoEm": "2026-10-24T05:59:09.381Z",
+ "nowUsado": "2026-10-24T05:59:09.363Z",
+ "corpus": {
+  "metadadosGeradosEm": "2026-10-24T05:36:21.691Z",
+  "gradeGeradaEm": "2026-10-24T05:36:22.198Z",
+  "canaisIndexados": 1169,
+  "canaisComGrade": 179,
+  "coberturaDaGradePercent": 15.31
+ },
+ "casos": [
+  {
+   "id": "noticia-pt-agora",
+   "pergunta": "o que tem de noticia em portugues tocando agora",
+   "porque": "Pergunta central da pesquisa: categoria, idioma e janela temporal, com evidencia por ponto de observacao.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [news], obtido [news]"
+    },
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [por], obtido [por]"
+    },
+    {
+     "nome": "plano.gruposDePais",
+     "ok": true,
+     "detalhe": "esperado [], obtido []"
+    },
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "plano.temporalAgora",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    },
+    {
+     "nome": "abstencao",
+     "ok": true,
+     "detalhe": "esperado [], obtido []"
+    },
+    {
+     "nome": "evidencia.disponibilidade",
+     "ok": true,
+     "detalhe": "todos em [CONFIRMED_HERE]"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "AgroMais.br@SD",
+     "nome": "AgroMais",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "BandNews.br@SD",
+     "nome": "BandNews",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "CNNBrasil.br@SD",
+     "nome": "CNN Brasil",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "EuronewsPortuguese.fr@SD",
+     "nome": "Euronews Portuguese",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "GloboNews.br@SD",
+     "nome": "GloboNews",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "JovemPanNews.br@SD",
+     "nome": "Jovem Pan News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "RecordNews.br@SD",
+     "nome": "Record News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "BMCNews.br@SD",
+     "nome": "BM&C News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "grade-canal-sem-grade",
+   "pergunta": "o que esta passando na CazeTV agora",
+   "porque": "Canal com stream confirmado e sem grade: tem de abster da parte de programacao e nao inventar programa.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "plano.temporalAgora",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 1, obtido 1"
+    },
+    {
+     "nome": "recuperacao.maxCandidatos",
+     "ok": true,
+     "detalhe": "esperado <= 1, obtido 1"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    },
+    {
+     "nome": "abstencao",
+     "ok": true,
+     "detalhe": "esperado [programme], obtido [programme]"
+    },
+    {
+     "nome": "evidencia.grade",
+     "ok": true,
+     "detalhe": "todos em [NO_GUIDE]"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "CazeTV.br@SD",
+     "nome": "CazeTV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": [
+    "programme: a grade cobre 179 dos 1169 canais indexados (15.31%) e nenhum dos candidatos tem programa registrado no ar agora; o que esta passando e desconhecido"
+   ]
+  },
+  {
+   "id": "ponto-de-observacao-divergente",
+   "pergunta": "o que esta passando na RTP Memoria",
+   "porque": "Canal confirmado apenas do runner dos EUA: o veredito nao pode ser 'funciona daqui'.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 1, obtido 8"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    },
+    {
+     "nome": "evidencia.veredito[RTPMemoria.pt@SD]",
+     "ok": true,
+     "detalhe": "esperado CONFIRMED_ELSEWHERE, obtido CONFIRMED_ELSEWHERE"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "RTPMemoria.pt@SD",
+     "nome": "RTP Memoria",
+     "disponibilidade": "CONFIRMED_ELSEWHERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "RTPAcores.pt@HD",
+     "nome": "RTP Acores",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "RTP1.pt@HD",
+     "nome": "RTP 1",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "RTP2.pt@HD",
+     "nome": "RTP 2",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "RTPAfrica.pt@SD",
+     "nome": "RTP Africa",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "RTPNoticias.pt@HD",
+     "nome": "RTP Noticias",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVCanalUOL.us@BR",
+     "nome": "Pluto TV Canal UOL",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "Arte1.br@SD",
+     "nome": "Arte 1",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "mesmo-canal-do-outro-ponto",
+   "pergunta": "o que esta passando na RTP Memoria",
+   "porque": "A mesma pergunta do ponto de observacao dos EUA tem de virar confirmacao local: disponibilidade e funcao do observador.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 1, obtido 8"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    },
+    {
+     "nome": "evidencia.veredito[RTPMemoria.pt@SD]",
+     "ok": true,
+     "detalhe": "esperado CONFIRMED_HERE, obtido CONFIRMED_HERE"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "RTPMemoria.pt@SD",
+     "nome": "RTP Memoria",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "RTPAcores.pt@HD",
+     "nome": "RTP Acores",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "RTP1.pt@HD",
+     "nome": "RTP 1",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "RTP2.pt@HD",
+     "nome": "RTP 2",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "RTPAfrica.pt@SD",
+     "nome": "RTP Africa",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "RTPNoticias.pt@HD",
+     "nome": "RTP Noticias",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "PlutoTVCanalUOL.us@BR",
+     "nome": "Pluto TV Canal UOL",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    },
+    {
+     "tvgId": "Arte1.br@SD",
+     "nome": "Arte 1",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "github-us"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "evidencia-vencida",
+   "pergunta": "o que tem de noticia em portugues tocando agora",
+   "porque": "Tres dias depois da ultima checagem toda evidencia vence: a resposta certa e abster, nao recomendar o que funcionava.",
+   "nowDoCaso": "2026-10-27T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "recuperacao.maxCandidatos",
+     "ok": true,
+     "detalhe": "esperado <= 0, obtido 0"
+    },
+    {
+     "nome": "abstencao",
+     "ok": true,
+     "detalhe": "esperado [availability,programme], obtido [availability,programme]"
+    }
+   ],
+   "candidatos": [],
+   "abstencoes": [
+    "availability: nenhum canal com evidencia valida satisfaz o filtro (28 passaram no filtro estrutural; 28 descartados por evidencia vencida, 0 por observacao de recusa, 0 por nunca terem sido checados)",
+    "programme: a grade cobre 179 dos 1169 canais indexados (15.31%) e nenhum dos candidatos tem programa registrado no ar agora; o que esta passando e desconhecido"
+   ]
+  },
+  {
+   "id": "filtro-sem-resultado",
+   "pergunta": "tem canal de esporte em alemao no brasil",
+   "porque": "Combinacao que o corpus nao tem: abstencao por ausencia de candidato, sem resposta inventada.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [sports], obtido [sports]"
+    },
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [deu], obtido [deu]"
+    },
+    {
+     "nome": "plano.gruposDePais",
+     "ok": true,
+     "detalhe": "esperado [BR], obtido [BR]"
+    },
+    {
+     "nome": "recuperacao.maxCandidatos",
+     "ok": true,
+     "detalhe": "esperado <= 0, obtido 0"
+    },
+    {
+     "nome": "abstencao",
+     "ok": true,
+     "detalhe": "esperado [availability], obtido [availability]"
+    }
+   ],
+   "candidatos": [],
+   "abstencoes": [
+    "availability: nenhum canal com evidencia valida satisfaz o filtro (0 passaram no filtro estrutural; 0 descartados por evidencia vencida, 0 por observacao de recusa, 0 por nunca terem sido checados)"
+   ]
+  },
+  {
+   "id": "tvg-id-explicito",
+   "pergunta": "o canal GloboNews.br@SD esta funcionando daqui",
+   "porque": "tvg-id na pergunta e filtro exato: um unico canal, sem casamento por nome.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 1, obtido 1"
+    },
+    {
+     "nome": "recuperacao.maxCandidatos",
+     "ok": true,
+     "detalhe": "esperado <= 1, obtido 1"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    },
+    {
+     "nome": "evidencia.disponibilidade",
+     "ok": true,
+     "detalhe": "todos em [CONFIRMED_HERE]"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "GloboNews.br@SD",
+     "nome": "GloboNews",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "esporte-brasil",
+   "pergunta": "quero ver futebol brasileiro",
+   "porque": "'futebol' cai em esportes e 'brasileiro' no grupo BR, sem deduzir categoria do nome do canal.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [sports], obtido [sports]"
+    },
+    {
+     "nome": "plano.gruposDePais",
+     "ok": true,
+     "detalhe": "esperado [BR], obtido [BR]"
+    },
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado false, obtido false"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 2, obtido 6"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    },
+    {
+     "nome": "evidencia.disponibilidade",
+     "ok": true,
+     "detalhe": "todos em [CONFIRMED_HERE,CONFIRMED_ELSEWHERE]"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "BandSports.br@SD",
+     "nome": "Band Sports",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ESPN.br@SD",
+     "nome": "ESPN",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVEsportes.us@BR",
+     "nome": "Pluto TV Esportes",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "CazeTV.br@SD",
+     "nome": "CazeTV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ESPN3.br@SD",
+     "nome": "ESPN 3",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ESPN4.br@SD",
+     "nome": "ESPN 4",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "infantil-portugues",
+   "pergunta": "tem algum canal infantil em portugues que funciona",
+   "porque": "Pergunta de disponibilidade, nao de grade: nao deve abster por falta de programacao.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [kids], obtido [kids]"
+    },
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [por], obtido [por]"
+    },
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado false, obtido false"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    },
+    {
+     "nome": "abstencao",
+     "ok": true,
+     "detalhe": "esperado [], obtido []"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "CartoonNetworkLatinAmerica.us@Brazil",
+     "nome": "Cartoon Network Latin America",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "BoxKidsTV.br@SD",
+     "nome": "Box Kids TV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "DiscoveryKidsLatinAmerica.us@Brazil",
+     "nome": "Discovery Kids Latin America",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "DumDum.br@SD",
+     "nome": "DumDum",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "OReinoInfantil.us@Brazil",
+     "nome": "O Reino Infantil",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVJunior.us@BR",
+     "nome": "Pluto TV Junior",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVKids.us@BR",
+     "nome": "Pluto TV Kids",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVKidsClub.us@BR",
+     "nome": "Pluto TV Kids Club",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "filme-portugal",
+   "pergunta": "o que tem de filme em portugues de Portugal",
+   "porque": "Idioma e pais separados: 'portugues' e idioma, 'Portugal' e grupo de pais.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [movies], obtido [movies]"
+    },
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [por], obtido [por]"
+    },
+    {
+     "nome": "plano.gruposDePais",
+     "ok": true,
+     "detalhe": "esperado [PT], obtido [PT]"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 1, obtido 2"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "AXNMovies.pt@SD",
+     "nome": "AXN Movies",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "KuriakosCine.pt@SD",
+     "nome": "Kuriakos Cine",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "noticia-ingles",
+   "pergunta": "o que tem de noticia em ingles",
+   "porque": "Idioma declarado diferente do portugues, sem arrastar o filtro de pais.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [news], obtido [news]"
+    },
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [eng], obtido [eng]"
+    },
+    {
+     "nome": "plano.gruposDePais",
+     "ok": true,
+     "detalhe": "esperado [], obtido []"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    },
+    {
+     "nome": "recuperacao.naoDeveConter",
+     "ok": true,
+     "detalhe": "nenhum apareceu"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "ABCNewsLive.us@SD",
+     "nome": "ABC News Live",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AccuWeatherNOW.us@SD",
+     "nome": "AccuWeather NOW",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AmericasVoiceNews.us@SD",
+     "nome": "America's Voice News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ABCNews.au@Sydney",
+     "nome": "ABC News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ABPNews.in@SD",
+     "nome": "ABP News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AfriqueMedia.cm@SD",
+     "nome": "Afrique Media",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AL24News.dz@SD",
+     "nome": "AL24 News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AlArabiyaEnglish.sa@SD",
+     "nome": "Al Arabiya English",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "pergunta-em-ingles",
+   "pergunta": "what news channels in english are on right now",
+   "porque": "O lexico tem de funcionar tambem em ingles, sem traduzir a pergunta antes.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [news], obtido [news]"
+    },
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [eng], obtido [eng]"
+    },
+    {
+     "nome": "plano.temporalAgora",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "ABCNewsLive.us@SD",
+     "nome": "ABC News Live",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AccuWeatherNOW.us@SD",
+     "nome": "AccuWeather NOW",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AmericasVoiceNews.us@SD",
+     "nome": "America's Voice News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ABCNews.au@Sydney",
+     "nome": "ABC News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ABPNews.in@SD",
+     "nome": "ABP News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AfriqueMedia.cm@SD",
+     "nome": "Afrique Media",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AL24News.dz@SD",
+     "nome": "AL24 News",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AlArabiyaEnglish.sa@SD",
+     "nome": "Al Arabiya English",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "espanha-espanhol",
+   "pergunta": "tem canal da espanha em espanhol",
+   "porque": "Pais e idioma coerentes entre si, sem confundir ES com LATAM.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.idiomas",
+     "ok": true,
+     "detalhe": "esperado [spa], obtido [spa]"
+    },
+    {
+     "nome": "plano.gruposDePais",
+     "ok": true,
+     "detalhe": "esperado [ES], obtido [ES]"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    },
+    {
+     "nome": "recuperacao.naoDeveConter",
+     "ok": true,
+     "detalhe": "nenhum apareceu"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "24Horas.es@SD",
+     "nome": "24 Horas",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "101tvAntequera.es@SD",
+     "nome": "101tv Antequera",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "12tv.es@SD",
+     "nome": "12tv",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "24HorasCatalunya.es@SD",
+     "nome": "24 Horas Catalunya",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "7TV.es@Andalucia",
+     "nome": "7TV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "8LaMarinaTV.es@SD",
+     "nome": "8 La Marina TV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "ActivaTV.es@SD",
+     "nome": "Activa TV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "Actualidad360.es@SD",
+     "nome": "Actualidad 360",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "documentario-no-ar",
+   "pergunta": "quais canais de documentario estao no ar",
+   "porque": "'no ar' e janela temporal; a resposta precisa separar stream que abre de programa conhecido.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [documentary], obtido [documentary]"
+    },
+    {
+     "nome": "plano.temporalAgora",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    },
+    {
+     "nome": "evidencia.disponibilidade",
+     "ok": true,
+     "detalhe": "todos em [CONFIRMED_HERE,CONFIRMED_ELSEWHERE]"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "AmericanHeroesChannel.us@SD",
+     "nome": "American Heroes Channel",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "AnimalPlanet.us@East",
+     "nome": "Animal Planet",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "History.br@SD",
+     "nome": "History",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "History2LatinAmerica.us@Brazil",
+     "nome": "History 2 Latin America",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVAliens.us@BR",
+     "nome": "Pluto TV Aliens",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVAnimais.us@BR",
+     "nome": "Pluto TV Animais",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVInvestigacao.us@BR",
+     "nome": "Pluto TV Investigacao",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVNegocioFechado.us@BR",
+     "nome": "Pluto TV Negocio Fechado",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "nome-de-canal",
+   "pergunta": "tem Globo no ar?",
+   "porque": "Busca lexical por nome, com o texto livre restringindo o universo.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.temporalAgora",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 1, obtido 4"
+    },
+    {
+     "nome": "recuperacao.deveConter",
+     "ok": true,
+     "detalhe": "todos presentes"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "GloboNews.br@SD",
+     "nome": "GloboNews",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "TVBahia.br@HD",
+     "nome": "TV Bahia",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVNatureza.us@BR",
+     "nome": "Pluto TV Natureza",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVAnimais.us@BR",
+     "nome": "Pluto TV Animais",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  },
+  {
+   "id": "nome-inexistente",
+   "pergunta": "o que esta passando no canal Zorblax",
+   "porque": "Nome que nao existe no corpus e sem filtro estrutural: devolver os oito primeiros canais do catalogo responderia outra pergunta, entao a resposta e abster.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.maxCandidatos",
+     "ok": true,
+     "detalhe": "esperado <= 0, obtido 0"
+    },
+    {
+     "nome": "abstencao",
+     "ok": true,
+     "detalhe": "esperado [availability,programme], obtido [availability,programme]"
+    }
+   ],
+   "candidatos": [],
+   "abstencoes": [
+    "availability: nenhum canal do corpus casa 'zorblax', e a pergunta nao trouxe filtro de pais, categoria ou idioma para responder por outro caminho (1169 canais indexados)",
+    "programme: a grade cobre 179 dos 1169 canais indexados (15.31%) e nenhum dos candidatos tem programa registrado no ar agora; o que esta passando e desconhecido"
+   ]
+  },
+  {
+   "id": "musica-agora",
+   "pergunta": "canal de musica que toca agora",
+   "porque": "Categoria com cobertura de grade quase nula: mede se o buraco e declarado em vez de preenchido.",
+   "nowDoCaso": "2026-10-24T05:59:09.363Z",
+   "aprovado": true,
+   "verificacoes": [
+    {
+     "nome": "plano.categorias",
+     "ok": true,
+     "detalhe": "esperado [music], obtido [music]"
+    },
+    {
+     "nome": "plano.exigeGrade",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "plano.temporalAgora",
+     "ok": true,
+     "detalhe": "esperado true, obtido true"
+    },
+    {
+     "nome": "recuperacao.minCandidatos",
+     "ok": true,
+     "detalhe": "esperado >= 3, obtido 8"
+    },
+    {
+     "nome": "evidencia.grade",
+     "ok": true,
+     "detalhe": "todos em [ON_AIR,GUIDE_GAP,GUIDE_STALE,NO_GUIDE]"
+    }
+   ],
+   "candidatos": [
+    {
+     "tvgId": "MusicBoxBrazil.br@SD",
+     "nome": "Music Box Brazil",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "PlutoTVShowsporStingray.us@BR",
+     "nome": "Pluto TV Shows por Stingray",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "ON_AIR",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "1HDMusicTelevision.ru@HD",
+     "nome": "1HD Music Television",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "360TuneBox.nl@SD",
+     "nome": "360TuneBox",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "3ABNPraiseHimMusicNetwork.us@SD",
+     "nome": "3ABN Praise Him Music Network",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "4everMusic.ua@SD",
+     "nome": "4ever Music",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "4FunDance.pl@SD",
+     "nome": "4 Fun Dance",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    },
+    {
+     "tvgId": "4FunTV.pl@SD",
+     "nome": "4 Fun TV",
+     "disponibilidade": "CONFIRMED_HERE",
+     "grade": "NO_GUIDE",
+     "pontoDeObservacao": "local-br"
+    }
+   ],
+   "abstencoes": []
+  }
+ ],
+ "totais": {
+  "casos": 17,
+  "casosAprovados": 17,
+  "verificacoes": 78,
+  "verificacoesAprovadas": 78,
+  "acertoDeCasosPercent": 100,
+  "acertoDeVerificacoesPercent": 100
+ }
+}

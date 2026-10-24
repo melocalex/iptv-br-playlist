@@ -1,0 +1,218 @@
+{
+  "comment": [
+    "Conjunto de avaliacao da camada de recuperacao. Cada caso declara o que se espera do",
+    "plano (filtros extraidos da pergunta), da recuperacao (quem tem de aparecer) e da",
+    "abstencao. Rode com `npm run rag:eval`.",
+    "",
+    "A pontuacao depende do instante: evidencia vence e a janela da grade dura 24 h. O",
+    "relatorio grava o `now` usado e o comando aceita `--now=<ISO>` para reproduzir uma",
+    "medicao antiga. Casos com `horasNoFuturo` existem exatamente para medir o decaimento.",
+    "",
+    "Ancoras por tvg-id (deveConter) sao canais grandes, mas stream publico tem rotatividade:",
+    "se um deles sair do catalogo, o caso falha de proposito — e sinal de que o corpus mudou,",
+    "nao de teste instavel."
+  ],
+  "minimoDeAcertoPercent": 100,
+  "casos": [
+    {
+      "id": "noticia-pt-agora",
+      "pergunta": "o que tem de noticia em portugues tocando agora",
+      "porque": "Pergunta central da pesquisa: categoria, idioma e janela temporal, com evidencia por ponto de observacao.",
+      "espera": {
+        "categorias": ["news"],
+        "idiomas": ["por"],
+        "gruposDePais": [],
+        "exigeGrade": true,
+        "temporalAgora": true,
+        "minCandidatos": 3,
+        "deveConter": ["GloboNews.br@SD", "CNNBrasil.br@SD"],
+        "disponibilidadeEm": ["CONFIRMED_HERE"],
+        "abstencoes": []
+      }
+    },
+    {
+      "id": "grade-canal-sem-grade",
+      "pergunta": "o que esta passando na CazeTV agora",
+      "porque": "Canal com stream confirmado e sem grade: tem de abster da parte de programacao e nao inventar programa.",
+      "espera": {
+        "exigeGrade": true,
+        "temporalAgora": true,
+        "minCandidatos": 1,
+        "maxCandidatos": 1,
+        "deveConter": ["CazeTV.br@SD"],
+        "gradeEm": ["NO_GUIDE"],
+        "abstencoes": ["programme"]
+      }
+    },
+    {
+      "id": "ponto-de-observacao-divergente",
+      "pergunta": "o que esta passando na RTP Memoria",
+      "porque": "Canal confirmado apenas do runner dos EUA: o veredito nao pode ser 'funciona daqui'.",
+      "vantage": "local-br",
+      "espera": {
+        "exigeGrade": true,
+        "minCandidatos": 1,
+        "deveConter": ["RTPMemoria.pt@SD"],
+        "vereditoPorCanal": { "RTPMemoria.pt@SD": "CONFIRMED_ELSEWHERE" }
+      }
+    },
+    {
+      "id": "mesmo-canal-do-outro-ponto",
+      "pergunta": "o que esta passando na RTP Memoria",
+      "porque": "A mesma pergunta do ponto de observacao dos EUA tem de virar confirmacao local: disponibilidade e funcao do observador.",
+      "vantage": "github-us",
+      "espera": {
+        "minCandidatos": 1,
+        "deveConter": ["RTPMemoria.pt@SD"],
+        "vereditoPorCanal": { "RTPMemoria.pt@SD": "CONFIRMED_HERE" }
+      }
+    },
+    {
+      "id": "evidencia-vencida",
+      "pergunta": "o que tem de noticia em portugues tocando agora",
+      "porque": "Tres dias depois da ultima checagem toda evidencia vence: a resposta certa e abster, nao recomendar o que funcionava.",
+      "horasNoFuturo": 72,
+      "espera": {
+        "maxCandidatos": 0,
+        "abstencoes": ["availability", "programme"]
+      }
+    },
+    {
+      "id": "filtro-sem-resultado",
+      "pergunta": "tem canal de esporte em alemao no brasil",
+      "porque": "Combinacao que o corpus nao tem: abstencao por ausencia de candidato, sem resposta inventada.",
+      "espera": {
+        "categorias": ["sports"],
+        "idiomas": ["deu"],
+        "gruposDePais": ["BR"],
+        "maxCandidatos": 0,
+        "abstencoes": ["availability"]
+      }
+    },
+    {
+      "id": "tvg-id-explicito",
+      "pergunta": "o canal GloboNews.br@SD esta funcionando daqui",
+      "porque": "tvg-id na pergunta e filtro exato: um unico canal, sem casamento por nome.",
+      "espera": {
+        "minCandidatos": 1,
+        "maxCandidatos": 1,
+        "deveConter": ["GloboNews.br@SD"],
+        "disponibilidadeEm": ["CONFIRMED_HERE"]
+      }
+    },
+    {
+      "id": "esporte-brasil",
+      "pergunta": "quero ver futebol brasileiro",
+      "porque": "'futebol' cai em esportes e 'brasileiro' no grupo BR, sem deduzir categoria do nome do canal.",
+      "espera": {
+        "categorias": ["sports"],
+        "gruposDePais": ["BR"],
+        "exigeGrade": false,
+        "minCandidatos": 2,
+        "deveConter": ["BandSports.br@SD"],
+        "disponibilidadeEm": ["CONFIRMED_HERE", "CONFIRMED_ELSEWHERE"]
+      }
+    },
+    {
+      "id": "infantil-portugues",
+      "pergunta": "tem algum canal infantil em portugues que funciona",
+      "porque": "Pergunta de disponibilidade, nao de grade: nao deve abster por falta de programacao.",
+      "espera": {
+        "categorias": ["kids"],
+        "idiomas": ["por"],
+        "exigeGrade": false,
+        "minCandidatos": 3,
+        "abstencoes": []
+      }
+    },
+    {
+      "id": "filme-portugal",
+      "pergunta": "o que tem de filme em portugues de Portugal",
+      "porque": "Idioma e pais separados: 'portugues' e idioma, 'Portugal' e grupo de pais.",
+      "espera": {
+        "categorias": ["movies"],
+        "idiomas": ["por"],
+        "gruposDePais": ["PT"],
+        "minCandidatos": 1,
+        "deveConter": ["AXNMovies.pt@SD"]
+      }
+    },
+    {
+      "id": "noticia-ingles",
+      "pergunta": "o que tem de noticia em ingles",
+      "porque": "Idioma declarado diferente do portugues, sem arrastar o filtro de pais.",
+      "espera": {
+        "categorias": ["news"],
+        "idiomas": ["eng"],
+        "gruposDePais": [],
+        "minCandidatos": 3,
+        "naoDeveConter": ["GloboNews.br@SD"]
+      }
+    },
+    {
+      "id": "pergunta-em-ingles",
+      "pergunta": "what news channels in english are on right now",
+      "porque": "O lexico tem de funcionar tambem em ingles, sem traduzir a pergunta antes.",
+      "espera": {
+        "categorias": ["news"],
+        "idiomas": ["eng"],
+        "temporalAgora": true,
+        "minCandidatos": 3
+      }
+    },
+    {
+      "id": "espanha-espanhol",
+      "pergunta": "tem canal da espanha em espanhol",
+      "porque": "Pais e idioma coerentes entre si, sem confundir ES com LATAM.",
+      "espera": {
+        "gruposDePais": ["ES"],
+        "idiomas": ["spa"],
+        "minCandidatos": 3,
+        "naoDeveConter": ["GloboNews.br@SD"]
+      }
+    },
+    {
+      "id": "documentario-no-ar",
+      "pergunta": "quais canais de documentario estao no ar",
+      "porque": "'no ar' e janela temporal; a resposta precisa separar stream que abre de programa conhecido.",
+      "espera": {
+        "categorias": ["documentary"],
+        "temporalAgora": true,
+        "minCandidatos": 3,
+        "disponibilidadeEm": ["CONFIRMED_HERE", "CONFIRMED_ELSEWHERE"]
+      }
+    },
+    {
+      "id": "nome-de-canal",
+      "pergunta": "tem Globo no ar?",
+      "porque": "Busca lexical por nome, com o texto livre restringindo o universo.",
+      "espera": {
+        "temporalAgora": true,
+        "minCandidatos": 1,
+        "deveConter": ["GloboNews.br@SD"]
+      }
+    },
+    {
+      "id": "nome-inexistente",
+      "pergunta": "o que esta passando no canal Zorblax",
+      "porque": "Nome que nao existe no corpus e sem filtro estrutural: devolver os oito primeiros canais do catalogo responderia outra pergunta, entao a resposta e abster.",
+      "espera": {
+        "exigeGrade": true,
+        "maxCandidatos": 0,
+        "abstencoes": ["availability", "programme"]
+      }
+    },
+    {
+      "id": "musica-agora",
+      "pergunta": "canal de musica que toca agora",
+      "porque": "Categoria com cobertura de grade quase nula: mede se o buraco e declarado em vez de preenchido.",
+      "espera": {
+        "categorias": ["music"],
+        "exigeGrade": true,
+        "temporalAgora": true,
+        "minCandidatos": 3,
+        "gradeEm": ["ON_AIR", "GUIDE_GAP", "GUIDE_STALE", "NO_GUIDE"]
+      }
+    }
+  ]
+}

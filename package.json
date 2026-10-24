@@ -14,6 +14,9 @@
     "build": "node src/cli.ts build",
     "report": "node src/cli.ts report",
     "all": "node src/cli.ts all",
+    "ask": "node src/cli.ts ask",
+    "mcp": "node src/cli.ts mcp",
+    "rag:eval": "node src/cli.ts rag-eval",
     "typecheck": "tsc --noEmit",
     "test": "node --test 'test/*.test.ts'"
   },

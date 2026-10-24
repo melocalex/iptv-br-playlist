@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "iptv-canais": {
+      "command": "node",
+      "args": ["src/cli.ts", "mcp"],
+      "env": {}
+    }
+  }
+}
