@@ -211,6 +211,9 @@ http://stream.mcquack.net/123/index.m3u8
 #EXTINF:-1 tvg-id="AsianetMovies.in@SD" tvg-name="Asianet Movies" tvg-logo="https://i.imgur.com/cps67hs.png" tvg-language="mal" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Asianet Movies
 #EXTGRP:🏳️ Other Countries • Filmes
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-id="AXNAsia.sg@Taiwan" tvg-name="AXN Asia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="cmn" tvg-country="SG" group-title="🏳️ Other Countries • Filmes",AXN Asia
+#EXTGRP:🏳️ Other Countries • Filmes
+http://125.227.210.55:4050/VideoInput/play.ts
 #EXTINF:-1 tvg-id="AXNPoland.pl@SD" tvg-name="AXN Poland" tvg-logo="https://i.imgur.com/i5wOhkf.png" tvg-language="pol" tvg-country="PL" group-title="🏳️ Other Countries • Filmes",AXN Poland
 #EXTGRP:🏳️ Other Countries • Filmes
 http://92.114.85.87:8015/play/a00f/index.m3u8
@@ -253,3 +256,6 @@ https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTGRP:🏳️ Other Countries • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://stream.mcquack.net/73/index.m3u8
+#EXTINF:-1 tvg-id="CafeFilm.ir@SD" tvg-name="Cafe Film" tvg-language="fas" tvg-country="IR" group-title="🏳️ Other Countries • Filmes",Cafe Film
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cafefhls.wns.live/hls/stream.m3u8
