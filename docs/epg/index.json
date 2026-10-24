@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-24T06:40:47.882Z",
+ "generatedAt": "2026-10-24T06:45:28.487Z",
  "horizonHours": 24,
  "timeFormat": "epoch-seconds-utc",
  "channels": 179,
- "programmes": 6015,
+ "programmes": 6008,
  "items": [
   {
    "id": "13C.cl@SD",
@@ -169,9 +169,9 @@
    "id": "AELatinAmerica.us@Brazil",
    "name": "A&E Latin America",
    "file": "AELatinAmerica.us_at_Brazil.json",
-   "count": 43,
+   "count": 44,
    "from": 1792823880,
-   "to": 1792910580
+   "to": 1792911960
   },
   {
    "id": "AgroMais.br@SD",
@@ -209,8 +209,8 @@
    "id": "ALLBLKGems.us@SD",
    "name": "ALLBLK Gems",
    "file": "ALLBLKGems.us_at_SD.json",
-   "count": 54,
-   "from": 1792821600,
+   "count": 53,
+   "from": 1792822860,
    "to": 1793143800
   },
   {
@@ -370,8 +370,8 @@
    "name": "Arte 1",
    "file": "Arte1.br_at_SD.json",
    "count": 31,
-   "from": 1792820700,
-   "to": 1792910700
+   "from": 1792824300,
+   "to": 1792912500
   },
   {
    "id": "ARTV.pt@SD",
@@ -409,8 +409,8 @@
    "id": "BandSports.br@SD",
    "name": "Band Sports",
    "file": "BandSports.br_at_SD.json",
-   "count": 22,
-   "from": 1792820700,
+   "count": 21,
+   "from": 1792824300,
    "to": 1792912500
   },
   {
@@ -457,9 +457,9 @@
    "id": "CartoonNetworkLatinAmerica.us@Brazil",
    "name": "Cartoon Network Latin America",
    "file": "CartoonNetworkLatinAmerica.us_at_Brazil.json",
-   "count": 165,
+   "count": 166,
    "from": 1792824000,
-   "to": 1792911120
+   "to": 1792911600
   },
   {
    "id": "CineTerror.us@BR",
@@ -473,9 +473,9 @@
    "id": "CNNBrasil.br@SD",
    "name": "CNN Brasil",
    "file": "CNNBrasil.br_at_SD.json",
-   "count": 26,
+   "count": 27,
    "from": 1792822200,
-   "to": 1792910700
+   "to": 1792915200
   },
   {
    "id": "CNNPortugal.pt@SD",
@@ -498,8 +498,8 @@
    "name": "Discovery Kids Latin America",
    "file": "DiscoveryKidsLatinAmerica.us_at_Brazil.json",
    "count": 108,
-   "from": 1792823580,
-   "to": 1792910640
+   "from": 1792824240,
+   "to": 1792911300
   },
   {
    "id": "DiscoveryWorld.us@Brazil",
@@ -609,9 +609,9 @@
    "id": "MusicBoxBrazil.br@SD",
    "name": "Music Box Brazil",
    "file": "MusicBoxBrazil.br_at_SD.json",
-   "count": 116,
+   "count": 117,
    "from": 1792824000,
-   "to": 1792910460
+   "to": 1792910760
   },
   {
    "id": "Naruto.us@Brazil",
@@ -633,8 +633,8 @@
    "id": "OReinoInfantil.us@Brazil",
    "name": "O Reino Infantil",
    "file": "OReinoInfantil.us_at_Brazil.json",
-   "count": 45,
-   "from": 1792822080,
+   "count": 44,
+   "from": 1792824120,
    "to": 1793143800
   },
   {
@@ -657,16 +657,16 @@
    "id": "PlutoTVAnime.us@BR",
    "name": "Pluto TV Anime",
    "file": "PlutoTVAnime.us_at_BR.json",
-   "count": 30,
-   "from": 1792822440,
+   "count": 29,
+   "from": 1792824240,
    "to": 1793057400
   },
   {
    "id": "PlutoTVAnimeAcao.us@BR",
    "name": "Pluto TV Anime Acao",
    "file": "PlutoTVAnimeAcao.us_at_BR.json",
-   "count": 44,
-   "from": 1792822560,
+   "count": 43,
+   "from": 1792824060,
    "to": 1793057400
   },
   {
@@ -761,8 +761,8 @@
    "id": "PlutoTVCozinha.us@BR",
    "name": "Pluto TV Cozinha",
    "file": "PlutoTVCozinha.us_at_BR.json",
-   "count": 31,
-   "from": 1792822740,
+   "count": 30,
+   "from": 1792824240,
    "to": 1793143800
   },
   {
@@ -873,8 +873,8 @@
    "id": "PlutoTVMisterios.us@BR",
    "name": "Pluto TV Misterios",
    "file": "PlutoTVMisterios.us_at_BR.json",
-   "count": 32,
-   "from": 1792820940,
+   "count": 31,
+   "from": 1792824300,
    "to": 1793143800
   },
   {
@@ -889,8 +889,8 @@
    "id": "PlutoTVNegocioFechado.us@BR",
    "name": "Pluto TV Negocio Fechado",
    "file": "PlutoTVNegocioFechado.us_at_BR.json",
-   "count": 54,
-   "from": 1792822800,
+   "count": 53,
+   "from": 1792824300,
    "to": 1793143800
   },
   {
@@ -921,8 +921,8 @@
    "id": "PlutoTVPolicial.us@BR",
    "name": "Pluto TV Policial",
    "file": "PlutoTVPolicial.us_at_BR.json",
-   "count": 41,
-   "from": 1792822800,
+   "count": 40,
+   "from": 1792824060,
    "to": 1793143800
   },
   {
@@ -985,8 +985,8 @@
    "id": "PlutoTVSeriesSciFi.us@BR",
    "name": "Pluto TV Series Sci-Fi",
    "file": "PlutoTVSeriesSciFi.us_at_BR.json",
-   "count": 29,
-   "from": 1792821240,
+   "count": 28,
+   "from": 1792824120,
    "to": 1793057400
   },
   {
@@ -1113,9 +1113,9 @@
    "id": "RedeVida.br@SD",
    "name": "Rede Vida",
    "file": "RedeVida.br_at_SD.json",
-   "count": 53,
+   "count": 54,
    "from": 1792824000,
-   "to": 1792911000
+   "to": 1792914600
   },
   {
    "id": "RTP1.pt@HD",
@@ -1139,7 +1139,7 @@
    "file": "RTPAcores.pt_at_HD.json",
    "count": 41,
    "from": 1792823340,
-   "to": 1792910460
+   "to": 1792911060
   },
   {
    "id": "RTPAfrica.pt@SD",
@@ -1153,8 +1153,8 @@
    "id": "RTPMemoria.pt@SD",
    "name": "RTP Memoria",
    "file": "RTPMemoria.pt_at_SD.json",
-   "count": 69,
-   "from": 1792820520,
+   "count": 67,
+   "from": 1792824180,
    "to": 1792911600
   },
   {
@@ -1193,17 +1193,17 @@
    "id": "SmithsonianChannelPlutoTV.us@BR",
    "name": "Smithsonian Channel Pluto TV",
    "file": "SmithsonianChannelPlutoTV.us_at_BR.json",
-   "count": 24,
-   "from": 1792820400,
+   "count": 23,
+   "from": 1792824060,
    "to": 1793143800
   },
   {
    "id": "SonyChannel.br@SD",
    "name": "Sony Channel",
    "file": "SonyChannel.br_at_SD.json",
-   "count": 17,
+   "count": 18,
    "from": 1792823700,
-   "to": 1792911300
+   "to": 1792912500
   },
   {
    "id": "StarTrek.us@BR",
@@ -1274,8 +1274,8 @@
    "name": "Travel Box Brazil",
    "file": "TravelBoxBrazil.br_at_SD.json",
    "count": 67,
-   "from": 1792824000,
-   "to": 1792910700
+   "from": 1792824300,
+   "to": 1792911600
   },
   {
    "id": "TurmadaMonica.us@Brazil",
@@ -1377,9 +1377,9 @@
    "id": "TVI.pt@SD",
    "name": "TVI",
    "file": "TVI.pt_at_SD.json",
-   "count": 28,
+   "count": 29,
    "from": 1792818000,
-   "to": 1792910520
+   "to": 1792913700
   },
   {
    "id": "TVIReality.pt@SD",
@@ -1409,8 +1409,8 @@
    "id": "TVRaTimBum.br@SD",
    "name": "TV Ra Tim Bum",
    "file": "TVRaTimBum.br_at_SD.json",
-   "count": 88,
-   "from": 1792823700,
+   "count": 87,
+   "from": 1792824300,
    "to": 1792911000
   },
   {

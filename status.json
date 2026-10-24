@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T06:40:47.998Z",
+ "generatedAt": "2026-10-24T06:45:28.675Z",
  "repo": {
   "owner": "melocalex",
   "name": "lighteye",
@@ -264,78 +264,78 @@
   "missingChannelsCount": 675,
   "slices": {
    "files": 179,
-   "programmes": 6015,
+   "programmes": 6008,
    "horizonHours": 24,
-   "totalKB": 1449.7,
-   "largestKB": 32.1,
+   "totalKB": 1447.6,
+   "largestKB": 32.2,
    "indexUrl": "https://raw.githubusercontent.com/melocalex/lighteye/main/docs/epg/index.json"
   }
  },
  "playlists": [
   {
    "file": "playlist.m3u",
-   "title": "Principal (todas as secoes, validada)",
+   "title": "Main (all sections, validated)",
    "channels": 1169,
    "entries": 1169,
    "sections": 80
   },
   {
    "file": "playlist-br.m3u",
-   "title": "Brasil",
+   "title": "Brazil",
    "channels": 290,
    "entries": 290,
    "sections": 13
   },
   {
    "file": "playlist-pt.m3u",
-   "title": "Portugues (PT + lusofonos)",
+   "title": "Portuguese (PT + Portuguese-speaking)",
    "channels": 329,
    "entries": 329,
    "sections": 22
   },
   {
    "file": "playlist-movies.m3u",
-   "title": "Filmes",
+   "title": "Movies",
    "channels": 81,
    "entries": 81,
    "sections": 8
   },
   {
    "file": "playlist-series.m3u",
-   "title": "Series",
+   "title": "Series (TV shows)",
    "channels": 72,
    "entries": 72,
    "sections": 10
   },
   {
    "file": "playlist-sports.m3u",
-   "title": "Esportes",
+   "title": "Sports",
    "channels": 32,
    "entries": 32,
    "sections": 6
   },
   {
    "file": "playlist-international.m3u",
-   "title": "Internacional (tudo fora do Brasil)",
+   "title": "International (everything outside Brazil)",
    "channels": 879,
    "entries": 879,
    "sections": 67
   },
   {
    "file": "playlist-all.m3u",
-   "title": "Tudo, inclusive nao verificado e indisponivel",
+   "title": "Everything, including unverified and unavailable",
    "channels": 12252,
    "entries": 17965,
    "sections": 101
   }
  ],
  "limitations": [
-  "Resultados de 2 pontos de observacao (local-br, github-us) sao reportados separadamente e **nao somam**: o mesmo stream pode estar WORKING em um e GEO_BLOCKED em outro.",
-  "10140 canais ainda nunca foram checados. O limite por execucao e `validation.maxChecksPerRun` = 1200; a cobertura cresce a cada rodada.",
-  "Cobertura de EPG medida: 179 de 1169 canais da playlist principal (990 sem grade). Numero medido, sem arredondar para cima.",
-  "Em 2001 canais o stream e HLS. O ffprobe nao abre a playlist de variante de legenda, logo **ausencia de faixa de legenda nao prova ausencia de legenda** nesses canais.",
-  "Nenhuma playlist faz failover automatico. Streams alternativos ficam guardados em `data/channels.json`, mas trocar de stream depende do player: o projeto nao implementa nem testou failover, e por isso nao alega que exista.",
-  "Nada aqui contorna DRM, autenticacao, paywall ou geobloqueio. `GEO_BLOCKED` e apenas um rotulo de diagnostico, baseado em HTTP 451 ou em texto explicito da resposta.",
-  "2033 streams nao tem metadado de canal na fonte. Ficam fora das playlists validadas e aparecem apenas em `playlist-all.m3u`, porque classificar pelo nome do canal seria adivinhacao."
+  "Results from 2 observation points (local-br, github-us) are reported separately and **do not add up**: the same stream can be WORKING at one and GEO_BLOCKED at another.",
+  "10140 channels have never been checked. The per-run cap is `validation.maxChecksPerRun` = 1200; coverage grows each round.",
+  "Measured guide coverage: 179 of 1169 channels in the main playlist (990 without a guide). Measured, with no rounding up.",
+  "2001 channels are served over HLS. ffprobe does not open the subtitle variant playlist, so **absence of a subtitle track does not prove absence of subtitles** on those channels.",
+  "No playlist performs automatic failover. Alternative streams are kept in `data/channels.json`, but switching streams is up to the player: the project neither implements nor has tested failover, so it does not claim one exists.",
+  "Nothing here circumvents DRM, authentication, paywalls or geoblocking. `GEO_BLOCKED` is only a diagnostic label, based on HTTP 451 or explicit text in the response.",
+  "2033 streams have no channel metadata in the source. They stay out of the validated playlists and appear only in `playlist-all.m3u`, because classifying by channel name would be guessing."
  ]
 }

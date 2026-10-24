@@ -260,41 +260,40 @@ function limitations(
 
   if (vantages.length === 1) {
     out.push(
-      `Validacao feita de um unico ponto de observacao (\`${vantages[0]}\`). Um canal marcado ` +
-        'como indisponivel aqui pode funcionar de outro pais, e o contrario tambem. ' +
-        'Rode com `IPTV_VANTAGE` diferente para comparar.',
+      `Validation came from a single observation point (\`${vantages[0]}\`). A channel marked ` +
+        'unavailable here may work from another country, and the reverse is also true. ' +
+        'Run with a different `IPTV_VANTAGE` to compare.',
     );
   } else if (vantages.length > 1) {
     out.push(
-      `Resultados de ${vantages.length} pontos de observacao (${vantages.join(', ')}) sao ` +
-        'reportados separadamente e **nao somam**: o mesmo stream pode estar WORKING em um e ' +
-        'GEO_BLOCKED em outro.',
+      `Results from ${vantages.length} observation points (${vantages.join(', ')}) are reported ` +
+        'separately and **do not add up**: the same stream can be WORKING at one and ' +
+        'GEO_BLOCKED at another.',
     );
   }
   if (never > 0) {
     out.push(
-      `${never} canais ainda nunca foram checados. O limite por execucao e ` +
-        `\`validation.maxChecksPerRun\` = ${cfg.validation.maxChecksPerRun}; a cobertura cresce a cada rodada.`,
+      `${never} channels have never been checked. The per-run cap is ` +
+        `\`validation.maxChecksPerRun\` = ${cfg.validation.maxChecksPerRun}; coverage grows each round.`,
     );
   }
-  const semGrade = Math.max(0, wantedTotal - epg.channelsInGuide);
+  const withoutGuide = Math.max(0, wantedTotal - epg.channelsInGuide);
   out.push(
-    `Cobertura de EPG medida: ${epg.channelsInGuide} de ${wantedTotal} canais da playlist ` +
-      `principal (${semGrade} sem grade). Numero medido, sem arredondar para cima.`,
+    `Measured guide coverage: ${epg.channelsInGuide} of ${wantedTotal} channels in the main ` +
+      `playlist (${withoutGuide} without a guide). Measured, with no rounding up.`,
   );
   if (epg.sources.length === 0 && epg.channelsInGuide > 0) {
     out.push(
-      `O guia nao foi regerado nesta execucao: os dados de EPG sao do indice de ` +
-        `${epg.generatedAt}. Canal que entrou na playlist depois disso ainda nao foi pedido ` +
-        'a nenhuma fonte de grade, entao aparece como sem cobertura ate a proxima execucao ' +
-        'completa.',
+      'The guide was not rebuilt in this run: the EPG data comes from the index generated at ' +
+        `${epg.generatedAt}. A channel that entered the playlist after that has not been ` +
+        'requested from any guide source yet, so it shows as uncovered until the next full run.',
     );
   }
   const failedEpg = epg.sources.filter((s) => !s.ok);
   if (failedEpg.length) {
     out.push(
-      `Fontes de EPG que nao renderam nesta execucao: ${failedEpg
-        .map((s) => `${s.id} (${s.note ?? 'sem motivo registrado'})`)
+      `Guide sources that produced nothing in this run: ${failedEpg
+        .map((s) => `${s.id} (${s.note ?? 'no reason recorded'})`)
         .join('; ')}.`,
     );
   }
@@ -303,22 +302,23 @@ function limitations(
   ).length;
   if (unreliableSubs > 0) {
     out.push(
-      `Em ${unreliableSubs} canais o stream e HLS. O ffprobe nao abre a playlist de variante de ` +
-        'legenda, logo **ausencia de faixa de legenda nao prova ausencia de legenda** nesses canais.',
+      `${unreliableSubs} channels are served over HLS. ffprobe does not open the subtitle ` +
+        'variant playlist, so **absence of a subtitle track does not prove absence of ' +
+        'subtitles** on those channels.',
     );
   }
   out.push(
-    'Nenhuma playlist faz failover automatico. Streams alternativos ficam guardados em ' +
-      `\`${cfg.output.metadataFile}\`, mas trocar de stream depende do player: o projeto nao ` +
-      'implementa nem testou failover, e por isso nao alega que exista.',
+    'No playlist performs automatic failover. Alternative streams are kept in ' +
+      `\`${cfg.output.metadataFile}\`, but switching streams is up to the player: the project ` +
+      'neither implements nor has tested failover, so it does not claim one exists.',
   );
   out.push(
-    'Nada aqui contorna DRM, autenticacao, paywall ou geobloqueio. `GEO_BLOCKED` e apenas um ' +
-      'rotulo de diagnostico, baseado em HTTP 451 ou em texto explicito da resposta.',
+    'Nothing here circumvents DRM, authentication, paywalls or geoblocking. `GEO_BLOCKED` is ' +
+      'only a diagnostic label, based on HTTP 451 or explicit text in the response.',
   );
   if (catalog.sourceReport.failed.length) {
     out.push(
-      `Fontes que falharam no download: ${catalog.sourceReport.failed
+      `Sources that failed to download: ${catalog.sourceReport.failed
         .map((f) => `${f.id} (${f.reason})`)
         .join('; ')}.`,
     );
@@ -326,16 +326,16 @@ function limitations(
   const unclassified = catalog.channels.filter((c) => !c.classified).length;
   if (unclassified > 0) {
     out.push(
-      `${unclassified} streams nao tem metadado de canal na fonte. Ficam fora das playlists ` +
-        'validadas e aparecem apenas em `playlist-all.m3u`, porque classificar pelo nome do ' +
-        'canal seria adivinhacao.',
+      `${unclassified} streams have no channel metadata in the source. They stay out of the ` +
+        'validated playlists and appear only in `playlist-all.m3u`, because classifying by ' +
+        'channel name would be guessing.',
     );
   }
   const checked = runs.reduce((n, r) => n + r.checked, 0);
   if (runs.length && checked < runs.reduce((n, r) => n + r.eligible, 0)) {
     out.push(
-      `Nesta execucao foram checados ${checked} streams de ${runs.reduce((n, r) => n + r.eligible, 0)} ` +
-        'elegiveis. O resto mantem o status da rodada anterior.',
+      `This run checked ${checked} streams out of ${runs.reduce((n, r) => n + r.eligible, 0)} ` +
+        'eligible. The rest keep the status from the previous round.',
     );
   }
   return out;

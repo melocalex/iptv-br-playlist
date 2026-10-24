@@ -210,45 +210,45 @@ export interface PlaylistSpec {
 
 export function playlistSpecs(cfg: Config): PlaylistSpec[] {
   return [
-    { file: cfg.output.mainPlaylist, title: 'Principal (todas as secoes, validada)', mode: 'validated' },
+    { file: cfg.output.mainPlaylist, title: 'Main (all sections, validated)', mode: 'validated' },
     {
       file: 'playlist-br.m3u',
-      title: 'Brasil',
+      title: 'Brazil',
       mode: 'validated',
       filter: (v) => v.channel.countryGroup === 'BR',
     },
     {
       file: 'playlist-pt.m3u',
-      title: 'Portugues (PT + lusofonos)',
+      title: 'Portuguese (PT + Portuguese-speaking)',
       mode: 'validated',
       filter: (v) =>
         v.channel.countryGroup === 'PT' || v.channel.declaredLanguages.includes('por'),
     },
     {
       file: 'playlist-movies.m3u',
-      title: 'Filmes',
+      title: 'Movies',
       mode: 'validated',
       filter: (v) => v.channel.categoryCodes.includes('movies'),
     },
     {
       file: 'playlist-series.m3u',
-      title: 'Series',
+      title: 'Series (TV shows)',
       mode: 'validated',
       filter: (v) => v.channel.categoryCodes.includes('series'),
     },
     {
       file: 'playlist-sports.m3u',
-      title: 'Esportes',
+      title: 'Sports',
       mode: 'validated',
       filter: (v) => v.channel.categoryCodes.includes('sports'),
     },
     {
       file: 'playlist-international.m3u',
-      title: 'Internacional (tudo fora do Brasil)',
+      title: 'International (everything outside Brazil)',
       mode: 'validated',
       filter: (v) => v.channel.countryGroup !== 'BR',
     },
-    { file: 'playlist-all.m3u', title: 'Tudo, inclusive nao verificado e indisponivel', mode: 'all' },
+    { file: 'playlist-all.m3u', title: 'Everything, including unverified and unavailable', mode: 'all' },
   ];
 }
 

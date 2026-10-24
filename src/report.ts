@@ -234,32 +234,32 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
 
   const vantages = Object.keys(s.validation.streamsByVantageAndStatus).sort();
   const md: string[] = [];
-  md.push('# Painel de status');
+  md.push('# Status dashboard');
   md.push('');
-  md.push(`Gerado em **${s.generatedAt}**.`);
+  md.push(`Generated at **${s.generatedAt}**.`);
   md.push('');
-  md.push('## Descoberta');
+  md.push('## Discovery');
   md.push('');
   md.push(
     table([
-      ['Metrica', 'Valor'],
-      ['Canais descobertos', s.discovery.channelsDiscovered],
-      ['Streams descobertos (URLs unicas)', s.discovery.streamsDiscovered],
-      ['URLs duplicadas colapsadas', s.discovery.duplicateStreamUrlsCollapsed],
-      ['Canais sem metadado na fonte', s.discovery.unclassifiedChannels],
+      ['Metric', 'Value'],
+      ['Channels discovered', s.discovery.channelsDiscovered],
+      ['Streams discovered (unique URLs)', s.discovery.streamsDiscovered],
+      ['Duplicate URLs collapsed', s.discovery.duplicateStreamUrlsCollapsed],
+      ['Channels with no metadata in the source', s.discovery.unclassifiedChannels],
     ]),
   );
   md.push('');
-  md.push('## Validacao');
+  md.push('## Validation');
   md.push('');
   md.push(
-    'Validacao depende de onde o teste roda. O runner do GitHub Actions fica nos Estados Unidos ' +
-      'e ve disponibilidade diferente de uma maquina no Brasil. **Os numeros por ponto de ' +
-      'observacao nao sao somaveis.**',
+    'A validation result depends on where the probe runs. The GitHub Actions runner sits in ' +
+      'the United States and sees different availability than a machine in Brazil. ' +
+      '**Numbers from different observation points do not add up.**',
   );
   md.push('');
   if (vantages.length === 0) {
-    md.push('_Nenhuma validacao registrada ainda._');
+    md.push('_No validation recorded yet._');
   } else {
     md.push(
       table([
@@ -273,7 +273,7 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
     md.push('');
     md.push(
       table([
-        ['Ponto de observacao', 'Ultima execucao', 'Checados', 'Elegiveis', 'Frescos (pulados)'],
+        ['Observation point', 'Last run', 'Checked', 'Eligible', 'Fresh (skipped)'],
         ...Object.entries(s.validation.lastRunByVantage).map(([v, r]) => [
           v,
           r.finishedAt,
@@ -285,115 +285,115 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
     );
   }
   md.push('');
-  md.push('## Status por canal');
+  md.push('## Status per channel');
   md.push('');
   md.push(
-    'Status do canal e o melhor entre os streams dele. `UNKNOWN` domina porque cada execucao ' +
-      'checa no maximo `validation.maxChecksPerRun` streams, e um canal com qualquer stream ' +
-      'ainda nao checado conta como desconhecido, nao como indisponivel.',
+    "A channel's status is the best among its streams. `UNKNOWN` dominates because each run " +
+      'checks at most `validation.maxChecksPerRun` streams, and a channel with any stream not ' +
+      'yet checked counts as unknown, not as unavailable.',
   );
   md.push('');
   md.push(
     table([
-      ['Status', 'Canais'],
+      ['Status', 'Channels'],
       ...ALL_STATUSES.map((st) => [st, s.validation.channelsByStatus[st] ?? 0]),
     ]),
   );
   md.push('');
-  md.push('## Canais publicados');
+  md.push('## Published channels');
   md.push('');
   md.push(
-    'Estes sao os canais que entram nas playlists validadas: elegiveis **e** com metadado na ' +
-      'fonte. Stream sem metadado de canal nunca e publicado, entao nao entra nestas contas — ' +
-      `foram ${s.catalog.eligibleButUnclassified} streams nessa situacao nesta execucao, e eles ` +
-      'aparecem apenas em `playlist-all.m3u`.',
+    'These are the channels that enter the validated playlists: eligible **and** carrying ' +
+      'metadata in the source. A stream with no channel metadata is never published, so it is ' +
+      `not counted here — there were ${s.catalog.eligibleButUnclassified} such streams in this ` +
+      'run, and they appear only in `playlist-all.m3u`.',
   );
   md.push('');
   md.push(
     table([
-      ['Metrica', 'Valor'],
-      ['Canais publicados na playlist principal', s.catalog.publishableChannels],
-      ['Destes, com status WORKING', s.catalog.validatedWorkingChannels],
-      ['Destes, instaveis', s.catalog.unstableChannels],
-      ['Canais brasileiros', s.catalog.brazilianChannels],
-      ['Canais internacionais', s.catalog.internationalChannels],
-      ['Com stream alternativo guardado', s.catalog.channelsWithAlternativeStreams],
-      ['Com cobertura de EPG', s.catalog.withEpgCoverage],
-      ['Com audio em portugues **verificado**', s.catalog.withVerifiedPortugueseAudio],
-      ['Com legenda **verificada**', s.catalog.withVerifiedSubtitles],
-      ['Com deteccao de legenda nao confiavel (HLS)', s.catalog.withSubtitleDetectionUnreliable],
+      ['Metric', 'Value'],
+      ['Channels published in the main playlist', s.catalog.publishableChannels],
+      ['Of those, status WORKING', s.catalog.validatedWorkingChannels],
+      ['Of those, unstable', s.catalog.unstableChannels],
+      ['Brazilian channels', s.catalog.brazilianChannels],
+      ['International channels', s.catalog.internationalChannels],
+      ['With an alternative stream kept', s.catalog.channelsWithAlternativeStreams],
+      ['With guide coverage', s.catalog.withEpgCoverage],
+      ['With **verified** Portuguese audio', s.catalog.withVerifiedPortugueseAudio],
+      ['With **verified** subtitles', s.catalog.withVerifiedSubtitles],
+      ['With unreliable subtitle detection (HLS)', s.catalog.withSubtitleDetectionUnreliable],
     ]),
   );
   md.push('');
-  md.push('### Por grupo de pais');
+  md.push('### By country group');
   md.push('');
   md.push(
     table([
-      ['Grupo', 'Canais publicados'],
+      ['Group', 'Published channels'],
       ...Object.entries(s.catalog.byCountryGroup).sort((a, b) => b[1] - a[1]),
     ]),
   );
   md.push('');
-  md.push('### Por categoria');
+  md.push('### By category');
   md.push('');
   md.push(
     table([
-      ['Categoria', 'Canais publicados'],
+      ['Category', 'Published channels'],
       ...Object.entries(s.catalog.byCategory).sort((a, b) => b[1] - a[1]),
     ]),
   );
   md.push('');
-  md.push('## EPG');
+  md.push('## Programme guide');
   md.push('');
   md.push(
     table([
-      ['Metrica', 'Valor'],
-      ['Canais pedidos ao EPG', s.epg.channelsRequested],
-      ['Canais com grade', s.epg.channelsWithGuide],
-      ['Cobertura medida', `${s.epg.coveragePercent}%`],
-      ['Programas no guia', s.epg.programmes],
-      ['Horizonte', `${s.epg.horizonHours} h`],
-      ['Canais sem grade', s.epg.missingChannelsCount],
+      ['Metric', 'Value'],
+      ['Channels requested from the guide', s.epg.channelsRequested],
+      ['Channels with a guide', s.epg.channelsWithGuide],
+      ['Measured coverage', `${s.epg.coveragePercent}%`],
+      ['Programmes in the guide', s.epg.programmes],
+      ['Horizon', `${s.epg.horizonHours} h`],
+      ['Channels without a guide', s.epg.missingChannelsCount],
     ]),
   );
   if (s.epg.slices) {
     md.push('');
-    md.push('### Fatias por canal');
+    md.push('### Per-channel slices');
     md.push('');
     md.push(
-      'Grade curta em JSON, um arquivo por canal, para consumidor que nao parseia XMLTV. ' +
-        'Horario em **epoch de segundos, UTC**. O indice publica o nome de arquivo pronto, ' +
-        'entao o consumidor nao precisa reproduzir nenhuma transformacao do `tvg-id`.',
+      'A short guide in JSON, one file per channel, for consumers that do not parse XMLTV. ' +
+        'Times are **epoch seconds, UTC**. The index publishes the ready-made file name, so a ' +
+        'consumer never has to reproduce any `tvg-id` transformation.',
     );
     md.push('');
     md.push(
       table([
-        ['Metrica', 'Valor'],
-        ['Arquivos', s.epg.slices.files],
-        ['Programas', s.epg.slices.programmes],
-        ['Janela', `${s.epg.slices.horizonHours} h`],
-        ['Tamanho total', `${s.epg.slices.totalKB} KB`],
-        ['Maior arquivo', `${s.epg.slices.largestKB} KB`],
-        ['Indice', `\`${s.epg.slices.indexUrl}\``],
+        ['Metric', 'Value'],
+        ['Files', s.epg.slices.files],
+        ['Programmes', s.epg.slices.programmes],
+        ['Window', `${s.epg.slices.horizonHours} h`],
+        ['Total size', `${s.epg.slices.totalKB} KB`],
+        ['Largest file', `${s.epg.slices.largestKB} KB`],
+        ['Index', `\`${s.epg.slices.indexUrl}\``],
       ]),
     );
   }
   md.push('');
   md.push(
-    'Cobertura de EPG do iptv-org e parcial por natureza. O numero acima e o **medido**, ' +
-      'sem arredondamento para cima. A lista completa de canais sem grade esta em ' +
+    "iptv-org's guide coverage is partial by nature. The number above is the **measured** one, " +
+      'with no rounding up. The full list of channels without a guide is in ' +
       `\`${cfg.output.epgCoverageFile}\`.`,
   );
   md.push('');
-  md.push('### Fontes de EPG');
+  md.push('### Guide sources');
   md.push('');
   md.push(
     table([
-      ['Fonte', 'Tipo', 'OK', 'Canais pedidos', 'Canais com grade', 'Programas', 'Observacao'],
+      ['Source', 'Kind', 'OK', 'Channels requested', 'Channels with a guide', 'Programmes', 'Note'],
       ...s.epg.sources.map((x) => [
         x.id,
         x.kind,
-        x.ok ? 'sim' : 'nao',
+        x.ok ? 'yes' : 'no',
         x.requestedChannels < 0 ? 'n/a' : x.requestedChannels,
         x.channelsWithProgrammes,
         x.programmes,
@@ -406,12 +406,12 @@ export function writeStatus(cfg: Config, s: StatusPayload): void {
   md.push('');
   md.push(
     table([
-      ['Arquivo', 'Conteudo', 'Canais', 'Entradas', 'Secoes'],
+      ['File', 'Contents', 'Channels', 'Entries', 'Sections'],
       ...s.playlists.map((p) => [`\`${p.file}\``, p.title, p.channels, p.entries, p.sections]),
     ]),
   );
   md.push('');
-  md.push('## Limitacoes conhecidas');
+  md.push('## Known limitations');
   md.push('');
   for (const l of s.limitations) md.push(`- ${l}`);
   md.push('');

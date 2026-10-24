@@ -1,19 +1,19 @@
-# Painel de status
+# Status dashboard
 
-Gerado em **2026-10-24T06:40:47.998Z**.
+Generated at **2026-10-24T06:45:28.675Z**.
 
-## Descoberta
+## Discovery
 
-| Metrica | Valor |
+| Metric | Value |
 | --- | --- |
-| Canais descobertos | 12323 |
-| Streams descobertos (URLs unicas) | 18058 |
-| URLs duplicadas colapsadas | 11323 |
-| Canais sem metadado na fonte | 2033 |
+| Channels discovered | 12323 |
+| Streams discovered (unique URLs) | 18058 |
+| Duplicate URLs collapsed | 11323 |
+| Channels with no metadata in the source | 2033 |
 
-## Validacao
+## Validation
 
-Validacao depende de onde o teste roda. O runner do GitHub Actions fica nos Estados Unidos e ve disponibilidade diferente de uma maquina no Brasil. **Os numeros por ponto de observacao nao sao somaveis.**
+A validation result depends on where the probe runs. The GitHub Actions runner sits in the United States and sees different availability than a machine in Brazil. **Numbers from different observation points do not add up.**
 
 | Status | github-us | local-br |
 | --- | --- | --- |
@@ -26,14 +26,14 @@ Validacao depende de onde o teste roda. O runner do GitHub Actions fica nos Esta
 | UNSUPPORTED | 49 | 144 |
 | UNKNOWN | 0 | 0 |
 
-| Ponto de observacao | Ultima execucao | Checados | Elegiveis | Frescos (pulados) |
+| Observation point | Last run | Checked | Eligible | Fresh (skipped) |
 | --- | --- | --- | --- | --- |
 
-## Status por canal
+## Status per channel
 
-Status do canal e o melhor entre os streams dele. `UNKNOWN` domina porque cada execucao checa no maximo `validation.maxChecksPerRun` streams, e um canal com qualquer stream ainda nao checado conta como desconhecido, nao como indisponivel.
+A channel's status is the best among its streams. `UNKNOWN` dominates because each run checks at most `validation.maxChecksPerRun` streams, and a channel with any stream not yet checked counts as unknown, not as unavailable.
 
-| Status | Canais |
+| Status | Channels |
 | --- | --- |
 | WORKING | 1995 |
 | UNSTABLE | 29 |
@@ -44,26 +44,26 @@ Status do canal e o melhor entre os streams dele. `UNKNOWN` domina porque cada e
 | UNSUPPORTED | 0 |
 | UNKNOWN | 10140 |
 
-## Canais publicados
+## Published channels
 
-Estes sao os canais que entram nas playlists validadas: elegiveis **e** com metadado na fonte. Stream sem metadado de canal nunca e publicado, entao nao entra nestas contas — foram 855 streams nessa situacao nesta execucao, e eles aparecem apenas em `playlist-all.m3u`.
+These are the channels that enter the validated playlists: eligible **and** carrying metadata in the source. A stream with no channel metadata is never published, so it is not counted here — there were 855 such streams in this run, and they appear only in `playlist-all.m3u`.
 
-| Metrica | Valor |
+| Metric | Value |
 | --- | --- |
-| Canais publicados na playlist principal | 1169 |
-| Destes, com status WORKING | 1163 |
-| Destes, instaveis | 6 |
-| Canais brasileiros | 290 |
-| Canais internacionais | 879 |
-| Com stream alternativo guardado | 386 |
-| Com cobertura de EPG | 179 |
-| Com audio em portugues **verificado** | 50 |
-| Com legenda **verificada** | 233 |
-| Com deteccao de legenda nao confiavel (HLS) | 1150 |
+| Channels published in the main playlist | 1169 |
+| Of those, status WORKING | 1163 |
+| Of those, unstable | 6 |
+| Brazilian channels | 290 |
+| International channels | 879 |
+| With an alternative stream kept | 386 |
+| With guide coverage | 179 |
+| With **verified** Portuguese audio | 50 |
+| With **verified** subtitles | 233 |
+| With unreliable subtitle detection (HLS) | 1150 |
 
-### Por grupo de pais
+### By country group
 
-| Grupo | Canais publicados |
+| Group | Published channels |
 | --- | --- |
 | OTHER | 498 |
 | BR | 290 |
@@ -74,9 +74,9 @@ Estes sao os canais que entram nas playlists validadas: elegiveis **e** com meta
 | UK | 18 |
 | INT | 14 |
 
-### Por categoria
+### By category
 
-| Categoria | Canais publicados |
+| Category | Published channels |
 | --- | --- |
 | Geral | 339 |
 | Notícias | 167 |
@@ -92,64 +92,64 @@ Estes sao os canais que entram nas playlists validadas: elegiveis **e** com meta
 | Educação | 16 |
 | Animação | 14 |
 
-## EPG
+## Programme guide
 
-| Metrica | Valor |
+| Metric | Value |
 | --- | --- |
-| Canais pedidos ao EPG | 1169 |
-| Canais com grade | 179 |
-| Cobertura medida | 15.31% |
-| Programas no guia | 9058 |
-| Horizonte | 72 h |
-| Canais sem grade | 675 |
+| Channels requested from the guide | 1169 |
+| Channels with a guide | 179 |
+| Measured coverage | 15.31% |
+| Programmes in the guide | 9058 |
+| Horizon | 72 h |
+| Channels without a guide | 675 |
 
-### Fatias por canal
+### Per-channel slices
 
-Grade curta em JSON, um arquivo por canal, para consumidor que nao parseia XMLTV. Horario em **epoch de segundos, UTC**. O indice publica o nome de arquivo pronto, entao o consumidor nao precisa reproduzir nenhuma transformacao do `tvg-id`.
+A short guide in JSON, one file per channel, for consumers that do not parse XMLTV. Times are **epoch seconds, UTC**. The index publishes the ready-made file name, so a consumer never has to reproduce any `tvg-id` transformation.
 
-| Metrica | Valor |
+| Metric | Value |
 | --- | --- |
-| Arquivos | 179 |
-| Programas | 6015 |
-| Janela | 24 h |
-| Tamanho total | 1449.7 KB |
-| Maior arquivo | 32.1 KB |
-| Indice | `https://raw.githubusercontent.com/melocalex/lighteye/main/docs/epg/index.json` |
+| Files | 179 |
+| Programmes | 6008 |
+| Window | 24 h |
+| Total size | 1447.6 KB |
+| Largest file | 32.2 KB |
+| Index | `https://raw.githubusercontent.com/melocalex/lighteye/main/docs/epg/index.json` |
 
-Cobertura de EPG do iptv-org e parcial por natureza. O numero acima e o **medido**, sem arredondamento para cima. A lista completa de canais sem grade esta em `data/epg-coverage.json`.
+iptv-org's guide coverage is partial by nature. The number above is the **measured** one, with no rounding up. The full list of channels without a guide is in `data/epg-coverage.json`.
 
-### Fontes de EPG
+### Guide sources
 
-| Fonte | Tipo | OK | Canais pedidos | Canais com grade | Programas | Observacao |
+| Source | Kind | OK | Channels requested | Channels with a guide | Programmes | Note |
 | --- | --- | --- | --- | --- | --- | --- |
-| mi.tv | grabber | sim | 68 | 65 | 4149 | - |
-| meuguia.tv | grabber | sim | 33 | 26 | 337 | - |
-| meo.pt | grabber | sim | 20 | 20 | 946 | - |
-| nostv.pt | grabber | sim | 19 | 19 | 526 | - |
-| gatotv.com | grabber | sim | 5 | 5 | 267 | - |
-| pluto.tv | grabber | sim | 81 | 79 | 2392 | - |
-| kanya-us | published | sim | n/a | 24 | 441 | - |
-| kanya-ke | published | sim | n/a | 0 | 0 | - |
+| mi.tv | grabber | yes | 68 | 65 | 4149 | - |
+| meuguia.tv | grabber | yes | 33 | 26 | 337 | - |
+| meo.pt | grabber | yes | 20 | 20 | 946 | - |
+| nostv.pt | grabber | yes | 19 | 19 | 526 | - |
+| gatotv.com | grabber | yes | 5 | 5 | 267 | - |
+| pluto.tv | grabber | yes | 81 | 79 | 2392 | - |
+| kanya-us | published | yes | n/a | 24 | 441 | - |
+| kanya-ke | published | yes | n/a | 0 | 0 | - |
 
 ## Playlists
 
-| Arquivo | Conteudo | Canais | Entradas | Secoes |
+| File | Contents | Channels | Entries | Sections |
 | --- | --- | --- | --- | --- |
-| `playlist.m3u` | Principal (todas as secoes, validada) | 1169 | 1169 | 80 |
-| `playlist-br.m3u` | Brasil | 290 | 290 | 13 |
-| `playlist-pt.m3u` | Portugues (PT + lusofonos) | 329 | 329 | 22 |
-| `playlist-movies.m3u` | Filmes | 81 | 81 | 8 |
-| `playlist-series.m3u` | Series | 72 | 72 | 10 |
-| `playlist-sports.m3u` | Esportes | 32 | 32 | 6 |
-| `playlist-international.m3u` | Internacional (tudo fora do Brasil) | 879 | 879 | 67 |
-| `playlist-all.m3u` | Tudo, inclusive nao verificado e indisponivel | 12252 | 17965 | 101 |
+| `playlist.m3u` | Main (all sections, validated) | 1169 | 1169 | 80 |
+| `playlist-br.m3u` | Brazil | 290 | 290 | 13 |
+| `playlist-pt.m3u` | Portuguese (PT + Portuguese-speaking) | 329 | 329 | 22 |
+| `playlist-movies.m3u` | Movies | 81 | 81 | 8 |
+| `playlist-series.m3u` | Series (TV shows) | 72 | 72 | 10 |
+| `playlist-sports.m3u` | Sports | 32 | 32 | 6 |
+| `playlist-international.m3u` | International (everything outside Brazil) | 879 | 879 | 67 |
+| `playlist-all.m3u` | Everything, including unverified and unavailable | 12252 | 17965 | 101 |
 
-## Limitacoes conhecidas
+## Known limitations
 
-- Resultados de 2 pontos de observacao (local-br, github-us) sao reportados separadamente e **nao somam**: o mesmo stream pode estar WORKING em um e GEO_BLOCKED em outro.
-- 10140 canais ainda nunca foram checados. O limite por execucao e `validation.maxChecksPerRun` = 1200; a cobertura cresce a cada rodada.
-- Cobertura de EPG medida: 179 de 1169 canais da playlist principal (990 sem grade). Numero medido, sem arredondar para cima.
-- Em 2001 canais o stream e HLS. O ffprobe nao abre a playlist de variante de legenda, logo **ausencia de faixa de legenda nao prova ausencia de legenda** nesses canais.
-- Nenhuma playlist faz failover automatico. Streams alternativos ficam guardados em `data/channels.json`, mas trocar de stream depende do player: o projeto nao implementa nem testou failover, e por isso nao alega que exista.
-- Nada aqui contorna DRM, autenticacao, paywall ou geobloqueio. `GEO_BLOCKED` e apenas um rotulo de diagnostico, baseado em HTTP 451 ou em texto explicito da resposta.
-- 2033 streams nao tem metadado de canal na fonte. Ficam fora das playlists validadas e aparecem apenas em `playlist-all.m3u`, porque classificar pelo nome do canal seria adivinhacao.
+- Results from 2 observation points (local-br, github-us) are reported separately and **do not add up**: the same stream can be WORKING at one and GEO_BLOCKED at another.
+- 10140 channels have never been checked. The per-run cap is `validation.maxChecksPerRun` = 1200; coverage grows each round.
+- Measured guide coverage: 179 of 1169 channels in the main playlist (990 without a guide). Measured, with no rounding up.
+- 2001 channels are served over HLS. ffprobe does not open the subtitle variant playlist, so **absence of a subtitle track does not prove absence of subtitles** on those channels.
+- No playlist performs automatic failover. Alternative streams are kept in `data/channels.json`, but switching streams is up to the player: the project neither implements nor has tested failover, so it does not claim one exists.
+- Nothing here circumvents DRM, authentication, paywalls or geoblocking. `GEO_BLOCKED` is only a diagnostic label, based on HTTP 451 or explicit text in the response.
+- 2033 streams have no channel metadata in the source. They stay out of the validated playlists and appear only in `playlist-all.m3u`, because classifying by channel name would be guessing.
