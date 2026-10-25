@@ -102,6 +102,9 @@ http://15.204.196.147:22880/CABLE-MAGES-AZCINEMA/video.m3u8
 #EXTINF:-1 tvg-id="Boreal.do@SD" tvg-name="Boreal" tvg-logo="https://i.imgur.com/KSquHTG.png" tvg-language="spa" tvg-country="DO" group-title="🌎 América Latina • Filmes",Boreal
 #EXTGRP:🌎 América Latina • Filmes
 https://edge.essastream.com/borealtelevision/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="CanalCineDios.co@SD" tvg-name="Canal Cine Dios" tvg-logo="https://i.imgur.com/S4xqZgV.png" tvg-language="spa" tvg-country="CO" group-title="🌎 América Latina • Filmes",Canal Cine Dios
+#EXTGRP:🌎 América Latina • Filmes
+https://canal.mediaserver.com.co/live/cinedios.m3u8
 #EXTINF:-1 tvg-id="AXNCEE.es@Bulgary" tvg-name="AXN CEE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="bul" tvg-country="ES" group-title="🇪🇸 España • Filmes",AXN CEE
 #EXTGRP:🇪🇸 España • Filmes
 #EXTVLCOPT:http-referrer=https://cool-tv.net/
@@ -259,3 +262,9 @@ http://stream.mcquack.net/73/index.m3u8
 #EXTINF:-1 tvg-id="CafeFilm.ir@SD" tvg-name="Cafe Film" tvg-language="fas" tvg-country="IR" group-title="🏳️ Other Countries • Filmes",Cafe Film
 #EXTGRP:🏳️ Other Countries • Filmes
 https://cafefhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CCTVStormTheater.cn@HD" tvg-name="CCTV-Storm Theater" tvg-logo="https://i.imgur.com/rEttkKm.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Filmes",CCTV-Storm Theater
+#EXTGRP:🏳️ Other Countries • Filmes
+http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTVTheFirstTheater.cn@HD" tvg-name="CCTV-The First Theater" tvg-logo="https://i.imgur.com/eFxD3hq.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Filmes",CCTV-The First Theater
+#EXTGRP:🏳️ Other Countries • Filmes
+http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub

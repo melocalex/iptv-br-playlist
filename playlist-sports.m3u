@@ -29,6 +29,9 @@ http://168.196.127.137:6001/play/a06v/index.m3u8
 #EXTINF:-1 tvg-id="AztecaDeportesNetwork.mx@SD" tvg-name="Azteca Deportes Network" tvg-logo="https://match-images.icdb.tv/5913207f2494844101287828e87625eb.jpg" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Esportes",Azteca Deportes Network
 #EXTGRP:🌎 América Latina • Esportes
 https://live-manifest.production-public.tubi.io/live/6bf131c3-d664-424c-93c9-49188a788980/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalShowsport.ar@SD" tvg-name="Canal Showsport" tvg-logo="https://i.imgur.com/0L9tW3Z.png" tvg-language="spa" tvg-country="AR" group-title="🌎 América Latina • Esportes",Canal Showsport
+#EXTGRP:🌎 América Latina • Esportes
+https://livestream.lumpentv.com.ar/hls/lumpen.m3u8
 #EXTINF:-1 tvg-id="beINSPORTSXTRAenEspanol.us@SD" tvg-name="beIN SPORTS XTRA en Espanol" tvg-logo="https://i.imgur.com/V562tpO.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Esportes",beIN SPORTS XTRA en Espanol
 #EXTGRP:🇺🇸 United States • Esportes
 https://aegis-cloudfront-1.tubi.video/01f6c149-449b-4248-8bda-2278799205ec/playlist.m3u8
@@ -56,6 +59,12 @@ https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8
 #EXTINF:-1 tvg-id="BilliardTV.us@SD" tvg-name="Billiard TV" tvg-logo="https://i.imgur.com/BZijfKh.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",Billiard TV
 #EXTGRP:🇺🇸 United States • Esportes
 https://pb-wm04vonaerv0k.akamaized.net/billi.m3u8
+#EXTINF:-1 tvg-id="CBSSportsGolazoNetwork.us@SD" tvg-name="CBS Sports Golazo Network" tvg-logo="https://i.imgur.com/eMjutHS.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",CBS Sports Golazo Network
+#EXTGRP:🇺🇸 United States • Esportes
+https://dai.google.com/linear/hls/event/7f3Wv6f7QEKfQna22jHqLQ/master.m3u8
+#EXTINF:-1 tvg-id="CBSSportsHQ.us@SD" tvg-name="CBS Sports HQ" tvg-logo="https://i.imgur.com/q8BENJg.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",CBS Sports HQ
+#EXTGRP:🇺🇸 United States • Esportes
+https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8
 #EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-name="Africa 24 Sport" tvg-logo="https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1" tvg-language="fra" tvg-country="FR" group-title="🏳️ Other Countries • Notícias",Africa 24 Sport
 #EXTGRP:🏳️ Other Countries • Notícias
 https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
@@ -107,3 +116,36 @@ http://stream.mcquack.net/33/index.m3u8
 #EXTINF:-1 tvg-id="BoksTV.ru@SD" tvg-name="Boks TV" tvg-logo="https://i.imgur.com/R1UjyfX.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Boks TV
 #EXTGRP:🏳️ Other Countries • Esportes
 http://stream.mcquack.net/154/index.m3u8
+#EXTINF:-1 tvg-id="CanalPlusSport2SK.sk@SD" tvg-name="Canal+ Sport 2 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ab/CANAL%2B_SPORT_2.svg/revision/latest?cb=20241028202739" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 2 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport2/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSport3SK.sk@SD" tvg-name="Canal+ Sport 3 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4c/CANAL%2B_SPORT_3.svg/revision/latest?cb=20241028202810" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 3 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport3/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSport4SK.sk@SD" tvg-name="Canal+ Sport 4 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/82/CANAL%2B_SPORT_4.svg/revision/latest?cb=20241028202820" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 4 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport4/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSport5SK.sk@SD" tvg-name="Canal+ Sport 5 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/39/CANAL%2B_SPORT_5.svg/revision/latest?cb=20241028202829" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 5 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport5/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSport6SK.sk@SD" tvg-name="Canal+ Sport 6 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3b/Canal%2B_Sport_6.svg/revision/latest?cb=20251106141229" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 6 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport6/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSport7SK.sk@SD" tvg-name="Canal+ Sport 7 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/03/Canal%2B_Sport_7.svg/revision/latest?cb=20251106141245" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 7 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport7/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSport8SK.sk@SD" tvg-name="Canal+ Sport 8 SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/64/Canal%2B_Sport_8.svg/revision/latest?cb=20251106141257" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport 8 SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport8/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CanalPlusSportSK.sk@SD" tvg-name="Canal+ Sport SK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/25/Canal%2B_Sport_2023.svg/revision/latest?cb=20230901182304" tvg-language="slk" tvg-country="SK" group-title="🏳️ Other Countries • Esportes",Canal+ Sport SK
+#EXTGRP:🏳️ Other Countries • Esportes
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport/live_fullhd?offsetSeconds=0
+#EXTINF:-1 tvg-id="CCTVBilliards.cn@HD" tvg-name="CCTV-Billiards" tvg-logo="https://i.imgur.com/WK3keM9.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Esportes",CCTV-Billiards
+#EXTGRP:🏳️ Other Countries • Esportes
+http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-name="CCTV-Golf & Tennis" tvg-logo="https://i.imgur.com/iqJJTmH.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Esportes",CCTV-Golf & Tennis
+#EXTGRP:🏳️ Other Countries • Esportes
+http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTVStormFootball.cn@HD" tvg-name="CCTV-Storm Football" tvg-logo="https://i.imgur.com/Fy6HkX0.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Esportes",CCTV-Storm Football
+#EXTGRP:🏳️ Other Countries • Esportes
+http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub

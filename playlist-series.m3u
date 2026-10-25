@@ -144,6 +144,9 @@ https://jmp2.uk/plu-5d51e2bceca5b4b2c0e06c50.m3u8
 #EXTINF:-1 tvg-id="BlueBloods.us@SD" tvg-name="Blue Bloods" tvg-logo="https://images.pluto.tv/channels/61b3b8c645b45d0007a9bb8d/colorLogoSVG.svg" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Blue Bloods
 #EXTGRP:🇺🇸 United States • Séries
 https://jmp2.uk/plu-61b3b8c645b45d0007a9bb8d.m3u8
+#EXTINF:-1 tvg-id="CelebrityNameGame.us@SD" tvg-name="Celebrity Name Game" tvg-logo="https://provider-static.plex.tv/epg/cms/production/773232e1-5c36-490b-922e-e5be8ec12eb2/celebrityd5796a3e14bf45513f7b3071b90d030.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Celebrity Name Game
+#EXTGRP:🇺🇸 United States • Séries
+https://amg00353-amg00353c19-xumo-us-2608.playouts.now.amagi.tv/lionsgate-clbng/playlist.m3u8
 #EXTINF:-1 tvg-id="AlerteaMalibu.us@France" tvg-name="Alerte a Malibu" tvg-logo="https://i.imgur.com/hBiB6uk.png" tvg-language="fra" tvg-country="US" group-title="🇺🇸 United States • Séries",Alerte a Malibu
 #EXTGRP:🇺🇸 United States • Séries
 https://jmp2.uk/plu-60afaa535580be0007ac9ee4.m3u8
@@ -211,6 +214,9 @@ https://jmp2.uk/plu-67a09ddc21af380008088dc3.m3u8
 #EXTINF:-1 tvg-id="Bull.se@DK" tvg-name="Bull" tvg-logo="https://images.pluto.tv/channels/6964b982ca459f9b939da8e6/colorLogoPNG_1770900947317.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",Bull
 #EXTGRP:🏳️ Other Countries • Séries
 https://jmp2.uk/plu-6964b982ca459f9b939da8e6.m3u8
+#EXTINF:-1 tvg-id="CarChase.se@DK" tvg-name="Car Chase" tvg-logo="https://images.pluto.tv/channels/65a93b0607e03a000895abda/colorLogoPNG.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",Car Chase
+#EXTGRP:🏳️ Other Countries • Séries
+https://jmp2.uk/plu-65a93b0607e03a000895abda.m3u8
 #EXTINF:-1 tvg-id="4everDrama.ua@SD" tvg-name="4ever Drama" tvg-logo="https://i.imgur.com/CD3vZU6.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Séries",4ever Drama
 #EXTGRP:🏳️ Other Countries • Séries
 http://stream.mcquack.net/260/index.m3u8

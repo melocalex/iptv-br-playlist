@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-10-24T11:02:10.324Z",
+ "generatedAt": "2026-10-25T11:26:42.651Z",
  "horizonHours": 72,
- "channelsRequested": 1338,
- "channelsWithGuide": 226,
- "coveragePercent": 16.89,
- "programmes": 10572,
+ "channelsRequested": 1617,
+ "channelsWithGuide": 269,
+ "coveragePercent": 16.64,
+ "programmes": 12908,
  "sources": [
   {
    "id": "mi.tv",
    "kind": "grabber",
    "ok": true,
-   "requestedChannels": 83,
-   "channelsWithProgrammes": 79,
-   "programmes": 4230,
+   "requestedChannels": 100,
+   "channelsWithProgrammes": 96,
+   "programmes": 5347,
    "note": null
   },
   {
@@ -20,44 +20,44 @@
    "kind": "grabber",
    "ok": true,
    "requestedChannels": 33,
-   "channelsWithProgrammes": 20,
-   "programmes": 229,
+   "channelsWithProgrammes": 19,
+   "programmes": 407,
    "note": null
   },
   {
    "id": "meo.pt",
    "kind": "grabber",
    "ok": true,
-   "requestedChannels": 23,
-   "channelsWithProgrammes": 23,
-   "programmes": 801,
+   "requestedChannels": 26,
+   "channelsWithProgrammes": 26,
+   "programmes": 934,
    "note": null
   },
   {
    "id": "nostv.pt",
    "kind": "grabber",
    "ok": true,
-   "requestedChannels": 19,
-   "channelsWithProgrammes": 19,
-   "programmes": 384,
+   "requestedChannels": 21,
+   "channelsWithProgrammes": 17,
+   "programmes": 271,
    "note": null
   },
   {
    "id": "gatotv.com",
    "kind": "grabber",
    "ok": true,
-   "requestedChannels": 15,
-   "channelsWithProgrammes": 15,
-   "programmes": 571,
+   "requestedChannels": 24,
+   "channelsWithProgrammes": 23,
+   "programmes": 676,
    "note": null
   },
   {
    "id": "pluto.tv",
    "kind": "grabber",
    "ok": true,
-   "requestedChannels": 93,
-   "channelsWithProgrammes": 91,
-   "programmes": 2777,
+   "requestedChannels": 112,
+   "channelsWithProgrammes": 107,
+   "programmes": 3391,
    "note": null
   },
   {
@@ -65,8 +65,8 @@
    "kind": "published",
    "ok": true,
    "requestedChannels": -1,
-   "channelsWithProgrammes": 49,
-   "programmes": 1580,
+   "channelsWithProgrammes": 66,
+   "programmes": 1882,
    "note": null
   },
   {
@@ -80,10 +80,10 @@
   }
  ],
  "dropped": {
-  "duplicates": 3528,
-  "outOfHorizon": 2151,
+  "duplicates": 4912,
+  "outOfHorizon": 2632,
   "invalidTimestamp": 0,
-  "unknownChannel": 67083,
+  "unknownChannel": 75075,
   "malformed": 0
  },
  "missingChannels": [
@@ -821,12 +821,6 @@
    "guideSites": []
   },
   {
-   "tvgId": "TimesBrasil.br@SD",
-   "name": "Times Brasil",
-   "countryGroup": "BR",
-   "guideSites": []
-  },
-  {
    "tvgId": "TNTNovelas.us@Brazil",
    "name": "TNT Novelas",
    "countryGroup": "BR",
@@ -1270,8 +1264,26 @@
    "guideSites": []
   },
   {
+   "tvgId": "Canal10Emporda.es@SD",
+   "name": "Canal 10 Emporda",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal2000.es@SD",
+   "name": "Canal 2000",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
    "tvgId": "Canal3TVBiar.es@SD",
    "name": "Canal 3 TV Biar",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal33Madrid.es@SD",
+   "name": "Canal 33 Madrid",
    "countryGroup": "ES",
    "guideSites": []
   },
@@ -1282,8 +1294,94 @@
    "guideSites": []
   },
   {
+   "tvgId": "Canal45.es@SD",
+   "name": "Canal 45",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal56.es@SD",
+   "name": "Canal 56",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
    "tvgId": "Canal7TeleValencia.es@SD",
    "name": "Canal 7 TeleValencia",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalDiocesano.es@SD",
+   "name": "Canal Diocesano",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalDonana.es@SD",
+   "name": "Canal Donana",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalLuzTelevision.es@SD",
+   "name": "Canal Luz Television",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalMalagaRTV.es@SD",
+   "name": "Canal Malaga RTV",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalParlamento.es@SD",
+   "name": "Canal Parlamento",
+   "countryGroup": "ES",
+   "guideSites": [
+    "programacion-tv.elpais.com"
+   ]
+  },
+  {
+   "tvgId": "CanalSanRoque.es@SD",
+   "name": "Canal San Roque",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalSierradeCadiz.es@SD",
+   "name": "Canal Sierra de Cadiz",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalSur2.es@SD",
+   "name": "Canal Sur 2",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalSurNoticias.es@SD",
+   "name": "Canal Sur Noticias",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTaronjaComarquesCentrals.es@SD",
+   "name": "Canal Taronja Comarques Centrals",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTaronjaOsonaiMoianes.es@SD",
+   "name": "Canal Taronja Osona i Moianes",
+   "countryGroup": "ES",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CetelmonTV.es@SD",
+   "name": "Cetelmon TV",
    "countryGroup": "ES",
    "guideSites": []
   },
@@ -2048,6 +2146,66 @@
    "guideSites": []
   },
   {
+   "tvgId": "Canal10.ni@SD",
+   "name": "Canal 10",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal10Durango.mx@SD",
+   "name": "Canal 10 Durango",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal100Chinique.gt@SD",
+   "name": "Canal 100 Chinique",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal11.gt@SD",
+   "name": "Canal 11",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal11TuTV.sv@SD",
+   "name": "Canal 11 TuTV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal12VenadoTuerto.ar@SD",
+   "name": "Canal 12 Venado Tuerto",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal12Web.ar@SD",
+   "name": "Canal 12 Web",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal13.gt@SD",
+   "name": "Canal 13",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal13Esquipulas.gt@SD",
+   "name": "Canal 13 Esquipulas",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal13LaRioja.ar@SD",
+   "name": "Canal 13 La Rioja",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
    "tvgId": "Canal2AlpavisionNeiva.co@SD",
    "name": "Canal 2 Alpavision Neiva",
    "countryGroup": "LATAM",
@@ -2084,6 +2242,42 @@
    "guideSites": []
   },
   {
+   "tvgId": "Canal21Huancayo.pe@HD",
+   "name": "Canal 21 Huancayo",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal21Tachira.ve@SD",
+   "name": "Canal 21 Tachira",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal21TV.ar@SD",
+   "name": "Canal 21 TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal22Nacional.mx@SD",
+   "name": "Canal 22 Nacional",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal25Ayacucho.pe@SD",
+   "name": "Canal 25 Ayacucho",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal26.mx@SD",
+   "name": "Canal 26",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
    "tvgId": "Canal3Formosa.ar@SD",
    "name": "Canal 3 Formosa",
    "countryGroup": "LATAM",
@@ -2116,6 +2310,18 @@
   {
    "tvgId": "Canal3Pinamar.ar@SD",
    "name": "Canal 3 Pinamar",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal30TVBethel.gt@SD",
+   "name": "Canal 30 TV Bethel",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal33Tijuana.mx@SD",
+   "name": "Canal 33 Tijuana",
    "countryGroup": "LATAM",
    "guideSites": []
   },
@@ -2162,6 +2368,12 @@
    "guideSites": []
   },
   {
+   "tvgId": "Canal44.mx@SD",
+   "name": "Canal 44",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
    "tvgId": "Canal5DelPueblo.ar@SD",
    "name": "Canal 5 Del Pueblo",
    "countryGroup": "LATAM",
@@ -2194,6 +2406,18 @@
   {
    "tvgId": "Canal5TVMax.py@SD",
    "name": "Canal 5 TV Max",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal50Morteros.ar@SD",
+   "name": "Canal 50 Morteros",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal56QuieroTV.bo@SD",
+   "name": "Canal 56 Quiero TV",
    "countryGroup": "LATAM",
    "guideSites": []
   },
@@ -2234,6 +2458,36 @@
    "guideSites": []
   },
   {
+   "tvgId": "Canal79LaCosta.ar@SD",
+   "name": "Canal 79 La Costa",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal79MardelPlata.ar@SD",
+   "name": "Canal 79 Mar del Plata",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal79Puan.ar@SD",
+   "name": "Canal 79 Puan",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal79SantaClaradelMar.ar@SD",
+   "name": "Canal 79 Santa Clara del Mar",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal79VillaMaza.ar@SD",
+   "name": "Canal 79 Villa Maza",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
    "tvgId": "Canal8CCProducciones.py@SD",
    "name": "Canal 8 C&C Producciones",
    "countryGroup": "LATAM",
@@ -2266,6 +2520,354 @@
   {
    "tvgId": "Canal9Resistencia.ar@SD",
    "name": "Canal 9 Resistencia",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canal99Miramar.ar@SD",
+   "name": "Canal 99 Miramar",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalALMA.uy@SD",
+   "name": "Canal ALMA",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalCalimaTV.co@SD",
+   "name": "Canal Calima TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalCaribe.cu@SD",
+   "name": "Canal Caribe",
+   "countryGroup": "LATAM",
+   "guideSites": [
+    "tvcubana.icrt.cu"
+   ]
+  },
+  {
+   "tvgId": "CanalCatorce.do@SD",
+   "name": "Canal Catorce",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalChilote.cl@SD",
+   "name": "Canal Chilote",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalCineDios.co@SD",
+   "name": "Canal Cine Dios",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanaldelSol.do@SD",
+   "name": "Canal del Sol",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalDiplomatico.ve@SD",
+   "name": "Canal Diplomatico",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalDos.co@SD",
+   "name": "Canal Dos",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalDTV.do@SD",
+   "name": "Canal DTV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalI.ve@SD",
+   "name": "Canal I",
+   "countryGroup": "LATAM",
+   "guideSites": [
+    "reportv.com.ar"
+   ]
+  },
+  {
+   "tvgId": "CanalIPe.pe@SD",
+   "name": "Canal IPe",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalLatino54.cl@SD",
+   "name": "Canal Latino 54",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalLocal.cl@SD",
+   "name": "Canal Local",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CANALMTelevision.pe@SD",
+   "name": "CANAL M Television",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalMas.uy@SD",
+   "name": "Canal Mas",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalMasTelevision.co@SD",
+   "name": "Canal Mas Television",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalMasTV.pe@SD",
+   "name": "Canal Mas TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalMultivision.do@SD",
+   "name": "Canal Multivision",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalN.pe@SD",
+   "name": "Canal N",
+   "countryGroup": "LATAM",
+   "guideSites": [
+    "tv.movistar.com.pe"
+   ]
+  },
+  {
+   "tvgId": "CanalNets.co@SD",
+   "name": "Canal Nets",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalOnce.mx@HD",
+   "name": "Canal Once",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalOncePlus.uy@SD",
+   "name": "Canal Once Plus",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalOracionConSon.co@SD",
+   "name": "Canal Oracion Con Son",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalParlamentodelCongresodeJalisco.mx@SD",
+   "name": "Canal Parlamento del Congreso de Jalisco",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPro.py@SD",
+   "name": "Canal Pro",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPulpoTV.ar@SD",
+   "name": "Canal Pulpo TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPyC.co@SD",
+   "name": "Canal PyC",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalShowsport.ar@SD",
+   "name": "Canal Showsport",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalSurvisionAlerce.cl@SD",
+   "name": "Canal Survision Alerce",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTDC.ar@SD",
+   "name": "Canal TDC",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTelefamilia.co@SD",
+   "name": "Canal Telefamilia",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTelesantiago.co@SD",
+   "name": "Canal Telesantiago",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTRV.sv@SD",
+   "name": "Canal TRV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTVRadioMayaTGBA.gt@SD",
+   "name": "Canal TV Radio Maya TGBA",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalTV3.co@SD",
+   "name": "Canal TV3",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalUniversidad.ar@SD",
+   "name": "Canal Universidad",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalWomtv.co@SD",
+   "name": "Canal Womtv",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canalda26HD.do@HD",
+   "name": "Canalda 26 HD",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanangaTV.do@SD",
+   "name": "Cananga TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CandelitaTV.pr@SD",
+   "name": "Candelita TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanicaTV.co@SD",
+   "name": "Canica TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CaobaTVRadio.do@HD",
+   "name": "Caoba TV Radio",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Capital21.mx@SD",
+   "name": "Capital 21",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CaracolHD2.co@SD",
+   "name": "Caracol HD2",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CaracolaTV.cl@SD",
+   "name": "Caracola TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CarasTV.ar@SD",
+   "name": "Caras TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CaritasTV.py@SD",
+   "name": "Caritas TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Carivision.do@SD",
+   "name": "Carivision",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CascaraTV.do@SD",
+   "name": "Cascara TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CasmaTV.pe@SD",
+   "name": "Casma TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CatatumboTV.ve@SD",
+   "name": "Catatumbo TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBTVMichoacan.mx@SD",
+   "name": "CB TV Michoacan",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CeltaTV.ar@SD",
+   "name": "Celta TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CentralTV.cl@SD",
+   "name": "Central TV",
+   "countryGroup": "LATAM",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ChamameTV.ar@SD",
+   "name": "Chamame TV",
    "countryGroup": "LATAM",
    "guideSites": []
   },
@@ -3347,6 +3949,12 @@
     "programetv.ro",
     "tvprofil.com"
    ]
+  },
+  {
+   "tvgId": "AhasaTV.lk@SD",
+   "name": "Ahasa TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
   },
   {
    "tvgId": "AhsanTV.id@SD",
@@ -6300,8 +6908,812 @@
    "guideSites": []
   },
   {
+   "tvgId": "CanThoTV.vn@SD",
+   "name": "Can Tho TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanThoTV3.vn@SD",
+   "name": "Can Tho TV 3",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
    "tvgId": "CanadaOne.ca@SD",
    "name": "Canada One",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalAlphaJura.ch@SD",
+   "name": "Canal Alpha Jura",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "teleboy.ch"
+   ]
+  },
+  {
+   "tvgId": "CanalAlphaNeuchatel.ch@SD",
+   "name": "Canal Alpha Neuchatel",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "teleboy.ch"
+   ]
+  },
+  {
+   "tvgId": "CanalMotor.no@SD",
+   "name": "Canal Motor",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CANALPlus360.pl@SD",
+   "name": "CANAL+ 360",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusDomo.pl@SD",
+   "name": "Canal+ Domo",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "programtv.onet.pl"
+   ]
+  },
+  {
+   "tvgId": "CanalPlusKuchnia.pl@SD",
+   "name": "Canal+ Kuchnia",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "programtv.onet.pl"
+   ]
+  },
+  {
+   "tvgId": "CanalPlusSport2SK.sk@SD",
+   "name": "Canal+ Sport 2 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSport3SK.sk@SD",
+   "name": "Canal+ Sport 3 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSport4SK.sk@SD",
+   "name": "Canal+ Sport 4 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSport5SK.sk@SD",
+   "name": "Canal+ Sport 5 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSport6SK.sk@SD",
+   "name": "Canal+ Sport 6 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSport7SK.sk@SD",
+   "name": "Canal+ Sport 7 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSport8SK.sk@SD",
+   "name": "Canal+ Sport 8 SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalPlusSportSK.sk@SD",
+   "name": "Canal+ Sport SK",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canale2Altamura.it@SD",
+   "name": "Canale 2 Altamura",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canale7.it@SD",
+   "name": "Canale 7",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Canale8.it@SD",
+   "name": "Canale 8",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CannesLerinsTV.fr@SD",
+   "name": "Cannes Lerins TV",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.sfr.fr"
+   ]
+  },
+  {
+   "tvgId": "CaoBangTV.vn@SD",
+   "name": "Cao Bang TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CapeTownTV.za@SD",
+   "name": "Cape Town TV",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "dstv.com"
+   ]
+  },
+  {
+   "tvgId": "CapitalTV.pk@SD",
+   "name": "Capital TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CapitalTVHD.np@HD",
+   "name": "Capital TV HD",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CapuchinTV.ke@SD",
+   "name": "Capuchin TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CarChase.se@DK",
+   "name": "Car Chase",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Carac1.ch@SD",
+   "name": "Carac 1",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "teleboy.ch",
+    "tv.blue.ch"
+   ]
+  },
+  {
+   "tvgId": "Carac2.ch@SD",
+   "name": "Carac 2",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "teleboy.ch",
+    "tv.blue.ch"
+   ]
+  },
+  {
+   "tvgId": "Carac3.ch@SD",
+   "name": "Carac 3",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "teleboy.ch",
+    "tv.blue.ch"
+   ]
+  },
+  {
+   "tvgId": "Carac4.ch@SD",
+   "name": "Carac 4",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.blue.ch"
+   ]
+  },
+  {
+   "tvgId": "Carac5.ch@SD",
+   "name": "Carac 5",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "teleboy.ch",
+    "tv.blue.ch"
+   ]
+  },
+  {
+   "tvgId": "CaribbeanGospelTV.jm@SD",
+   "name": "Caribbean Gospel TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CaribbeanHot7TV.lc@SD",
+   "name": "Caribbean Hot 7 TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CarolineintheCity.se@DK",
+   "name": "Caroline in the City",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Carousel.ru@Plus4",
+   "name": "Carousel",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CartoonNetwork.in@SD",
+   "name": "Cartoon Network",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "dishtv.in",
+    "tataplay.com"
+   ]
+  },
+  {
+   "tvgId": "CartoonNetwork.pk@SD",
+   "name": "Cartoon Network",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CartoonNetworkArabic.ae@SD",
+   "name": "Cartoon Network Arabic",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "elcinema.com",
+    "osn.com"
+   ]
+  },
+  {
+   "tvgId": "CartoonNetworkAsia.sg@SD",
+   "name": "Cartoon Network Asia",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "content.astro.com.my",
+    "nowplayer.now.com",
+    "singtel.com",
+    "starhubtvplus.com"
+   ]
+  },
+  {
+   "tvgId": "CartoonNetworkHDPlus.in@SD",
+   "name": "Cartoon Network HD+",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "airtelxstream.in",
+    "tataplay.com"
+   ]
+  },
+  {
+   "tvgId": "CartoonitoAsia.sg@SD",
+   "name": "Cartoonito Asia",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CarubanTV.id@HD",
+   "name": "Caruban TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBCTV8.bb@SD",
+   "name": "CBC TV8",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBeebies.pl@SD",
+   "name": "CBeebies",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "programtv.onet.pl"
+   ]
+  },
+  {
+   "tvgId": "CBNGospel.vg@SD",
+   "name": "CBN Gospel",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBNTV.vg@SD",
+   "name": "CBN TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTN47.ph@SD",
+   "name": "CCTN 47",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTV1.cn@HD",
+   "name": "CCTV-1",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTV10.cn@SD",
+   "name": "CCTV-10",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV11.cn@SD",
+   "name": "CCTV-11",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV12.cn@SD",
+   "name": "CCTV-12",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV13.cn@HD",
+   "name": "CCTV-13",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTV14.cn@HD",
+   "name": "CCTV-14",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTV15.cn@SD",
+   "name": "CCTV-15",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV17.cn@HD",
+   "name": "CCTV-17",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTV2.cn@SD",
+   "name": "CCTV-2",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV3.cn@SD",
+   "name": "CCTV-3",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com",
+    "tvhebdo.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV4Asia.cn@SD",
+   "name": "CCTV-4 Asia",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "content.astro.com.my",
+    "cubmu.com",
+    "dens.tv",
+    "maxstream.tv",
+    "nowplayer.now.com",
+    "playtv.unifi.com.my",
+    "singtel.com",
+    "starhubtvplus.com",
+    "wavve.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV7.cn@SD",
+   "name": "CCTV-7",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV8.cn@SD",
+   "name": "CCTV-8",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTV8K.cn@HD",
+   "name": "CCTV-8K",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVBilliards.cn@HD",
+   "name": "CCTV-Billiards",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVCultureofQuality.cn@SD",
+   "name": "CCTV-Culture of Quality",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTVGolfTennis.cn@HD",
+   "name": "CCTV-Golf & Tennis",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVHealth.cn@HD",
+   "name": "CCTV-Health",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVNostalgiaTheater.cn@HD",
+   "name": "CCTV-Nostalgia Theater",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVStormFootball.cn@HD",
+   "name": "CCTV-Storm Football",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVStormMusic.cn@HD",
+   "name": "CCTV-Storm Music",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVStormTheater.cn@HD",
+   "name": "CCTV-Storm Theater",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVTheFirstTheater.cn@HD",
+   "name": "CCTV-The First Theater",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVWeaponTechnology.cn@HD",
+   "name": "CCTV-Weapon & Technology",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTVWomensFashion.cn@SD",
+   "name": "CCTV-Women's Fashion",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTVWorldGeography.cn@SD",
+   "name": "CCTV-World Geography",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.cctv.com"
+   ]
+  },
+  {
+   "tvgId": "CCTVPlus2.cn@SD",
+   "name": "CCTV+ 2",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCV.in@SD",
+   "name": "CCV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CenterTV.gr@SD",
+   "name": "Center TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CentralTV.mn@SD",
+   "name": "Central TV",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "zuragt.mn"
+   ]
+  },
+  {
+   "tvgId": "CGEntertainment.it@SD",
+   "name": "CG Entertainment",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CGNTVChinese.tw@SD",
+   "name": "CGNTV Chinese",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CGNTVJapan.jp@SD",
+   "name": "CGNTV Japan",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CGTNArabic.cn@SD",
+   "name": "CGTN Arabic",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "sat.tv"
+   ]
+  },
+  {
+   "tvgId": "CGTNFrench.cn@SD",
+   "name": "CGTN French",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "chaines-tv.orange.fr",
+    "sky.com",
+    "startimestv.com",
+    "tv-programme.telecablesat.fr",
+    "tv.sfr.fr"
+   ]
+  },
+  {
+   "tvgId": "CGTNGlobalBiz.cn@SD",
+   "name": "CGTN Global Biz",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "distro.tv",
+    "watch.whaletvplus.com"
+   ]
+  },
+  {
+   "tvgId": "CGTNRussian.cn@SD",
+   "name": "CGTN Russian",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.mail.ru"
+   ]
+  },
+  {
+   "tvgId": "CGTNSpanish.cn@SD",
+   "name": "CGTN Spanish",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "distro.tv",
+    "movistarplus.es",
+    "programacion.tcc.com.uy"
+   ]
+  },
+  {
+   "tvgId": "Ch4TeenDocumentary.kw@SD",
+   "name": "Ch4Teen Documentary",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ChadaTV.ma@SD",
+   "name": "Chada TV",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "chada.ma",
+    "sat.tv",
+    "tv.sfr.fr"
+   ]
+  },
+  {
+   "tvgId": "ChampionTV.ci@SD",
+   "name": "Champion TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "ChandelTV.tg@SD",
+   "name": "Chandel TV",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel11.mn@SD",
+   "name": "Channel 11",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel12.ru@SD",
+   "name": "Channel 12",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel13.il@SD",
+   "name": "Channel 13",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "freetv.tv"
+   ]
+  },
+  {
+   "tvgId": "Channel13.mv@SD",
+   "name": "Channel 13",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel16.il@SD",
+   "name": "Channel 16",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel24.il@SD",
+   "name": "Channel 24",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel24.ua@SD",
+   "name": "Channel 24",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel44.au@SD",
+   "name": "Channel 44",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "i.mjh.nz"
+   ]
+  },
+  {
+   "tvgId": "Channel5.ru@SD",
+   "name": "Channel 5",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "epg.iptvx.one",
+    "tv.mail.ru"
+   ]
+  },
+  {
+   "tvgId": "Channel5.th@SD",
+   "name": "Channel 5",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel5.ua@SD",
+   "name": "Channel 5",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "m.tv.sms.cz"
+   ]
+  },
+  {
+   "tvgId": "Channel5International.ru@SD",
+   "name": "Channel 5 International",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel7.kz@SD",
+   "name": "Channel 7",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel7.th@SD",
+   "name": "Channel 7",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.trueid.net"
+   ]
+  },
+  {
+   "tvgId": "Channel7Ukraine.ua@SD",
+   "name": "Channel 7 Ukraine",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel8.gr@HD",
+   "name": "Channel 8",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel8.ru@SD",
+   "name": "Channel 8",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "epg.iptvx.one"
+   ]
+  },
+  {
+   "tvgId": "Channel8.th@SD",
+   "name": "Channel 8",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "tv.trueid.net"
+   ]
+  },
+  {
+   "tvgId": "Channel8.ua@SD",
+   "name": "Channel 8",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel8International.ru@SD",
+   "name": "Channel 8 International",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "epg.iptvx.one"
+   ]
+  },
+  {
+   "tvgId": "Channel8Krasnoyarsk.ru@HD",
+   "name": "Channel 8 Krasnoyarsk",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel8Novosibirsk.ru@SD",
+   "name": "Channel 8 Novosibirsk",
+   "countryGroup": "OTHER",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel9.il@SD",
+   "name": "Channel 9",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "9tv.co.il"
+   ]
+  },
+  {
+   "tvgId": "ChannelDivya.in@SD",
+   "name": "Channel Divya",
+   "countryGroup": "OTHER",
+   "guideSites": [
+    "dishtv.in",
+    "tataplay.com"
+   ]
+  },
+  {
+   "tvgId": "Channel16.ru@SD",
+   "name": "Channel-16",
    "countryGroup": "OTHER",
    "guideSites": []
   },
@@ -6589,6 +8001,22 @@
   {
    "tvgId": "Canaf54TV.uk@SD",
    "name": "Canaf54 TV",
+   "countryGroup": "UK",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CartoonNetworkCEE.uk@CzechRepublic",
+   "name": "Cartoon Network CEE",
+   "countryGroup": "UK",
+   "guideSites": [
+    "horizon.tv",
+    "m.tv.sms.cz",
+    "mujtvprogram.cz"
+   ]
+  },
+  {
+   "tvgId": "CartoonitoCEE.uk@Czechia",
+   "name": "Cartoonito CEE",
    "countryGroup": "UK",
    "guideSites": []
   },
@@ -7565,6 +8993,128 @@
     "i.mjh.nz",
     "plex.tv"
    ]
+  },
+  {
+   "tvgId": "CANTV19.us@SD",
+   "name": "CAN TV19",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CANTV21.us@SD",
+   "name": "CAN TV21",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CANTV27.us@SD",
+   "name": "CAN TV27",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CANTV36.us@SD",
+   "name": "CAN TV36",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanaldelaFe.us@SD",
+   "name": "Canal de la Fe",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanalInfantil.us@SD",
+   "name": "Canal Infantil",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CanelaTV.us@SD",
+   "name": "Canela TV",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CarChase.us@SD",
+   "name": "Car Chase",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CatholicFaithNetwork.us@SD",
+   "name": "Catholic Faith Network",
+   "countryGroup": "US",
+   "guideSites": [
+    "tvtv.us"
+   ]
+  },
+  {
+   "tvgId": "CatholicTV.us@SD",
+   "name": "Catholic TV",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBNEspanol.us@SD",
+   "name": "CBN Espanol",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBNFamily.us@SD",
+   "name": "CBN Family",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBNNews.us@SD",
+   "name": "CBN News",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBS.us@KCCI",
+   "name": "CBS",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CBSenespanol.us@SD",
+   "name": "CBS en espanol",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CCTV.us@SD",
+   "name": "CC-TV",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CelebritySceneTV.us@SD",
+   "name": "Celebrity Scene TV",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CerritosTV3.us@SD",
+   "name": "Cerritos TV3",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "CFMTVChannel98.us@SD",
+   "name": "CFM TV Channel 98",
+   "countryGroup": "US",
+   "guideSites": []
+  },
+  {
+   "tvgId": "Channel10.us@SD",
+   "name": "Channel 10",
+   "countryGroup": "US",
+   "guideSites": []
   }
  ]
 }
