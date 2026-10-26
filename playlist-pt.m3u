@@ -812,9 +812,6 @@ https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8
 #EXTINF:-1 tvg-id="TVGazeta.br@SD" tvg-name="TV Gazeta" tvg-logo="https://i.imgur.com/0sksWse.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Gazeta
 #EXTGRP:🇧🇷 Brasil • Geral
 http://186.219.52.187/gazeta/index.m3u8
-#EXTINF:-1 tvg-id="TVGloboBrasilia.br@SD" tvg-name="TV Globo Brasilia" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Globo Brasilia
-#EXTGRP:🇧🇷 Brasil • Geral
-http://79.127.238.228:14173/
 #EXTINF:-1 tvg-id="TVGuarapari.br@SD" tvg-name="TV Guarapari" tvg-logo="https://i.imgur.com/eDNzwK0.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Guarapari
 #EXTGRP:🇧🇷 Brasil • Geral
 #EXTVLCOPT:http-referrer=https://tvguarapari.com/
@@ -983,10 +980,6 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
 #EXTGRP:🇵🇹 Portugal • Geral
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTPMemoria.pt@SD" tvg-name="RTP Memoria" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpmemoria_2026.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Memoria
-#EXTGRP:🇵🇹 Portugal • Geral
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
-https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPMundo.pt@SD" tvg-name="RTP Mundo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Geral",RTP Mundo
 #EXTGRP:🇵🇹 Portugal • Geral
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0

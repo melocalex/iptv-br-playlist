@@ -90,6 +90,9 @@ http://50.7.120.34:8080/AXN_BLACK/index.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt@SD" tvg-name="Kuriakos Cine" tvg-logo="https://i.imgur.com/CZViCwB.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Filmes",Kuriakos Cine
 #EXTGRP:🇵🇹 Portugal • Filmes
 https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CosmosTv.ar@HD" tvg-name="Cosmos Tv" tvg-logo="https://i0.wp.com/fmcosmos.com/wp-content/uploads/2021/11/COSMOS-TV.png" tvg-language="spa" tvg-country="AR" group-title="🌎 América Latina • Notícias",Cosmos Tv
+#EXTGRP:🌎 América Latina • Notícias
+https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
 #EXTINF:-1 tvg-id="AlternaTV.ar@SD" tvg-name="AlternaTV" tvg-logo="https://tv.alterna.ar/alternatv.png" tvg-language="spa" tvg-country="AR" group-title="🌎 América Latina • Filmes",AlternaTV
 #EXTGRP:🌎 América Latina • Filmes
 https://tv.alterna.ar/stream/hls/live.m3u8
@@ -105,11 +108,22 @@ https://edge.essastream.com/borealtelevision/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="CanalCineDios.co@SD" tvg-name="Canal Cine Dios" tvg-logo="https://i.imgur.com/S4xqZgV.png" tvg-language="spa" tvg-country="CO" group-title="🌎 América Latina • Filmes",Canal Cine Dios
 #EXTGRP:🌎 América Latina • Filmes
 https://canal.mediaserver.com.co/live/cinedios.m3u8
+#EXTINF:-1 tvg-id="CineLatino.mx@SD" tvg-name="CineLatino" tvg-logo="https://i.imgur.com/2V0R0xT.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",CineLatino
+#EXTGRP:🌎 América Latina • Filmes
+http://200.115.96.61:9090/play/a0i5/index.m3u8
+#EXTINF:-1 tvg-id="ClaroCinema.mx@SD" tvg-name="Claro Cinema" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",Claro Cinema
+#EXTGRP:🌎 América Latina • Filmes
+http://158.172.217.18:8000/play/a00d/index.m3u8
+#EXTINF:-1 tvg-id="CineFriki.es@SD" tvg-name="Cine Friki" tvg-logo="https://i.imgur.com/b3Ospym.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Filmes",Cine Friki
+#EXTGRP:🇪🇸 España • Filmes
+https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
+#EXTINF:-1 tvg-id="CineWestern.es@SD" tvg-name="Cine Western" tvg-logo="https://i.imgur.com/2UROzSc.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Filmes",Cine Western
+#EXTGRP:🇪🇸 España • Filmes
+https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-awohw8g217ho8/CineWestern_ES.m3u8
 #EXTINF:-1 tvg-id="AXNCEE.es@Bulgary" tvg-name="AXN CEE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="bul" tvg-country="ES" group-title="🇪🇸 España • Filmes",AXN CEE
 #EXTGRP:🇪🇸 España • Filmes
-#EXTVLCOPT:http-referrer=https://cool-tv.net/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
-https://cronos.mangora1.cfd/axy/usergend3h5jkc9rnd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://88.212.15.50/live/test_axn/playlist.m3u8
 #EXTINF:-1 tvg-id="AneflixLive.us@HD" tvg-name="Aneflix Live" tvg-logo="https://cdn.pixabay.com/photo/2021/06/26/18/11/live-6366830_960_720.png" tvg-language="eng;spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Aneflix Live
 #EXTGRP:🇺🇸 United States • Filmes
 #EXTVLCOPT:http-referrer=https://vaughn.live/
@@ -118,6 +132,30 @@ https://stream-cdn-iad.vaughnsoft.net/play/live_a_neflix01.flv
 #EXTINF:-1 tvg-id="AVIRewind.us@SD" tvg-name="AVI Rewind" tvg-logo="https://zplay.cl/LogosV2/AVIREWINDS_NEW.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",AVI Rewind
 #EXTGRP:🇺🇸 United States • Filmes
 http://45.70.201.81:8000/play/a010/index.m3u8
+#EXTINF:-1 tvg-id="CineAdrenalina.us@SD" tvg-name="Cine Adrenalina" tvg-logo="https://i.imgur.com/njCKaMv.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cine Adrenalina
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-5d8d164d92e97a5e107638d2.m3u8
+#EXTINF:-1 tvg-id="CineAmor.us@SD" tvg-name="Cine Amor" tvg-logo="https://i.imgur.com/eAS86qH.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cine Amor
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
+#EXTINF:-1 tvg-id="CinePremiere.us@SD" tvg-name="Cine Premiere" tvg-logo="https://i.imgur.com/PdhWTO6.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cine Premiere
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8
+#EXTINF:-1 tvg-id="CinePremium.us@SD" tvg-name="Cine Premium" tvg-logo="https://i.imgur.com/tC3jGd4.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cine Premium
+#EXTGRP:🇺🇸 United States • Filmes
+http://190.61.90.17:40000/play/a02i/index.m3u8
+#EXTINF:-1 tvg-id="CineSony.us@SD" tvg-name="Cine Sony" tvg-logo="https://i.imgur.com/bZWoDTg.png" tvg-language="spa;eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cine Sony
+#EXTGRP:🇺🇸 United States • Filmes
+https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinemax.us@West" tvg-name="Cinemax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png" tvg-language="eng;spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cinemax
+#EXTGRP:🇺🇸 United States • Filmes
+http://23.237.104.106:8080/USA_CINEMAX_WEST/index.m3u8
+#EXTINF:-1 tvg-id="CinemaxHits.us@East" tvg-name="Cinemax Hits" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Cinemax_Hits_Logo.png/960px-Cinemax_Hits_Logo.png" tvg-language="eng;spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cinemax Hits
+#EXTGRP:🇺🇸 United States • Filmes
+http://23.237.104.106:8080/USA_MOREMAX/index.m3u8
+#EXTINF:-1 tvg-id="CinemaxLatinAmerica.us@HD" tvg-name="Cinemax Latin America" tvg-logo="https://i.imgur.com/cZWoJWD.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cinemax Latin America
+#EXTGRP:🇺🇸 United States • Filmes
+https://streaming.onnethn.com/CINEMAX/playlist.m3u8
 #EXTINF:-1 tvg-id="00sReplay.us@SD" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",00s Replay
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
@@ -151,6 +189,10 @@ http://107.167.7.162:8081/playlist/amhor/playlist.m3u8
 #EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-name="ARTFLIX Movie Classics" tvg-logo="https://i.imgur.com/5pOZQB4.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",ARTFLIX Movie Classics
 #EXTGRP:🇺🇸 United States • Filmes
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AXNCrime.us@SD" tvg-name="AXN Crime" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/AXN_Crime_-_Logo.png/960px-AXN_Crime_-_Logo.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",AXN Crime
+#EXTGRP:🇺🇸 United States • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+http://88.212.7.14/live/viasat_film/index.m3u8
 #EXTINF:-1 tvg-id="BattlestarGalactica.us@SD" tvg-name="Battlestar Galactica" tvg-logo="https://images.pluto.tv/channels/69d7ebff029c431826bd328e/colorLogoPNG_1776982986391.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Battlestar Galactica
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-69d7ebff029c431826bd328e.m3u8
@@ -166,16 +208,38 @@ https://jmp2.uk/plu-663946c1b18d700008d9c168.m3u8
 #EXTINF:-1 tvg-id="Bonanza.us@CA" tvg-name="Bonanza" tvg-logo="https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Bonanza
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-696e647b07ea70192d49f6a5.m3u8
+#EXTINF:-1 tvg-id="Charge.us@SD" tvg-name="Charge!" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/09/Charge!_network_logo.png/revision/latest/scale-to-width-down/512/" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Charge!
+#EXTGRP:🇺🇸 United States • Filmes
+https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8
+#EXTINF:-1 tvg-id="CinemaxClassics.us@East" tvg-name="Cinemax Classics" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Cinemax_Classics_Logo.png/960px-Cinemax_Classics_Logo.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cinemax Classics
+#EXTGRP:🇺🇸 United States • Filmes
+http://23.237.104.106:8080/USA_5STARMAX/index.m3u8
+#EXTINF:-1 tvg-id="Cinevault80s.us@SD" tvg-name="Cinevault 80s" tvg-logo="https://i.imgur.com/xaCyyDd.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cinevault 80s
+#EXTGRP:🇺🇸 United States • Filmes
+https://gsn-cinevault-80s-2-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ClassicCinema.us@SD" tvg-name="Classic Cinema" tvg-logo="https://i.imgur.com/FJoPnTb.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Classic Cinema
+#EXTGRP:🇺🇸 United States • Filmes
+https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
+#EXTINF:-1 tvg-id="ClassicMovieWesterns.us@SD" tvg-name="Classic Movie Westerns" tvg-logo="https://images.pluto.tv/channels/61f33318210549000806a530/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Classic Movie Westerns
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-61f33318210549000806a530.m3u8
+#EXTINF:-1 tvg-id="ClassicMoviesChannel.us@SD" tvg-name="Classic Movies Channel" tvg-logo="https://i.imgur.com/pQJxov2.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Classic Movies Channel
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-561c5b0dada51f8004c4d855.m3u8
 #EXTINF:-1 tvg-id="AXNBlack.us@Bulgary" tvg-name="AXN Black" tvg-logo="https://i.imgur.com/Peo1QiZ.png" tvg-language="bul" tvg-country="US" group-title="🇺🇸 United States • Filmes",AXN Black
 #EXTGRP:🇺🇸 United States • Filmes
-http://141.94.193.53:80/axn_black/index.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://88.212.15.50/live/test_black/playlist.m3u8
 #EXTINF:-1 tvg-id="AMCEurope.uk@Bulgary" tvg-name="AMC Europe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-language="bul" tvg-country="UK" group-title="🇬🇧 United Kingdom • Filmes",AMC Europe
 #EXTGRP:🇬🇧 United Kingdom • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://212.70.131.37:8000/play/a05k
+http://88.212.7.14/live/test_amc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="AXNLatinAmerica.us@Andes" tvg-name="AXN Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="spa" group-title="🌐 International • Filmes",AXN Latin America
 #EXTGRP:🌐 International • Filmes
 http://181.78.8.199:8000/play/a0cu/index.m3u8
+#EXTINF:-1 tvg-id="Cinecanal.us@Pacific" tvg-name="Cinecanal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" tvg-language="spa" group-title="🌐 International • Filmes",Cinecanal
+#EXTGRP:🌐 International • Filmes
+http://138.121.15.230:9002/CINECANAL/index.m3u8
 #EXTINF:-1 tvg-id="AXNAdria.us@SD" tvg-name="AXN Adria" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" tvg-language="eng" group-title="🌐 International • Filmes",AXN Adria
 #EXTGRP:🌐 International • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
@@ -183,6 +247,9 @@ http://5.57.74.130:8000/play/a0at/index.m3u8
 #EXTINF:-1 tvg-id="AlloCine.cm@SD" tvg-name="Allo Cine" tvg-logo="https://raw.githubusercontent.com/songwenhui239/Songwenhui239/refs/heads/main/Allo%20Cine.jpeg" tvg-language="fre;eng" tvg-country="CM" group-title="🏳️ Other Countries • Filmes",Allo Cine
 #EXTGRP:🏳️ Other Countries • Filmes
 https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8
+#EXTINF:-1 tvg-id="CinemaxAsia.sg@HD" tvg-name="Cinemax Asia" tvg-logo="https://i.imgur.com/c8crJfA.png" tvg-language="eng" tvg-country="SG" group-title="🏳️ Other Countries • Filmes",Cinemax Asia
+#EXTGRP:🏳️ Other Countries • Filmes
+http://125.227.210.55:1001/VideoInput/play.ts
 #EXTINF:-1 tvg-id="AndTV.in@International" tvg-name="&TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",&TV
 #EXTGRP:🏳️ Other Countries • Filmes
 https://drk6xq0vhn.gpcdn.net/live/and_tv_hd_abr/index.m3u8
@@ -268,3 +335,109 @@ http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVTheFirstTheater.cn@HD" tvg-name="CCTV-The First Theater" tvg-logo="https://i.imgur.com/eFxD3hq.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Filmes",CCTV-The First Theater
 #EXTGRP:🏳️ Other Countries • Filmes
 http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="Cine666byPlutoTV.de@FR" tvg-name="Cine 666 by Pluto TV" tvg-logo="https://images.pluto.tv/channels/6823648580b2665220d9e69a/colorLogoPNG-1757404141.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine 666 by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-6823648580b2665220d9e69a.m3u8
+#EXTINF:-1 tvg-id="CineActionbyPlutoTV.de@FR" tvg-name="Cine Action by Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f8ed1ff5c39700007e2204a/colorLogoPNG_1752228138963.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Action by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-5f8ed1ff5c39700007e2204a.m3u8
+#EXTINF:-1 tvg-id="CinebyPlutoTV.de@FR" tvg-name="Cine by Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f8ed0f17564a300082b676a/colorLogoPNG_1775048900088.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-5f8ed0f17564a300082b676a.m3u8
+#EXTINF:-1 tvg-id="CineCatastrophebyPlutoTV.de@FR" tvg-name="Cine Catastrophe by Pluto TV" tvg-logo="https://images.pluto.tv/channels/65a69ef53af63d000825e0ee/colorLogoPNG_1751272916058.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Catastrophe by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-65a69ef53af63d000825e0ee.m3u8
+#EXTINF:-1 tvg-id="CinedAsiebyPlutoTV.de@FR" tvg-name="Cine d'Asie by Pluto TV" tvg-logo="https://images.pluto.tv/channels/62f3e2d000418d00070f7dbc/colorLogoPNG_1751272759694.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine d'Asie by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-62f3e2d000418d00070f7dbc.m3u8
+#EXTINF:-1 tvg-id="CineHorreurbyPlutoTV.de@FR" tvg-name="Cine Horreur by Pluto TV" tvg-logo="https://images.pluto.tv/channels/66e1978babec540008ce41ac/colorLogoPNG_1751272165674.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Horreur by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-66e1978babec540008ce41ac.m3u8
+#EXTINF:-1 tvg-id="CineNanar.fr@SD" tvg-name="Cine Nanar" tvg-logo="https://i.imgur.com/YnUZd3W.png" tvg-language="fra" tvg-country="FR" group-title="🏳️ Other Countries • Filmes",Cine Nanar
+#EXTGRP:🏳️ Other Countries • Filmes
+https://zylo-cinenanar-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CineRetrobyPlutoTV.de@FR" tvg-name="Cine Retro by Pluto TV" tvg-logo="https://images.pluto.tv/channels/5f8ed168f72fcd0007e56269/colorLogoPNG_1751272859383.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Retro by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-5f8ed168f72fcd0007e56269.m3u8
+#EXTINF:-1 tvg-id="CineRomancebyPlutoTV.de@FR" tvg-name="Cine Romance by Pluto TV" tvg-logo="https://images.pluto.tv/channels/60812fc8539963000707d1e1/colorLogoPNG_1775048649580.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Romance by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-60812fc8539963000707d1e1.m3u8
+#EXTINF:-1 tvg-id="CineSciFibyPlutoTV.de@FR" tvg-name="Cine Sci-Fi by Pluto TV" tvg-logo="https://images.pluto.tv/channels/60c34592c911890007f29a73/colorLogoPNG.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Sci-Fi by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-60c34592c911890007f29a73.m3u8
+#EXTINF:-1 tvg-id="CineThrillersbyPlutoTV.de@FR" tvg-name="Cine Thrillers by Pluto TV" tvg-logo="https://images.pluto.tv/channels/60c3472a51a2050008dad272/colorLogoPNG_1751272093012.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Thrillers by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-60c3472a51a2050008dad272.m3u8
+#EXTINF:-1 tvg-id="CineWesternbyPlutoTV.de@FR" tvg-name="Cine Western by Pluto TV" tvg-logo="https://images.pluto.tv/channels/65cca3e2ec452d0008af3a65/colorLogoPNG_1751272826143.png" tvg-language="fra" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Cine Western by Pluto TV
+#EXTGRP:🏳️ Other Countries • Filmes
+https://jmp2.uk/plu-65cca3e2ec452d0008af3a65.m3u8
+#EXTINF:-1 tvg-id="CinePlus.ua@SD" tvg-name="Cine+" tvg-logo="https://i.imgur.com/SAtdShq.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",Cine+
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-referrer=http://live.tvstitch.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjUxOjcwMDAvY2gzMy90cmFja3MtdjJhMS9tb25vLm0zdTg%2FbGl2ZT0xJmlwPTE3OC4xMzYuNDIuMjIwJmlkPTk0ODg2NSZzZWNyZXQ9bjF1N3VpMDYmc3NsPTEmMjF5bz0wJmU9MTc5MDc1MjM2MiZzdD12bmp2elZKY2JtUndKMkFzY1l0UWpR&master=567
+#EXTINF:-1 tvg-id="CinePlusHit.ua@SD" tvg-name="Cine+ Hit" tvg-logo="https://i.imgur.com/b3FcLU1.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",Cine+ Hit
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-referrer=http://live.tvstitch.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoNDAvdHJhY2tzLXYyYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA3NTI3NDUmc3Q9cVZaQ3Vpd2l3UzEwLW1tMzEwMktDZw%3D%3D&master=539
+#EXTINF:-1 tvg-id="CinePlusLegend.ua@SD" tvg-name="Cine+ Legend" tvg-logo="https://i.imgur.com/QtOfzSH.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",Cine+ Legend
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-referrer=http://live.tvstitch.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoMzQvdHJhY2tzLXYxYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA3NTI2Mzgmc3Q9RHdRc3AyN2l6V3J1dllqUEZ5aS1yUQ%3D%3D&master=568
+#EXTINF:-1 tvg-id="Cinema.mn@SD" tvg-name="Cinema" tvg-logo="https://www.mongolsat.mn/assets/img/channel/914.png" tvg-language="mon" tvg-country="MN" group-title="🏳️ Other Countries • Filmes",Cinema
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+https://cdn1.skygo.mn/live/disk1/CinemaTV/HLS-FTA/CinemaTV.m3u8
+#EXTINF:-1 tvg-id="Cinema.ru@SD" tvg-name="Cinema" tvg-logo="https://i.imgur.com/b5e9qUA.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Cinema
+#EXTGRP:🏳️ Other Countries • Filmes
+https://stream8.cinerama.uz/1227/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="CinemaratonPlus.ro@HD" tvg-name="Cinemaraton Plus" tvg-logo="https://assets.antenaplay.ro/2026/03/10/RMNdkVBCTNfsogsYqHaB.png" tvg-language="ron" tvg-country="RO" group-title="🏳️ Other Countries • Filmes",Cinemaraton Plus
+#EXTGRP:🏳️ Other Countries • Filmes
+https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8
+#EXTINF:-1 tvg-id="Cinemax.cz@Czechia" tvg-name="Cinemax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png" tvg-language="ces" tvg-country="CZ" group-title="🏳️ Other Countries • Filmes",Cinemax
+#EXTGRP:🏳️ Other Countries • Filmes
+http://88.212.15.50/live/test_cinemax_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinemax2.cz@Czechia" tvg-name="Cinemax 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cinemax_2_%282016%29.png/960px-Cinemax_2_%282016%29.png" tvg-language="ces" tvg-country="CZ" group-title="🏳️ Other Countries • Filmes",Cinemax 2
+#EXTGRP:🏳️ Other Countries • Filmes
+http://88.212.15.50/live/test_cinemax2_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="CineWow.ro@SD" tvg-name="CineWow" tvg-logo="https://cdn.gamma.app/tfnglu66dwji8hw/d36b2d5c45a544749b3739d46fb119cc/original/CineWow.png" tvg-language="ron" tvg-country="RO" group-title="🏳️ Other Countries • Filmes",CineWow
+#EXTGRP:🏳️ Other Countries • Filmes
+https://hls02ns.antenaplay.ro/hls/bollywood-clasic-sd/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoAction.ru@HD" tvg-name="City Eden KinoAction" tvg-logo="https://i.imgur.com/uuzuvD0.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoAction
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/41333/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoArt.ru@HD" tvg-name="City Eden KinoArt" tvg-logo="https://i.imgur.com/67CWCtz.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoArt
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/38398/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoAsia.ru@HD" tvg-name="City Eden KinoAsia" tvg-logo="https://i.imgur.com/gaket4B.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoAsia
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/34393/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoDetektiv.ru@HD" tvg-name="City Eden KinoDetektiv" tvg-logo="https://i.imgur.com/9rKHwBV.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoDetektiv
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/41327/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoDrama.ru@HD" tvg-name="City Eden KinoDrama" tvg-logo="https://i.imgur.com/29ddffh.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoDrama
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/45269/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoFantastika.ru@HD" tvg-name="City Eden KinoFantastika" tvg-logo="https://i.imgur.com/I64FeIO.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoFantastika
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/45268/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoKlassika.ru@HD" tvg-name="City Eden KinoKlassika" tvg-logo="https://i.imgur.com/0qGCS1S.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoKlassika
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/34185/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoKomediya.ru@HD" tvg-name="City Eden KinoKomediya" tvg-logo="https://i.imgur.com/Aga2XVA.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoKomediya
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/41331/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoMistika.ru@HD" tvg-name="City Eden KinoMistika" tvg-logo="https://i.imgur.com/s1Pid0K.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",City Eden KinoMistika
+#EXTGRP:🏳️ Other Countries • Filmes
+https://cityeden.catcast.tv/content/40783/index.m3u8
+#EXTINF:-1 tvg-id="CNDFilmMiddleSchoolChannel.cn@SD" tvg-name="CND Film Middle School Channel" tvg-logo="https://i.imgur.com/4uG8HsQ.png" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Filmes",CND Film Middle School Channel
+#EXTGRP:🏳️ Other Countries • Filmes
+http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8
+#EXTINF:-1 tvg-id="ColorsBanglaCinema.in@SD" tvg-name="Colors Bangla Cinema" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_BANGLA_CINEMA/images/LOGO_HD/image.png" tvg-language="ben" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Colors Bangla Cinema
+#EXTGRP:🏳️ Other Countries • Filmes
+http://103.151.60.162:2122/play/a02m/index.m3u8?hls
+#EXTINF:-1 tvg-id="ColorsCineplex.in@HD" tvg-name="Colors Cineplex" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX_HD/images/LOGO_HD/image.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Colors Cineplex
+#EXTGRP:🏳️ Other Countries • Filmes
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8
