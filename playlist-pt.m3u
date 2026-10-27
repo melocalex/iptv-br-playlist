@@ -768,6 +768,9 @@ https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAldeia.br@SD" tvg-name="TV Aldeia" tvg-logo="https://i.imgur.com/rsfnv4Z.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Aldeia
 #EXTGRP:🇧🇷 Brasil • Geral
 https://stmv1.samcast.com.br/giovane7843/giovane7843/playlist.m3u8
+#EXTINF:-1 tvg-id="TVAliancaCatarinense.br@SD" tvg-name="TV Alianca Catarinense" tvg-logo="https://i.imgur.com/eqmOhtP.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Alianca Catarinense
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video01.logicahost.com.br/tvalianca/tvalianca/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAlternativa.br@SD" tvg-name="TV Alternativa" tvg-logo="https://i.imgur.com/wM9xXhc.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Alternativa
 #EXTGRP:🇧🇷 Brasil • Geral
 https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
@@ -812,6 +815,9 @@ https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8
 #EXTINF:-1 tvg-id="TVGazeta.br@SD" tvg-name="TV Gazeta" tvg-logo="https://i.imgur.com/0sksWse.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Gazeta
 #EXTGRP:🇧🇷 Brasil • Geral
 http://186.219.52.187/gazeta/index.m3u8
+#EXTINF:-1 tvg-id="TVGuara.br@SD" tvg-name="TV Guara" tvg-logo="https://i.imgur.com/8PErNBT.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Guara
+#EXTGRP:🇧🇷 Brasil • Geral
+https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGuarapari.br@SD" tvg-name="TV Guarapari" tvg-logo="https://i.imgur.com/eDNzwK0.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Guarapari
 #EXTGRP:🇧🇷 Brasil • Geral
 #EXTVLCOPT:http-referrer=https://tvguarapari.com/
@@ -912,6 +918,9 @@ https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RFPtv.pt@SD" tvg-name="RFPtv" tvg-logo="https://i.imgur.com/I60nQuR.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Música",RFPtv
 #EXTGRP:🇵🇹 Portugal • Música
 https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
+#EXTINF:-1 tvg-id="ADBTV.pt@SD" tvg-name="ADB TV" tvg-logo="https://i.ibb.co/HGfTJwt/ADBTV.jpg" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",ADB TV
+#EXTGRP:🇵🇹 Portugal • Cultura
+https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="KuriakosTV.pt@SD" tvg-name="Kuriakos TV" tvg-logo="https://i.imgur.com/xdAW0D5.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Cultura",Kuriakos TV
 #EXTGRP:🇵🇹 Portugal • Cultura
 https://w1.manasat.com/ktv/smil:ktv.smil/playlist.m3u8

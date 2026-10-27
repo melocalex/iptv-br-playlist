@@ -114,6 +114,12 @@ http://200.115.96.61:9090/play/a0i5/index.m3u8
 #EXTINF:-1 tvg-id="ClaroCinema.mx@SD" tvg-name="Claro Cinema" tvg-logo="https://i.imgur.com/SOLGQxQ.jpg" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",Claro Cinema
 #EXTGRP:🌎 América Latina • Filmes
 http://158.172.217.18:8000/play/a00d/index.m3u8
+#EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx@SD" tvg-name="De Pelicula Latin America" tvg-logo="https://i.imgur.com/aksM8pa.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",De Pelicula Latin America
+#EXTGRP:🌎 América Latina • Filmes
+http://15.204.196.147:22880/RECEPCION-DPELICULA-LATAM-FHD/video.m3u8
+#EXTINF:-1 tvg-id="DePeliculaPlus.mx@SD" tvg-name="De Pelicula Plus" tvg-logo="https://i.imgur.com/MMhSmDK.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",De Pelicula Plus
+#EXTGRP:🌎 América Latina • Filmes
+http://200.115.120.1:8000/play/ca030/index.m3u8
 #EXTINF:-1 tvg-id="CineFriki.es@SD" tvg-name="Cine Friki" tvg-logo="https://i.imgur.com/b3Ospym.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Filmes",Cine Friki
 #EXTGRP:🇪🇸 España • Filmes
 https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
@@ -156,6 +162,12 @@ http://23.237.104.106:8080/USA_MOREMAX/index.m3u8
 #EXTINF:-1 tvg-id="CinemaxLatinAmerica.us@HD" tvg-name="Cinemax Latin America" tvg-logo="https://i.imgur.com/cZWoJWD.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",Cinemax Latin America
 #EXTGRP:🇺🇸 United States • Filmes
 https://streaming.onnethn.com/CINEMAX/playlist.m3u8
+#EXTINF:-1 tvg-id="DePeliculaUS.us@SD" tvg-name="De Pelicula US" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/DPel%C3%ADcula_2021.svg/960px-DPel%C3%ADcula_2021.svg.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",De Pelicula US
+#EXTGRP:🇺🇸 United States • Filmes
+http://138.121.15.230:9002/DEPELICULA/index.m3u8
+#EXTINF:-1 tvg-id="DHE.us@SD" tvg-name="DHE" tvg-logo="https://i.imgur.com/nsttoEa.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Filmes",DHE
+#EXTGRP:🇺🇸 United States • Filmes
+http://15.204.246.24:8080/DHEHD/index.m3u8
 #EXTINF:-1 tvg-id="00sReplay.us@SD" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",00s Replay
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
@@ -226,10 +238,19 @@ https://jmp2.uk/plu-61f33318210549000806a530.m3u8
 #EXTINF:-1 tvg-id="ClassicMoviesChannel.us@SD" tvg-name="Classic Movies Channel" tvg-logo="https://i.imgur.com/pQJxov2.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Classic Movies Channel
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-561c5b0dada51f8004c4d855.m3u8
+#EXTINF:-1 tvg-id="DUST.us@SD" tvg-name="DUST" tvg-logo="https://i.imgur.com/FxYhME9.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",DUST
+#EXTGRP:🇺🇸 United States • Filmes
+https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="EbonyTVbyLionsgate.us@SD" tvg-name="Ebony TV by Lionsgate" tvg-logo="https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Ebony TV by Lionsgate
+#EXTGRP:🇺🇸 United States • Filmes
+https://pb-6csswagmy4nat.akamaized.net/Ebony_TV_by_Lionsgate.m3u8
 #EXTINF:-1 tvg-id="AXNBlack.us@Bulgary" tvg-name="AXN Black" tvg-logo="https://i.imgur.com/Peo1QiZ.png" tvg-language="bul" tvg-country="US" group-title="🇺🇸 United States • Filmes",AXN Black
 #EXTGRP:🇺🇸 United States • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://88.212.15.50/live/test_black/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSCinema.us@SD" tvg-name="EBS Cinema" tvg-logo="https://i.imgur.com/fewPTFE.png" tvg-language="amh" tvg-country="US" group-title="🇺🇸 United States • Filmes",EBS Cinema
+#EXTGRP:🇺🇸 United States • Filmes
+https://rpn.bozztv.com/ebstv/ebscinema/index.m3u8
 #EXTINF:-1 tvg-id="AMCEurope.uk@Bulgary" tvg-name="AMC Europe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" tvg-language="bul" tvg-country="UK" group-title="🇬🇧 United Kingdom • Filmes",AMC Europe
 #EXTGRP:🇬🇧 United Kingdom • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
@@ -441,3 +462,23 @@ http://103.151.60.162:2122/play/a02m/index.m3u8?hls
 #EXTINF:-1 tvg-id="ColorsCineplex.in@HD" tvg-name="Colors Cineplex" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX_HD/images/LOGO_HD/image.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Colors Cineplex
 #EXTGRP:🏳️ Other Countries • Filmes
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8
+#EXTINF:-1 tvg-id="Domkino.ru@International" tvg-name="Dom kino" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png/960px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Dom kino
+#EXTGRP:🏳️ Other Countries • Filmes
+http://stream.mcquack.net/236/index.m3u8
+#EXTINF:-1 tvg-id="DomkinoPremium.ru@HD" tvg-name="Dom kino Premium" tvg-logo="https://i.imgur.com/rJpQtvK.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Dom kino Premium
+#EXTGRP:🏳️ Other Countries • Filmes
+http://stream.mcquack.net/108/index.m3u8
+#EXTINF:-1 tvg-id="Dorama.ru@HD" tvg-name="Dorama" tvg-logo="https://i.imgur.com/ZH5LuXU.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Dorama
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://stream.mcquack.net/412/index.m3u8
+#EXTINF:-1 tvg-id="EnterFilm.ua@SD" tvg-name="Enter-Film" tvg-logo="https://i.imgur.com/wQbiGs6.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",Enter-Film
+#EXTGRP:🏳️ Other Countries • Filmes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+http://stream.mcquack.net/322/index.m3u8
+#EXTINF:-1 tvg-id="EpicBhojpuri.in@Digital" tvg-name="Epic Bhojpuri" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0032BVJ8.png?lock=720x540" tvg-language="bho" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Epic Bhojpuri
+#EXTGRP:🏳️ Other Countries • Filmes
+https://mumt01.tangotv.in/O5aw8Zn3EPICBHOJPURI/index.m3u8
+#EXTINF:-1 tvg-id="ETVCinema.in@HD" tvg-name="ETV Cinema" tvg-logo="https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540" tvg-language="tel" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",ETV Cinema
+#EXTGRP:🏳️ Other Countries • Filmes
+https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b

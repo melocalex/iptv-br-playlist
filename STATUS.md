@@ -1,13 +1,13 @@
 # Status dashboard
 
-Generated at **2026-10-26T13:00:37.926Z**.
+Generated at **2026-10-27T12:16:25.631Z**.
 
 ## Discovery
 
 | Metric | Value |
 | --- | --- |
 | Channels discovered | 12337 |
-| Streams discovered (unique URLs) | 18067 |
+| Streams discovered (unique URLs) | 18068 |
 | Duplicate URLs collapsed | 11340 |
 | Channels with no metadata in the source | 2031 |
 
@@ -17,13 +17,13 @@ A validation result depends on where the probe runs. The GitHub Actions runner s
 
 | Status | github-us | local-br |
 | --- | --- | --- |
-| WORKING | 2863 | 2388 |
-| UNSTABLE | 20 | 87 |
-| OFFLINE | 1247 | 1283 |
-| TIMEOUT | 69 | 204 |
+| WORKING | 3538 | 2388 |
+| UNSTABLE | 28 | 87 |
+| OFFLINE | 1478 | 1282 |
+| TIMEOUT | 97 | 204 |
 | GEO_BLOCKED | 0 | 0 |
-| AUTH_REQUIRED | 8 | 21 |
-| UNSUPPORTED | 131 | 144 |
+| AUTH_REQUIRED | 11 | 21 |
+| UNSUPPORTED | 150 | 144 |
 | UNKNOWN | 0 | 0 |
 
 | Observation point | Last run | Checked | Eligible | Fresh (skipped) |
@@ -35,14 +35,14 @@ A channel's status is the best among its streams. `UNKNOWN` dominates because ea
 
 | Status | Channels |
 | --- | --- |
-| WORKING | 2808 |
-| UNSTABLE | 33 |
+| WORKING | 3263 |
+| UNSTABLE | 37 |
 | OFFLINE | 0 |
-| TIMEOUT | 91 |
+| TIMEOUT | 105 |
 | GEO_BLOCKED | 0 |
 | AUTH_REQUIRED | 0 |
 | UNSUPPORTED | 0 |
-| UNKNOWN | 9333 |
+| UNKNOWN | 8860 |
 
 ## Published channels
 
@@ -50,58 +50,58 @@ These are the channels that enter the validated playlists: eligible **and** carr
 
 | Metric | Value |
 | --- | --- |
-| Channels published in the main playlist | 1986 |
-| Of those, status WORKING | 1976 |
-| Of those, unstable | 10 |
-| Brazilian channels | 289 |
-| International channels | 1697 |
-| With an alternative stream kept | 612 |
-| With guide coverage | 320 |
+| Channels published in the main playlist | 2445 |
+| Of those, status WORKING | 2431 |
+| Of those, unstable | 14 |
+| Brazilian channels | 291 |
+| International channels | 2154 |
+| With an alternative stream kept | 756 |
+| With guide coverage | 356 |
 | With **verified** Portuguese audio | 50 |
-| With **verified** subtitles | 369 |
-| With unreliable subtitle detection (HLS) | 1953 |
+| With **verified** subtitles | 421 |
+| With unreliable subtitle detection (HLS) | 2400 |
 
 ### By country group
 
 | Group | Published channels |
 | --- | --- |
-| OTHER | 874 |
-| LATAM | 342 |
-| US | 339 |
-| BR | 289 |
-| ES | 58 |
-| PT | 39 |
-| UK | 27 |
-| INT | 18 |
+| OTHER | 1150 |
+| LATAM | 421 |
+| US | 393 |
+| BR | 291 |
+| ES | 77 |
+| PT | 40 |
+| UK | 38 |
+| INT | 35 |
 
 ### By category
 
 | Category | Published channels |
 | --- | --- |
-| Geral | 679 |
-| Notícias | 246 |
-| Cultura | 208 |
-| Entretenimento | 197 |
-| Filmes | 140 |
-| Música | 110 |
-| Variedades | 97 |
-| Séries | 89 |
-| Infantil | 78 |
-| Esportes | 58 |
-| Documentários | 38 |
-| Educação | 30 |
-| Animação | 16 |
+| Geral | 830 |
+| Notícias | 290 |
+| Cultura | 247 |
+| Entretenimento | 236 |
+| Filmes | 153 |
+| Música | 140 |
+| Variedades | 119 |
+| Infantil | 109 |
+| Séries | 105 |
+| Esportes | 87 |
+| Educação | 62 |
+| Documentários | 46 |
+| Animação | 21 |
 
 ## Programme guide
 
 | Metric | Value |
 | --- | --- |
-| Channels requested from the guide | 1986 |
-| Channels with a guide | 320 |
-| Measured coverage | 16.11% |
-| Programmes in the guide | 14703 |
+| Channels requested from the guide | 2445 |
+| Channels with a guide | 356 |
+| Measured coverage | 14.56% |
+| Programmes in the guide | 16051 |
 | Horizon | 72 h |
-| Channels without a guide | 1666 |
+| Channels without a guide | 2089 |
 
 ### Per-channel slices
 
@@ -109,11 +109,11 @@ A short guide in JSON, one file per channel, for consumers that do not parse XML
 
 | Metric | Value |
 | --- | --- |
-| Files | 320 |
-| Programmes | 10836 |
+| Files | 356 |
+| Programmes | 11783 |
 | Window | 24 h |
-| Total size | 2495.8 KB |
-| Largest file | 40.1 KB |
+| Total size | 2676.2 KB |
+| Largest file | 35.2 KB |
 | Index | `https://raw.githubusercontent.com/melocalex/lighteye/main/docs/epg/index.json` |
 
 iptv-org's guide coverage is partial by nature. The number above is the **measured** one, with no rounding up. The full list of channels without a guide is in `data/epg-coverage.json`.
@@ -122,34 +122,34 @@ iptv-org's guide coverage is partial by nature. The number above is the **measur
 
 | Source | Kind | OK | Channels requested | Channels with a guide | Programmes | Note |
 | --- | --- | --- | --- | --- | --- | --- |
-| mi.tv | grabber | yes | 110 | 104 | 5377 | - |
-| meuguia.tv | grabber | yes | 33 | 20 | 344 | - |
-| meo.pt | grabber | yes | 27 | 27 | 996 | - |
-| nostv.pt | grabber | yes | 22 | 16 | 311 | - |
-| gatotv.com | grabber | yes | 32 | 30 | 1027 | - |
-| pluto.tv | grabber | yes | 139 | 134 | 4142 | - |
-| kanya-us | published | yes | n/a | 90 | 2506 | - |
+| mi.tv | grabber | yes | 127 | 111 | 4594 | - |
+| meuguia.tv | grabber | yes | 33 | 18 | 257 | - |
+| meo.pt | grabber | yes | 28 | 28 | 1095 | - |
+| nostv.pt | grabber | yes | 22 | 16 | 217 | - |
+| gatotv.com | grabber | yes | 45 | 45 | 1952 | - |
+| pluto.tv | grabber | yes | 149 | 144 | 4606 | - |
+| kanya-us | published | yes | n/a | 106 | 3330 | - |
 | kanya-ke | published | yes | n/a | 0 | 0 | - |
 
 ## Playlists
 
 | File | Contents | Channels | Entries | Sections |
 | --- | --- | --- | --- | --- |
-| `playlist.m3u` | Main (all sections, validated) | 1986 | 1986 | 86 |
-| `playlist-br.m3u` | Brazil | 289 | 289 | 13 |
-| `playlist-pt.m3u` | Portuguese (PT + Portuguese-speaking) | 327 | 327 | 22 |
-| `playlist-movies.m3u` | Movies | 141 | 141 | 9 |
-| `playlist-series.m3u` | Series (TV shows) | 97 | 97 | 10 |
-| `playlist-sports.m3u` | Sports | 59 | 59 | 6 |
-| `playlist-international.m3u` | International (everything outside Brazil) | 1697 | 1697 | 73 |
-| `playlist-all.m3u` | Everything, including unverified and unavailable | 12265 | 17973 | 101 |
+| `playlist.m3u` | Main (all sections, validated) | 2445 | 2445 | 91 |
+| `playlist-br.m3u` | Brazil | 291 | 291 | 13 |
+| `playlist-pt.m3u` | Portuguese (PT + Portuguese-speaking) | 330 | 330 | 22 |
+| `playlist-movies.m3u` | Movies | 154 | 154 | 9 |
+| `playlist-series.m3u` | Series (TV shows) | 114 | 114 | 10 |
+| `playlist-sports.m3u` | Sports | 88 | 88 | 8 |
+| `playlist-international.m3u` | International (everything outside Brazil) | 2154 | 2154 | 78 |
+| `playlist-all.m3u` | Everything, including unverified and unavailable | 12265 | 17974 | 101 |
 
 ## Known limitations
 
 - Results from 2 observation points (local-br, github-us) are reported separately and **do not add up**: the same stream can be WORKING at one and GEO_BLOCKED at another.
-- 9333 channels have never been checked. The per-run cap is `validation.maxChecksPerRun` = 1200; coverage grows each round.
-- Measured guide coverage: 320 of 1986 channels in the main playlist (1666 without a guide). Measured, with no rounding up.
-- 2806 channels are served over HLS. ffprobe does not open the subtitle variant playlist, so **absence of a subtitle track does not prove absence of subtitles** on those channels.
+- 8860 channels have never been checked. The per-run cap is `validation.maxChecksPerRun` = 1200; coverage grows each round.
+- Measured guide coverage: 356 of 2445 channels in the main playlist (2089 without a guide). Measured, with no rounding up.
+- 3253 channels are served over HLS. ffprobe does not open the subtitle variant playlist, so **absence of a subtitle track does not prove absence of subtitles** on those channels.
 - No playlist performs automatic failover. Alternative streams are kept in `data/channels.json`, but switching streams is up to the player: the project neither implements nor has tested failover, so it does not claim one exists.
 - Nothing here circumvents DRM, authentication, paywalls or geoblocking. `GEO_BLOCKED` is only a diagnostic label, based on HTTP 451 or explicit text in the response.
 - 2031 streams have no channel metadata in the source. They stay out of the validated playlists and appear only in `playlist-all.m3u`, because classifying by channel name would be guessing.

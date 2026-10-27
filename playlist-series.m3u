@@ -81,6 +81,9 @@ https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvificcao.m
 #EXTINF:-1 tvg-id="13T.cl@SD" tvg-name="13T" tvg-logo="https://i.imgur.com/csBNi2L.png" tvg-language="spa" tvg-country="CL" group-title="🌎 América Latina • Séries",13T
 #EXTGRP:🌎 América Latina • Séries
 https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
+#EXTINF:-1 tvg-id="EuropaEuropa.ar@SD" tvg-name="Europa Europa" tvg-logo="https://i.imgur.com/w5SOfyJ.png" tvg-language="spa;eng" tvg-country="AR" group-title="🌎 América Latina • Séries",Europa Europa
+#EXTGRP:🌎 América Latina • Séries
+https://iptv.bitred.cl/EUROPAEUROPA_HD/index.m3u8
 #EXTINF:-1 tvg-id="Anaylos7.us@Spain" tvg-name="Ana y los 7" tvg-logo="https://i.imgur.com/X5g6gXS.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Séries",Ana y los 7
 #EXTGRP:🇪🇸 España • Séries
 https://jmp2.uk/plu-5f1acce7f17797000718f9be.m3u8
@@ -93,6 +96,15 @@ https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CurroJimenez.us@Spain" tvg-name="Curro Jimenez" tvg-logo="https://i.imgur.com/e3biTY5.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Séries",Curro Jimenez
 #EXTGRP:🇪🇸 España • Séries
 https://jmp2.uk/plu-5f1acd36779de70007a680d1.m3u8
+#EXTINF:-1 tvg-id="ElComisario.us@Spain" tvg-name="El Comisario" tvg-logo="https://i.imgur.com/XYt8utn.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Séries",El Comisario
+#EXTGRP:🇪🇸 España • Séries
+https://jmp2.uk/plu-60c343007bcabe0007242aa6.m3u8
+#EXTINF:-1 tvg-id="Elencantadordeperros.us@Spain" tvg-name="El encantador de perros" tvg-logo="https://i.imgur.com/hYqjQ1n.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Séries",El encantador de perros
+#EXTGRP:🇪🇸 España • Séries
+https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8
+#EXTINF:-1 tvg-id="Empenosalobestia.us@Spain" tvg-name="Empenos a lo bestia" tvg-logo="https://i.imgur.com/EOttSdW.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Séries",Empenos a lo bestia
+#EXTGRP:🇪🇸 España • Séries
+https://jmp2.uk/plu-5f23102d5e239d00074b092a.m3u8
 #EXTINF:-1 tvg-id="3CatPlatsbruts.es@SD" tvg-name="3Cat Plats bruts" tvg-logo="https://i.imgur.com/49ZENis.png" tvg-language="cat" tvg-country="ES" group-title="🇪🇸 España • Séries",3Cat Plats bruts
 #EXTGRP:🇪🇸 España • Séries
 https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
@@ -108,6 +120,9 @@ https://jmp2.uk/plu-696e647b07ea70192d49f6a5.m3u8
 #EXTINF:-1 tvg-id="ClassicMovieWesterns.us@SD" tvg-name="Classic Movie Westerns" tvg-logo="https://images.pluto.tv/channels/61f33318210549000806a530/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Classic Movie Westerns
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-61f33318210549000806a530.m3u8
+#EXTINF:-1 tvg-id="EbonyTVbyLionsgate.us@SD" tvg-name="Ebony TV by Lionsgate" tvg-logo="https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Ebony TV by Lionsgate
+#EXTGRP:🇺🇸 United States • Filmes
+https://pb-6csswagmy4nat.akamaized.net/Ebony_TV_by_Lionsgate.m3u8
 #EXTINF:-1 tvg-id="AcapulcoShore.us@LatAm" tvg-name="Acapulco Shore" tvg-logo="https://images.pluto.tv/channels/61a52615cbef2500072876e2/colorLogoPNG_1756972226445.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Séries",Acapulco Shore
 #EXTGRP:🇺🇸 United States • Séries
 https://jmp2.uk/plu-61a52615cbef2500072876e2.m3u8
@@ -174,6 +189,27 @@ https://jmp2.uk/plu-62f54c6439183b000769fb8f.m3u8
 #EXTINF:-1 tvg-id="DarkMatterTV.us@SD" tvg-name="Dark Matter TV" tvg-logo="https://i.imgur.com/9K8T3ND.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Dark Matter TV
 #EXTGRP:🇺🇸 United States • Séries
 https://tricoast-tv-dark-matter-01-us.ono.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DealorNoDeal.us@SD" tvg-name="Deal or No Deal" tvg-logo="https://i.imgur.com/lZvNXA1.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Deal or No Deal
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-62e92951c2db99000787c00d.m3u8
+#EXTINF:-1 tvg-id="Degrassi.us@US" tvg-name="Degrassi" tvg-logo="https://i.imgur.com/vhSzfDC.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Degrassi
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-62bdaf3470f09a000714a2f6.m3u8
+#EXTINF:-1 tvg-id="DesignatedSurvivor.us@SD" tvg-name="Designated Survivor" tvg-logo="https://provider-static.plex.tv/epg/cms/production/6f31f52b-2b65-49eb-91e5-52e07edd1927/DesignatedSurvivor_Plex_1500x1000_Logo_Dark.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Designated Survivor
+#EXTGRP:🇺🇸 United States • Séries
+https://amg00353-amg00353c40-xumo-us-4839.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DocMartin.us@CA" tvg-name="Doc Martin" tvg-logo="https://images.pluto.tv/channels/62e922f6675f71000736db3b/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Doc Martin
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-62e922f6675f71000736db3b.m3u8
+#EXTINF:-1 tvg-id="DoctorWhoClassic.us@US" tvg-name="Doctor Who Classic" tvg-logo="https://i.imgur.com/JIqJQQM.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Doctor Who Classic
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-62bdad934d73d50007a82472.m3u8
+#EXTINF:-1 tvg-id="DontTellTheBride.uk@SD" tvg-name="Don't Tell The Bride" tvg-logo="https://i.imgur.com/h0bc3Fa.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Don't Tell The Bride
+#EXTGRP:🇺🇸 United States • Séries
+https://amg00426-lds-amg00426c15-samsung-au-3684.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Dynasty.us@SD" tvg-name="Dynasty" tvg-logo="https://images.pluto.tv/channels/62e919ca865c590007ecd0bd/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Dynasty
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-64d1606b4c5ed80008e3b8b9.m3u8
 #EXTINF:-1 tvg-id="AlerteaMalibu.us@France" tvg-name="Alerte a Malibu" tvg-logo="https://i.imgur.com/hBiB6uk.png" tvg-language="fra" tvg-country="US" group-title="🇺🇸 United States • Séries",Alerte a Malibu
 #EXTGRP:🇺🇸 United States • Séries
 https://jmp2.uk/plu-60afaa535580be0007ac9ee4.m3u8
@@ -198,6 +234,15 @@ https://jmp2.uk/plu-6960c5a906d76f50db2816dc.m3u8
 #EXTINF:-1 tvg-id="CSICrimeSceneInvestigation.de@GB" tvg-name="CSI: Crime Scene Investigation" tvg-logo="https://images.pluto.tv/channels/6304f8d5ffb61000071ab478/colorLogoPNG.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",CSI: Crime Scene Investigation
 #EXTGRP:🇬🇧 United Kingdom • Séries
 https://jmp2.uk/plu-6304f8d5ffb61000071ab478.m3u8
+#EXTINF:-1 tvg-id="DogtheBountyHunter.us@UK" tvg-name="Dog the Bounty Hunter" tvg-logo="https://i.imgur.com/lMICupK.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Dog the Bounty Hunter
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://jmp2.uk/plu-5f6b535a278bfe000799484a.m3u8
+#EXTINF:-1 tvg-id="DogWhisperer.us@UK" tvg-name="Dog Whisperer" tvg-logo="https://i.imgur.com/tgWypVJ.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Dog Whisperer
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://pb-ffpxvjshv4rxx.akamaized.net/Dog_Whisperer_with_Cesar_Millan.m3u8
+#EXTINF:-1 tvg-id="DuckDynasty.us@UK" tvg-name="Duck Dynasty" tvg-logo="https://i.imgur.com/vMcSlwm.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Duck Dynasty
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://jmp2.uk/plu-6540fe6fbfbaec0008a583ae.m3u8
 #EXTINF:-1 tvg-id="AMCSeriesLatinAmerica.us@Panregional" tvg-name="AMC Series Latin America" tvg-logo="https://amc-series.s3.amazonaws.com/menu/hbfen1Gom0_k1cyqi7rw4-amc-series-train-w.png" tvg-language="spa" group-title="🌐 International • Séries",AMC Series Latin America
 #EXTGRP:🌐 International • Séries
 https://streaming.onnethn.com/AMC/playlist.m3u8
@@ -259,6 +304,12 @@ https://jmp2.uk/plu-64e87c6b28cec700088ceb55.m3u8
 #EXTINF:-1 tvg-id="DatingNakedUK.se@DK" tvg-name="Dating Naked UK" tvg-logo="https://images.pluto.tv/channels/692edc78d52ea9e4858cf78f/colorLogoPNG_1768226003744.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",Dating Naked UK
 #EXTGRP:🏳️ Other Countries • Séries
 https://jmp2.uk/plu-692edc78d52ea9e4858cf78f.m3u8
+#EXTINF:-1 tvg-id="DiagnosisMurder.se@DK" tvg-name="Diagnosis Murder" tvg-logo="https://images.pluto.tv/channels/668bf7dd74f5ec000817e6d1/colorLogoPNG.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",Diagnosis Murder
+#EXTGRP:🏳️ Other Countries • Séries
+https://jmp2.uk/plu-668bf7dd74f5ec000817e6d1.m3u8
+#EXTINF:-1 tvg-id="DocMartin.se@SE" tvg-name="Doc Martin" tvg-logo="https://images.pluto.tv/channels/62724ae034f5190007b63424/colorLogoPNG.png" tvg-language="eng;swe" tvg-country="SE" group-title="🏳️ Other Countries • Séries",Doc Martin
+#EXTGRP:🏳️ Other Countries • Séries
+https://jmp2.uk/plu-62b1e5e77d15410007f798c6.m3u8
 #EXTINF:-1 tvg-id="4everDrama.ua@SD" tvg-name="4ever Drama" tvg-logo="https://i.imgur.com/CD3vZU6.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Séries",4ever Drama
 #EXTGRP:🏳️ Other Countries • Séries
 http://stream.mcquack.net/260/index.m3u8
