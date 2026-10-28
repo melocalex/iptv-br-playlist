@@ -381,6 +381,9 @@ https://jmp2.uk/plu-5f357e91b18f0b00073583d2.m3u8
 #EXTINF:-1 tvg-id="ConectaMaisTV.br@SD" tvg-name="Conecta Mais TV" tvg-logo="https://i.imgur.com/qHwTWlz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Conecta Mais TV
 #EXTGRP:🇧🇷 Brasil • Entretenimento
 https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryChannelLatinAmerica.us@Brazil" tvg-name="Discovery Channel Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Discovery Channel Latin America
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryWorld.us@Brazil" tvg-name="Discovery World" tvg-logo="https://i.imgur.com/yNFmUkE.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Discovery World
 #EXTGRP:🇧🇷 Brasil • Entretenimento
 http://168.196.127.137:6001/play/a097/index.m3u8
@@ -759,9 +762,6 @@ https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8
 #EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Brazil" tvg-name="Studio Universal Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Studio Universal Latin America
 #EXTGRP:🇧🇷 Brasil • Geral
 http://187.102.210.46/universo/index.m3u8
-#EXTINF:-1 tvg-id="TNTLatinAmerica.us@Brazil" tvg-name="TNT Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TNT Latin America
-#EXTGRP:🇧🇷 Brasil • Geral
-http://45.171.64.30:6060/play/a03i/index.m3u8
 #EXTINF:-1 tvg-id="TVACritica.br@SD" tvg-name="TV A Critica" tvg-logo="https://i.imgur.com/j51rBro.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV A Critica
 #EXTGRP:🇧🇷 Brasil • Geral
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
@@ -887,6 +887,15 @@ https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheH
 #EXTGRP:🇵🇹 Portugal • Notícias
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="DAZN3.uk@Portugal" tvg-name="DAZN 3" tvg-logo="https://i.imgur.com/2rXsq2m.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",DAZN 3
+#EXTGRP:🇵🇹 Portugal • Esportes
+http://23.237.104.106:8080/DAZN_3/index.m3u8
+#EXTINF:-1 tvg-id="DAZN4.uk@Portugal" tvg-name="DAZN 4" tvg-logo="https://i.imgur.com/m7ga8bU.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",DAZN 4
+#EXTGRP:🇵🇹 Portugal • Esportes
+http://23.237.104.106:8080/DAZN_4/index.m3u8
+#EXTINF:-1 tvg-id="DAZN5.uk@Portugal" tvg-name="DAZN 5" tvg-logo="https://i.imgur.com/HD2XaeS.png" tvg-language="por" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",DAZN 5
+#EXTGRP:🇵🇹 Portugal • Esportes
+http://23.237.104.106:8080/DAZN_5/index.m3u8
 #EXTINF:-1 tvg-id="FUELTV.pt@AU" tvg-name="FUEL TV" tvg-logo="https://i.imgur.com/I8mviBy.png" tvg-language="eng" tvg-country="PT" group-title="🇵🇹 Portugal • Esportes",FUEL TV
 #EXTGRP:🇵🇹 Portugal • Esportes
 https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist.m3u8

@@ -210,6 +210,21 @@ https://amg00426-lds-amg00426c15-samsung-au-3684.playouts.now.amagi.tv/playlist.
 #EXTINF:-1 tvg-id="Dynasty.us@SD" tvg-name="Dynasty" tvg-logo="https://images.pluto.tv/channels/62e919ca865c590007ecd0bd/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Dynasty
 #EXTGRP:🇺🇸 United States • Séries
 https://jmp2.uk/plu-64d1606b4c5ed80008e3b8b9.m3u8
+#EXTINF:-1 tvg-id="FamilyTies.us@SD" tvg-name="Family Ties" tvg-logo="https://i.imgur.com/WJEkKCb.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Family Ties
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-5f77939a630f530007dde654.m3u8
+#EXTINF:-1 tvg-id="Farscape.us@SD" tvg-name="Farscape" tvg-logo="https://i.imgur.com/2WH4lSc.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Farscape
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-699c1b4c9c3b075ecd513139.m3u8
+#EXTINF:-1 tvg-id="FearFactor.us@US" tvg-name="Fear Factor" tvg-logo="https://i.imgur.com/CIYnLWz.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Fear Factor
+#EXTGRP:🇺🇸 United States • Séries
+https://d2y1l0qikd751h.cloudfront.net/Fear_Factor.m3u8
+#EXTINF:-1 tvg-id="FeelGoodDrama.us@SD" tvg-name="Feel Good Drama" tvg-logo="https://images.pluto.tv/channels/65775af3b3801200084a3aa4/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Feel Good Drama
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-65775af3b3801200084a3aa4.m3u8
+#EXTINF:-1 tvg-id="Frasier.us@CA" tvg-name="Frasier" tvg-logo="https://images.pluto.tv/channels/62f4f90e39183b000769f12b/colorLogoPNG.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Séries",Frasier
+#EXTGRP:🇺🇸 United States • Séries
+https://jmp2.uk/plu-62f4f90e39183b000769f12b.m3u8
 #EXTINF:-1 tvg-id="AlerteaMalibu.us@France" tvg-name="Alerte a Malibu" tvg-logo="https://i.imgur.com/hBiB6uk.png" tvg-language="fra" tvg-country="US" group-title="🇺🇸 United States • Séries",Alerte a Malibu
 #EXTGRP:🇺🇸 United States • Séries
 https://jmp2.uk/plu-60afaa535580be0007ac9ee4.m3u8
@@ -243,6 +258,12 @@ https://pb-ffpxvjshv4rxx.akamaized.net/Dog_Whisperer_with_Cesar_Millan.m3u8
 #EXTINF:-1 tvg-id="DuckDynasty.us@UK" tvg-name="Duck Dynasty" tvg-logo="https://i.imgur.com/vMcSlwm.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Duck Dynasty
 #EXTGRP:🇬🇧 United Kingdom • Séries
 https://jmp2.uk/plu-6540fe6fbfbaec0008a583ae.m3u8
+#EXTINF:-1 tvg-id="GhostDimension.us@UK" tvg-name="Ghost Dimension" tvg-logo="https://i.imgur.com/a0jOxez.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Ghost Dimension
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://jmp2.uk/plu-619e1bb3e9af5a0007f235ad.m3u8
+#EXTINF:-1 tvg-id="GhostHunters.us@UK" tvg-name="Ghost Hunters" tvg-logo="https://i.imgur.com/KdBr6rG.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Séries",Ghost Hunters
+#EXTGRP:🇬🇧 United Kingdom • Séries
+https://amg00353-amg00353c30-samsung-au-3440.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="AMCSeriesLatinAmerica.us@Panregional" tvg-name="AMC Series Latin America" tvg-logo="https://amc-series.s3.amazonaws.com/menu/hbfen1Gom0_k1cyqi7rw4-amc-series-train-w.png" tvg-language="spa" group-title="🌐 International • Séries",AMC Series Latin America
 #EXTGRP:🌐 International • Séries
 https://streaming.onnethn.com/AMC/playlist.m3u8
@@ -265,6 +286,9 @@ http://92.114.85.87:8014/play/a004/index.m3u8
 #EXTGRP:🏳️ Other Countries • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://stream.mcquack.net/73/index.m3u8
+#EXTINF:-1 tvg-id="FilmUADrama.ua@SD" tvg-name="FilmUADrama" tvg-logo="https://i.imgur.com/Hnwsh5d.png" tvg-language="rus;ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",FilmUADrama
+#EXTGRP:🏳️ Other Countries • Filmes
+https://dash2.antik.sk/live/test_film_drama_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="2900Happiness.se@DK" tvg-name="2900 Happiness" tvg-logo="https://images.pluto.tv/channels/6720bc6cdaad7f000872a6e2/colorLogoPNG.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",2900 Happiness
 #EXTGRP:🏳️ Other Countries • Séries
 https://jmp2.uk/plu-6720bc6cdaad7f000872a6e2.m3u8
@@ -310,6 +334,9 @@ https://jmp2.uk/plu-668bf7dd74f5ec000817e6d1.m3u8
 #EXTINF:-1 tvg-id="DocMartin.se@SE" tvg-name="Doc Martin" tvg-logo="https://images.pluto.tv/channels/62724ae034f5190007b63424/colorLogoPNG.png" tvg-language="eng;swe" tvg-country="SE" group-title="🏳️ Other Countries • Séries",Doc Martin
 #EXTGRP:🏳️ Other Countries • Séries
 https://jmp2.uk/plu-62b1e5e77d15410007f798c6.m3u8
+#EXTINF:-1 tvg-id="FBoyIsland.se@DK" tvg-name="FBoy Island" tvg-logo="https://images.pluto.tv/channels/6790d6c7bc03978b9bfbfd44/colorLogoPNG.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Séries",FBoy Island
+#EXTGRP:🏳️ Other Countries • Séries
+https://jmp2.uk/plu-6790d6c7bc03978b9bfbfd44.m3u8
 #EXTINF:-1 tvg-id="4everDrama.ua@SD" tvg-name="4ever Drama" tvg-logo="https://i.imgur.com/CD3vZU6.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Séries",4ever Drama
 #EXTGRP:🏳️ Other Countries • Séries
 http://stream.mcquack.net/260/index.m3u8

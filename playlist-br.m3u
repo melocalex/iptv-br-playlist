@@ -359,7 +359,7 @@ https://jmp2.uk/plu-65df70b0f7f0af0008c3b316.m3u8
 https://jmp2.uk/plu-5ff609de50ab210008025c1b.m3u8
 #EXTINF:-1 tvg-id="OnePiece.us@BR" tvg-name="One Piece" tvg-logo="https://i.imgur.com/XsvbAWR.png" tvg-language="jap" tvg-country="BR" group-title="🇧🇷 Brasil • Animação",One Piece
 #EXTGRP:🇧🇷 Brasil • Animação
-https://jmp2.uk/plu-62e94ec74823db0007277a8f.m3u8
+https://jmp2.uk/plu-6380c94947c72b0007ee9a13.m3u8
 #EXTINF:-1 tvg-id="AELatinAmerica.us@Brazil" tvg-name="A&E Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",A&E Latin America
 #EXTGRP:🇧🇷 Brasil • Entretenimento
 http://170.83.16.50/AeE/index.m3u8
@@ -384,6 +384,9 @@ https://jmp2.uk/plu-5f357e91b18f0b00073583d2.m3u8
 #EXTINF:-1 tvg-id="ConectaMaisTV.br@SD" tvg-name="Conecta Mais TV" tvg-logo="https://i.imgur.com/qHwTWlz.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Conecta Mais TV
 #EXTGRP:🇧🇷 Brasil • Entretenimento
 https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryChannelLatinAmerica.us@Brazil" tvg-name="Discovery Channel Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Discovery Channel Latin America
+#EXTGRP:🇧🇷 Brasil • Entretenimento
+http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryWorld.us@Brazil" tvg-name="Discovery World" tvg-logo="https://i.imgur.com/yNFmUkE.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Entretenimento",Discovery World
 #EXTGRP:🇧🇷 Brasil • Entretenimento
 http://168.196.127.137:6001/play/a097/index.m3u8
@@ -762,9 +765,6 @@ https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8
 #EXTINF:-1 tvg-id="StudioUniversalLatinAmerica.us@Brazil" tvg-name="Studio Universal Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Studio Universal Latin America
 #EXTGRP:🇧🇷 Brasil • Geral
 http://187.102.210.46/universo/index.m3u8
-#EXTINF:-1 tvg-id="TNTLatinAmerica.us@Brazil" tvg-name="TNT Latin America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TNT Latin America
-#EXTGRP:🇧🇷 Brasil • Geral
-http://45.171.64.30:6060/play/a03i/index.m3u8
 #EXTINF:-1 tvg-id="TVACritica.br@SD" tvg-name="TV A Critica" tvg-logo="https://i.imgur.com/j51rBro.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV A Critica
 #EXTGRP:🇧🇷 Brasil • Geral
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
