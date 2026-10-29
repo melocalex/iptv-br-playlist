@@ -129,6 +129,12 @@ https://filmex-filmex-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="FilmexClasico.mx@SD" tvg-name="Filmex Clasico" tvg-logo="https://i.imgur.com/D3dj4mv.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",Filmex Clasico
 #EXTGRP:🌎 América Latina • Filmes
 https://filmex-filmexclasico-xumo.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="GoldenPremier.mx@SD" tvg-name="Golden Premier" tvg-logo="https://i.imgur.com/JMa7jws.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",Golden Premier
+#EXTGRP:🌎 América Latina • Filmes
+http://200.57.28.141:8540/play/a0ln
+#EXTINF:-1 tvg-id="GoldenPremier2.mx@SD" tvg-name="Golden Premier 2" tvg-logo="https://i.imgur.com/GBlvQBI.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Filmes",Golden Premier 2
+#EXTGRP:🌎 América Latina • Filmes
+http://200.57.28.141:8540/play/a0lo
 #EXTINF:-1 tvg-id="CineFriki.es@SD" tvg-name="Cine Friki" tvg-logo="https://i.imgur.com/b3Ospym.png" tvg-language="spa" tvg-country="ES" group-title="🇪🇸 España • Filmes",Cine Friki
 #EXTGRP:🇪🇸 España • Filmes
 https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
@@ -262,6 +268,15 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2229
 #EXTINF:-1 tvg-id="GirlfriendsFilms.us@SD" tvg-name="Girlfriends Films" tvg-logo="https://i.imgur.com/hCcdrOv.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Girlfriends Films
 #EXTGRP:🇺🇸 United States • Filmes
 https://jmp2.uk/plu-66ba1e4446762a000855cd87.m3u8
+#EXTINF:-1 tvg-id="GravitasMovies.us@SD" tvg-name="Gravitas Movies" tvg-logo="https://i.imgur.com/H2hD4vT.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Gravitas Movies
+#EXTGRP:🇺🇸 United States • Filmes
+https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8
+#EXTINF:-1 tvg-id="HallmarkMoviesMore.us@SD" tvg-name="Hallmark Movies & More" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29af70d1-d3ba-4a16-bc4d-bd99e7e7def4/hallmark-movies-and-more_color.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Hallmark Movies & More
+#EXTGRP:🇺🇸 United States • Filmes
+https://jmp2.uk/plu-628e685ba3811100070551a8.m3u8
+#EXTINF:-1 tvg-id="HallmarkMystery.us@East" tvg-name="Hallmark Mystery" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/32/Hallmark_Mystery_2024.svg" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Filmes",Hallmark Mystery
+#EXTGRP:🇺🇸 United States • Filmes
+http://41.205.93.154/HALLMARK/index.m3u8
 #EXTINF:-1 tvg-id="AXNBlack.us@Bulgary" tvg-name="AXN Black" tvg-logo="https://i.imgur.com/Peo1QiZ.png" tvg-language="bul" tvg-country="US" group-title="🇺🇸 United States • Filmes",AXN Black
 #EXTGRP:🇺🇸 United States • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
@@ -307,6 +322,12 @@ http://88.212.15.50/live/test_film_boxpremium_hd_hevc/playlist.m3u8
 #EXTGRP:🏳️ Other Countries • Filmes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 https://webtvstream.bhtelecom.ba/filmbox_stars.m3u8
+#EXTINF:-1 tvg-id="GrjngoWesternMovies.de@SD" tvg-name="Grjngo Western Movies" tvg-logo="https://i.imgur.com/wFqhK3p.png" tvg-language="eng;deu" tvg-country="DE" group-title="🏳️ Other Countries • Filmes",Grjngo Western Movies
+#EXTGRP:🏳️ Other Countries • Filmes
+https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="HBOAsia.sg@SD" tvg-name="HBO Asia" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/HBO_Asia.png/960px-HBO_Asia.png" tvg-language="eng" tvg-country="SG" group-title="🏳️ Other Countries • Filmes",HBO Asia
+#EXTGRP:🏳️ Other Countries • Filmes
+http://125.227.210.55:1003/VideoInput/play.ts
 #EXTINF:-1 tvg-id="AndTV.in@International" tvg-name="&TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",&TV
 #EXTGRP:🏳️ Other Countries • Filmes
 https://drk6xq0vhn.gpcdn.net/live/and_tv_hd_abr/index.m3u8
@@ -553,3 +574,51 @@ https://dash2.antik.sk/live/test_film_life_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="FilmUADrama.ua@SD" tvg-name="FilmUADrama" tvg-logo="https://i.imgur.com/Hnwsh5d.png" tvg-language="rus;ukr" tvg-country="UA" group-title="🏳️ Other Countries • Filmes",FilmUADrama
 #EXTGRP:🏳️ Other Countries • Filmes
 https://dash2.antik.sk/live/test_film_drama_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="GoldStar.ir@SD" tvg-name="Gold Star" tvg-language="fas" tvg-country="IR" group-title="🏳️ Other Countries • Filmes",Gold Star
+#EXTGRP:🏳️ Other Countries • Filmes
+https://moviethls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Goldmines.in@SD" tvg-name="Goldmines" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOLDMINES/images/LOGO_HD/image.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Goldmines
+#EXTGRP:🏳️ Other Countries • Filmes
+https://streams.tangotv.in/GOLDMINES/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="Goldmines2.in@SD" tvg-name="Goldmines 2" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Goldmines 2
+#EXTGRP:🏳️ Other Countries • Filmes
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINES2/index.m3u8
+#EXTINF:-1 tvg-id="GoldminesAction.in@SD" tvg-name="Goldmines Action" tvg-logo="https://yt3.googleusercontent.com/_X6U6bMLF-pTu5wBMFwsSI6aubGrXk2B0kUKdGiLIMqFLyDIne4Ot4ro76BS1S8fX3pWcCwS=s900-c-k-c0x00ffffff-no-rj" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Goldmines Action
+#EXTGRP:🏳️ Other Countries • Filmes
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINESACTION/index.m3u8
+#EXTINF:-1 tvg-id="GoldminesBollywood.in@SD" tvg-name="Goldmines Bollywood" tvg-logo="https://i.imgur.com/6mNQ9mM.png" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Goldmines Bollywood
+#EXTGRP:🏳️ Other Countries • Filmes
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
+#EXTINF:-1 tvg-id="GoldminesMovies.in@SD" tvg-name="Goldmines Movies" tvg-logo="https://dtil.tmsimg.com/assets/s142881_ld_h15_aa.png?lock=720x540" tvg-language="hin" tvg-country="IN" group-title="🏳️ Other Countries • Filmes",Goldmines Movies
+#EXTGRP:🏳️ Other Countries • Filmes
+https://streams.tangotv.in/GOLDMINEMOVIES/ORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="GrandCinema.tr@SD" tvg-name="Grand Cinema" tvg-language="fas" tvg-country="TR" group-title="🏳️ Other Countries • Filmes",Grand Cinema
+#EXTGRP:🏳️ Other Countries • Filmes
+https://gcinemahls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GroovyTV.gr@SD" tvg-name="Groovy TV" tvg-logo="https://i.imgur.com/ZYNQuf1.png" tvg-language="ell" tvg-country="GR" group-title="🏳️ Other Countries • Filmes",Groovy TV
+#EXTGRP:🏳️ Other Countries • Filmes
+http://web.onair-radio.eu:1935/groovytv/groovytv/playlist.m3u8
+#EXTINF:-1 tvg-id="HalloweenNonStop.ro@SD" tvg-name="Halloween Non Stop" tvg-logo="https://assets.antenaplay.ro/2026/10/18/ODGTMKI8mciV9cmCOxgn.png" tvg-language="ron" tvg-country="RO" group-title="🏳️ Other Countries • Filmes",Halloween Non Stop
+#EXTGRP:🏳️ Other Countries • Filmes
+https://live4dai.antenaplay.ro/live2_srt/live2_srt.m3u8
+#EXTINF:-1 tvg-id="HarbinMovieChannel.cn@SD" tvg-name="Harbin Movie Channel" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg" tvg-language="zho" tvg-country="CN" group-title="🏳️ Other Countries • Filmes",Harbin Movie Channel
+#EXTGRP:🏳️ Other Countries • Filmes
+https://stream.hrbtv.net/yspd/playlist.m3u8
+#EXTINF:-1 tvg-id="HBO.cz@SD" tvg-name="HBO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a9/HBO_Silver_glossy_logo.svg/revision/latest?cb=20260529155924" tvg-language="ces" tvg-country="CZ" group-title="🏳️ Other Countries • Filmes",HBO
+#EXTGRP:🏳️ Other Countries • Filmes
+http://88.212.15.50/live/test_hbo_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="HBO2.cz@SD" tvg-name="HBO 2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8f/HBO_2_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122226" tvg-language="ces" tvg-country="CZ" group-title="🏳️ Other Countries • Filmes",HBO 2
+#EXTGRP:🏳️ Other Countries • Filmes
+http://88.212.15.50/live/test_hbo2_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="HBO2.pl@SD" tvg-name="HBO 2" tvg-logo="https://i.imgur.com/2e3muOJ.png" tvg-language="pol" tvg-country="PL" group-title="🏳️ Other Countries • Filmes",HBO 2
+#EXTGRP:🏳️ Other Countries • Filmes
+http://185.227.34.179:8080/hbo-2-hd/index.m3u8
+#EXTINF:-1 tvg-id="HBO3.cz@SD" tvg-name="HBO 3" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6f/HBO_3_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122202" tvg-language="ces" tvg-country="CZ" group-title="🏳️ Other Countries • Filmes",HBO 3
+#EXTGRP:🏳️ Other Countries • Filmes
+http://88.212.15.50/live/test_hbo3_hd_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="Hit.ru@HD" tvg-name="Hit" tvg-logo="https://i.imgur.com/jl3MNPe.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Hit
+#EXTGRP:🏳️ Other Countries • Filmes
+http://stream.mcquack.net/363/index.m3u8
+#EXTINF:-1 tvg-id="HorosheeKino.ru@SD" tvg-name="Horoshee Kino" tvg-logo="https://i.imgur.com/ZbOqfy4.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Filmes",Horoshee Kino
+#EXTGRP:🏳️ Other Countries • Filmes
+https://live-rian.cdnvideo.ru/rian/rus-radio/playlist.m3u8
