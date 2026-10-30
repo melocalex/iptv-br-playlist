@@ -62,6 +62,9 @@ https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u
 #EXTINF:-1 tvg-id="TVSimCachoeiro.br@SD" tvg-name="TV Sim Cachoeiro" tvg-logo="https://i.imgur.com/t5oUK3C.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Sim Cachoeiro
 #EXTGRP:🇧🇷 Brasil • Notícias
 https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSimSaoMateus.br@SD" tvg-name="TV Sim Sao Mateus" tvg-logo="https://i.imgur.com/t5oUK3C.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Sim Sao Mateus
+#EXTGRP:🇧🇷 Brasil • Notícias
+https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8
 #EXTINF:-1 tvg-id="TVZoom.br@SD" tvg-name="TV Zoom" tvg-logo="https://i.imgur.com/jCGrjf5.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Notícias",TV Zoom
 #EXTGRP:🇧🇷 Brasil • Notícias
 https://cdn.jmvstream.com/w/LVW-9730/LVW9730_LmUwslM8jt/playlist.m3u8
@@ -588,6 +591,9 @@ https://jmp2.uk/plu-61bb72a7bf8c520007a8fd27.m3u8
 #EXTINF:-1 tvg-id="RedeMinas.br@SD" tvg-name="Rede Minas" tvg-logo="https://i.imgur.com/MtQWAHv.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Educação",Rede Minas
 #EXTGRP:🇧🇷 Brasil • Educação
 https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8
+#EXTINF:-1 tvg-id="1001Noites.br@SD" tvg-name="1001 Noites" tvg-logo="https://i.imgur.com/dWA9y2J.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",1001 Noites
+#EXTGRP:🇧🇷 Brasil • Variedades
+https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8
 #EXTINF:-1 tvg-id="CanalRural.br@SD" tvg-name="Canal Rural" tvg-logo="https://i.imgur.com/w9R9IIX.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Variedades",Canal Rural
 #EXTGRP:🇧🇷 Brasil • Variedades
 http://170.83.49.66:8083/CANALRURALHD/index.m3u8
@@ -636,6 +642,9 @@ https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
 #EXTINF:-1 tvg-id="ArarunaTV.br@SD" tvg-name="Araruna TV" tvg-logo="https://i.imgur.com/jl39ula.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Araruna TV
 #EXTGRP:🇧🇷 Brasil • Geral
 https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
+#EXTINF:-1 tvg-id="BoasNovas.br@SD" tvg-name="Boas Novas" tvg-logo="https://i.imgur.com/ZqhizdP.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Boas Novas
+#EXTGRP:🇧🇷 Brasil • Geral
+https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal25Jundiai.br@SD" tvg-name="Canal 25 Jundiai" tvg-logo="https://i.imgur.com/7igGMwH.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Canal 25 Jundiai
 #EXTGRP:🇧🇷 Brasil • Geral
 https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
@@ -666,6 +675,9 @@ https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/NewCo/New_Brasil_BR/New_Brasil.m
 #EXTINF:-1 tvg-id="ConecTVBrasil.br@SD" tvg-name="ConecTV Brasil" tvg-logo="https://i.imgur.com/XN6jjMR.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",ConecTV Brasil
 #EXTGRP:🇧🇷 Brasil • Geral
 https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8
+#EXTINF:-1 tvg-id="ConexaoTV.br@SD" tvg-name="Conexao TV" tvg-logo="https://i.imgur.com/CJ9SPsZ.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Conexao TV
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5a57bda70564a.streamlock.net/conexaotv/conexaotv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="CulturaFast.br@SD" tvg-name="Cultura Fast" tvg-logo="https://eitv6.cdn.broadpeak.io/account351-i1438/channel/53/quadrada_-3-_pequeno-1723832301.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",Cultura Fast
 #EXTGRP:🇧🇷 Brasil • Geral
 https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8
@@ -832,6 +844,9 @@ https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 #EXTINF:-1 tvg-id="TVJustica.br@SD" tvg-name="TV Justica" tvg-logo="https://i.imgur.com/rOQKiMO.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Justica
 #EXTGRP:🇧🇷 Brasil • Geral
 http://170.83.16.50/TV_JUSTICA/index.m3u8
+#EXTINF:-1 tvg-id="TVLitoralRN.br@SD" tvg-name="TV Litoral RN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3e/TV_LITORAL_RN.jpg" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Litoral RN
+#EXTGRP:🇧🇷 Brasil • Geral
+https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMaisMarica.br@SD" tvg-name="TV Mais Marica" tvg-logo="https://i.imgur.com/lgCRX7q.png" tvg-language="por" tvg-country="BR" group-title="🇧🇷 Brasil • Geral",TV Mais Marica
 #EXTGRP:🇧🇷 Brasil • Geral
 https://5cf4a2c2512a2.streamlock.net/tvmaismarica/tvmaismarica/playlist.m3u8
