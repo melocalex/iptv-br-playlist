@@ -80,6 +80,9 @@ http://45.228.234.9:8000/play/a06o/index.m3u8
 #EXTINF:-1 tvg-id="ITVDeportes.mx@SD" tvg-name="ITV Deportes" tvg-logo="https://iili.io/J1kV1Bn.png" tvg-language="spa" tvg-country="MX" group-title="🌎 América Latina • Esportes",ITV Deportes
 #EXTGRP:🌎 América Latina • Esportes
 https://thm-it-roku.otteravision.com/thm/it/it.m3u8
+#EXTINF:-1 tvg-id="L1Max.pe@SD" tvg-name="L1 Max" tvg-logo="https://i.imgur.com/2fziU2B.png" tvg-language="spa" tvg-country="PE" group-title="🌎 América Latina • Esportes",L1 Max
+#EXTGRP:🌎 América Latina • Esportes
+http://190.93.224.42/LIGA-1-MAX/index.m3u8
 #EXTINF:-1 tvg-id="beINSPORTSXTRAenEspanol.us@SD" tvg-name="beIN SPORTS XTRA en Espanol" tvg-logo="https://i.imgur.com/V562tpO.png" tvg-language="spa" tvg-country="US" group-title="🇺🇸 United States • Esportes",beIN SPORTS XTRA en Espanol
 #EXTGRP:🇺🇸 United States • Esportes
 https://aegis-cloudfront-1.tubi.video/01f6c149-449b-4248-8bda-2278799205ec/playlist.m3u8
@@ -164,6 +167,9 @@ https://jmp2.uk/plu-63a0e33a45264d000850ed7e.m3u8
 #EXTINF:-1 tvg-id="HBCUGOSports.us@SD" tvg-name="HBCU-GO Sports" tvg-logo="https://i.imgur.com/TY6sx5W.png" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",HBCU-GO Sports
 #EXTGRP:🇺🇸 United States • Esportes
 https://a-cdn.klowdtv.com/live3/hbcugo_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="LacrosseTV.us@SD" tvg-name="Lacrosse TV" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_m_xSJFydxZ9QBU-85OuchjmzS0Bo0_Tukmk7to8hBfyl8=s512-c-k-c0x00ffffff-no-rj" tvg-language="eng" tvg-country="US" group-title="🇺🇸 United States • Esportes",Lacrosse TV
+#EXTGRP:🇺🇸 United States • Esportes
+https://a-cdn.klowdtv.com/live2/lsn_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="DAZNCombat.uk@SD" tvg-name="DAZN Combat" tvg-logo="https://i.postimg.cc/VsW3Jsrz/logo-DAZN-Combat.png" tvg-language="eng" tvg-country="UK" group-title="🇬🇧 United Kingdom • Esportes",DAZN Combat
 #EXTGRP:🇬🇧 United Kingdom • Esportes
 https://jmp2.uk/plu-64d626ac9b414d000820e2fc.m3u8
@@ -195,6 +201,9 @@ https://skynewsau-live-premium.akamaized.net/hls/live/2105307/foxsportsnews/live
 #EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-name="Africa 24 Sport" tvg-logo="https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1" tvg-language="fra" tvg-country="FR" group-title="🏳️ Other Countries • Notícias",Africa 24 Sport
 #EXTGRP:🏳️ Other Countries • Notícias
 https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 tvg-id="AntenaPlayEvents.ro@SD" tvg-name="AntenaPlay Events" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/87/Antena_Play_symbol_white_2022.svg/revision/latest/scale-to-width-down/1000?cb=20251128201145" tvg-language="ron;eng" tvg-country="RO" group-title="🏳️ Other Countries • Esportes",AntenaPlay Events
+#EXTGRP:🏳️ Other Countries • Esportes
+https://live4dai.antenaplay.ro/live2_sdi09/live2_sdi09_600k.m3u8
 #EXTINF:-1 tvg-id="BrondbyTV.se@DK" tvg-name="Brondby TV" tvg-logo="https://images.pluto.tv/channels/685029cda1e091e16ff57fc8/colorLogoPNG_1750246109707.png" tvg-language="eng;dan" tvg-country="SE" group-title="🏳️ Other Countries • Esportes",Brondby TV
 #EXTGRP:🏳️ Other Countries • Esportes
 https://jmp2.uk/plu-685029cda1e091e16ff57fc8.m3u8
@@ -405,3 +414,60 @@ http://stream.mcquack.net/178/index.m3u8
 #EXTINF:-1 tvg-id="KTVSportPlus.kw@SD" tvg-name="KTV Sport Plus" tvg-logo="https://i.imgur.com/l4oX0gf.png" tvg-language="ara" tvg-country="KW" group-title="🏳️ Other Countries • Esportes",KTV Sport Plus
 #EXTGRP:🏳️ Other Countries • Esportes
 https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="LEquipe.fr@SD" tvg-name="L'Equipe" tvg-logo="https://i.imgur.com/t35zhM9.png" tvg-language="fra" tvg-country="FR" group-title="🏳️ Other Countries • Esportes",L'Equipe
+#EXTGRP:🏳️ Other Countries • Esportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+https://dq37unyetkpcz.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-m04j89j7k5gtp/LEquipe_FR.m3u8
+#EXTINF:-1 tvg-id="LRTPlius.lt@SD" tvg-name="LRT Plius" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/LRT_Plius_Logo_2022.svg/960px-LRT_Plius_Logo_2022.svg.png" tvg-language="lit" tvg-country="LT" group-title="🏳️ Other Countries • Esportes",LRT Plius
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/353/index.m3u8
+#EXTINF:-1 tvg-id="M4Sport.hu@SD" tvg-name="M4 Sport" tvg-logo="https://i.imgur.com/TQ4uJZk.png" tvg-language="hun" tvg-country="HU" group-title="🏳️ Other Countries • Esportes",M4 Sport
+#EXTGRP:🏳️ Other Countries • Esportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+http://88.212.7.14/live/uatlmvixrr/index.m3u8
+#EXTINF:-1 tvg-id="MadeinBOTV.it@SD" tvg-name="MadeinBO TV" tvg-logo="https://i.imgur.com/47X44DD.png" tvg-language="ita" tvg-country="IT" group-title="🏳️ Other Countries • Esportes",MadeinBO TV
+#EXTGRP:🏳️ Other Countries • Esportes
+https://srvx1.selftv.video/dmchannel/live/playlist.m3u8
+#EXTINF:-1 tvg-id="MaincastCybersport.ua@SD" tvg-name="Maincast Cybersport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Maincast_%28HD_Logo%29_2024.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Esportes",Maincast Cybersport
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/487/index.m3u8
+#EXTINF:-1 tvg-id="MaincastSport.ua@SD" tvg-name="Maincast Sport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Maincast_%28HD_Logo%29_2024.png" tvg-language="ukr" tvg-country="UA" group-title="🏳️ Other Countries • Esportes",Maincast Sport
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/490/index.m3u8
+#EXTINF:-1 tvg-id="MatchArena.ru@SD" tvg-name="Match! Arena" tvg-logo="https://i.imgur.com/udTzwzu.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Match! Arena
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/163/index.m3u8
+#EXTINF:-1 tvg-id="MatchBoets.ru@SD" tvg-name="Match! Boets" tvg-logo="https://i.imgur.com/DogOkA4.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Match! Boets
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/112/index.m3u8
+#EXTINF:-1 tvg-id="MatchIgra.ru@SD" tvg-name="Match! Igra" tvg-logo="https://i.imgur.com/5XWpF19.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Match! Igra
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/188/index.m3u8
+#EXTINF:-1 tvg-id="MatchPremier.ru@SD" tvg-name="Match! Premier" tvg-logo="https://i.imgur.com/GQPyHYK.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Match! Premier
+#EXTGRP:🏳️ Other Countries • Esportes
+http://185.23.80.23:8080/MATCH_PREMIER/index.m3u8
+#EXTINF:-1 tvg-id="MatchStrana.ru@SD" tvg-name="Match! Strana" tvg-logo="https://i.imgur.com/X02s2UE.png" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Match! Strana
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/143/index.m3u8
+#EXTINF:-1 tvg-id="MatchUltra.ru@4K" tvg-name="Match! Ultra" tvg-logo="https://www.kartina.tv/media/news/images/News/SEO/kanal-match-ultra.jpg" tvg-language="rus" tvg-country="RU" group-title="🏳️ Other Countries • Esportes",Match! Ultra
+#EXTGRP:🏳️ Other Countries • Esportes
+http://stream.mcquack.net/169/index.m3u8
+#EXTINF:-1 tvg-id="Match4.hu@SD" tvg-name="Match4" tvg-logo="https://i.imgur.com/hzexBLX.png" tvg-language="hun" tvg-country="HU" group-title="🏳️ Other Countries • Esportes",Match4
+#EXTGRP:🏳️ Other Countries • Esportes
+http://141.94.193.53:80/Match4_HD/index.m3u8
+#EXTINF:-1 tvg-id="MaxSport1.bg@SD" tvg-name="Max Sport 1" tvg-logo="https://i.imgur.com/0ohnpql.png" tvg-language="bul" tvg-country="BG" group-title="🏳️ Other Countries • Esportes",Max Sport 1
+#EXTGRP:🏳️ Other Countries • Esportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36x
+http://213.91.179.28:8000/play/a0as
+#EXTINF:-1 tvg-id="MaxSport2.bg@SD" tvg-name="Max Sport 2" tvg-logo="https://i.imgur.com/33m1wPN.png" tvg-language="bul" tvg-country="BG" group-title="🏳️ Other Countries • Esportes",Max Sport 2
+#EXTGRP:🏳️ Other Countries • Esportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://213.91.179.28:8000/play/a0at
+#EXTINF:-1 tvg-id="MaxSport3.bg@SD" tvg-name="Max Sport 3" tvg-logo="https://i.imgur.com/eGiGgZ2.png" tvg-language="bul" tvg-country="BG" group-title="🏳️ Other Countries • Esportes",Max Sport 3
+#EXTGRP:🏳️ Other Countries • Esportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://213.91.179.28:8000/play/a0ar
+#EXTINF:-1 tvg-id="MaxSport4.bg@SD" tvg-name="Max Sport 4" tvg-logo="https://i.imgur.com/7IxXX6f.png" tvg-language="bul" tvg-country="BG" group-title="🏳️ Other Countries • Esportes",Max Sport 4
+#EXTGRP:🏳️ Other Countries • Esportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://213.91.179.28:8000/play/a05n
